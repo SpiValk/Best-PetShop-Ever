@@ -1,1 +1,0 @@
-var malakia=5
