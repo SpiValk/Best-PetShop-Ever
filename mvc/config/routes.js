@@ -21,6 +21,14 @@ module.exports.routes = {
 
   '/': { view: 'pages/homepage' },
 
+  // Product
+  'GET /products'             : { action: 'products/list'},
+  'GET /products/new'         : { action: 'products/new'},
+  'POST /products/new'        : { action: 'products/save'},
+  'GET /products/delete/:id'  : { action: 'products/delete'},
+  'GET /products/edit/:id'    : { action: 'products/edit'},
+  'GET /products/update/:id'  : { action: 'products/update'},
+
 
   /***************************************************************************
   *                                                                          *
