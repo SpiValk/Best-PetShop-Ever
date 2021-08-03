@@ -5,5 +5,9 @@ module.exports = {
         description: { type: 'string', required: true },
         costPrice: { type: 'number', required: true},
         quantity: { type: 'number', required: true},
+    },
+
+    product_category: {
+        model: 'product_category'
     }
 }
