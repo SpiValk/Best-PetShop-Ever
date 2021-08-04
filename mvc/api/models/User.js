@@ -6,7 +6,7 @@ module.exports={
         isAdmin:{type:"boolean",required:true,columnName:"is_admin"}
 
     },
-    owner:{
+    customer_user:{
         model:'Customer',
         unique: true
       }

@@ -11,7 +11,7 @@ attributes:{
 
     user: {
         collection:'User',
-        via: 'owner'
+        via: 'customer_user'
       }
 
 }}
