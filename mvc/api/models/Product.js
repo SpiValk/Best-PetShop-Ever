@@ -7,7 +7,7 @@ module.exports = {
         quantity: { type: 'number', required: true},
     },
 
-    product_category: {
-        model: 'product_category'
-    }
+    // product_category: {
+    //     model: 'product_category'
+    // }
 }
