@@ -9,5 +9,11 @@ module.exports = {
 
     product_category: {
         model: 'product_category'
+    },
+    product_supplier:{
+        model:'Supplier'
+    },
+    product_discount:{
+        model:'discount'
     }
 }
