@@ -50,6 +50,8 @@ module.exports.datastores = {
     ***************************************************************************/
     adapter: 'sails-mysql',
     url: 'mysql://root:superSecurePass@ra1.anystream.eu:7722/pet_test_db',
+    // adapter: 'sails-mysql',
+    // url: 'mysql://user:password@host:port/database',
   },
 
 
