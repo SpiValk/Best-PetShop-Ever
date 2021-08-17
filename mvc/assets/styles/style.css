@@ -1,0 +1,245 @@
+.bg-custom{
+    background-color: rgb(30, 116, 48);
+    border-bottom: 3px solid orange;
+    /*background-image: url("img/download.png");*/
+    color: white;
+}
+.ul-custom{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+
+}
+
+.headerImageFont{
+    color: lightgrey;
+}
+
+.custom-img{
+    height:500px;
+    /* max-width:100px; */
+
+}
+
+/* .carousel{
+  height: 25em;
+} */
+
+.carousel_a-custom{
+    text-decoration:none;
+    color:white;
+
+}
+
+.bgheader{
+    background-image: url("img/dog\ body.jpg");
+    background-size:cover;
+}
+.sub_ul-custom{
+    background-color:rgb(30, 116, 48);
+    color:orange;
+    list-style:none;
+    /* display:flex;
+    flex-direction:row; */
+
+}
+.sub_ul-custom>li{
+    list-style: none;
+}
+.dropdown-ul{
+    display:flex;
+    flex-direction:row;
+}
+
+.no-radius{
+    border-radius: 0!important;
+}
+.main{
+    display:flex;
+    flex-direction:row;
+
+}
+.main1-custom{
+    width:80%;
+}
+
+/* .cart-custom{
+    font-size:2rem;
+} */
+
+.myBox img{
+    max-height: 225px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.myProductBox img{
+    max-height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.myProductBox h4{
+    text-align:center;
+}
+
+.myBox h4{
+    text-align: center;
+}
+
+#cart{
+    margin-left: 500px;
+}
+
+
+.myBox button{
+    width: 100%;
+}
+.myProductBox button{
+    width:100%;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+
+#map{
+    width: 100%;
+    height: 500px;
+    filter: grayscale(50%);
+}
+
+img#check{
+    display: block;
+    margin: 15% auto;
+}
+
+.card img {
+    max-height: 350px;
+    object-fit: cover;
+    object-position: 75% 25%;
+}
+
+.text-center{
+    
+    margin-top: 35px;
+}
+
+/* .myBox img{
+    border: 5px;
+    border-color: black;
+
+} */
+
+.top-shipping{
+    position: fixed;
+    bottom: 350px;
+    right: 20px;
+    color: rgb(219, 124, 34);
+    width: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+
+.custom-categories{
+    
+        display:flex;
+        flex-direction:row;
+        justify-content: space-around;
+        align-items:space-around;
+        margin:auto;
+        width:100%;
+         
+}
+.pet{
+    width:150px;
+    height:150px;
+   
+}
+.petchoice{
+    margin-bottom:10px;
+    display:flex;
+    flex-direction:column;
+}
+.petchoice >p{
+    visibility:hidden;
+}
+.petchoice:hover p{
+    visibility:visible;
+    text-align:center;
+}
+
+.image5{
+    /* width:100%;
+    height:100%; */
+    background:url("https://th.bing.com/th/id/R.38c1ac37527db9da8b7ba2812454d994?rik=w1oZyyvtEt1WWQ&pid=ImgRaw&r=0") center center no-repeat;
+    background-size:contain;
+    overflow:hidden;
+    transition:all 1s ease-in-out;
+}
+.image4{
+    /* width:100%;
+    height:100%; */
+    background:url("https://stylesatlife.com/wp-content/uploads/2019/10/Types-of-Fish-Species-In-World-and-Their-Facts.jpg") center center;
+    background-size:contain;
+    overflow:hidden;
+    transition:all 1s ease-in-out;
+}
+.image3{
+    /* width:100%;
+    height:100%; */
+    background:url("https://th.bing.com/th/id/OIP.LFWGyAILDrLR4_6h34i8VwHaFj?pid=ImgDet&w=600&h=450&rs=1") center center no-repeat;
+    background-size:contain;
+    overflow:hidden;
+    transition:all 1s ease-in-out;
+}
+.image2{
+    /* width:100%;
+    height:100%; */
+    background:url("https://th.bing.com/th/id/OIP.Q1-QDKCugRcsAh39-jWSywHaHa?pid=ImgDet&rs=1") center center;
+    background-size:contain;
+    overflow:hidden;
+    transition:all 1s ease-in-out;
+}
+.image1{
+    /* width:100%;
+    height:100%; */
+    background:url("https://th.bing.com/th/id/OIP.PGIY1XYJkck8lcCcckyWnQHaEo?pid=ImgDet&rs=1") center center no-repeat;
+    background-size:contain;
+    overflow:hidden;
+    transition:all 1s ease-in-out;
+}
+.pet-categ{
+    width:150px;
+    height:150px;
+    overflow:hidden;
+    border-radius:50%;
+    border:5px solid black;
+}
+.pet-categ:hover{
+    border:5px solid green;
+}
+.pets-heading{
+    text-align:center;
+    margin-bottom:5px;
+}
+
+.dog-categ:hover .image1{
+    transform:scale(1.5)
+    } 
+.cat-categ:hover .image2{
+    transform:scale(1.5);
+    }
+.bird-categ:hover .image3{
+    transform:scale(1.5);
+    }
+.fish-categ:hover .image4{
+    transform:scale(1.5);
+    } 
+.small-pets-categ:hover .image5{
+        transform:scale(1.5);
+    }
