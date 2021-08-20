@@ -1,0 +1,10 @@
+<h1>List of Products</h1>
+<% products.forEach((product)=> { %>
+      <%= product.id %> <%= product.name %>
+       <%= product.description %> <%= product.costPrice %> 
+       <%= product.quantity %> <%= product.product_category %>
+     <a href='<%= ' /products/edit/' + product.id %>'> Edit </a>
+      <a href='<%= ' /products/delete/' + product.id %>'> Delete </a> <br>
+      <br>
+   <% }) %>
+   <p><a href="/products/new"> New Product</a></p>
