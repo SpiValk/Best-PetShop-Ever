@@ -1,13 +1,21 @@
 module.exports={
-    tableName:"users",
-    attributes:{ 
-        username:{type:"string",required:true},
-        password:{type:"string",required:true},
-        isAdmin:{type:"boolean",required:true,columnName:"is_admin"},
+    tableName:'user',
+    attributes:{
+        username        :{type:'string',  columnName:'username',     required:true},
+        password        :{type:'string',  columnName:'password',     required:true},
+        // avatar:{type:'blob',required:true},
+        contact_number  :{type:'number',  columnName:'phone_number', required:true},
+        email           :{type:"string",  columnName:'email',        required:true},
+        isAdmin         :{type:"boolean", columnName:'is_admin',     required:true},
 
-    customer_user:{
-        model:'Customer',
-        unique: true
-      }
-   }
-}
+    
+        customer: {
+            model:'customer',
+            unique: 'true'
+          },
+
+          order:{
+            model:'order'
+            }
+    
+    }}

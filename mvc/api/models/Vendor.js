@@ -1,5 +1,5 @@
 module.exports={
-    table_name:"supplier",
+    table_name:"vendor",
     attributes:{
         companyName:{type:"string",columnName:"company_name",required:true},
         contactPerson:{type:"string",columnName:"company_contact_person",required:true},
@@ -8,9 +8,14 @@ module.exports={
         companyPhone:{type:'number',columnName:'company_phone',required:true}
 
     },
-    products:{
-        collection:'Product',
-        via:'product_supplier'
-
-    }
+    pet_product:{
+        model:'pet_product'
+        }
 }
+
+
+            // product_category:{
+            //     collection:'product_category',
+            //     via:'product_discount'
+            // }
+
