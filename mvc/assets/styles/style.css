@@ -161,9 +161,11 @@ img#check{
    
 }
 .petchoice{
+    margin:auto;
     margin-bottom:10px;
     display:flex;
     flex-direction:column;
+    
 }
 .petchoice >p{
     visibility:hidden;
@@ -243,3 +245,11 @@ img#check{
 .small-pets-categ:hover .image5{
         transform:scale(1.5);
     }
+
+    @media only screen and (max-width: 600px) {
+        .custom-categories{
+            display:flex;
+            flex-direction:column;
+            margin:auto;
+        }
+      }
