@@ -1,11 +1,11 @@
 module.exports = {
     tableName: 'pet_product',
-    attribute: {
+    attributes: {
         name          : { type: 'string',  columnName: 'name',         required: true },
         description   : { type: 'string',  columnName: 'description',  required: true },
         quantity      : { type: 'number',  columnName: 'quantity',     required: true },
         ventor_price  : { type: 'number',  columnName: 'ventor_price', required: true },
-        status        : { type: 'boolean', columnName: 'ventor_price', required: true },
+        status        : { type: 'number',  columnName: 'status',       required: true },
     
 
     discount: {
@@ -26,7 +26,7 @@ module.exports = {
     order_id: {
         collection: 'order',
         via:        'product',
-        // through:    'order_products'
+        through:    'order_products'
     }
     }
 }

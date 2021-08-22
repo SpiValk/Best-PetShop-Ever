@@ -6,7 +6,7 @@ module.exports={
         // avatar:{type:'blob',required:true},
         contact_number  :{type:'number',  columnName:'phone_number', required:true},
         email           :{type:"string",  columnName:'email',        required:true},
-        isAdmin         :{type:"boolean", columnName:'is_admin',     required:true},
+        isAdmin         :{type:"number",  columnName:'is_admin',     required:true},
 
     
         customer: {
@@ -16,6 +16,19 @@ module.exports={
 
           order:{
             model:'order'
-            }
+            },
+
+            payment: {
+              collection:'payment',
+              via:        'user'
+            },
+
+            donation_recipent: {
+              collection: 'donation_recipent',
+              via:        'user',
+              through:    'donation',
+          }
+          }
+      }
     
-    }}
+    

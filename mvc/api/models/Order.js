@@ -15,7 +15,7 @@ module.exports={
         product: {
             collection: 'pet_product',
             via:        'order_id',
-            // through:    'order_products'
+            through:    'order_products'
         }
     
     }}
