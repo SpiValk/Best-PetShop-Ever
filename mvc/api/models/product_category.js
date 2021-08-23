@@ -1,15 +1,18 @@
+
 module.exports = {
   tableName: 'product_category',
   attributes: {
-    updatedAt: false,
-    createdAt: false,
-    name: { type: 'string', required: true },
-    description: { type: 'string', required: true },
-    pet_related: { type: 'number', required: true},
+    category_name   : { type: 'string', columnName: 'category_name', required: true },
+    description     : { type: 'string', columnName: 'description',   required: true },
 
-    product: {
-      collection: 'product',
+
+    pet_product:{
+      model:'pet_product'
+    },
+
+    pets: {
+      collection: 'pets',
       via:        'product_category'
-    }
-  },
+    },
+  }
 };

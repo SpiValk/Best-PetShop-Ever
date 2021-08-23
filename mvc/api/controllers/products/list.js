@@ -9,6 +9,7 @@ module.exports = {
     }
   },
 
+  //testing a way to get product category
   fn: async function(){
     let products = await Product.find();
     for(let product of products){
