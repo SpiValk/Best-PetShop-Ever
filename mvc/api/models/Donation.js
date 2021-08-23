@@ -3,5 +3,5 @@ module.exports = {
   tableName: 'donation',
   attributes :{
     user               : { model: 'user' },
-    donation_recipent  : { model: 'donation_recipent' }
+    donation_recipient  : { model: 'donation_recipient' }
   }};
