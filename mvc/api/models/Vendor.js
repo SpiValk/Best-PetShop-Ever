@@ -6,7 +6,7 @@ module.exports={
     contactPerson  : { type:'string', columnName:'company_contact_person', required:true},
     companyEmail   : { type:'string', columnName:'company_email',          required:true},
     companyWebSite : { type:'string', columnName:'company_website',        required:false},
-    companyPhone   : { type:'number', columnName:'company_phone',          required:true},
+    companyPhone   : { type:'number', columnName:'company_phone',          required:false},
 
 
     pet_product:{

@@ -5,7 +5,8 @@ module.exports = {
     name          : { type: 'string',  columnName: 'name',         required: true },
     description   : { type: 'string',  columnName: 'description',  required: true },
     quantity      : { type: 'number',  columnName: 'quantity',     required: true },
-    ventor_price  : { type: 'number',  columnName: 'ventor_price', required: true },
+    vendor_price  : { type: 'number',  columnName: 'vendor_price', required: true },
+    image_name    : { type: 'string',  columnName: 'image_name',   required: true },
     status        : { type: 'number',  columnName: 'status',       required: true },
 
 

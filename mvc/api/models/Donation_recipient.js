@@ -13,7 +13,7 @@ module.exports = {
 
     user: {
       collection: 'user',
-      via:        'donation_recipent',
+      via:        'donation_recipient',
       through:    'donation',
     }
   }};
