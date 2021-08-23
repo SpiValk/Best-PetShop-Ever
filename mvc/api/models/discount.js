@@ -1,16 +1,16 @@
+
 module.exports={
   tableName:'discount',
   attributes:{
-    discountName:{type:'string',columnName: 'disc_name',required:true},
-    description:{type:'string',required:true},
-    discountPercent:{type:'number',columnName:'disc_percent',required:true},
-    active:{type:'boolean',required:true}
-  },
+    discountName     : { type:'string',  columnName: 'disc_name',   required:true },
+    description      : { type:'string',  columnName: 'description', required:true },
+    discountPercent  : { type:'number',  columnName:'disc_percent', required:true },
+    active           : { type:'number',  columnName:'active',       required:true },
 
 
-  //   products:{
-  //     collection:'Product',
-  //     via:'Product_discount'
-  //   }
 
+    pet_product:{
+      model:'pet_product',
+    }
+  }
 };

@@ -20,7 +20,7 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': { view: 'pages/index' },
-  
+
 
   // Product
   'GET /products'             : { action: 'products/list'},
@@ -29,6 +29,7 @@ module.exports.routes = {
   'GET /products/delete/:id'  : { action: 'products/delete'},
   'GET /products/edit/:id'    : { action: 'products/edit'},
   'GET /products/update/:id'  : { action: 'products/update'},
+  'GET /products/dog'         : { action: 'dog'}
 
 
   /***************************************************************************

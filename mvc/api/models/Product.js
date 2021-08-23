@@ -10,6 +10,9 @@ module.exports = {
     product_category: {
       model: 'product_category',
     },
+    discount_id: {
+      model: 'discount'
+    }
   },
 
 
