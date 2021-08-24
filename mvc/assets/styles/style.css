@@ -130,6 +130,7 @@ img#check {
 
 } */
 
+<<<<<<< Updated upstream
 .top-shipping {
   position: fixed;
   bottom: 350px;
@@ -138,6 +139,54 @@ img#check {
   width: 200px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: medium;
+=======
+.top-shipping{
+    position: fixed;
+    bottom: 350px;
+    right: 20px;
+    color: rgb(219, 124, 34);
+    width: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+
+.custom-categories{
+        display:flex;
+        flex-direction:row;
+        justify-content: space-around;
+        align-items:space-around;
+        margin:auto;
+        width:100%;     
+}
+.pet{
+    width:150px;
+    height:150px;
+   
+}
+.petchoice{
+    margin:auto;
+    margin-bottom:10px;
+    display:flex;
+    flex-direction:column;
+    
+}
+.petchoice >p{
+    visibility:hidden;
+}
+.petchoice:hover p{
+    visibility:visible;
+    text-align:center;
+}
+
+.image5{
+    /* width:100%;
+    height:100%; */
+    background:url("https://th.bing.com/th/id/R.38c1ac37527db9da8b7ba2812454d994?rik=w1oZyyvtEt1WWQ&pid=ImgRaw&r=0") center center no-repeat;
+    background-size:contain;
+    overflow:hidden;
+    transition:all 1s ease-in-out;
+>>>>>>> Stashed changes
 }
 
 .custom-categories {
