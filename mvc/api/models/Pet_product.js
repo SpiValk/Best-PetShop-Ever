@@ -10,25 +10,35 @@ module.exports = {
     status        : { type: 'number',  columnName: 'status',       required: true },
 
 
-    discount: {
+    
+   
+
+    discount_id: {
       collection: 'discount',
-      via:        'pet_product'
+      via:        'pet_product_id'
     },
 
-    vendor: {
-      collection: 'vendor',
-      via:        'pet_product'
+    vendor_id: {
+      model: 'vendor'
     },
 
-    product_category: {
-      collection: 'product_category',
-      via:        'pet_product'
+    
+
+
+    product_category_id:{
+      model:'product_category'
     },
 
     order_id: {
       collection: 'order',
-      via:        'product',
+      via:        'product_id',
       through:    'order_products'
+    },
+
+    
+
+    subcategory_id: {
+      model: 'product_subcategory'
     }
   }
 };

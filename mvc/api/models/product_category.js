@@ -4,13 +4,19 @@ module.exports = {
   attributes: {
     category_name   : { type: 'string', columnName: 'category_name', required: true },
     description     : { type: 'string', columnName: 'description',   required: true },
-    pet_product:{
-      model:'pet_product'
+    
+   
+
+    pet_product_id: {
+      collection: 'pet_product',
+      via:        'product_category_id'
     },
 
-    pets: {
-      collection: 'pets',
-      via:        'product_category'
-    },
+
+    pets_id: {
+      model: 'pets'
+    }
+
+ 
   }
 };

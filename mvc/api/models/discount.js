@@ -7,8 +7,12 @@ module.exports={
     discountPercent  : { type:'number',  columnName:'disc_percent', required:true },
     active           : { type:'number',  columnName:'active',       required:true },
 
-    pet_product:{
+
+
+    
+
+    pet_product_id:{
       model:'pet_product',
-    }
+    },
   }
 };
