@@ -9,8 +9,14 @@ module.exports={
     companyPhone   : { type:'number', columnName:'company_phone',          required:false},
 
 
-    pet_product:{
-      model:'pet_product'
-    }
+    
+
+    pet_product_id: {
+      collection: 'pet_product',
+      via:        'vendor_id'
+    },
+
+   
+
   }
 };

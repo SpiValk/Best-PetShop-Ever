@@ -7,15 +7,17 @@ module.exports={
     total_amount    :{type:'number',   columnName:'float',           required:true},
     quantity        :{type:'number',   columnName:'quantity',        required:true},
 
-    user: {
+    user_id: {
       collection: 'user',
-      via:        'order'
+      via:        'order_id'
     },
 
-    product: {
+    product_id: {
       collection: 'pet_product',
       via:        'order_id',
       through:    'order_products'
     }
+
+    
 
   }};

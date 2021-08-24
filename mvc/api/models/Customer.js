@@ -6,8 +6,12 @@ module.exports={
     address         : { type:'string', columnName:'address',        required:true },
     contact_number  : { type:'number', columnName:'contact_number', required:true },
     //  email           : { type:'string', columnName:'email',          required:true },
-    user:{
-      collection: 'user',
-      via: 'customer'
-    }
+    
+   
+    user_id: {
+      model:'user',
+      unique: true
+    },
+
+
   }};

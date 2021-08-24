@@ -2,6 +2,6 @@
 module.exports = {
   tableName: 'donation',
   attributes :{
-    user               : { model: 'user' },
-    donation_recipient  : { model: 'donation_recipient' }
+    user_id               : { model: 'user' },
+    donation_recipient_id  : { model: 'donation_recipient' }
   }};

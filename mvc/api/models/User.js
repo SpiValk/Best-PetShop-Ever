@@ -5,28 +5,32 @@ module.exports={
     password        :{type:'string',  columnName:'password',     required:true},
     // avatar:{type:'blob',required:true},
     //  contact_number  :{type:'number',  columnName:'phone_number', required:true},
-    email           :{type:'string',  columnName:'email',        required:true},
+    email           :{type:'string', isEmail: true,   columnName:'email',        required:true},
     isAdmin         :{type:'number',  columnName:'is_admin',     required:true},
 
 
-    customer: {
-      model:'customer',
-      unique: true
+   
+
+    customer_id:{
+      collection: 'customer',
+      via: 'user_id'
     },
 
-    order:{
+    order_id:{
       model:'order'
     },
 
-    payment: {
+    payment_id: {
       collection:'payment',
-      via:        'user'
+      via:        'user_id'
     },
 
-    donation_recipient: {
+    donation_recipient_id: {
       collection: 'donation_recipient',
-      via:        'user',
+      via:        'user_id',
       through:    'donation',
     }
+
+    
   }
 };
