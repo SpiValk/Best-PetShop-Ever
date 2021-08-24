@@ -4,6 +4,7 @@
   /*background-image: url("img/download.png");*/
   color: white;
 }
+
 .ul-custom {
   width: 100%;
   display: flex;
@@ -16,7 +17,9 @@
 }
 
 .custom-img {
-  height: 500px;
+  width: 100vw;
+  height: 70vh;
+  object-fit: cover;
   /* max-width:100px; */
 }
 
@@ -194,6 +197,7 @@ img#check {
   margin: auto;
   width: 100%;
 }
+
 .pet {
   width: 150px;
   height: 150px;
