@@ -14,7 +14,7 @@
 
 
 
- module.exports.bootstrap = async function() {
+module.exports.bootstrap = async function() {
 
   // By convention, this is a good place to set up fake data during development.
   //
@@ -138,7 +138,7 @@
       status: 1,
       vendor_id: 2,
       product_category_id: 1,
-      subcategory_id: 1
+      subcategory_id: 2
 
     },
     {
@@ -150,7 +150,7 @@
       status: 1,
       vendor_id: 2,
       product_category_id: 1,
-      subcategory_id: 1
+      subcategory_id: 2
 
     },
     {
@@ -162,7 +162,7 @@
       status: 1,
       vendor_id: 2,
       product_category_id: 1,
-      subcategory_id: 1
+      subcategory_id: 2
 
     },
     {
@@ -174,7 +174,7 @@
       status: 1,
       vendor_id: 3,
       product_category_id: 1,
-      subcategory_id: 1
+      subcategory_id: 3
 
     },
     {
@@ -186,7 +186,7 @@
       status: 1,
       vendor_id: 3,
       product_category_id: 1,
-      subcategory_id: 1
+      subcategory_id: 3
 
     },
     {
@@ -198,7 +198,7 @@
       status: 1,
       vendor_id: 3,
       product_category_id: 1,
-      subcategory_id: 1
+      subcategory_id: 3
 
     },
   ]);
