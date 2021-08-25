@@ -1,4 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-custom">
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-custom">
     <div class="container">
         <a class="navbar-brand" href="#"><img src="/img/pngwing.com.png" width="76" height="58" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -35,6 +36,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="..">Sign In</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="..">Log In</a>
+                </li>
             </ul>
         </div>
 
@@ -51,9 +55,9 @@
                         <ul>
                             <li>FOODS</li>
                             <hr class="dropdown-divider">
-                            <li><a class="dropdown-item" href="..">Dry Food</a></li>
-                            <li><a class="dropdown-item" href="..">Dog Cans</a></li>
-                            <li><a class="dropdown-item" href="..">Dog Treats & Chews</a></li>
+                            <li><a class="dropdown-item" href="/products/dog#dryfoods">Dry Food</a></li>
+                            <li><a class="dropdown-item" href="/products/dog#dogcans">Dog Cans</a></li>
+                            <li><a class="dropdown-item" href="/products/dog#dogtreats">Dog Treats & Chews</a></li>
                         </ul>
                         <hr class="dropdown-divider">
                         <ul>
@@ -312,3 +316,19 @@
     </ul>
 
 </nav>
+
+<script type="text/javascript">
+
+    var nav = document.getElementById('navbar');
+    
+
+    window.onscroll = function(){
+        if(window.pageYOffset > 100) {
+            nav.style.background =  "transparent";
+            nav.style.height = "4em";
+        }else{
+            nav.style.background =  "green";
+            nav.style.height =  "6em";
+        }
+    }
+</script>

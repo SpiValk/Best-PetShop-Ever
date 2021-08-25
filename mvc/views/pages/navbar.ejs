@@ -1,5 +1,5 @@
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-custom">
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-custom">
     <div class="container">
         <a class="navbar-brand" href="#"><img src="/img/pngwing.com.png" width="76" height="58" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -317,3 +317,18 @@
 
 </nav>
 
+<script type="text/javascript">
+
+    var nav = document.getElementById('navbar');
+    
+
+    window.onscroll = function(){
+        if(window.pageYOffset > 100) {
+            nav.style.background =  "transparent";
+            nav.style.height = "4em";
+        }else{
+            nav.style.background =  "green";
+            nav.style.height =  "6em";
+        }
+    }
+</script>
