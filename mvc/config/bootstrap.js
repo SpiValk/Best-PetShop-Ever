@@ -50,7 +50,9 @@ module.exports.bootstrap = async function() {
   await Vendor.createEach([
     {companyName: 'Bon Appetit', contactPerson: 'Maria 5Isa', companyEmail: 'maria5i@bonappetit.com', companyWebSite: 'https://www.bonappetitpetfood.com/', companyPhone:'+3115553123' },
     {companyName: 'Natura Wild', contactPerson: 'George Bezos', companyEmail: 'Gbezos@nwild.com', companyWebSite: 'https://www.natura-wild.com/en/homepage/', companyPhone:'+3115553567' },
-    {companyName: 'Natyka', contactPerson: 'orestis chang', companyEmail: 'karate@natyka.com', companyWebSite: 'https://www.natyka.com/en/homepage/#intro', companyPhone:'+3131453567' }
+    {companyName: 'Natyka', contactPerson: 'orestis chang', companyEmail: 'karate@natyka.com', companyWebSite: 'https://www.natyka.com/en/homepage/#intro', companyPhone:'+3131453567' },
+    {companyName: 'Ancol', contactPerson: 'John Bush', companyEmail: 'jbush@natyka.com', companyWebSite: 'https://www.ancol.co.uk/', companyPhone:'01922402428' },
+    {companyName: 'Record'},
   ]);
 
   await Pets.createEach([
@@ -69,13 +71,13 @@ module.exports.bootstrap = async function() {
     },
     {
       category_name: 'dog grooming',
-      description: 'diapers, poop bags, flea and wormers, dog shampoo, ' +
-                    'braches & combs, scissors & clippers, perfumes & fragrances',
+      description: 'diapers,  flea and wormers, dog shampoo, ' +
+                    'brushes & combs, scissors & clippers, perfumes & fragrances',
       pets_id: 1
     },
     {
       category_name: 'dog accessories',
-      description: 'toys, clothes, collars, bowls & feeding, leads, harness, ' +
+      description: 'toys, clothes, poop bags, collars, bowls & feeding, leads, harness, ' +
                     'muzles, transport boxes, beds, houses',
       pets_id: 1
     },
@@ -90,6 +92,12 @@ module.exports.bootstrap = async function() {
     {subcategory: 'dry food'},
     {subcategory: 'dog cans'},
     {subcategory: 'dog treats chews'},
+    {subcategory: 'dog diapers'},
+    {subcategory: 'dog flea and wormers'},
+    {subcategory: 'dog shampoo'},
+    {subcategory: 'dog brushes and combs'},
+    {subcategory: 'dog scissors and clippers'},
+    {subcategory: 'perfumes and frangrances'},
   ]);
 
 
@@ -199,7 +207,39 @@ module.exports.bootstrap = async function() {
       vendor_id: 3,
       product_category_id: 1,
       subcategory_id: 3
-
+    },
+    {
+      name: 'Ancol Ergo Wood Handle Soft Bristle Dog Brush',
+      description: 'Removes dead hair and promotes glossy coat. It comes with a wood handle for comfort',
+      quantity: 1,
+      vendor_price: 2,
+      image_name: 'Ancol-dog-brush-soft.jpeg',
+      status: 1,
+      vendor_id: 4,
+      product_category_id: 2,
+      subcategory_id: 7
+    },
+    {
+      name: 'Record Pet Hair Remover Brush Set',
+      description: 'The Record Pet Hair Remover Brush is reusable, double-sided and can be used on sofas, car seats, clothes, pet beds, but also on the pet directly, as it does not leave glue residue or dangerous chemical materials.',
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'RECORD-Brush-Hair-Remover-5540.jpeg',
+      status: 1,
+      vendor_id: 5,
+      product_category_id: 2,
+      subcategory_id: 7
+    },
+    {
+      name: 'Record Self Cleaning Slicker Brush',
+      description: 'A tool specially made for the daily grooming of long-haired cats and dogs. After having combed your pet you’ll need to push the button on the back of the brush and the plastic board will easily expel the combed hair.',
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Record-self-cleaning-slicker-brush.jpeg',
+      status: 1,
+      vendor_id: 5,
+      product_category_id: 2,
+      subcategory_id: 7
     },
   ]);
   // ```
