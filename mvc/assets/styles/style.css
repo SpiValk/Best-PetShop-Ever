@@ -5,6 +5,15 @@
   color: white;
 }
 
+#navbar {
+  width: 100%;
+  padding: 20px;
+  position: sticky;
+  top: 0px;
+  transition: .5s;
+  z-index: 1;
+}
+
 .ul-custom {
   width: 100%;
   display: flex;
