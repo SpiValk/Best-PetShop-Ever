@@ -34,7 +34,10 @@ module.exports.routes = {
   'GET /products/delete/:id'  : { action: 'products/delete'},
   'GET /products/edit/:id'    : { action: 'products/edit'},
   'GET /products/update/:id'  : { action: 'products/update'},
-  'GET /products/dog'         : { action: 'dog'}
+  //Dog
+  'GET /products/dog'         : { action: 'dog'},
+  //Cat
+  'GET /products/cat'         : { action: 'cat'},
 
 
   /***************************************************************************
