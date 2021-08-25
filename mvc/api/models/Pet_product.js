@@ -10,8 +10,8 @@ module.exports = {
     status        : { type: 'number',  columnName: 'status',       required: true },
 
 
-    
-   
+
+
 
     discount_id: {
       collection: 'discount',
@@ -22,7 +22,7 @@ module.exports = {
       model: 'vendor'
     },
 
-    
+
 
 
     product_category_id:{
@@ -35,7 +35,7 @@ module.exports = {
       through:    'order_products'
     },
 
-    
+
 
     subcategory_id: {
       model: 'product_subcategory'

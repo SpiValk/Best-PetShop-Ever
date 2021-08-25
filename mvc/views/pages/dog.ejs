@@ -2,53 +2,53 @@
 
    <body>
       <%- include("navbar") %>
-      <h2 class="text-center">Dog Products</h2>
-      <hr>
-      <h3 class="text-center">Foods</h3>
-      <hr>
-      <h5 id="dryfoods" class="text-center">Dry Foods</h5>
-      <div class="row">
-         <%dogProducts.forEach((product)=> { %>
-            <div class="col-md-3 myProductBox">
-               <img src="/img/product_images/<%=product.image_name%>" alt="purina veterinary" />
-               <h4>
-                  <%= product.name %>
-               </h4>
-               <button class="btn bg-custom no-radius add"><i class="fas fa-shopping-cart"></i> Add To
-                  Cart</button>
-            </div>
-            <%})%>
+         <h2 class="text-center">Dog Products</h2>
+         <hr>
+         <h3 class="text-center">Foods</h3>
+         <hr>
+         <h5 id="dryfoods" class="text-center">Dry Foods</h5>
+         <div class="row">
+            <%dryFood.forEach((product)=> { %>
+               <div class="col-md-3 myProductBox">
+                  <img src="/img/product_images/<%=product.image_name%>" alt="purina veterinary" />
+                  <h4>
+                     <%= product.name %>
+                  </h4>
+                  <button class="btn bg-custom no-radius add"><i class="fas fa-shopping-cart"></i> Add To
+                     Cart</button>
+               </div>
+               <%})%>
          </div>
 
          <hr>
-      <h5 id="dogcans" class="text-center">Dog Cans</h5>
-      <div class="row">
-         <%dogProducts.forEach((product)=> { %>
-            <div class="col-md-3 myProductBox">
-               <img src="/img/product_images/<%=product.image_name%>" alt="purina veterinary" />
-               <h4>
-                  <%= product.name %>
-               </h4>
-               <button class="btn bg-custom no-radius add"><i class="fas fa-shopping-cart"></i> Add To
-                  Cart</button>
-            </div>
-            <%})%>
-      </div>
+         <h5 id="dogcans" class="text-center">Dog Cans</h5>
+         <div class="row">
+            <%dogCans.forEach((product)=> { %>
+               <div class="col-md-3 myProductBox">
+                  <img src="/img/product_images/<%=product.image_name%>" alt="purina veterinary" />
+                  <h4>
+                     <%= product.name %>
+                  </h4>
+                  <button class="btn bg-custom no-radius add"><i class="fas fa-shopping-cart"></i> Add To
+                     Cart</button>
+               </div>
+               <%})%>
+         </div>
 
-      <hr>
-      <h5 id="dogtreats" class="text-center">Dog Treats & Chews</h5>
-      <div class="row">
-         <%dogProducts.forEach((product)=> { %>
-            <div class="col-md-3 myProductBox">
-               <img src="/img/product_images/<%=product.image_name%>" alt="purina veterinary" />
-               <h4>
-                  <%= product.name %>
-               </h4>
-               <button class="btn bg-custom no-radius add"><i class="fas fa-shopping-cart"></i> Add To
-                  Cart</button>
-            </div>
-            <%})%>
-      </div>
+         <hr>
+         <h5 id="dogtreats" class="text-center">Dog Treats & Chews</h5>
+         <div class="row">
+            <%dogTreats.forEach((product)=> { %>
+               <div class="col-md-3 myProductBox">
+                  <img src="/img/product_images/<%=product.image_name%>" alt="purina veterinary" />
+                  <h4>
+                     <%= product.name %>
+                  </h4>
+                  <button class="btn bg-custom no-radius add"><i class="fas fa-shopping-cart"></i> Add To
+                     Cart</button>
+               </div>
+               <%})%>
+         </div>
 
    </body>
    <%- include("scripts") %>
