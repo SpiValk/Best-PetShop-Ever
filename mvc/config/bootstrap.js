@@ -53,6 +53,8 @@ module.exports.bootstrap = async function() {
     {companyName: 'Natyka', contactPerson: 'orestis chang', companyEmail: 'karate@natyka.com', companyWebSite: 'https://www.natyka.com/en/homepage/#intro', companyPhone:'+3131453567' },
     {companyName: 'Ancol', contactPerson: 'John Bush', companyEmail: 'jbush@natyka.com', companyWebSite: 'https://www.ancol.co.uk/', companyPhone:'01922402428' },
     {companyName: 'Record'},
+    {companyName: 'So Phresh'},
+
   ]);
 
   await Pets.createEach([
@@ -215,7 +217,7 @@ module.exports.bootstrap = async function() {
       vendor_price: 2,
       image_name: 'Ancol-dog-brush-soft.jpeg',
       status: 1,
-      vendor_id: 4,
+      vendor_id: 5,
       product_category_id: 2,
       subcategory_id: 7
     },
@@ -240,6 +242,28 @@ module.exports.bootstrap = async function() {
       vendor_id: 5,
       product_category_id: 2,
       subcategory_id: 7
+    },
+    {
+      name: 'So Phresh Washable Diaper for Dogs, X-Small',
+      description: 'Washable Diaper for Dogs, X-Small',
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'so-phresh-washable-dog-diaper-Xs.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 2,
+      subcategory_id: 4
+    },
+    {
+      name: 'Drontal Tasty Bone Wormer Tablets',
+      description: 'Drontal Tasty Bone worming tablets work fast to kill every type of intestinal worm commonly found in UK dogs, giving you peace of mind that you are helping keep internal parasites away from your pet and family. ',
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Drontal-Tasty-Bone-Worming-Tablets-for-Dogs-1-Tablet_1.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 2,
+      subcategory_id: 5
     },
   ]);
   // ```
