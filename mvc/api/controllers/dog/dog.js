@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 module.exports = {
   inputs:{},
   exits:{
@@ -7,6 +8,10 @@ module.exports = {
     let dryFood = await Pet_product.find({subcategory_id: 1});
     let dogCans = await Pet_product.find({subcategory_id: 2});
     let dogTreats = await Pet_product.find({subcategory_id: 3});
-    return{dryFood, dogCans, dogTreats};
+    let dogCombing = await Pet_product.find({subcategory_id: 7});
+    let dogDiapers = await Pet_product.find({subcategory_id:4});
+    let dogWormers = await Pet_product.find({subcategory_id:5});
+
+    return{dryFood, dogCans, dogTreats, dogCombing, dogDiapers, dogWormers};
   }
 };

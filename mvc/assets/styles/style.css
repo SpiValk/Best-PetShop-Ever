@@ -5,6 +5,12 @@
   color: white;
 }
 
+.nav-item:hover .dropdown-menu {
+  display: block;
+  position: relative;
+  left: 0;
+}
+
 #navbar {
   width: 100%;
   padding: 20px;

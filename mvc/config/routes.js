@@ -24,7 +24,7 @@ module.exports.routes = {
   '/ourteam' :{view: 'pages/static/ourteam'},
   '/contactus' :{view: 'pages/static/contactus'},
   '/home' :{view: 'pages/index'},
-  
+
 
 
   // Product
@@ -35,7 +35,7 @@ module.exports.routes = {
   'GET /products/edit/:id'    : { action: 'products/edit'},
   'GET /products/update/:id'  : { action: 'products/update'},
   //Dog
-  'GET /products/dog'         : { action: 'dog'},
+  'GET /products/dog'         : { action: 'dog/dogcontroller'},
   //Cat
   'GET /products/cat'         : { action: 'cat'},
 
