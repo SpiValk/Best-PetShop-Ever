@@ -113,7 +113,8 @@ module.exports.bootstrap = async function() {
       status: 1,
       vendor_id: 1,
       product_category_id: 1,
-      subcategory_id: 1
+      subcategory_id: 1,
+      pet_id: 1
     },
     {
       name: 'Bon Appetit Adult Dog Lamb & Salmon & Rice Dry Food: hypoallergenic, gluten-free',
@@ -124,8 +125,8 @@ module.exports.bootstrap = async function() {
       status: 1,
       vendor_id: 1,
       product_category_id: 1,
-      subcategory_id: 1
-
+      subcategory_id: 1,
+      pet_id: 1
     },
     {
       name: 'Bon Appetit Adult Dog Maxi Chicken & Rice Dry Food: hypoallergenic, gluten-free',
@@ -136,8 +137,8 @@ module.exports.bootstrap = async function() {
       status: 1,
       vendor_id: 1,
       product_category_id: 1,
-      subcategory_id: 1
-
+      subcategory_id: 1,
+      pet_id: 1
     },
     {
       name: 'Grain Free Dog Food Natura Wild: Ontario Wildland Adult Dry Food',
@@ -148,8 +149,8 @@ module.exports.bootstrap = async function() {
       status: 1,
       vendor_id: 2,
       product_category_id: 1,
-      subcategory_id: 2
-
+      subcategory_id: 2,
+      pet_id: 1
     },
     {
       name: 'Grain Free Puppy Food: Natura Wild Little Creek',
@@ -160,7 +161,8 @@ module.exports.bootstrap = async function() {
       status: 1,
       vendor_id: 2,
       product_category_id: 1,
-      subcategory_id: 2
+      subcategory_id: 2,
+      pet_id: 1
 
     },
     {
@@ -172,7 +174,8 @@ module.exports.bootstrap = async function() {
       status: 1,
       vendor_id: 2,
       product_category_id: 1,
-      subcategory_id: 2
+      subcategory_id: 2,
+      pet_id: 1
 
     },
     {
@@ -184,7 +187,8 @@ module.exports.bootstrap = async function() {
       status: 1,
       vendor_id: 3,
       product_category_id: 1,
-      subcategory_id: 3
+      subcategory_id: 3,
+      pet_id: 1
 
     },
     {
@@ -196,7 +200,8 @@ module.exports.bootstrap = async function() {
       status: 1,
       vendor_id: 3,
       product_category_id: 1,
-      subcategory_id: 3
+      subcategory_id: 3,
+      pet_id: 1
 
     },
     {
@@ -208,7 +213,8 @@ module.exports.bootstrap = async function() {
       status: 1,
       vendor_id: 3,
       product_category_id: 1,
-      subcategory_id: 3
+      subcategory_id: 3,
+      pet_id: 1
     },
     {
       name: 'Ancol Ergo Wood Handle Soft Bristle Dog Brush',
@@ -219,7 +225,8 @@ module.exports.bootstrap = async function() {
       status: 1,
       vendor_id: 5,
       product_category_id: 2,
-      subcategory_id: 7
+      subcategory_id: 7,
+      pet_id: 1
     },
     {
       name: 'Record Pet Hair Remover Brush Set',
@@ -230,7 +237,8 @@ module.exports.bootstrap = async function() {
       status: 1,
       vendor_id: 5,
       product_category_id: 2,
-      subcategory_id: 7
+      subcategory_id: 7,
+      pet_id: 1
     },
     {
       name: 'Record Self Cleaning Slicker Brush',
@@ -241,7 +249,8 @@ module.exports.bootstrap = async function() {
       status: 1,
       vendor_id: 5,
       product_category_id: 2,
-      subcategory_id: 7
+      subcategory_id: 7,
+      pet_id: 1
     },
     {
       name: 'So Phresh Washable Diaper for Dogs, X-Small',
@@ -252,7 +261,8 @@ module.exports.bootstrap = async function() {
       status: 1,
       vendor_id: 6,
       product_category_id: 2,
-      subcategory_id: 4
+      subcategory_id: 4,
+      pet_id: 1
     },
     {
       name: 'Drontal Tasty Bone Wormer Tablets',
@@ -263,7 +273,8 @@ module.exports.bootstrap = async function() {
       status: 1,
       vendor_id: 6,
       product_category_id: 2,
-      subcategory_id: 5
+      subcategory_id: 5,
+      pet_id: 1
     },
   ]);
   // ```

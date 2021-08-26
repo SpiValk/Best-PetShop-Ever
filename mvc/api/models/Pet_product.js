@@ -9,10 +9,6 @@ module.exports = {
     image_name    : { type: 'string',  columnName: 'image_name',   required: true },
     status        : { type: 'number',  columnName: 'status',       required: true },
 
-
-
-
-
     discount_id: {
       collection: 'discount',
       via:        'pet_product_id'
@@ -21,9 +17,6 @@ module.exports = {
     vendor_id: {
       model: 'vendor'
     },
-
-
-
 
     product_category_id:{
       model:'product_category'
@@ -35,10 +28,12 @@ module.exports = {
       through:    'order_products'
     },
 
-
-
     subcategory_id: {
       model: 'product_subcategory'
+    },
+
+    pet_id: {
+      model: 'pets',
     }
   }
 };
