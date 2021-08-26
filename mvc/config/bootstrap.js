@@ -25,28 +25,33 @@ module.exports.bootstrap = async function() {
     return;
   }
 
+  //------------ CREATE CUSTOMERS ---------------//
   await Customer.createEach([
     { firstName: 'super', lastName: 'admin', address: 'In da house', contact_number: '1313', user_id: 1},
     { firstName: 'John', lastName: 'Doe', address: 'elpinikis 8, patisia', contact_number: '1212', user_id: 2},
   ]);
 
+  //-------------- CREATE USERS ---------------//
   await User.createEach([
     {username:'admin', password: 'admin', email: 'admin@admin.com', isAdmin: 1, customer_id: 1},
     {username:'john', password: 'doe', email: 'john@doe.com', isAdmin: 0, customer_id: 2, payment_id: 1} //only one payment per user???
   ]);
 
+
+  //-------------- CREATE PAYMENT METHODS ---------------///
   await Payment.createEach([
     {payment_type: 'Visa', user_id: 2},
     {payment_type: 'Cash', user_id: 2},
   ]);
 
-
+  //------------- CREATE DISCOUNTS ------------------------//
   await Discount.createEach([
     { discountName: 'Summer Sales', description: 'Up to 40%', discountPercent: 40, active: 0},
     { discountName: 'Winter Sales', description: 'Up to 30%', discountPercent: 30, active: 0},
     // etc.
   ]);
 
+  //-------------------- CREATE VENDORS ----------------//
   await Vendor.createEach([
     {companyName: 'Bon Appetit', contactPerson: 'Maria 5Isa', companyEmail: 'maria5i@bonappetit.com', companyWebSite: 'https://www.bonappetitpetfood.com/', companyPhone:'+3115553123' },
     {companyName: 'Natura Wild', contactPerson: 'George Bezos', companyEmail: 'Gbezos@nwild.com', companyWebSite: 'https://www.natura-wild.com/en/homepage/', companyPhone:'+3115553567' },
@@ -57,6 +62,8 @@ module.exports.bootstrap = async function() {
 
   ]);
 
+
+  //---------------------CREATE PETS ------------------//
   await Pets.createEach([
     {name: 'dog', description:'dog...'},
     {name: 'cat', description:'cat...'},
@@ -65,6 +72,7 @@ module.exports.bootstrap = async function() {
     {name: 'small animals', description:'little animals'}
   ]);
 
+  //------------------CREATE PRODUCT CATEGORIES --------------//
   await Product_category.createEach([
     {
       category_name: 'dog foods',
@@ -90,6 +98,7 @@ module.exports.bootstrap = async function() {
     },
   ]);
 
+  //------------------ CREATE SUBCATEGORIES -------------------//
   await Product_subcategory.createEach([
     {subcategory: 'dry food'},
     {subcategory: 'dog cans'},
@@ -102,6 +111,8 @@ module.exports.bootstrap = async function() {
     {subcategory: 'perfumes and frangrances'},
   ]);
 
+
+  //-------------------------- CREATE PRODUCTS --------------------//
 
   await Pet_product.createEach([
     {
@@ -272,7 +283,7 @@ module.exports.bootstrap = async function() {
       image_name: 'Drontal-Tasty-Bone-Worming-Tablets-for-Dogs-1-Tablet_1.jpeg',
       status: 1,
       vendor_id: 6,
-      product_category_id: 2,
+      product_category_id: 4,
       subcategory_id: 5,
       pet_id: 1
     },
