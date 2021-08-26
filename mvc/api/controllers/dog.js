@@ -10,7 +10,8 @@ module.exports = {
     let dogTreats = await Pet_product.find({subcategory_id: 3});
     let dogCombing = await Pet_product.find({subcategory_id: 7});
     let dogDiapers = await Pet_product.find({subcategory_id:4});
+    let dogWormers = await Pet_product.find({subcategory_id:5});
 
-    return{dryFood, dogCans, dogTreats, dogCombing, dogDiapers};
+    return{dryFood, dogCans, dogTreats, dogCombing, dogDiapers, dogWormers};
   }
 };
