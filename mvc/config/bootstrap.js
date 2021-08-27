@@ -100,16 +100,35 @@ module.exports.bootstrap = async function() {
 
   //------------------ CREATE SUBCATEGORIES -------------------//
   await Product_subcategory.createEach([
-    {subcategory: 'dry food'},
-    {subcategory: 'dog cans'},
-    {subcategory: 'dog treats chews'},
-    {subcategory: 'dog diapers'},
-    {subcategory: 'dog flea and wormers'},
-    {subcategory: 'dog shampoo'},
-    {subcategory: 'dog brushes and combs'},
-    {subcategory: 'dog scissors and clippers'},
-    {subcategory: 'perfumes and frangrances'},
-  ]);
+    //------ FOODS -------//
+   {subcategory: 'dry food'},
+   {subcategory: 'dog cans'},
+   {subcategory: 'dog treats chews'},
+   //------ GROOMING -------//
+   {subcategory: 'dog diapers'},
+   {subcategory: 'dog shampoo'},
+   {subcategory: 'dog brushes and combs'},
+   {subcategory: 'dog scissors and clippers'},
+   {subcategory: 'perfumes and frangrances'},
+   //------ ACCESSORIES -------//
+   {subcategory: 'dog toys'},
+   {subcategory: 'dog clothes'},
+   {subcategory: 'dog collars'},
+   {subcategory: 'dog bowls and feeding'},
+   {subcategory: 'dog leads'},
+   {subcategory: 'dog harness'},
+   {subcategory: 'dog poop bags'},
+   {subcategory: 'dog muzzle'},
+   {subcategory: 'dog transport boxes'},
+   {subcategory: 'dog beds'},
+   {subcategory: 'dog houses'},
+   //------ VETERINARY -------//
+   {subcategory: 'dog antiparasitics'},
+   {subcategory: 'dog antibiotics'},
+   {subcategory: 'wound care'},
+   {subcategory: 'dog flea and wormers'},
+   {subcategory: 'vitamins minerals electrolytes'},
+ ]);
 
 
   //-------------------------- CREATE PRODUCTS --------------------//
@@ -285,6 +304,151 @@ module.exports.bootstrap = async function() {
       vendor_id: 6,
       product_category_id: 4,
       subcategory_id: 5,
+      pet_id: 1
+    },
+    //**** DOG ACCESORIES/DOG TOYS ******//
+    {
+      name: 'KONG® Classic Dog Toy-Treat Dispensing',
+      description: 'The KONG Classic is the gold standard of dog toys, and has become the staple for dogs around the world for over forty years. Offering enrichment by helping satisfy a dogs instinctual needs' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'kong-toy.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id:9,
+      pet_id: 1
+    },
+    {
+      name: 'KONG® Cozie Spunky Monkey Dog Toy',
+      description: "Your dog loves to cuddle and he also loves to play, so grab a toy that he can do both with. Kong's Cozie Spunky Monkey is cute, cuddly and durable. Your dog will enjoy the versatility this toy offers." ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'kong-monkey-toy.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id:9,
+      pet_id: 1
+    },
+    {
+      name: 'KONG® AirDog® Tennis Ball Set Squeaker Dog Toy',
+      description: "The KONG SqueakAir Tennis Ball Dog Toy combines two classic dog toys -the tennis ball and the squeaker toy-to create the perfect fetch toy. This durable, high-quality Squeakair tennis ball will not wear down your dog's teeth" ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'kong-tennis-ball.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id:9,
+      pet_id: 1
+    },
+    {
+      name: 'Thrills & Chills™ Halloween GET SPOOKY! Purple Bone Dog Toy - Plush, Squeaker',
+      description: "Your dog will have a spook-tacular time playing with this Thrills & Chills Plush Spooky Bone Dog Toy" ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Thrills&Chills-Purple-Bone-Dog.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id:9,
+      pet_id: 1
+    },
+    {
+      name: 'Top Paw® "I Love PetSmart" Flyer Dog Toy',
+      description: "Engage in fun, interactive play with your dog with this Top Paw Plastic Flyer. This fun flyer is the perfect vehicle by which to keep your dog active and engaged" ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Top-Paw-Flyer-Dog-Toy.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id:9,
+      pet_id: 1
+    },
+    {
+      name: 'Nylabone® Puppy Ring Chew Dog Toy',
+      description: "The Puppy Ring Bone is specifically designed for teething puppies to encourage the development of non-destructive chewing habits. Not recommended for dogs with any adult teeth." ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Nylabone-Puppy-Ring-Chew.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id:9,
+      pet_id: 1
+    },
+    {
+      name: 'Nylabone® Puppy Teething Keys Chew Dog Toy',
+      description: "This Nylabone Just for Puppies Teething Chew Keys Toy is made from inert soft thermoplastic polymer to satisfy the chewing instinct of teething puppies, and encourages non-destructive chewing" ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Nylabone-Chew-Dog-Toy.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id:9,
+      pet_id: 1
+    },
+    {
+      name: 'KONG® Teddy Bear Dog Toy - Plush, Squeaker',
+      description: " A plush toy that lasts! KONG's Plush Teddy Bear Dog Toy is the perfect toy for your pooch who loves stuffed toys - minus the mess! This plush toy comes with a pre-loaded removable internal squeaker that all dogs love." ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Kong-Teddy-Bear-Dog-Toy.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id:9,
+      pet_id: 1
+    },
+    {
+      name: 'KONG® Teddy Bear Dog Toy - Plush, Squeaker',
+      description: " A plush toy that lasts! KONG's Plush Teddy Bear Dog Toy is the perfect toy for your pooch who loves stuffed toys - minus the mess! This plush toy comes with a pre-loaded removable internal squeaker that all dogs love." ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Multipet-Teddy-Lamb-Chop-Dog-Toy.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id:9,
+      pet_id: 1
+    },
+    {
+      name: 'Multipet® Lamb Chop Dog Toy - Squeaker, Plush',
+      description: " The Multipet Lamb Chop Mini Dog Toy is the officially licensed Lamb Chop Dog Toy from the popular Shari Lewis children's program." ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Kong-Teddy-Bear-Dog-Toy.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id:9,
+      pet_id: 1
+    },
+    {
+      name: 'Top Paw® Spiky Football Dog Toy - Squeaker',
+      description: "Keep your dog active and entertained with this Top Paw Spiky TPR Football Dog Toy" ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Top-Paw-Spiky-Football-Dog-Toy.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id:9,
+      pet_id: 1
+    },
+    {
+      name: 'Thrills & Chills™ Halloween Spider Dog Toy - Plush, Squeaker',
+      description: "Your dog will have a spook-tacular time playing with this Thrills & Chills Plush Spider Dog Toy." ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Thrills-Chills-Halloween-Spider-Dog-Toy.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id:9,
       pet_id: 1
     },
   ]);
