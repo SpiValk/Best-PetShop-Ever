@@ -1,26 +1,36 @@
-# mvc
+# Product categories(1st) - subcategories(2nd) IDs
 
-a [Sails v1](https://sailsjs.com) application
+# Dog
+
+      - Dog foods: #1
+         - Dry Food: #1
+         - Dog Cans: #2
+         - Dog treats and chews: #3
+
+      - Dog grooming: #2
+         - Dog diapers: #4
+         - Dog shampoo: #5
+         - Dog brushes & combs: #6
+         - Dog scissors & clippers: #7
+         - Dog perfumes & fragrances: #8
+
+      - Dog Accessories: #3
+         -Dog toys: #9
+         -Dog clothes: #10
+         -Dog collars: #11
+         -Dog bowls and feeding: #12
+         -Dog leads: #13
+         -Dog harness: #14
+         -Dog poop bags: #15
+         -Dog muzzle: #16
+         -Dog transport boxes: #17
+         -Dog beds: #18
+         -Dog houses: #19
 
 
-### Links
-
-+ [Sails framework documentation](https://sailsjs.com/get-started)
-+ [Version notes / upgrading](https://sailsjs.com/documentation/upgrading)
-+ [Deployment tips](https://sailsjs.com/documentation/concepts/deployment)
-+ [Community support options](https://sailsjs.com/support)
-+ [Professional / enterprise options](https://sailsjs.com/enterprise)
-
-
-### Version info
-
-This app was originally generated on Mon Aug 02 2021 17:10:50 GMT+0300 (Eastern European Summer Time) using Sails v1.4.3.
-
-<!-- Internally, Sails used [`sails-generate@2.0.3`](https://github.com/balderdashy/sails-generate/tree/v2.0.3/lib/core-generators/new). -->
-
-
-
-<!--
-Note:  Generators are usually run using the globally-installed `sails` CLI (command-line interface).  This CLI version is _environment-specific_ rather than app-specific, thus over time, as a project's dependencies are upgraded or the project is worked on by different developers on different computers using different versions of Node.js, the Sails dependency in its package.json file may differ from the globally-installed Sails CLI release it was originally generated with.  (Be sure to always check out the relevant [upgrading guides](https://sailsjs.com/upgrading) before upgrading the version of Sails used by your app.  If you're stuck, [get help here](https://sailsjs.com/support).)
--->
-
+      - Dog Vetinary Products: #4
+         -Dog antiparasitics: #20
+         -Dog antibiotics: #21
+         -Dog wound care: #22
+         -Dog flea and wormers: #23
+         -Dog vitamins minerals electrolytes: #24
