@@ -1,5 +1,5 @@
 var nav = document.getElementById('navbar');
-    var list = document.querySelectorAll('a');
+    var list = nav.querySelectorAll('a');
     
 
     window.onscroll = function(){
@@ -19,3 +19,7 @@ var nav = document.getElementById('navbar');
             })
         }
     }
+
+
+
+        
