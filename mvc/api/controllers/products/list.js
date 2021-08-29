@@ -13,7 +13,7 @@ module.exports = {
   fn: async function(){
     let products = await Product.find();
     for(let product of products){
-      let category = await Product_category.findOne({id: product.product_category});
+      let category = await Product_category.find({id: product.product_category});
       product.product_category = category.name;
     }
     return{

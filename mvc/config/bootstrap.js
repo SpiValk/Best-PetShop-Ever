@@ -23,7 +23,7 @@
   //   Set up fake development data (or if we already have some, avast)
   if (await Pet_product.count() > 0) {
     return;
-  }
+  };
 
   await Customer.createEach([
     { firstName: 'super', lastName: 'admin', address: 'In da house', contact_number: '1313', user_id: 1},
