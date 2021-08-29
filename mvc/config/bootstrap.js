@@ -74,6 +74,7 @@ module.exports.bootstrap = async function() {
 
   //------------------CREATE PRODUCT CATEGORIES --------------//
   await Product_category.createEach([
+    /******DOGS CATEGORIES ******/
     {
       category_name: 'dog foods',
       description: 'dry food, dog cans, dog-treats & chews',
@@ -96,10 +97,17 @@ module.exports.bootstrap = async function() {
       description: 'antiparasitics, antibiotics, wound care, ',
       pets_id: 1
     },
+    /******* FISH CATEGORIES *******/
+    {
+      category_name:'fish foods',
+      description:'fish flakes,granules/pellets/sticks',
+      pets_id:3
+    }
   ]);
 
   //------------------ CREATE SUBCATEGORIES -------------------//
   await Product_subcategory.createEach([
+    //--------DOGS--------//
     //------ FOODS -------//
    {subcategory: 'dry food'},
    {subcategory: 'dog cans'},
@@ -128,6 +136,8 @@ module.exports.bootstrap = async function() {
    {subcategory: 'wound care'},
    {subcategory: 'dog flea and wormers'},
    {subcategory: 'vitamins minerals electrolytes'},
+
+
  ]);
 
 
@@ -282,18 +292,7 @@ module.exports.bootstrap = async function() {
       subcategory_id: 7,
       pet_id: 1
     },
-    {
-      name: 'So Phresh Washable Diaper for Dogs, X-Small',
-      description: 'Washable Diaper for Dogs, X-Small',
-      quantity: 1,
-      vendor_price: 5,
-      image_name: 'so-phresh-washable-dog-diaper-Xs.png',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 2,
-      subcategory_id: 4,
-      pet_id: 1
-    },
+    
     {
       name: 'Drontal Tasty Bone Wormer Tablets',
       description: 'Drontal Tasty Bone worming tablets work fast to kill every type of intestinal worm commonly found in UK dogs, giving you peace of mind that you are helping keep internal parasites away from your pet and family. ',
@@ -306,6 +305,32 @@ module.exports.bootstrap = async function() {
       subcategory_id: 5,
       pet_id: 1
     },
+    //**** DOG GROOMING/DOG DIAPERS *******//
+    {
+      name: 'Dogit Disposable Diapers',
+      description: 'Dogit Dog Diapers are prefect for preventing mess in the home or when travelling by providing a leak proof, secure fit due to their super absorbency and stick on tabs' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Dogit-Disposable-Diapers.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 2,
+      subcategory_id:4,
+      pet_id: 1
+    },
+    {
+      name: 'So Phresh Washable Diaper for Dogs, X-Small',
+      description: 'Washable Diaper for Dogs, X-Small',
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'so-phresh-washable-dog-diaper-Xs.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 2,
+      subcategory_id: 4,
+      pet_id: 1
+    },
+
     //**** DOG ACCESORIES/DOG TOYS ******//
     {
       name: 'KONG® Classic Dog Toy-Treat Dispensing',
@@ -404,7 +429,7 @@ module.exports.bootstrap = async function() {
       pet_id: 1
     },
     {
-      name: 'KONG® Teddy Bear Dog Toy - Plush, Squeaker',
+      name: 'Multipet® Lamb Chop Dog Toy - Squeaker, Plush',
       description: " A plush toy that lasts! KONG's Plush Teddy Bear Dog Toy is the perfect toy for your pooch who loves stuffed toys - minus the mess! This plush toy comes with a pre-loaded removable internal squeaker that all dogs love." ,
       quantity: 1,
       vendor_price: 5,
@@ -449,6 +474,19 @@ module.exports.bootstrap = async function() {
       vendor_id: 6,
       product_category_id: 3,
       subcategory_id:9,
+      pet_id: 1
+    },
+    //***DOG VETINARY PRODUCTS/ ****/
+    {
+      name: 'Canvit™ Antiparasitic snack',
+      description: "Herbal substances for the regulation of intestinal parasites and for the proper functioning of the digestive system" ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Canvit-Antiparasitic-snack.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 4,
+      subcategory_id:20,
       pet_id: 1
     },
   ]);

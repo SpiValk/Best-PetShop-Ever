@@ -47,6 +47,12 @@ module.exports.routes = {
   'GET /products/cat'         : { action: 'cat'},
 
 
+
+  //Fish
+  'GET /products/fish'        : {action: 'fish/fishcontroller'},
+  'GET /products/fish/food'   : {action: 'fish/foodcontroller'}
+
+
   /***************************************************************************
   *                                                                          *
   * More custom routes here...                                               *

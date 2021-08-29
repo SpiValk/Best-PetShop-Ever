@@ -1,12 +1,7 @@
 /***** NAVBAR *****/
 
 
-.bg-custom {
-  background-color: rgb(30, 116, 48);
-  border-bottom: 3px solid orange;
-  /*background-image: url("img/download.png");*/
-  color: white;
-}
+
 
 
 .nav-link{
@@ -101,15 +96,8 @@
   margin-left: auto;
   margin-right: auto;
 }
-.myProductBox img {
-  max-height: 150px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.myProductBox h4 {
-  text-align: center;
-}
+
+
 
 .myBox h4 {
   text-align: center;
@@ -278,4 +266,43 @@ img#check {
     flex-direction: column;
     margin: auto;
   }
+}
+
+/******** Products *********/
+.myProductBox h4 {
+  text-align: center;
+}
+
+.product-name{
+  font-size:12px;
+}
+
+.bg-custom {
+  background-color: rgb(30, 116, 48);
+  border-bottom: 3px solid orange;
+  /*background-image: url("img/download.png");*/
+  color: white;
+}
+
+.myProductBox img {
+  max-height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/****** Footer *****/
+#media{
+  margin-left:auto;
+  margin-right:1rem;
+  width:10%;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  align-items:center;
+}
+#media a{
+  font-size:2rem;
+  text-decoration:none;
 }
