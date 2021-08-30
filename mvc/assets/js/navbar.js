@@ -41,9 +41,7 @@ function slides(event) {
     switch (slideShow) {
         case 'FOODS':
             dogCategoriesImg.src = dogImages[0]
-            
             break;
-
         case 'DOG GROOMING':
             dogCategoriesImg.src = dogImages[1]
             break;
