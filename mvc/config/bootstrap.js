@@ -75,24 +75,24 @@ module.exports.bootstrap = async function() {
   //------------------CREATE PRODUCT CATEGORIES --------------//
   await Product_category.createEach([
     {
-      category_name: 'dog foods',
+      category_name: 'dog-foods',
       description: 'dry food, dog cans, dog-treats & chews',
       pets_id: 1
     },
     {
-      category_name: 'dog grooming',
+      category_name: 'dog-grooming',
       description: 'diapers,  flea and wormers, dog shampoo, ' +
                     'brushes & combs, scissors & clippers, perfumes & fragrances',
       pets_id: 1
     },
     {
-      category_name: 'dog accessories',
+      category_name: 'dog-accessories',
       description: 'toys, clothes, poop bags, collars, bowls & feeding, leads, harness, ' +
                     'muzles, transport boxes, beds, houses',
       pets_id: 1
     },
     {
-      category_name: 'dog vetinary products',
+      category_name: 'dog-veterinary-products',
       description: 'antiparasitics, antibiotics, wound care, ',
       pets_id: 1
     },
@@ -101,34 +101,34 @@ module.exports.bootstrap = async function() {
   //------------------ CREATE SUBCATEGORIES -------------------//
   await Product_subcategory.createEach([
     //------ FOODS -------//
-   {subcategory: 'dry food'},
-   {subcategory: 'dog cans'},
-   {subcategory: 'dog treats chews'},
-   //------ GROOMING -------//
-   {subcategory: 'dog diapers'},
-   {subcategory: 'dog shampoo'},
-   {subcategory: 'dog brushes and combs'},
-   {subcategory: 'dog scissors and clippers'},
-   {subcategory: 'perfumes and frangrances'},
-   //------ ACCESSORIES -------//
-   {subcategory: 'dog toys'},
-   {subcategory: 'dog clothes'},
-   {subcategory: 'dog collars'},
-   {subcategory: 'dog bowls and feeding'},
-   {subcategory: 'dog leads'},
-   {subcategory: 'dog harness'},
-   {subcategory: 'dog poop bags'},
-   {subcategory: 'dog muzzle'},
-   {subcategory: 'dog transport boxes'},
-   {subcategory: 'dog beds'},
-   {subcategory: 'dog houses'},
-   //------ VETERINARY -------//
-   {subcategory: 'dog antiparasitics'},
-   {subcategory: 'dog antibiotics'},
-   {subcategory: 'wound care'},
-   {subcategory: 'dog flea and wormers'},
-   {subcategory: 'vitamins minerals electrolytes'},
- ]);
+    {subcategory: 'dry-food', category_id: 1},
+    {subcategory: 'dog-cans', category_id: 1},
+    {subcategory: 'dog-treats-and-chews', category_id: 1},
+    //------ GROOMING -------//
+    {subcategory: 'dog-diapers', category_id: 2},
+    {subcategory: 'dog-shampoo', category_id: 2},
+    {subcategory: 'dog-brushes-and-combs', category_id: 2},
+    {subcategory: 'dog-scissors-and-clippers', category_id: 2},
+    {subcategory: 'perfumes-and-fragrances', category_id: 2},
+    //------ ACCESSORIES -------//
+    {subcategory: 'dog-toys', category_id: 3},
+    {subcategory: 'dog-clothes', category_id: 3},
+    {subcategory: 'dog-collars', category_id: 3},
+    {subcategory: 'dog-bowls-and-feeding', category_id: 3},
+    {subcategory: 'dog-leads', category_id: 3},
+    {subcategory: 'dog-harness', category_id: 3},
+    {subcategory: 'dog-poop-bags', category_id: 3},
+    {subcategory: 'dog-muzzle', category_id: 3},
+    {subcategory: 'dog-transport-boxes', category_id: 3},
+    {subcategory: 'dog-beds', category_id: 3},
+    {subcategory: 'dog-houses', category_id: 3},
+    //------ VETERINARY -------//
+    {subcategory: 'dog-antiparasitics', category_id: 4},
+    {subcategory: 'dog-antibiotics', category_id: 4},
+    {subcategory: 'wound-care', category_id: 4},
+    {subcategory: 'dog-fleas-and-wormers', category_id: 4},
+    {subcategory: 'vitamins-minerals-electrolytes', category_id: 4},
+  ]);
 
 
   //-------------------------- CREATE PRODUCTS --------------------//
@@ -191,7 +191,7 @@ module.exports.bootstrap = async function() {
       status: 1,
       vendor_id: 2,
       product_category_id: 1,
-      subcategory_id: 2,
+      subcategory_id: 1,
       pet_id: 1
 
     },
@@ -204,7 +204,7 @@ module.exports.bootstrap = async function() {
       status: 1,
       vendor_id: 2,
       product_category_id: 1,
-      subcategory_id: 2,
+      subcategory_id: 1,
       pet_id: 1
 
     },
@@ -217,7 +217,7 @@ module.exports.bootstrap = async function() {
       status: 1,
       vendor_id: 3,
       product_category_id: 1,
-      subcategory_id: 3,
+      subcategory_id: 1,
       pet_id: 1
 
     },
@@ -230,7 +230,7 @@ module.exports.bootstrap = async function() {
       status: 1,
       vendor_id: 3,
       product_category_id: 1,
-      subcategory_id: 3,
+      subcategory_id: 1,
       pet_id: 1
 
     },
@@ -243,7 +243,7 @@ module.exports.bootstrap = async function() {
       status: 1,
       vendor_id: 3,
       product_category_id: 1,
-      subcategory_id: 3,
+      subcategory_id: 1,
       pet_id: 1
     },
     {
@@ -303,7 +303,7 @@ module.exports.bootstrap = async function() {
       status: 1,
       vendor_id: 6,
       product_category_id: 4,
-      subcategory_id: 5,
+      subcategory_id: 23,
       pet_id: 1
     },
     //**** DOG ACCESORIES/DOG TOYS ******//
@@ -316,139 +316,139 @@ module.exports.bootstrap = async function() {
       status: 1,
       vendor_id: 6,
       product_category_id: 3,
-      subcategory_id:9,
+      subcategory_id: 9,
       pet_id: 1
     },
     {
       name: 'KONG® Cozie Spunky Monkey Dog Toy',
-      description: "Your dog loves to cuddle and he also loves to play, so grab a toy that he can do both with. Kong's Cozie Spunky Monkey is cute, cuddly and durable. Your dog will enjoy the versatility this toy offers." ,
+      description: 'Your dog loves to cuddle and he also loves to play, so grab a toy that he can do both with. Kong\'s Cozie Spunky Monkey is cute, cuddly and durable. Your dog will enjoy the versatility this toy offers.' ,
       quantity: 1,
       vendor_price: 5,
       image_name: 'kong-monkey-toy.png',
       status: 1,
       vendor_id: 6,
       product_category_id: 3,
-      subcategory_id:9,
+      subcategory_id: 9,
       pet_id: 1
     },
     {
       name: 'KONG® AirDog® Tennis Ball Set Squeaker Dog Toy',
-      description: "The KONG SqueakAir Tennis Ball Dog Toy combines two classic dog toys -the tennis ball and the squeaker toy-to create the perfect fetch toy. This durable, high-quality Squeakair tennis ball will not wear down your dog's teeth" ,
+      description: 'The KONG SqueakAir Tennis Ball Dog Toy combines two classic dog toys -the tennis ball and the squeaker toy-to create the perfect fetch toy. This durable, high-quality Squeakair tennis ball will not wear down your dog\'s teeth' ,
       quantity: 1,
       vendor_price: 5,
       image_name: 'kong-tennis-ball.png',
       status: 1,
       vendor_id: 6,
       product_category_id: 3,
-      subcategory_id:9,
+      subcategory_id: 9,
       pet_id: 1
     },
     {
       name: 'Thrills & Chills™ Halloween GET SPOOKY! Purple Bone Dog Toy - Plush, Squeaker',
-      description: "Your dog will have a spook-tacular time playing with this Thrills & Chills Plush Spooky Bone Dog Toy" ,
+      description: 'Your dog will have a spook-tacular time playing with this Thrills & Chills Plush Spooky Bone Dog Toy' ,
       quantity: 1,
       vendor_price: 5,
       image_name: 'Thrills&Chills-Purple-Bone-Dog.png',
       status: 1,
       vendor_id: 6,
       product_category_id: 3,
-      subcategory_id:9,
+      subcategory_id: 9,
       pet_id: 1
     },
     {
       name: 'Top Paw® "I Love PetSmart" Flyer Dog Toy',
-      description: "Engage in fun, interactive play with your dog with this Top Paw Plastic Flyer. This fun flyer is the perfect vehicle by which to keep your dog active and engaged" ,
+      description: 'Engage in fun, interactive play with your dog with this Top Paw Plastic Flyer. This fun flyer is the perfect vehicle by which to keep your dog active and engaged' ,
       quantity: 1,
       vendor_price: 5,
       image_name: 'Top-Paw-Flyer-Dog-Toy.png',
       status: 1,
       vendor_id: 6,
       product_category_id: 3,
-      subcategory_id:9,
+      subcategory_id: 9,
       pet_id: 1
     },
     {
       name: 'Nylabone® Puppy Ring Chew Dog Toy',
-      description: "The Puppy Ring Bone is specifically designed for teething puppies to encourage the development of non-destructive chewing habits. Not recommended for dogs with any adult teeth." ,
+      description: 'The Puppy Ring Bone is specifically designed for teething puppies to encourage the development of non-destructive chewing habits. Not recommended for dogs with any adult teeth.' ,
       quantity: 1,
       vendor_price: 5,
       image_name: 'Nylabone-Puppy-Ring-Chew.png',
       status: 1,
       vendor_id: 6,
       product_category_id: 3,
-      subcategory_id:9,
+      subcategory_id: 9,
       pet_id: 1
     },
     {
       name: 'Nylabone® Puppy Teething Keys Chew Dog Toy',
-      description: "This Nylabone Just for Puppies Teething Chew Keys Toy is made from inert soft thermoplastic polymer to satisfy the chewing instinct of teething puppies, and encourages non-destructive chewing" ,
+      description: 'This Nylabone Just for Puppies Teething Chew Keys Toy is made from inert soft thermoplastic polymer to satisfy the chewing instinct of teething puppies, and encourages non-destructive chewing' ,
       quantity: 1,
       vendor_price: 5,
       image_name: 'Nylabone-Chew-Dog-Toy.png',
       status: 1,
       vendor_id: 6,
       product_category_id: 3,
-      subcategory_id:9,
+      subcategory_id: 14,
       pet_id: 1
     },
     {
       name: 'KONG® Teddy Bear Dog Toy - Plush, Squeaker',
-      description: " A plush toy that lasts! KONG's Plush Teddy Bear Dog Toy is the perfect toy for your pooch who loves stuffed toys - minus the mess! This plush toy comes with a pre-loaded removable internal squeaker that all dogs love." ,
+      description: ' A plush toy that lasts! KONG\'s Plush Teddy Bear Dog Toy is the perfect toy for your pooch who loves stuffed toys - minus the mess! This plush toy comes with a pre-loaded removable internal squeaker that all dogs love.' ,
       quantity: 1,
       vendor_price: 5,
       image_name: 'Kong-Teddy-Bear-Dog-Toy.png',
       status: 1,
       vendor_id: 6,
       product_category_id: 3,
-      subcategory_id:9,
+      subcategory_id: 9,
       pet_id: 1
     },
     {
       name: 'KONG® Teddy Bear Dog Toy - Plush, Squeaker',
-      description: " A plush toy that lasts! KONG's Plush Teddy Bear Dog Toy is the perfect toy for your pooch who loves stuffed toys - minus the mess! This plush toy comes with a pre-loaded removable internal squeaker that all dogs love." ,
+      description: ' A plush toy that lasts! KONG\'s Plush Teddy Bear Dog Toy is the perfect toy for your pooch who loves stuffed toys - minus the mess! This plush toy comes with a pre-loaded removable internal squeaker that all dogs love.' ,
       quantity: 1,
       vendor_price: 5,
       image_name: 'Multipet-Teddy-Lamb-Chop-Dog-Toy.png',
       status: 1,
       vendor_id: 6,
       product_category_id: 3,
-      subcategory_id:9,
+      subcategory_id: 9,
       pet_id: 1
     },
     {
       name: 'Multipet® Lamb Chop Dog Toy - Squeaker, Plush',
-      description: " The Multipet Lamb Chop Mini Dog Toy is the officially licensed Lamb Chop Dog Toy from the popular Shari Lewis children's program." ,
+      description: ' The Multipet Lamb Chop Mini Dog Toy is the officially licensed Lamb Chop Dog Toy from the popular Shari Lewis children\'s program.' ,
       quantity: 1,
       vendor_price: 5,
       image_name: 'Kong-Teddy-Bear-Dog-Toy.png',
       status: 1,
       vendor_id: 6,
       product_category_id: 3,
-      subcategory_id:9,
+      subcategory_id: 17,
       pet_id: 1
     },
     {
       name: 'Top Paw® Spiky Football Dog Toy - Squeaker',
-      description: "Keep your dog active and entertained with this Top Paw Spiky TPR Football Dog Toy" ,
+      description: 'Keep your dog active and entertained with this Top Paw Spiky TPR Football Dog Toy' ,
       quantity: 1,
       vendor_price: 5,
       image_name: 'Top-Paw-Spiky-Football-Dog-Toy.png',
       status: 1,
       vendor_id: 6,
       product_category_id: 3,
-      subcategory_id:9,
+      subcategory_id: 9,
       pet_id: 1
     },
     {
       name: 'Thrills & Chills™ Halloween Spider Dog Toy - Plush, Squeaker',
-      description: "Your dog will have a spook-tacular time playing with this Thrills & Chills Plush Spider Dog Toy." ,
+      description: 'Your dog will have a spook-tacular time playing with this Thrills & Chills Plush Spider Dog Toy.' ,
       quantity: 1,
       vendor_price: 5,
       image_name: 'Thrills-Chills-Halloween-Spider-Dog-Toy.png',
       status: 1,
       vendor_id: 6,
       product_category_id: 3,
-      subcategory_id:9,
+      subcategory_id: 9,
       pet_id: 1
     },
   ]);
