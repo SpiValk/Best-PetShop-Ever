@@ -260,13 +260,7 @@ img#check {
   transform: scale(1.5);
 }
 
-@media only screen and (max-width: 600px) {
-  .custom-categories {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-  }
-}
+
 
 /******** Products *********/
 .myProductBox h4 {
@@ -323,6 +317,14 @@ img#check {
   width:100%;
   height:100%;
 } */
-#dog-li-header{
+.li-header{
   text-align:center;
+}
+
+@media only screen and (max-width: 600px) {
+  .custom-categories {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
 }
