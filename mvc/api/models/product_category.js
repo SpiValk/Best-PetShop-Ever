@@ -9,6 +9,9 @@ module.exports = {
       collection: 'pet_product',
       via:        'product_category_id'
     },
+    subcategory_id:{
+      collection:'product_subcategory',
+      via:'category_id'
 
     pets_id: {
       model: 'pets'

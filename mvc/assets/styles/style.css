@@ -314,10 +314,15 @@ img#check {
   margin:auto auto auto auto;
 }
 
-#dogCategoriesPic{
+.category-pic{
   width:100%;
   height:100%;
 }
+
+/* #dogCategoriesPic{
+  width:100%;
+  height:100%;
+} */
 #dog-li-header{
   text-align:center;
 }
