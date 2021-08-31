@@ -65,7 +65,7 @@ function slides(event) {
         case dropUl[5]:
             catCategoriesImg.src = navImages[1]
             break;
-        case dogDropUl[6]:
+        case dropUl[6]:
             catCategoriesImg.src = navImages[2]
             break;
         case dropUl[7]:
