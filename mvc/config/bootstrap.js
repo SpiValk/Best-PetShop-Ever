@@ -128,6 +128,7 @@ module.exports.bootstrap = async function() {
     {subcategory: 'wound-care', category_id: 4},
     {subcategory: 'dog-fleas-and-wormers', category_id: 4},
     {subcategory: 'vitamins-minerals-electrolytes', category_id: 4},
+    {subcategory: 'barf', category_id: 1},//---FOODS---//
   ]);
 
 
@@ -217,7 +218,7 @@ module.exports.bootstrap = async function() {
       status: 1,
       vendor_id: 3,
       product_category_id: 1,
-      subcategory_id: 1,
+      subcategory_id: 25,
       pet_id: 1
 
     },
@@ -230,7 +231,7 @@ module.exports.bootstrap = async function() {
       status: 1,
       vendor_id: 3,
       product_category_id: 1,
-      subcategory_id: 1,
+      subcategory_id: 25,
       pet_id: 1
 
     },
@@ -243,7 +244,7 @@ module.exports.bootstrap = async function() {
       status: 1,
       vendor_id: 3,
       product_category_id: 1,
-      subcategory_id: 1,
+      subcategory_id: 25,
       pet_id: 1
     },
     {
@@ -693,18 +694,6 @@ module.exports.bootstrap = async function() {
       quantity: 1,
       vendor_price: 5,
       image_name: 'Kong-Teddy-Bear-Dog-Toy.png',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 9,
-      pet_id: 1
-    },
-    {
-      name: 'KONG® Teddy Bear Dog Toy - Plush, Squeaker',
-      description: ' A plush toy that lasts! KONG\'s Plush Teddy Bear Dog Toy is the perfect toy for your pooch who loves stuffed toys - minus the mess! This plush toy comes with a pre-loaded removable internal squeaker that all dogs love.' ,
-      quantity: 1,
-      vendor_price: 5,
-      image_name: 'Multipet-Teddy-Lamb-Chop-Dog-Toy.png',
       status: 1,
       vendor_id: 6,
       product_category_id: 3,

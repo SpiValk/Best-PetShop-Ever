@@ -6,6 +6,7 @@
          - Dry Food: #1
          - Dog Cans: #2
          - Dog treats and chews: #3
+         - Barf: #25
 
       - Dog grooming: #2
          - Dog diapers: #4
