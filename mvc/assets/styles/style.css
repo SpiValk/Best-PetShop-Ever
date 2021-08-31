@@ -1,5 +1,9 @@
-/***** NAVBAR *****/
+/* SMALL USEFULL CLASSES */
+.capitalize {
+  text-transform: capitalize;
+}
 
+/***** NAVBAR *****/
 
 .bg-custom {
   background-color: rgb(30, 116, 48);

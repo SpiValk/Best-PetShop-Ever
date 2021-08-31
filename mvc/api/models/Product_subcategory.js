@@ -8,7 +8,11 @@ module.exports={
     pet_product_id: {
       collection : 'pet_product',
       via        : 'subcategory_id'
-    }
+    },
+
+    category_id:{
+      model: 'product_category'
+    },
 
 
   }};
