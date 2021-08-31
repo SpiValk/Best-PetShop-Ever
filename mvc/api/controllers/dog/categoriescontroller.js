@@ -16,11 +16,15 @@ module.exports = {
   },
 
   fn: async function({category}){
-    console.log(category);
-    //finds the input category and brings all the pet_products in it
     let productCategory = await Product_category.findOne({category_name: category}).populate('pet_product_id');
-    //take the array with all the products
-    let dogProducts = await productCategory.pet_product_id;
+    let products = await productCategory.pet_product_id;
+    let dogProducts = [];
+
+    for(let product of products){
+      dogProducts.push(await Pet_product.findOne({name: product.name}).populate('subcategory_id'));
+    }
+
+
     return this.res.view(`pages/dog/dogCategories`, {dogProducts, category});
   }
 
