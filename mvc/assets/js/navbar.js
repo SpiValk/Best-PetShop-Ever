@@ -65,6 +65,9 @@ function slides(event) {
         case dogDropUl[7]:
             catCategoriesImg.src = dogImages[3]
             break;
+        case dogDropUl[8]:
+            catCategoriesImg.src = dogImages[1]
+            break;
     }
 }
 
@@ -72,16 +75,12 @@ function slides(event) {
 
 
 
+dogSublists.forEach((list)=>{
+    list.addEventListener("mouseenter", slides)
+})
 
-
-
-
-
-
-for (let j in dogSublists) {
-    dogSublists[j].addEventListener("mouseenter", slides)
-}
-
-// for (let x in dogDropUl){
-//     dogDropUl[x].addEventListener("mouseenter",slides1)
+// for (let j in dogSublists) {
+//     dogSublists[j].addEventListener("mouseenter", slides)
 // }
+
+

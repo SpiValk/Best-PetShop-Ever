@@ -12,6 +12,7 @@ module.exports = {
     subcategory_id:{
       collection:'product_subcategory',
       via:'category_id'
+    },
 
     pets_id: {
       model: 'pets'
