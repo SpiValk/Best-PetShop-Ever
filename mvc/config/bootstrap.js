@@ -306,6 +306,302 @@ module.exports.bootstrap = async function() {
       subcategory_id: 23,
       pet_id: 1
     },
+    //**** DOG GROOMING ******//
+    //---Dog diapers---//
+    {
+      name: 'Top Paw® Disposable Dog Diapers - 30 Pack',
+      description: 'Top Paw Disposable Diapers are the perfect choice for dogs and pet parents dealing with incontinence, females in heat, excitable urination, and travel.' ,
+      quantity: 1,
+      vendor_price: 6,
+      image_name: 'top-paw-disposable-dog-diapers-30-pack',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 2,
+      subcategory_id: 4,
+      pet_id: 1
+    },
+    {
+      name: 'Top Paw® Disposable Dog Diapers - 12 Pack',
+      description: 'Top Paw Disposable Diapers are the perfect choice for dogs and pet parents dealing with incontinence, females in heat, excitable urination, and travel.' ,
+      quantity: 2,
+      vendor_price: 3,
+      image_name: 'top-paw-disposable-dog-diapers-12pack.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 2,
+      subcategory_id: 4,
+      pet_id: 1
+    },
+    {
+      name: 'PoochPad Washable Diapers',
+      description: 'The PoochPants Washable Diaper is a reusable diaper for dogs that is washable, leakproof, with no inserts needed.' ,
+      quantity: 2,
+      vendor_price: 3,
+      image_name: 'pooch-pad-washable-diapers.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 2,
+      subcategory_id: 4,
+      pet_id: 1
+    },
+    {
+      name: 'Simple Solution® Disposable Dog Diapers - 12 Pack',
+      description: 'With tabs underneath and padding facing in, slip the hole of the diaper over your dogs tail. Position the diaper between the back legs and snug against your dogs underbelly' ,
+      quantity: 2,
+      vendor_price: 3,
+      image_name: 'simple-solution-disposable-dog-diapers-12-pack.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 2,
+      subcategory_id: 4,
+      pet_id: 1
+    },
+    {
+      name: 'Simple Solution® All Day Dog Pads',
+      description: 'Neutralize accidents and unpleasant odors as you training your large dog with Simple Solutions All Day Premium Dog Pads.' ,
+      quantity: 2,
+      vendor_price: 4,
+      image_name: 'simple-solution-all-day-dog-pads.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 2,
+      subcategory_id: 4,
+      pet_id: 1
+    },
+    //---Dog shampoo---//
+    {
+      name: 'Advance Atopic Care Shampoo',
+      description: 'A special dog shampoo with triple effect, thanks to a combination of aloe vera, collagen and olive leaf extract.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'advance-atopic-care-shampoo.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 2,
+      subcategory_id: 5,
+      pet_id: 1
+    },
+    {
+      name: 'beaphar Puppy Shampoo Glossy Coat',
+      description: 'beaphar Puppy Shampoo Glossy Coat is a shampoo with valuable macadamia nut oil, especially developed for the sensitive skin of puppies.' ,
+      quantity: 2,
+      vendor_price: 6,
+      image_name: 'beaphar-puppy-shampoo-glossy-coat.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 2,
+      subcategory_id: 5,
+      pet_id: 1
+    },
+    {
+      name: 'Trixie Aloe Vera Dog Shampoo',
+      description: 'beaphar Puppy Shampoo Glossy Coat is a shampoo with valuable macadamia nut oil, especially developed for the sensitive skin of puppies.' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'trixie-aloe-vera-dog-shampoo.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 2,
+      subcategory_id: 5,
+      pet_id: 1
+    },
+    {
+      name: 'beaphar Dog Shampoo for White Coats',
+      description: 'beaphar Shampoo with Aloe Vera is a newly developed shampoo for the gentle cleansing of dogs of all breeds with white fur.' ,
+      quantity: 2,
+      vendor_price: 5,
+      image_name: 'beaphar-dog-shampoo-for-white-coats.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 2,
+      subcategory_id: 5,
+      pet_id: 1
+    },
+    {
+      name: 'Frontline Pet Care Sensitive Skin Shampoo',
+      description: 'Frontline Pet Care Sensitive Skin Shampoo has been specifically developed for cat and dogs who suffer from irritable skin.' ,
+      quantity: 2,
+      vendor_price: 5,
+      image_name: 'frontline-pet-care-sensitive-skin-shampoo',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 2,
+      subcategory_id: 5,
+      pet_id: 1
+    },
+    //---Dog brushes & combs---//
+    {
+      name: 'Moser Dematter',
+      description: 'Effective dematting grooming tool for removing knotted and matted fur in your dog’s undercoat.' ,
+      quantity: 1,
+      vendor_price: 3,
+      image_name: 'moser_dematter.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 2,
+      subcategory_id: 6,
+      pet_id: 1
+    },
+    {
+      name: '8in1 Perfect Coat DeShedder for Dogs',
+      description: 'A grooming brush for dogs that effectively removes loose hair and undercoat without damaging the top coat.' ,
+      quantity: 2,
+      vendor_price: 5,
+      image_name: '8in1-perfect-coat-deshedder-for-dogs.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 2,
+      subcategory_id: 6,
+      pet_id: 1
+    },
+    {
+      name: 'Trixie Universal Curry Combs',
+      description: 'A high-quality wire brush for cats and dogs of all fur types, helping to remove loose hairs, dirt and matting.' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'trixie-universal-curry-combs.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 2,
+      subcategory_id: 6,
+      pet_id: 1
+    },
+    {
+      name: 'Trixie Double-Sided Oval Pet Brush',
+      description: 'The double-sided pet brush from Trixie is suitable for cats and dogs.' ,
+      quantity: 2,
+      vendor_price: 4,
+      image_name: 'trixie-double-sided-oval-pet-brush.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 2,
+      subcategory_id: 6,
+      pet_id: 1
+    },
+    {
+      name: 'Grooming Glove',
+      description: 'Glove for grooming dogs and cats, double-sided use, one bobbly side and one velour side, pleasant massaging effect.' ,
+      quantity: 4,
+      vendor_price: 3,
+      image_name: 'grooming-glove.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 2,
+      subcategory_id: 6,
+      pet_id: 1
+    },
+    //---Dog scissors & clippers---//
+    {
+      name: 'Trixie Easy Claw Pet Clippers',
+      description: 'The claw scissors from Trixie are the easy way to trim your pets claws safely.' ,
+      quantity: 2,
+      vendor_price: 3,
+      image_name: 'trixie-easy-claw-pet-clippers.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 2,
+      subcategory_id: 7,
+      pet_id: 1
+    },
+    {
+      name: 'Trixie Household Claw Clippers',
+      description: 'These handy Trixie clippers can be used to trim the claws of any household pet.' ,
+      quantity: 2,
+      vendor_price: 4,
+      image_name: 'trixie-household-claw-clippers.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 2,
+      subcategory_id: 7,
+      pet_id: 1
+    },
+    {
+      name: 'Oster Cordless Claw Trimmer',
+      description: 'Battery powered file for stress-free claw trimming, with two speed settings for quick and easy pet manicures.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'oster-cordless-claw-trimmer.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 2,
+      subcategory_id: 7,
+      pet_id: 1
+    },
+    {
+      name: 'Wahl Pet U-Clip Dog Clipper Kit',
+      description: 'Mains operated dog clipper with coloured combs for easy selection of cutting lengths and adjustable taper lever for wide variation of cutting lengths.' ,
+      quantity: 1,
+      vendor_price: 6,
+      image_name: 'wahl-pet-u-clip-dog-clipper-kit.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 2,
+      subcategory_id: 7,
+      pet_id: 1
+    },
+    {
+      name: 'Wahl Pet KMSS Dog Clipper Kit',
+      description: 'The Wahl KM SS mains powered, high performance single speed animal clipper has a high torque rotary motor which is both durable and powerful.' ,
+      quantity: 2,
+      vendor_price: 6,
+      image_name: 'wahl-pet-kmss-dog-clipper.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 2,
+      subcategory_id: 7,
+      pet_id: 1
+    },
+    //---Dog perfumes & fragrances---//
+    {
+      name: 'Earthbath Hypo-Allergenic Fragrance',
+      description: 'earthbath Hypo-Allergenic Grooming Wipes safely and easily wipe away dirt & odor between baths.' ,
+      quantity: 3,
+      vendor_price: 3,
+      image_name: 'earthbath-hypo-allergenic-fragrance.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 2,
+      subcategory_id: 8,
+      pet_id: 1
+    },
+    {
+      name: 'Lavender & Chamomile Aromatherapy',
+      description: 'Freshening & Shining Spray for Pets, Dog Grooming Spray & Pet Odor Eliminator' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'lavender-chamomile-aromatherapy.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 2,
+      subcategory_id: 8,
+      pet_id: 1
+    },
+    {
+      name: 'Natural Pet Cologne',
+      description: 'Deodorant and Scented Perfume Body Spray' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'natural-pet-cologne.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 2,
+      subcategory_id: 8,
+      pet_id: 1
+    },
+    {
+      name: 'Lambert Kay Fresh N Clean Cologne Finishing Spray',
+      description: 'Fresh N Clean Cologne Finishing Spray - Baby Powder Scent' ,
+      quantity: 2,
+      vendor_price: 4,
+      image_name: 'lambert-kay-fresh-n-clean-cologne-finishing-spray.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 2,
+      subcategory_id: 8,
+      pet_id: 1
+    },
+
+
     //**** DOG ACCESORIES/DOG TOYS ******//
     {
       name: 'KONG® Classic Dog Toy-Treat Dispensing',
