@@ -127,7 +127,7 @@ module.exports.bootstrap = async function() {
   await Product_subcategory.createEach([
     //--------------------- DOG ------------------------------//
     //------ FOODS -------//
-    {subcategory: 'dry-food', category_id: 1},
+    {subcategory: 'dog-dry-food', category_id: 1},
     {subcategory: 'dog-cans', category_id: 1},
     {subcategory: 'dog-treats-and-chews', category_id: 1},
     //------ GROOMING -------//
@@ -135,7 +135,7 @@ module.exports.bootstrap = async function() {
     {subcategory: 'dog-shampoo', category_id: 2},
     {subcategory: 'dog-brushes-and-combs', category_id: 2},
     {subcategory: 'dog-scissors-and-clippers', category_id: 2},
-    {subcategory: 'perfumes-and-fragrances', category_id: 2},
+    {subcategory: 'dog-perfumes-and-fragrances', category_id: 2},
     //------ ACCESSORIES -------//
     {subcategory: 'dog-toys', category_id: 3},
     {subcategory: 'dog-clothes', category_id: 3},
@@ -149,43 +149,42 @@ module.exports.bootstrap = async function() {
     {subcategory: 'dog-beds', category_id: 3},
     {subcategory: 'dog-houses', category_id: 3},
     //------ VETERINARY -------//
-    {subcategory: 'dog-antiparasitics', category_id: 4},
+    {subcategory: 'dog-prescription-only-medicines', category_id: 4},
     {subcategory: 'dog-antibiotics', category_id: 4},
     {subcategory: 'wound-care', category_id: 4},
     {subcategory: 'dog-fleas-and-wormers', category_id: 4},
-    {subcategory: 'vitamins-minerals-electrolytes', category_id: 4},
-    {subcategory: 'barf', category_id: 1},//---FOODS---//
-
+    {subcategory: 'dog-vitamins-minerals-electrolytes', category_id: 4},
+    {subcategory: 'barf', category_id: 1}, //------- FOODS ------//
 
     //--------------------- CAT ------------------------------//
     //------ FOODS -------//
-    {subcategory: 'dry-food', category_id: 1},
-    {subcategory: 'cat-cans', category_id: 1},
-    {subcategory: 'cat-treats-and-chews', category_id: 1},
+    {subcategory: 'cat-dry-food', category_id: 5},
+    {subcategory: 'cat-cans', category_id: 5},
+    {subcategory: 'cat-treats-and-chews', category_id: 5},
     //------ GROOMING -------//
-    {subcategory: 'cat-diapers', category_id: 2},
-    {subcategory: 'cat-shampoo', category_id: 2},
-    {subcategory: 'cat-brushes-and-combs', category_id: 2},
-    {subcategory: 'cat-scissors-and-clippers', category_id: 2},
-    {subcategory: 'perfumes-and-fragrances', category_id: 2},
+    {subcategory: 'cat-diapers', category_id: 6},
+    {subcategory: 'cat-shampoo', category_id: 6},
+    {subcategory: 'cat-brushes-and-combs', category_id: 6},
+    {subcategory: 'cat-scissors-and-clippers', category_id: 6},
+    {subcategory: 'cat-perfumes-and-fragrances', category_id: 6},
     //------ ACCESSORIES -------//
-    {subcategory: 'cat-toys', category_id: 3},
-    {subcategory: 'cat-clothes', category_id: 3},
-    {subcategory: 'cat-collars', category_id: 3},
-    {subcategory: 'cat-bowls-and-feeding', category_id: 3},
-    {subcategory: 'cat-leads', category_id: 3},
-    {subcategory: 'cat-harness', category_id: 3},
-    {subcategory: 'cat-poop-bags', category_id: 3},
-    {subcategory: 'cat-muzzle', category_id: 3},
-    {subcategory: 'cat-transport-boxes', category_id: 3},
-    {subcategory: 'cat-beds', category_id: 3},
-    {subcategory: 'cat-houses', category_id: 3},
+    {subcategory: 'cat-toys', category_id: 7},
+    {subcategory: 'cat-clothes', category_id: 7},
+    {subcategory: 'cat-collars', category_id: 7},
+    {subcategory: 'cat-bowls-and-feeding', category_id: 7},
+    {subcategory: 'cat-leads', category_id: 7},
+    {subcategory: 'cat-harness', category_id: 7},
+    {subcategory: 'cat-poop-bags', category_id: 7},
+    {subcategory: 'cat-muzzle', category_id: 7},
+    {subcategory: 'cat-transport-boxes', category_id: 7},
+    {subcategory: 'cat-beds', category_id: 7},
+    {subcategory: 'cat-houses', category_id: 7},
     //------ VETERINARY -------//
-    {subcategory: 'cat-antiparasitics', category_id: 4},
-    {subcategory: 'cat-antibiotics', category_id: 4},
-    {subcategory: 'wound-care', category_id: 4},
-    {subcategory: 'cat-fleas-and-wormers', category_id: 4},
-    {subcategory: 'vitamins-minerals-electrolytes', category_id: 4},
+    {subcategory: 'cat-antiparasitics', category_id: 8},
+    {subcategory: 'cat-antibiotics', category_id: 8},
+    {subcategory: 'cat-wound-care', category_id: 8},
+    {subcategory: 'cat-fleas-and-wormers', category_id: 8},
+    {subcategory: 'cat-vitamins-minerals-electrolytes', category_id: 8},
 
   ]);
 
@@ -194,7 +193,7 @@ module.exports.bootstrap = async function() {
 
   await Pet_product.createEach([
 
-    
+
     //--------------------- Dog ------------------------------//
 
     {
@@ -357,18 +356,7 @@ module.exports.bootstrap = async function() {
       subcategory_id: 4,
       pet_id: 1
     },
-    {
-      name: 'Drontal Tasty Bone Wormer Tablets',
-      description: 'Drontal Tasty Bone worming tablets work fast to kill every type of intestinal worm commonly found in UK dogs, giving you peace of mind that you are helping keep internal parasites away from your pet and family. ',
-      quantity: 1,
-      vendor_price: 5,
-      image_name: 'Drontal-Tasty-Bone-Worming-Tablets-for-Dogs-1-Tablet_1.jpeg',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 4,
-      subcategory_id: 23,
-      pet_id: 1
-    },
+
     //**** DOG GROOMING ******//
     //---Dog diapers---//
     {
@@ -801,6 +789,195 @@ module.exports.bootstrap = async function() {
       pet_id: 1
     },
 
+    //DOG ACCESSORIES/DOG LEADS
+    {
+      name: 'KONG® Comfort Dog Leash',
+      description: 'The KONG Padded Hands-Free Leash offers you more freedom while still being in control on walks with your furry friend' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'KONG-Comfort-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 13,
+      pet_id: 1
+    },
+    {
+      name: 'Top Paw® Nylon Dog Leash: 6-ft long',
+      description: 'This Top Paw Standard Navy Nylon Dog Leash makes walks safer and more enjoyable for you and your dog' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Top-Paw-Nylon-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id:13,
+      pet_id: 1
+    },
+    {
+      name: 'flexi® New Classic Retractable Cord Dog Leash',
+      description: 'Keep your dog safe on walks while giving him a bit of room to roam with the Flexi New Classic Retractable Cord Dog Leash.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'flexi-New-Retractable-Cord-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 13,
+      pet_id: 1
+    },
+    {
+      name: 'KONG® Rope Dog Leash',
+      description: 'The KONG Red Rope Leash offers pet parents more comfort and control on walks' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'KONG-Rope-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 13,
+      pet_id: 1
+    },
+    {
+      name: 'Arcadia Trail™ Reflective Rope Dog Leash: 4-ft long',
+      description: 'This Arcadia Trail Berry Reflective Rope Dog Leash is the perfect choice for doggie/pet parent duos that love enjoying the outdoors together' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Arcadia-Trail-Reflective-Rope-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id:13,
+      pet_id: 1
+    },
+    {
+      name: 'Top Paw® Rope Dog Leash',
+      description: 'Make walks with your pup safer and more enjoyable with the Top Paw Rope Leash.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Top-Paw-Rope-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 13,
+      pet_id: 1
+    },
+    {
+      name: 'Thrills & Chills™ Halloween Orange & Black Waste Bag Dispenser Leash Set: 4-ft long',
+      description: 'Walking your dog, and cleaning up after him in convenient fashion, is a breeze with this Thrills & Chills Waste Bag Dispenser Leash Set.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Thrills-&-Chills-Halloween-Waste-Bag-Dispenser-Leash-Set.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 13,
+      pet_id: 1
+    },
+    {
+      name: 'Lucy & Co. Dilly Lily Dog Leash',
+      description: 'Make walks safer and more enjoyable for you and your pup with this Lucy & Co. Teal Floral Dog Leash' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Lucy-&-Co-Dilly-Lily-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id:13,
+      pet_id: 1
+    },
+    {
+      name: 'Top Paw® Blue Multi-Bone Dog Leash: 6-ft long, 5/8-in wide',
+      description: 'This colorful leash is strong and sturdy, and offers you more control while the two of you enjoy walks together' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Top-Paw-Blue-Multi-Bone-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 13,
+      pet_id: 1
+    },
+    {
+      name: 'Lucy & Co. Posy Pink Dog Leash',
+      description: 'This great-looking leash comes in vibrant pink, and offers you optimal control as well as a padded handle for maximum comfort while the two of you enjoy walks together' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Lucy-&-Co-Posy-Pink-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 13,
+      pet_id: 1
+    },
+    {
+      name: 'KONG® Reflective Padded Hands-Free Dog Leash',
+      description: 'The KONG Reflective Padded Hands-Free Leash offers you more freedom while still being in control on walks with your furry friend' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'KONG-Reflective-Padded-Hands-Free-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 13,
+      pet_id: 1
+    },
+
+    //DOG ACCESSORIES/DOG HARNESS
+    {
+      name: 'KONG® Reflective Pocket Dog Harness',
+      description: 'Keep your dog safer and more comfortable on walks with this stylish KONG Reflective Pocket Dog Harness.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'KONG-Reflective-Pocket-Dog-Harness.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id:14,
+      pet_id: 1
+    },
+    {
+      name: 'Top Paw® Gunmetal Core Adjustable Dog Harness',
+      description: 'The Top Paw Gunmetal Core Adjustable Harness is colorful and stylish, and provides you and your dog with the vehicle to make walks and other outdoor excursions safer and more enjoyable.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Top-Paw-Gunmetal-Core-Adjustable-Dog-Harness.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 14,
+      pet_id: 1
+    },
+    {
+      name: 'Arcadia Trail™ Neoprene Sport Dog Harness',
+      description: 'Dogs and their humans that are serious about their tandem outdoor excursions will love this Arcadia Trail Yellow Neoprene Sport Harness' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Arcadia-Trail-Neoprene-Sport-Dog-Harness.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 14,
+      pet_id: 1
+    },
+    {
+      name: 'KONG® Reflective Padded Hands-Free Dog Leash',
+      description: 'The KONG Reflective Padded Hands-Free Leash offers you more freedom while still being in control on walks with your furry friend' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'KONG-Reflective-Padded-Hands-Free-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 14,
+      pet_id: 1
+    },
+
+
+
+
+
+
 
     //**** DOG ACCESORIES/DOG BEDS ******//
     {
@@ -1132,6 +1309,7 @@ module.exports.bootstrap = async function() {
       product_category_id: 3,
       subcategory_id: 12,
       pet_id: 1  },
+
 
     //---Dog muzzle---//
     {
@@ -1701,6 +1879,141 @@ module.exports.bootstrap = async function() {
       vendor_id: 5,
       product_category_id: 5,
       subcategory_id: 26,
+      pet_id: 2
+    },
+
+    //--- Cat Cans ---//
+    {
+      name: 'Applaws Cat Food Cans 156g - Tuna / Fish',
+      description: 'Applaws premium wet food for cats - 100% natural cat food without artificial preservatives.' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'applaws-cat-food-cans-156g-tuna-fish.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 5,
+      subcategory_id: 27,
+      pet_id: 2
+    },
+    {
+      name: 'Applaws Cat Food Cans 156g - Tuna / Fish',
+      description: 'The delicate broth and tender meat pieces are the perfect way to entice your cat to drink more.' ,
+      quantity: 3,
+      vendor_price: 5,
+      image_name: 'smilla-cat-drink-with-chicken.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 5,
+      subcategory_id: 27,
+      pet_id: 2
+    },
+    {
+      name: '70g Applaws Mousse',
+      description: 'Delicious supplementary food for adult cats, in a soft, light mousse with natural ingredients.' ,
+      quantity: 4,
+      vendor_price: 5,
+      image_name: '70g-applaws-mousse.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 5,
+      subcategory_id: 27,
+      pet_id: 2
+    },
+    {
+      name: 'Bozita Canned Food 6 x 410g',
+      description: 'Bozita cat food is a complete food from Sweden for cats of all lifestyles and ages.' ,
+      quantity: 4,
+      vendor_price: 5,
+      image_name: 'bozita-canned-food-6x410g.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 5,
+      subcategory_id: 27,
+      pet_id: 2
+    },
+    {
+      name: 'Purina Pro Plan Cat Food - Chicken & Turkey',
+      description: 'Let your cat pick her mealtime favorites when you stock your pantry with this Purina Pro Plan Chicken and Turkey Favorites adult wet cat food variety pack.' ,
+      quantity: 4,
+      vendor_price: 5,
+      image_name: 'purina-pro-plan-cat-food-chicken&turkey.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 5,
+      subcategory_id: 27,
+      pet_id: 2
+    },
+    {
+      name: 'Royal Canin® Feline Health Nutrition™ Instinctive Kitten Food',
+      description: 'Royal Canin Thin Slices in Gravy is formulated to match the instinctively preferred macronutrient profile of your energetic kitten, ensuring long-time palatability.' ,
+      quantity: 4,
+      vendor_price: 5,
+      image_name: 'royal-canin-feline-health-nutrition-instinctive-kitten-food.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 5,
+      subcategory_id: 27,
+      pet_id: 2
+    },
+    //--- Cat Treats ---//
+    {
+      name: 'thrive Cat Treats',
+      description: '100% natural and additive-free cat snacks made only from 100% fresh meat or fish.' ,
+      quantity: 4,
+      vendor_price: 5,
+      image_name: 'thrive-cat-treats.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 5,
+      subcategory_id: 28,
+      pet_id: 2
+    },
+    {
+      name: 'Dreamies Mix Cat Treats 60g',
+      description: 'Each pack of Dreamies Mix Cat Treats contains 2 delicious flavours.' ,
+      quantity: 4,
+      vendor_price: 5,
+      image_name: 'dreamies-mix-cat-treats-60g.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 5,
+      subcategory_id: 28,
+      pet_id: 2
+    },
+    {
+      name: 'Big Pack Dreamies Cat Treats 180g',
+      description: 'All cats dream about these crunchy squares filled with a scrumptious soft centre.' ,
+      quantity: 3,
+      vendor_price: 5,
+      image_name: 'big-pack-dreamies-cat-treats-180g.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 5,
+      subcategory_id: 28,
+      pet_id: 2
+    },
+    {
+      name: 'Catz Finefood Meatz Treats',
+      description: 'These high-quality cat treats boast 98% tender Swiss meat, with just a single protein source per variety.' ,
+      quantity: 4,
+      vendor_price: 6,
+      image_name: 'catz-finefood-meatz-treats.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 5,
+      subcategory_id: 28,
+      pet_id: 2
+    },
+    {
+      name: 'Only Natural Pet Hemp Calming Support Soft Dog Chews',
+      description: 'Only Natural Pet Just Relax Herbal Calming Support Chews are holistically formulated natural calming treat for dogs to help reduce stress-related behavior and promise relaxation.' ,
+      quantity: 2,
+      vendor_price: 5,
+      image_name: 'only-natural-pet-just-relax-herbal-calming-support-soft-dog-chews.jps',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 5,
+      subcategory_id: 28,
       pet_id: 2
     },
   ]);
