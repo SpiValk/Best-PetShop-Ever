@@ -34,3 +34,11 @@
          -Dog wound care: #22
          -Dog flea and wormers: #23
          -Dog vitamins minerals electrolytes: #24
+
+         
+# Cat
+
+      - Dog foods: #5
+               - Dry Food: #26
+               - Dog Cans: #27
+               - Dog treats and chews: #28
