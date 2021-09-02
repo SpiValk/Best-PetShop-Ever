@@ -801,6 +801,195 @@ module.exports.bootstrap = async function() {
       pet_id: 1
     },
 
+    //DOG ACCESSORIES/DOG LEADS
+    {
+      name: 'KONG® Comfort Dog Leash',
+      description: 'The KONG Padded Hands-Free Leash offers you more freedom while still being in control on walks with your furry friend' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'KONG-Comfort-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 13,
+      pet_id: 1
+    },
+    {
+      name: 'Top Paw® Nylon Dog Leash: 6-ft long',
+      description: 'This Top Paw Standard Navy Nylon Dog Leash makes walks safer and more enjoyable for you and your dog' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Top-Paw-Nylon-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id:13,
+      pet_id: 1
+    },
+    {
+      name: 'flexi® New Classic Retractable Cord Dog Leash',
+      description: 'Keep your dog safe on walks while giving him a bit of room to roam with the Flexi New Classic Retractable Cord Dog Leash.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'flexi-New-Retractable-Cord-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 13,
+      pet_id: 1
+    },
+    {
+      name: 'KONG® Rope Dog Leash',
+      description: 'The KONG Red Rope Leash offers pet parents more comfort and control on walks' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'KONG-Rope-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 13,
+      pet_id: 1
+    },
+    {
+      name: "Arcadia Trail™ Reflective Rope Dog Leash: 4-ft long",
+      description: 'This Arcadia Trail Berry Reflective Rope Dog Leash is the perfect choice for doggie/pet parent duos that love enjoying the outdoors together' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Arcadia-Trail-Reflective-Rope-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id:13,
+      pet_id: 1
+    },
+    {
+      name: 'Top Paw® Rope Dog Leash',
+      description: 'Make walks with your pup safer and more enjoyable with the Top Paw Rope Leash.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Top-Paw-Rope-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 13,
+      pet_id: 1
+    },
+    {
+      name: 'Thrills & Chills™ Halloween Orange & Black Waste Bag Dispenser Leash Set: 4-ft long',
+      description: 'Walking your dog, and cleaning up after him in convenient fashion, is a breeze with this Thrills & Chills Waste Bag Dispenser Leash Set.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Thrills-&-Chills-Halloween-Waste-Bag-Dispenser-Leash-Set.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 13,
+      pet_id: 1
+    },
+    {
+      name: "Lucy & Co. Dilly Lily Dog Leash",
+      description: 'Make walks safer and more enjoyable for you and your pup with this Lucy & Co. Teal Floral Dog Leash' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Lucy-&-Co-Dilly-Lily-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id:13,
+      pet_id: 1
+    },
+    {
+      name: 'Top Paw® Blue Multi-Bone Dog Leash: 6-ft long, 5/8-in wide',
+      description: 'This colorful leash is strong and sturdy, and offers you more control while the two of you enjoy walks together' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Top-Paw-Blue-Multi-Bone-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 13,
+      pet_id: 1
+    },
+    {
+      name: 'Lucy & Co. Posy Pink Dog Leash',
+      description: 'This great-looking leash comes in vibrant pink, and offers you optimal control as well as a padded handle for maximum comfort while the two of you enjoy walks together' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Lucy-&-Co-Posy-Pink-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 13,
+      pet_id: 1
+    },
+    {
+      name: 'KONG® Reflective Padded Hands-Free Dog Leash',
+      description: 'The KONG Reflective Padded Hands-Free Leash offers you more freedom while still being in control on walks with your furry friend' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'KONG-Reflective-Padded-Hands-Free-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 13,
+      pet_id: 1
+    },
+
+    //DOG ACCESSORIES/DOG HARNESS
+    {
+      name: "KONG® Reflective Pocket Dog Harness",
+      description: 'Keep your dog safer and more comfortable on walks with this stylish KONG Reflective Pocket Dog Harness.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'KONG-Reflective-Pocket-Dog-Harness.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id:14,
+      pet_id: 1
+    },
+    {
+      name: 'Top Paw® Gunmetal Core Adjustable Dog Harness',
+      description: 'The Top Paw Gunmetal Core Adjustable Harness is colorful and stylish, and provides you and your dog with the vehicle to make walks and other outdoor excursions safer and more enjoyable.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Top-Paw-Gunmetal-Core-Adjustable-Dog-Harness.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 14,
+      pet_id: 1
+    },
+    {
+      name: 'Arcadia Trail™ Neoprene Sport Dog Harness',
+      description: 'Dogs and their humans that are serious about their tandem outdoor excursions will love this Arcadia Trail Yellow Neoprene Sport Harness' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Arcadia-Trail-Neoprene-Sport-Dog-Harness.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 14,
+      pet_id: 1
+    },
+    {
+      name: 'KONG® Reflective Padded Hands-Free Dog Leash',
+      description: 'The KONG Reflective Padded Hands-Free Leash offers you more freedom while still being in control on walks with your furry friend' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'KONG-Reflective-Padded-Hands-Free-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 14,
+      pet_id: 1
+    },
+
+
+
+
+
+
 
     //**** DOG ACCESORIES/DOG BEDS ******//
     {
@@ -1355,6 +1544,7 @@ module.exports.bootstrap = async function() {
       subcategory_id: 26,
       pet_id: 2
     },
+
   ]);
   // ```
 };
