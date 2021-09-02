@@ -1107,7 +1107,7 @@ module.exports.bootstrap = async function() {
       product_category_id: 3,
       subcategory_id: 12,
       pet_id: 1
-
+    },
     //---Dog muzzle---//
     {
       name: 'Baskerville Ultra 2.0 Muzzle',
