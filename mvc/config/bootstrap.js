@@ -736,6 +736,80 @@ module.exports.bootstrap = async function() {
       subcategory_id: 9,
       pet_id: 1
     },
+
+    //**** DOG ACCESORIES/DOG BEDS ******//
+    {
+      name: 'Top Paw® Grey Hearts Classic Pillow Dog Bed',
+      description: 'This Top Paw Grey Hearts Core Classic Pillow Dog Bed is lightweight enough for your dog to sleep anywhere. It features a field of colorful hearts at the heart of its design, and features soft polyfill for optimal comfort.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Top-Paw®-Grey-Hearts-Classic-Pillow-Dog-Bed_files.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 18,
+      pet_id: 1
+    },
+    {
+      name: 'Top Paw® Orthopedic Lounger Dog Bed',
+      description: 'This Top Paw Orthopedic Lounger Bed is overstuffed for a dreamy blend of support your dog will love.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Top-Paw®-Orthopedic-Lounger-Dog Bed.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 18,
+      pet_id: 1
+    },
+    {
+      name: 'Top Paw® Orthopedic Memory Foam Quilt Mattress Dog Bed',
+      description: 'The KONG SqueakAir Tennis Ball Dog Toy combines two classic dog toys -the tennis ball and the squeaker toy-to create the perfect fetch toy. This durable, high-quality Squeakair tennis ball will not wear down your dog\'s teeth' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Top-Paw®-Orthopedic-Memory-Foam-Quilt-Mattress-Dog-Bed.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 18,
+      pet_id: 1
+    },
+    {
+      name: 'Top Paw® Orthopedic Cuddler Dog Bed',
+      description: 'This Top Paw Grey Heather Orthopedic Cuddler Bed features dual layers the delicately balance softness and support.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Top-Paw®-Orthopedic-Cuddler-Dog-Bed.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 18,
+      pet_id: 1
+    },
+    {
+      name: 'Top Paw® Orthopedic Super Support Cuddler Dog Bed',
+      description: 'Your pet will experience ultimate relaxation when cradled against the cushioned walls of the new and improved Top Paw Orthopedic Cuddler Bed.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Top-Paw®-Orthopedic-Super-Support-Cuddler-Dog-Bed.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 18,
+      pet_id: 1
+    },
+    {
+      name: 'PAIKKA Recovery Burrow Pet Bed',
+      description: 'The PAIKKA Recovery Burrow Bed supports restful sleep and offers a warm hiding place for your dog. ' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'PAIKKA-Recovery-Burrow-Pet-Bed.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 18,
+      pet_id: 1
+    },
   ]);
   // ```
 };
