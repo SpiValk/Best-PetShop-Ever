@@ -192,7 +192,10 @@ module.exports.bootstrap = async function() {
   //-------------------------- CREATE PRODUCTS --------------------//
 
   await Pet_product.createEach([
+
+    
     //--------------------- Dog ------------------------------//
+
     {
       name: 'Bon Appetit Adult Dog Chicken & Rice Dry Food: hypoallergenic, gluten-free',
       description: 'A Bon Appetit dog food that is hypoallergenic and gluten-free suitable for all stages of life. 68% chicken, 32% Fruit and Vegetables and 0% gluten',
@@ -797,6 +800,502 @@ module.exports.bootstrap = async function() {
       pet_id: 1
     },
 
+    //DOG ACCESSORIES/DOG LEADS
+    {
+      name: 'KONG® Comfort Dog Leash',
+      description: 'The KONG Padded Hands-Free Leash offers you more freedom while still being in control on walks with your furry friend' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'KONG-Comfort-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 13,
+      pet_id: 1
+    },
+    {
+      name: 'Top Paw® Nylon Dog Leash: 6-ft long',
+      description: 'This Top Paw Standard Navy Nylon Dog Leash makes walks safer and more enjoyable for you and your dog' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Top-Paw-Nylon-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id:13,
+      pet_id: 1
+    },
+    {
+      name: 'flexi® New Classic Retractable Cord Dog Leash',
+      description: 'Keep your dog safe on walks while giving him a bit of room to roam with the Flexi New Classic Retractable Cord Dog Leash.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'flexi-New-Retractable-Cord-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 13,
+      pet_id: 1
+    },
+    {
+      name: 'KONG® Rope Dog Leash',
+      description: 'The KONG Red Rope Leash offers pet parents more comfort and control on walks' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'KONG-Rope-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 13,
+      pet_id: 1
+    },
+    {
+      name: "Arcadia Trail™ Reflective Rope Dog Leash: 4-ft long",
+      description: 'This Arcadia Trail Berry Reflective Rope Dog Leash is the perfect choice for doggie/pet parent duos that love enjoying the outdoors together' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Arcadia-Trail-Reflective-Rope-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id:13,
+      pet_id: 1
+    },
+    {
+      name: 'Top Paw® Rope Dog Leash',
+      description: 'Make walks with your pup safer and more enjoyable with the Top Paw Rope Leash.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Top-Paw-Rope-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 13,
+      pet_id: 1
+    },
+    {
+      name: 'Thrills & Chills™ Halloween Orange & Black Waste Bag Dispenser Leash Set: 4-ft long',
+      description: 'Walking your dog, and cleaning up after him in convenient fashion, is a breeze with this Thrills & Chills Waste Bag Dispenser Leash Set.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Thrills-&-Chills-Halloween-Waste-Bag-Dispenser-Leash-Set.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 13,
+      pet_id: 1
+    },
+    {
+      name: "Lucy & Co. Dilly Lily Dog Leash",
+      description: 'Make walks safer and more enjoyable for you and your pup with this Lucy & Co. Teal Floral Dog Leash' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Lucy-&-Co-Dilly-Lily-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id:13,
+      pet_id: 1
+    },
+    {
+      name: 'Top Paw® Blue Multi-Bone Dog Leash: 6-ft long, 5/8-in wide',
+      description: 'This colorful leash is strong and sturdy, and offers you more control while the two of you enjoy walks together' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Top-Paw-Blue-Multi-Bone-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 13,
+      pet_id: 1
+    },
+    {
+      name: 'Lucy & Co. Posy Pink Dog Leash',
+      description: 'This great-looking leash comes in vibrant pink, and offers you optimal control as well as a padded handle for maximum comfort while the two of you enjoy walks together' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Lucy-&-Co-Posy-Pink-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 13,
+      pet_id: 1
+    },
+    {
+      name: 'KONG® Reflective Padded Hands-Free Dog Leash',
+      description: 'The KONG Reflective Padded Hands-Free Leash offers you more freedom while still being in control on walks with your furry friend' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'KONG-Reflective-Padded-Hands-Free-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 13,
+      pet_id: 1
+    },
+
+    //DOG ACCESSORIES/DOG HARNESS
+    {
+      name: "KONG® Reflective Pocket Dog Harness",
+      description: 'Keep your dog safer and more comfortable on walks with this stylish KONG Reflective Pocket Dog Harness.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'KONG-Reflective-Pocket-Dog-Harness.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id:14,
+      pet_id: 1
+    },
+    {
+      name: 'Top Paw® Gunmetal Core Adjustable Dog Harness',
+      description: 'The Top Paw Gunmetal Core Adjustable Harness is colorful and stylish, and provides you and your dog with the vehicle to make walks and other outdoor excursions safer and more enjoyable.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Top-Paw-Gunmetal-Core-Adjustable-Dog-Harness.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 14,
+      pet_id: 1
+    },
+    {
+      name: 'Arcadia Trail™ Neoprene Sport Dog Harness',
+      description: 'Dogs and their humans that are serious about their tandem outdoor excursions will love this Arcadia Trail Yellow Neoprene Sport Harness' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Arcadia-Trail-Neoprene-Sport-Dog-Harness.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 14,
+      pet_id: 1
+    },
+    {
+      name: 'KONG® Reflective Padded Hands-Free Dog Leash',
+      description: 'The KONG Reflective Padded Hands-Free Leash offers you more freedom while still being in control on walks with your furry friend' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'KONG-Reflective-Padded-Hands-Free-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 14,
+      pet_id: 1
+    },
+
+
+
+
+
+
+
+    //**** DOG ACCESORIES/DOG BEDS ******//
+    {
+      name: 'Top Paw® Grey Hearts Classic Pillow Dog Bed',
+      description: 'This Top Paw Grey Hearts Core Classic Pillow Dog Bed is lightweight enough for your dog to sleep anywhere. It features a field of colorful hearts at the heart of its design, and features soft polyfill for optimal comfort.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Top-Paw®-Grey-Hearts-Classic-Pillow-Dog-Bed_files.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 18,
+      pet_id: 1
+    },
+    {
+      name: 'Top Paw® Orthopedic Lounger Dog Bed',
+      description: 'This Top Paw Orthopedic Lounger Bed is overstuffed for a dreamy blend of support your dog will love.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Top-Paw®-Orthopedic-Lounger-Dog Bed.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 18,
+      pet_id: 1
+    },
+    {
+      name: 'Top Paw® Orthopedic Memory Foam Quilt Mattress Dog Bed',
+      description: 'The KONG SqueakAir Tennis Ball Dog Toy combines two classic dog toys -the tennis ball and the squeaker toy-to create the perfect fetch toy. This durable, high-quality Squeakair tennis ball will not wear down your dog\'s teeth' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Top-Paw®-Orthopedic-Memory-Foam-Quilt-Mattress-Dog-Bed.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 18,
+      pet_id: 1
+    },
+    {
+      name: 'Top Paw® Orthopedic Cuddler Dog Bed',
+      description: 'This Top Paw Grey Heather Orthopedic Cuddler Bed features dual layers the delicately balance softness and support.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Top-Paw®-Orthopedic-Cuddler-Dog-Bed.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 18,
+      pet_id: 1
+    },
+    {
+      name: 'Top Paw® Orthopedic Super Support Cuddler Dog Bed',
+      description: 'Your pet will experience ultimate relaxation when cradled against the cushioned walls of the new and improved Top Paw Orthopedic Cuddler Bed.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Top-Paw®-Orthopedic-Super-Support-Cuddler-Dog-Bed.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 18,
+      pet_id: 1
+    },
+    {
+      name: 'PAIKKA Recovery Burrow Pet Bed',
+      description: 'The PAIKKA Recovery Burrow Bed supports restful sleep and offers a warm hiding place for your dog. ' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'PAIKKA-Recovery-Burrow-Pet-Bed.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 18,
+      pet_id: 1
+    },
+
+    //-------- Dog Clothes --------//
+    {
+      name: 'Hopping Bunny Flannel Dog Pajamas',
+      description: 'XS dog Pajamas' ,
+      quantity: 1,
+      vendor_price: 30,
+      image_name: 'Hopping-Bunny-Flannel-Dog-Pajamas.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 10,
+      pet_id: 1
+    },
+    {
+      name: 'Sparkling Bow Ruffle Layered Dog Dress',
+      description: 'Adorable dog dress with a striped top and polka dots ruffle layered skirt. Made with soft knit cotton fabric, accented with an attached sparkling belt and sparkling bow.' ,
+      quantity: 1,
+      vendor_price: 30,
+      image_name: 'Sparkling-Bow-Ruffle-Layered-Dog-Dress.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 10,
+      pet_id: 1
+    },
+    {
+      name: 'Juicy Watermelon Dog Sundress',
+      description: 'Adorable and juicy watermelon dog sundress, with attached large D-ring for easy leash attachment. ' ,
+      quantity: 1,
+      vendor_price: 30,
+      image_name: 'Juicy-Watermelon-Dog-Sundress.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 10,
+      pet_id: 1
+    },
+    {
+      name: 'Juicy Watermelon Dog Sundress',
+      description: 'Adorable hand knitted (bobble stitch) turtleneck dog sweater, accented with a flower on the side. Made with soft acrylic yarn.' ,
+      quantity: 1,
+      vendor_price: 30,
+      image_name: 'Bobble-Stitch-Turtleneck-Dog-Sweater-Pink.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 10,
+      pet_id: 1
+    },
+    {
+      name: 'Sun Shield Dog Tee Pebble',
+      description: 'The Sun Shield Dog Tee is a silky soft, lightweight stretch jersey with a UPF-50 rating that blocks 98% of the sun\'s harmful UV rays.' ,
+      quantity: 1,
+      vendor_price: 30,
+      image_name: 'Sun-Shield-Dog-Tee-Pebble.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 10,
+      pet_id: 1
+    },
+    {
+      name: 'Stretch Fleece Onesie Dog Pajamas Navy/Winter Mod',
+      description: 'These are unbeatable dog pajamas but aren\'t they also perfect for the next polar vortex on their own or under a waterproof coat?' ,
+      quantity: 1,
+      vendor_price: 30,
+      image_name: 'Stretch-Fleece-Onesie-Dog-Pajamas-NavyWinter-Mod.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 10,
+      pet_id: 1
+    },
+    //---------------- Dog Collars --------------//
+    {
+      name: 'Buttercup Plaid Flannel Dog Collar',
+      description: 'A mellow yellow plaid in soft, thick flannel.' ,
+      quantity: 1,
+      vendor_price: 20,
+      image_name: 'buttercup-plaid-flannel-dog-collar-from-the-foggy-dog.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 11,
+      pet_id: 1
+    },
+    {
+      name: 'Harbor Plaid Flannel Dog Collar',
+      description: 'A timeless plaid in a calming cornflower blue made from soft flannel.' ,
+      quantity: 1,
+      vendor_price: 20,
+      image_name: 'harbor-plaid-flannel-dog-collar-from-the-foggy-dog.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 11,
+      pet_id: 1
+    },
+    {
+      name: 'Harvest Plaid Flannel Dog Collar',
+      description: 'A beautiful autumn collar made from soft flannel in shades of yellow, gray, orange and cream.' ,
+      quantity: 1,
+      vendor_price: 20,
+      image_name: 'harvest-plaid-flannel-dog-collar-from-the-foggy-dog.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 11,
+      pet_id: 1
+    },
+    {
+      name: 'OurPets Comfort Elevated Dog Bowl, Black 8 Inches',
+      description: 'This flannel collar features an all-American plaid in shades of red, white and blue.' ,
+      quantity: 1,
+      vendor_price: 20,
+      image_name: 'OurPets-Comfort-Elevated-Dog-Bowl-Black-8-Inches.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 11,
+      pet_id: 1
+    },
+    {
+      name: 'Pink Herringbone Flannel Dog Collar',
+      description: 'A gentle pink collar with a subtle herringbone pattern made from luxuriously thick flannel.' ,
+      quantity: 1,
+      vendor_price: 20,
+      image_name: 'pink-herringbone-flannel-dog-collar-from-the-foggy-dog.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 11,
+      pet_id: 1
+    },
+    {
+      name: 'Sunset Flannel Dog Collar',
+      description: 'This flannel collar features warm jewel tones in purple, pink, and orange.' ,
+      quantity: 1,
+      vendor_price: 20,
+      image_name: 'sunset-flannel-dog-collar-from-the-foggy-dog.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 11,
+      pet_id: 1
+    },
+    {
+      name: 'Red and Black Buffalo Check Dog Collar',
+      description: 'A classic red and black buffalo plaid pattern is perfect during the winter and year-round.' ,
+      quantity: 1,
+      vendor_price: 20,
+      image_name: 'red-and-black-buffalo-check-dog-collar-from-the-foggy-dog.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 11,
+      pet_id: 1
+    },
+    {
+      name: 'Upcycled Denim Dog Collar',
+      description: 'Part of our Upcycled Denim capsule, a collection that is as beautiful as it is sustainable. Made in a zero-waste textile.' ,
+      quantity: 1,
+      vendor_price: 20,
+      image_name: 'upcycled-denim-dog-collar-from-the-foggy-dog.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 11,
+      pet_id: 1
+    },
+
+    //------------ Dog Bowls And Feeding ------------//
+    {
+      name: 'Outward Hound Fun Feeder Drop, Turquoise, Large',
+      description: 'Slow Feeder for obese pets' ,
+      quantity: 1,
+      vendor_price: 10,
+      image_name: 'pet-slow-feeder.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 12,
+      pet_id: 1
+    },
+    {
+      name: 'OurPets Comfort Elevated Dog Bowl, Black 8 Inches',
+      description: 'This Feeder Is Perfect For Small Dogs' ,
+      quantity: 1,
+      vendor_price: 10,
+      image_name: 'OurPets-Comfort-Elevated-Dog-Bowl-Black-8-Inches.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 12,
+      pet_id: 1
+    },
+    {
+      name: 'Our Pets Durapet Stainless Steel Bowl, 7 Cups',
+      description: 'Permanently-bonded rubber ring on bottom of bowl' ,
+      quantity: 1,
+      vendor_price: 10,
+      image_name: 'OurPets-Durapet-Stainless-Steel-Bowl-7-Cups.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 12,
+      pet_id: 1
+    },
+    {
+      name: 'Play On Matte Blue Ceramic Dog Bowl, Large, 33 Ounces',
+      description: 'High-end style, oven fired and hand painted' ,
+      quantity: 1,
+      vendor_price: 10,
+      image_name: 'Play-On-Matte-Blue-Ceramic-Dog-Bowl-Large-33-Ounces.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 12,
+      pet_id: 1
+    },
+    {
+      name: 'Play On Floral Melamine Bowl, Small, 8 Ounces',
+      description: 'Non-skid bottom allows for stable dinning' ,
+      quantity: 1,
+      vendor_price: 10,
+      image_name: 'Play-On-Floral-Melamine-Bowl-Small-8-Ounces.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 12,
+      pet_id: 1
+    },
     //---Dog muzzle---//
     {
       name: 'Baskerville Ultra 2.0 Muzzle',
@@ -1044,6 +1543,7 @@ module.exports.bootstrap = async function() {
       subcategory_id: 26,
       pet_id: 2
     },
+
     //--- Cat Cans ---//
     {
       name: 'Applaws Cat Food Cans 156g - Tuna / Fish',
