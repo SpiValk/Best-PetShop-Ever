@@ -39,7 +39,35 @@
          
 # Cat
 
-      - Dog foods: #5
-               - Dry Food: #26
-               - Dog Cans: #27
-               - Dog treats and chews: #28
+      - Cat foods: #5
+         - Dry Food: #26
+         - Cat Cans: #27
+         - Cat treats and chews: #28
+
+      - Cat grooming: #6
+         - Cat diapers: #29
+         - Cat shampoo: #30
+         - Cat brushes & combs: #31
+         - Cat scissors & clippers: #32
+         - Cat perfumes & fragrances: #33
+
+      - Cat Accessories: #7
+         -Cat toys: #34
+         -Cat clothes: #35
+         -Cat collars: #36
+         -Cat bowls and feeding: #37
+         -Cat leads: #38
+         -Cat harness: #39
+         -Cat poop bags: #40
+         -Cat muzzle: #41
+         -Cat transport boxes: #42
+         -Cat beds: #43
+         -Cat houses: #44
+
+
+      - Cat Vetinary Products: #8
+         -Cat antiparasitics: #45
+         -Cat antibiotics: #46
+         -Cat wound care: #47
+         -Cat flea and wormers: #48
+         -Cat vitamins minerals electrolytes: #49
