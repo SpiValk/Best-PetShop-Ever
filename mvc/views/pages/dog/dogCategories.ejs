@@ -11,7 +11,9 @@
          <div class="row">
             <%dogProducts.forEach((product)=> { %>
                <div class="col-md-3 myProductBox">
-                  <img src="/img/product_images/dogs/<%= category %>/<%=product.image_name%>" alt="purina veterinary" />
+                  <img
+                     src="/img/product_images/dogs/<%= category %>/<%= product.subcategory_id.subcategory %>/<%=product.image_name%>"
+                     alt="purina veterinary" />
                   <h4>
                      <%= product.name %>
                   </h4>
@@ -20,5 +22,6 @@
                </div>
                <%})%>
          </div>
+         <%-include("../footer") %>
    </body>
    <%- include("../scripts") %>
