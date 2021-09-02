@@ -72,7 +72,8 @@ module.exports.bootstrap = async function() {
     {name: 'small animals', description:'little animals'}
   ]);
 
-  //------------------CREATE PRODUCT CATEGORIES --------------//
+  //------------------ CREATE PRODUCT CATEGORIES --------------//
+  //---Dog--//
   await Product_category.createEach([
     {
       category_name: 'dog-foods',
@@ -96,10 +97,35 @@ module.exports.bootstrap = async function() {
       description: 'antiparasitics, antibiotics, wound care, ',
       pets_id: 1
     },
+
+    //---Cat--//
+    {
+      category_name: 'cat-foods',
+      description: 'dry food, cat cans, cat-treats & chews',
+      pets_id: 2
+    },
+    {
+      category_name: 'cat-grooming',
+      description: 'diapers,  flea and wormers, cat shampoo, ' +
+                    'brushes & combs, scissors & clippers, perfumes & fragrances',
+      pets_id: 2
+    },
+    {
+      category_name: 'cat-accessories',
+      description: 'toys, clothes, poop bags, collars, bowls & feeding, leads, harness, ' +
+                    'muzles, transport boxes, beds, houses',
+      pets_id: 2
+    },
+    {
+      category_name: 'cat-veterinary-products',
+      description: 'antiparasitics, antibiotics, wound care, ',
+      pets_id: 2
+    },
   ]);
 
   //------------------ CREATE SUBCATEGORIES -------------------//
   await Product_subcategory.createEach([
+    //--------------------- DOG ------------------------------//
     //------ FOODS -------//
     {subcategory: 'dry-food', category_id: 1},
     {subcategory: 'dog-cans', category_id: 1},
@@ -129,12 +155,48 @@ module.exports.bootstrap = async function() {
     {subcategory: 'dog-fleas-and-wormers', category_id: 4},
     {subcategory: 'vitamins-minerals-electrolytes', category_id: 4},
     {subcategory: 'barf', category_id: 1},//---FOODS---//
+
+
+    //--------------------- CAT ------------------------------//
+    //------ FOODS -------//
+    {subcategory: 'dry-food', category_id: 1},
+    {subcategory: 'cat-cans', category_id: 1},
+    {subcategory: 'cat-treats-and-chews', category_id: 1},
+    //------ GROOMING -------//
+    {subcategory: 'cat-diapers', category_id: 2},
+    {subcategory: 'cat-shampoo', category_id: 2},
+    {subcategory: 'cat-brushes-and-combs', category_id: 2},
+    {subcategory: 'cat-scissors-and-clippers', category_id: 2},
+    {subcategory: 'perfumes-and-fragrances', category_id: 2},
+    //------ ACCESSORIES -------//
+    {subcategory: 'cat-toys', category_id: 3},
+    {subcategory: 'cat-clothes', category_id: 3},
+    {subcategory: 'cat-collars', category_id: 3},
+    {subcategory: 'cat-bowls-and-feeding', category_id: 3},
+    {subcategory: 'cat-leads', category_id: 3},
+    {subcategory: 'cat-harness', category_id: 3},
+    {subcategory: 'cat-poop-bags', category_id: 3},
+    {subcategory: 'cat-muzzle', category_id: 3},
+    {subcategory: 'cat-transport-boxes', category_id: 3},
+    {subcategory: 'cat-beds', category_id: 3},
+    {subcategory: 'cat-houses', category_id: 3},
+    //------ VETERINARY -------//
+    {subcategory: 'cat-antiparasitics', category_id: 4},
+    {subcategory: 'cat-antibiotics', category_id: 4},
+    {subcategory: 'wound-care', category_id: 4},
+    {subcategory: 'cat-fleas-and-wormers', category_id: 4},
+    {subcategory: 'vitamins-minerals-electrolytes', category_id: 4},
+
   ]);
 
 
   //-------------------------- CREATE PRODUCTS --------------------//
 
   await Pet_product.createEach([
+
+    
+    //--------------------- Dog ------------------------------//
+
     {
       name: 'Bon Appetit Adult Dog Chicken & Rice Dry Food: hypoallergenic, gluten-free',
       description: 'A Bon Appetit dog food that is hypoallergenic and gluten-free suitable for all stages of life. 68% chicken, 32% Fruit and Vegetables and 0% gluten',
@@ -603,7 +665,9 @@ module.exports.bootstrap = async function() {
     },
 
 
-    //**** DOG ACCESORIES/DOG TOYS ******//
+    //**** DOG ACCESORIES ******//
+
+    //---DOG TOYS---//
     {
       name: 'KONG® Classic Dog Toy-Treat Dispensing',
       description: 'The KONG Classic is the gold standard of dog toys, and has become the staple for dogs around the world for over forty years. Offering enrichment by helping satisfy a dogs instinctual needs' ,
@@ -737,6 +801,7 @@ module.exports.bootstrap = async function() {
       pet_id: 1
     },
 
+
     //**** DOG ACCESORIES/DOG BEDS ******//
     {
       name: 'Top Paw® Grey Hearts Classic Pillow Dog Bed',
@@ -809,6 +874,486 @@ module.exports.bootstrap = async function() {
       product_category_id: 3,
       subcategory_id: 18,
       pet_id: 1
+    },
+
+    //-------- Dog Clothes --------//
+    {
+      name: 'Hopping Bunny Flannel Dog Pajamas',
+      description: 'XS dog Pajamas' ,
+      quantity: 1,
+      vendor_price: 30,
+      image_name: 'Hopping-Bunny-Flannel-Dog-Pajamas.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 10,
+      pet_id: 1
+    },
+    {
+      name: 'Sparkling Bow Ruffle Layered Dog Dress',
+      description: 'Adorable dog dress with a striped top and polka dots ruffle layered skirt. Made with soft knit cotton fabric, accented with an attached sparkling belt and sparkling bow.' ,
+      quantity: 1,
+      vendor_price: 30,
+      image_name: 'Sparkling-Bow-Ruffle-Layered-Dog-Dress.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 10,
+      pet_id: 1
+    },
+    {
+      name: 'Juicy Watermelon Dog Sundress',
+      description: 'Adorable and juicy watermelon dog sundress, with attached large D-ring for easy leash attachment. ' ,
+      quantity: 1,
+      vendor_price: 30,
+      image_name: 'Juicy-Watermelon-Dog-Sundress.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 10,
+      pet_id: 1
+    },
+    {
+      name: 'Juicy Watermelon Dog Sundress',
+      description: 'Adorable hand knitted (bobble stitch) turtleneck dog sweater, accented with a flower on the side. Made with soft acrylic yarn.' ,
+      quantity: 1,
+      vendor_price: 30,
+      image_name: 'Bobble-Stitch-Turtleneck-Dog-Sweater-Pink.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 10,
+      pet_id: 1
+    },
+    {
+      name: 'Sun Shield Dog Tee Pebble',
+      description: 'The Sun Shield Dog Tee is a silky soft, lightweight stretch jersey with a UPF-50 rating that blocks 98% of the sun\'s harmful UV rays.' ,
+      quantity: 1,
+      vendor_price: 30,
+      image_name: 'Sun-Shield-Dog-Tee-Pebble.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 10,
+      pet_id: 1
+    },
+    {
+      name: 'Stretch Fleece Onesie Dog Pajamas Navy/Winter Mod',
+      description: 'These are unbeatable dog pajamas but aren\'t they also perfect for the next polar vortex on their own or under a waterproof coat?' ,
+      quantity: 1,
+      vendor_price: 30,
+      image_name: 'Stretch-Fleece-Onesie-Dog-Pajamas-NavyWinter-Mod.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 10,
+      pet_id: 1
+    },
+    //---------------- Dog Collars --------------//
+    {
+      name: 'Buttercup Plaid Flannel Dog Collar',
+      description: 'A mellow yellow plaid in soft, thick flannel.' ,
+      quantity: 1,
+      vendor_price: 20,
+      image_name: 'buttercup-plaid-flannel-dog-collar-from-the-foggy-dog.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 11,
+      pet_id: 1
+    },
+    {
+      name: 'Harbor Plaid Flannel Dog Collar',
+      description: 'A timeless plaid in a calming cornflower blue made from soft flannel.' ,
+      quantity: 1,
+      vendor_price: 20,
+      image_name: 'harbor-plaid-flannel-dog-collar-from-the-foggy-dog.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 11,
+      pet_id: 1
+    },
+    {
+      name: 'Harvest Plaid Flannel Dog Collar',
+      description: 'A beautiful autumn collar made from soft flannel in shades of yellow, gray, orange and cream.' ,
+      quantity: 1,
+      vendor_price: 20,
+      image_name: 'harvest-plaid-flannel-dog-collar-from-the-foggy-dog.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 11,
+      pet_id: 1
+    },
+    {
+      name: 'OurPets Comfort Elevated Dog Bowl, Black 8 Inches',
+      description: 'This flannel collar features an all-American plaid in shades of red, white and blue.' ,
+      quantity: 1,
+      vendor_price: 20,
+      image_name: 'OurPets-Comfort-Elevated-Dog-Bowl-Black-8-Inches.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 11,
+      pet_id: 1
+    },
+    {
+      name: 'Pink Herringbone Flannel Dog Collar',
+      description: 'A gentle pink collar with a subtle herringbone pattern made from luxuriously thick flannel.' ,
+      quantity: 1,
+      vendor_price: 20,
+      image_name: 'pink-herringbone-flannel-dog-collar-from-the-foggy-dog.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 11,
+      pet_id: 1
+    },
+    {
+      name: 'Sunset Flannel Dog Collar',
+      description: 'This flannel collar features warm jewel tones in purple, pink, and orange.' ,
+      quantity: 1,
+      vendor_price: 20,
+      image_name: 'sunset-flannel-dog-collar-from-the-foggy-dog.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 11,
+      pet_id: 1
+    },
+    {
+      name: 'Red and Black Buffalo Check Dog Collar',
+      description: 'A classic red and black buffalo plaid pattern is perfect during the winter and year-round.' ,
+      quantity: 1,
+      vendor_price: 20,
+      image_name: 'red-and-black-buffalo-check-dog-collar-from-the-foggy-dog.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 11,
+      pet_id: 1
+    },
+    {
+      name: 'Upcycled Denim Dog Collar',
+      description: 'Part of our Upcycled Denim capsule, a collection that is as beautiful as it is sustainable. Made in a zero-waste textile.' ,
+      quantity: 1,
+      vendor_price: 20,
+      image_name: 'upcycled-denim-dog-collar-from-the-foggy-dog.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 11,
+      pet_id: 1
+    },
+
+    //------------ Dog Bowls And Feeding ------------//
+    {
+      name: 'Outward Hound Fun Feeder Drop, Turquoise, Large',
+      description: 'Slow Feeder for obese pets' ,
+      quantity: 1,
+      vendor_price: 10,
+      image_name: 'pet-slow-feeder.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 12,
+      pet_id: 1
+    },
+    {
+      name: 'OurPets Comfort Elevated Dog Bowl, Black 8 Inches',
+      description: 'This Feeder Is Perfect For Small Dogs' ,
+      quantity: 1,
+      vendor_price: 10,
+      image_name: 'OurPets-Comfort-Elevated-Dog-Bowl-Black-8-Inches.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 12,
+      pet_id: 1
+    },
+    {
+      name: 'Our Pets Durapet Stainless Steel Bowl, 7 Cups',
+      description: 'Permanently-bonded rubber ring on bottom of bowl' ,
+      quantity: 1,
+      vendor_price: 10,
+      image_name: 'OurPets-Durapet-Stainless-Steel-Bowl-7-Cups.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 12,
+      pet_id: 1
+    },
+    {
+      name: 'Play On Matte Blue Ceramic Dog Bowl, Large, 33 Ounces',
+      description: 'High-end style, oven fired and hand painted' ,
+      quantity: 1,
+      vendor_price: 10,
+      image_name: 'Play-On-Matte-Blue-Ceramic-Dog-Bowl-Large-33-Ounces.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 12,
+      pet_id: 1
+    },
+    {
+      name: 'Play On Floral Melamine Bowl, Small, 8 Ounces',
+      description: 'Non-skid bottom allows for stable dinning' ,
+      quantity: 1,
+      vendor_price: 10,
+      image_name: 'Play-On-Floral-Melamine-Bowl-Small-8-Ounces.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 12,
+      pet_id: 1
+
+    //---Dog muzzle---//
+    {
+      name: 'Baskerville Ultra 2.0 Muzzle',
+      description: 'Ergonomically shaped muzzle for dogs, extremely robust and padded with three attachment points.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'baskerville-ultra-2.0-muzzle.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 16,
+      pet_id: 1
+    },
+    {
+      name: 'Grreat Choice® Adjustable Mesh Dog Muzzle',
+      description: 'Prevent unwanted behaviors including biting, barking and chewing with the Grreat Choice Adjustable Mesh Muzzle.' ,
+      quantity: 3,
+      vendor_price: 3,
+      image_name: 'grreat-choice-adjustable-mesh-dog-muzzle.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 16,
+      pet_id: 1
+    },
+    {
+      name: 'Baskerville Ultra Dog Muzzle',
+      description: 'Prevent unwanted behaviors including biting, barking and chewing with the Grreat Choice Adjustable Mesh Muzzle.' ,
+      quantity: 2,
+      vendor_price: 4,
+      image_name: 'baskerville-ultra-dog-muzzle.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 16,
+      pet_id: 1
+    },
+    {
+      name: 'Mesh Muzzle',
+      description: 'Prevent unwanted behaviors including biting, barking and chewing with the Grreat Choice Adjustable Mesh Muzzle.' ,
+      quantity: 4,
+      vendor_price: 3,
+      image_name: 'mesh-muzzle.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 16,
+      pet_id: 1
+    },
+    {
+      name: 'Beaphar Gentle Anti-Pull',
+      description: 'The Worlds Best Selling Headcollar That Stops Your Dog Pulling On The Lead. Adjustable Nose Loop For A Comfortable Fit. Kind Control And Effective Leadership.' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'beaphar-gentle-anti-pull.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 16,
+      pet_id: 1
+    },
+    {
+      name: 'Mikki Muzzle',
+      description: 'Mikki Muzzle (boxer) Size 8' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'mikki-muzzle.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 16,
+      pet_id: 1
+    },
+
+    //---Dog transport boxes---//
+    {
+      name: 'HUNTER Transport Box Outdoor',
+      description: 'Transport box for dogs, made from robust nylon and usable as a dog house, with extra stable metal frame and matching carry bag.' ,
+      quantity: 2,
+      vendor_price: 7,
+      image_name: 'hunter-transport-box-outdoor.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 17,
+      pet_id: 1
+    },
+    {
+      name: 'Feria Transport Crate with Wheels',
+      description: 'Transport box for dogs, ideal for flights and IATA compliant, with air vents to ensure circulation.' ,
+      quantity: 2,
+      vendor_price: 8,
+      image_name: 'feria-transport-crate-with-wheels.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 17,
+      pet_id: 1
+    },
+    {
+      name: 'Mappa Transport Box',
+      description: 'A plastic transport box for dogs, cats & small animals, removable entrance door, excellent ventilation system.' ,
+      quantity: 2,
+      vendor_price: 6,
+      image_name: 'mappa-transport-box.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 17,
+      pet_id: 1
+    },
+    {
+      name: 'Ferplast Atlas Scenic Car Transport Box - Black',
+      description: 'Car transport box for dogs, with a large mesh door and security closure, offering plenty of space.' ,
+      quantity: 1,
+      vendor_price: 7,
+      image_name: 'ferplast-atlas-scenic-car-transport-box-black.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 17,
+      pet_id: 1
+    },
+    {
+      name: 'Easy Go Folding Transport Box',
+      description: 'Comfortable transport box for dogs, perfect as a sleeping and relaxing area for camping trips or use at home.' ,
+      quantity: 2,
+      vendor_price: 7,
+      image_name: 'easy-go-folding-transport-box.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 17,
+      pet_id: 1
+    },
+    {
+      name: 'Collapsible Transport Case',
+      description: 'This extraordinary transport case is light and collapsible, ideal for transporting cats and small dogs weighing up to 6kg.' ,
+      quantity: 2,
+      vendor_price: 7,
+      image_name: 'collapsible-transport-case.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 3,
+      subcategory_id: 17,
+      pet_id: 1
+    },
+
+    //--------------------- Cat ------------------------------//
+    //--- Food ---//
+    //--- Dry Food ---//
+    {
+      name: 'Hills Science Diet Indoor Adult Dry Cat Food - Chicken',
+      description: 'During your cats adult years, you want to feed nutrition that supports everyday health and digestion.' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'hills-science-diet-indoor-adult-dry-cat-food-chicken.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 5,
+      subcategory_id: 26,
+      pet_id: 2
+    },
+    {
+      name: 'Purina ONE SmartBlend Adult Cat Food',
+      description: 'Serve your cat a plate of the deliciously crunchy bites and meaty, tender morsels shes been craving with Purina ONE Tender Selects Blend With Real Chicken adult dry cat food.' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'purina-one-smartBlend-adult-cat-food.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 5,
+      subcategory_id: 26,
+      pet_id: 2
+    },
+    {
+      name: 'Purina Pro Plan Essentials Adult Cat Food',
+      description: 'Capture your cats curiosity when you fill her dish with Purina Pro Plan COMPLETE ESSENTIALS Chicken & Rice Formula adult dry cat food at mealtime.' ,
+      quantity: 3,
+      vendor_price: 5,
+      image_name: 'purina-pro-plan-essentials-adult-cat-food.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 5,
+      subcategory_id: 26,
+      pet_id: 2
+    },
+    {
+      name: 'Purina Friskies® Seafood Sensations Cat Food',
+      description: 'Pour a purr-worthy dish full of yum with Purina Friskies Seafood Sensations dry cat food.' ,
+      quantity: 2,
+      vendor_price: 3,
+      image_name: 'purina-friskies-seafood-sensations-cat-food.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 5,
+      subcategory_id: 26,
+      pet_id: 2
+    },
+    {
+      name: 'Authority Indoor Adult Cat Food - Chicken & Rice',
+      description: 'Provide delicious taste while promoting better everyday health in your indoor kitty by serving Authority Everyday Health Adult Indoor Cat Food.' ,
+      quantity: 3,
+      vendor_price: 5,
+      image_name: 'authority-indoor-adult-cat-food-chicken-&-rice.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 5,
+      subcategory_id: 26,
+      pet_id: 2
+    },
+    {
+      name: 'Rachael Ray Nutrish Indoor Complete Cat Food',
+      description: 'Rachael Ray Nutrish Indoor Complete Chicken with Lentils & Salmon Recipe Natural Dry Cat Food is a simple, natural food created to meet the specific needs of indoor cats.' ,
+      quantity: 3,
+      vendor_price: 5,
+      image_name: 'rachael-ray-nutrish-indoor-complete-cat-food.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 5,
+      subcategory_id: 26,
+      pet_id: 2
+    },
+    {
+      name: 'Hills Science Diet Kitten Dry Cat Food - Chicken',
+      description: 'Your little kitten needs premium nutrition that can keep up with their active lifestyle.' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'hills-science-diet-kitten-dry-cat-food-chicken.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 5,
+      subcategory_id: 26,
+      pet_id: 2
+    },
+    {
+      name: 'Royal Canin Feline Health Nutrition Indoor Adult Cat Food',
+      description: 'Your indoor cats lifestyle of napping, grooming, and grazing requires a diet made for their nutritional needs.' ,
+      quantity: 2,
+      vendor_price: 4,
+      image_name: 'royal-canin-feline-health-nutrition-indoor-adult-cat-food.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 5,
+      subcategory_id: 26,
+      pet_id: 2
     },
   ]);
   // ```
