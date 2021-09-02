@@ -149,12 +149,12 @@ module.exports.bootstrap = async function() {
     {subcategory: 'dog-beds', category_id: 3},
     {subcategory: 'dog-houses', category_id: 3},
     //------ VETERINARY -------//
-    {subcategory: 'dog-antiparasitics', category_id: 4},
+    {subcategory: 'dog-prescription-only-medicines', category_id: 4},
     {subcategory: 'dog-antibiotics', category_id: 4},
     {subcategory: 'wound-care', category_id: 4},
     {subcategory: 'dog-fleas-and-wormers', category_id: 4},
     {subcategory: 'dog-vitamins-minerals-electrolytes', category_id: 4},
-    {subcategory: 'barf', category_id: 1},
+    {subcategory: 'barf', category_id: 1}, //------- FOODS ------//
 
     //--------------------- CAT ------------------------------//
     //------ FOODS -------//
@@ -193,7 +193,7 @@ module.exports.bootstrap = async function() {
 
   await Pet_product.createEach([
 
-    
+
     //--------------------- Dog ------------------------------//
 
     {
@@ -356,18 +356,7 @@ module.exports.bootstrap = async function() {
       subcategory_id: 4,
       pet_id: 1
     },
-    {
-      name: 'Drontal Tasty Bone Wormer Tablets',
-      description: 'Drontal Tasty Bone worming tablets work fast to kill every type of intestinal worm commonly found in UK dogs, giving you peace of mind that you are helping keep internal parasites away from your pet and family. ',
-      quantity: 1,
-      vendor_price: 5,
-      image_name: 'Drontal-Tasty-Bone-Worming-Tablets-for-Dogs-1-Tablet_1.jpeg',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 4,
-      subcategory_id: 23,
-      pet_id: 1
-    },
+
     //**** DOG GROOMING ******//
     //---Dog diapers---//
     {
@@ -850,7 +839,7 @@ module.exports.bootstrap = async function() {
       pet_id: 1
     },
     {
-      name: "Arcadia Trail™ Reflective Rope Dog Leash: 4-ft long",
+      name: 'Arcadia Trail™ Reflective Rope Dog Leash: 4-ft long',
       description: 'This Arcadia Trail Berry Reflective Rope Dog Leash is the perfect choice for doggie/pet parent duos that love enjoying the outdoors together' ,
       quantity: 1,
       vendor_price: 5,
@@ -886,7 +875,7 @@ module.exports.bootstrap = async function() {
       pet_id: 1
     },
     {
-      name: "Lucy & Co. Dilly Lily Dog Leash",
+      name: 'Lucy & Co. Dilly Lily Dog Leash',
       description: 'Make walks safer and more enjoyable for you and your pup with this Lucy & Co. Teal Floral Dog Leash' ,
       quantity: 1,
       vendor_price: 5,
@@ -936,7 +925,7 @@ module.exports.bootstrap = async function() {
 
     //DOG ACCESSORIES/DOG HARNESS
     {
-      name: "KONG® Reflective Pocket Dog Harness",
+      name: 'KONG® Reflective Pocket Dog Harness',
       description: 'Keep your dog safer and more comfortable on walks with this stylish KONG Reflective Pocket Dog Harness.' ,
       quantity: 1,
       vendor_price: 5,
