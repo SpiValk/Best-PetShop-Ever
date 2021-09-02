@@ -241,7 +241,7 @@ module.exports.bootstrap = async function() {
       status: 1,
       vendor_id: 2,
       product_category_id: 1,
-      subcategory_id: 2,
+      subcategory_id: 1,
       pet_id: 1
     },
     {
@@ -737,7 +737,7 @@ module.exports.bootstrap = async function() {
       status: 1,
       vendor_id: 6,
       product_category_id: 3,
-      subcategory_id: 14,
+      subcategory_id: 9,
       pet_id: 1
     },
     {
@@ -761,7 +761,7 @@ module.exports.bootstrap = async function() {
       status: 1,
       vendor_id: 6,
       product_category_id: 3,
-      subcategory_id: 17,
+      subcategory_id: 9,
       pet_id: 1
     },
     {
@@ -923,6 +923,7 @@ module.exports.bootstrap = async function() {
       pet_id: 1
     },
 
+
     //DOG ACCESSORIES/DOG HARNESS
     {
       name: 'KONG® Reflective Pocket Dog Harness',
@@ -960,18 +961,7 @@ module.exports.bootstrap = async function() {
       subcategory_id: 14,
       pet_id: 1
     },
-    {
-      name: 'KONG® Reflective Padded Hands-Free Dog Leash',
-      description: 'The KONG Reflective Padded Hands-Free Leash offers you more freedom while still being in control on walks with your furry friend' ,
-      quantity: 1,
-      vendor_price: 5,
-      image_name: 'KONG-Reflective-Padded-Hands-Free-Dog-Leash.png',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 14,
-      pet_id: 1
-    },
+
 
 
 
@@ -1460,7 +1450,7 @@ module.exports.bootstrap = async function() {
     },
 
     // -----Dog houses ----//
-       
+
     {
       name: 'Petmate® Indigo Igloo-Style Dog House',
       description: 'The Petmate Indigo Dog House with Microban is a top-of-the-line igloo-shaped doghouse, and is a sturdy and spacious option that provides security and comfort for your dog.' ,
@@ -1557,226 +1547,226 @@ module.exports.bootstrap = async function() {
       subcategory_id: 19,
       pet_id: 1
     },
-  
-      //------- Veterinary Products --------//
 
-         //--- Antiparasitics For Dogs ----//
+    //------- Veterinary Products --------//
 
-
+    //--- Antiparasitics For Dogs ----//
 
 
 
-         //--- Antibiotics For Dogs ----//
 
-         {
-          name: 'Enroquin (Enrofloxacin Flavored Tab) 22.7 mg, 68 mg, 136 mg',
-          description: 'Enrofloxacin is an antibiotic that treats a broad range of susceptible bacterial infections.' ,
-          quantity: 3,
-          vendor_price: 4,
-          image_name: 'Enroquin-(Enrofloxacin-Flavored-Tab)-22.7-mg,-68-mg,-136-mg.jpg',
-          status: 3,
-          vendor_id: 5,
-          product_category_id: 4,
-          subcategory_id: 21,
-          pet_id: 1
-        },
 
-        {
-          name: 'Tylan Soluble Powder 100 gm',
-          description: 'Tylan Soluble Powder is a powdered antibiotic that is useful in treating CRD (chronic respiratory disease), controlling American Foulbrood of honey bees, treating and controlling swine dysentery.' ,
-          quantity: 3,
-          vendor_price: 4,
-          image_name: 'Tylan-Soluble-Powder-100-gm.jpg',
-          status: 3,
-          vendor_id: 5,
-          product_category_id: 4,
-          subcategory_id: 21,
-          pet_id: 1
-        },
+    //--- Antibiotics For Dogs ----//
 
-        {
-          name: 'Albon Tablet',
-          description: 'Albon is used to treat canine and feline soft tissue, enteric, genitourinary tract, and respiratory infections, including wound infections.' ,
-          quantity: 3,
-          vendor_price: 4,
-          image_name: 'Albon-Tablet.jpg',
-          status: 3,
-          vendor_id: 5,
-          product_category_id: 4,
-          subcategory_id: 21,
-          pet_id: 1
-        },
+    {
+      name: 'Enroquin (Enrofloxacin Flavored Tab) 22.7 mg, 68 mg, 136 mg',
+      description: 'Enrofloxacin is an antibiotic that treats a broad range of susceptible bacterial infections.' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'Enroquin-(Enrofloxacin-Flavored-Tab)-22.7-mg,-68-mg,-136-mg.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 21,
+      pet_id: 1
+    },
 
-        {
-          name: 'Orbax Oral Suspension 30 mg/ml, 20 ml',
-          description: 'Orbax Oral Suspension is used to treat wound, soft tissue, or urinary tract infections. It cannot be detected by the taste buds, which makes it easy to administer.' ,
-          quantity: 3,
-          vendor_price: 4,
-          image_name: 'Orbax-Oral-Suspension-30-mg-ml,-20-ml.jpg',
-          status: 3,
-          vendor_id: 5,
-          product_category_id: 4,
-          subcategory_id: 21,
-          pet_id: 1
-        },
+    {
+      name: 'Tylan Soluble Powder 100 gm',
+      description: 'Tylan Soluble Powder is a powdered antibiotic that is useful in treating CRD (chronic respiratory disease), controlling American Foulbrood of honey bees, treating and controlling swine dysentery.' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'Tylan-Soluble-Powder-100-gm.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 21,
+      pet_id: 1
+    },
 
-        {
-          name: 'Cefpoderm (Cefpodoxime Proxetil) Tablet',
-          description: 'Cefpodoxime Proxetil is useful in treating skin infection.' ,
-          quantity: 3,
-          vendor_price: 4,
-          image_name: 'Cefpoderm-(Cefpodoxime-Proxetil)-Tablet.jpg',
-          status: 3,
-          vendor_id: 5,
-          product_category_id: 4,
-          subcategory_id: 21,
-          pet_id: 1
-        },
+    {
+      name: 'Albon Tablet',
+      description: 'Albon is used to treat canine and feline soft tissue, enteric, genitourinary tract, and respiratory infections, including wound infections.' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'Albon-Tablet.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 21,
+      pet_id: 1
+    },
 
-        {
-          name: 'Doxycycline Hyclate 100 mg Tablet',
-          description: 'Doxycycline Hyclate is a bacteriostatic antibiotic that is useful in treating susceptible bacterial infections, including Lyme disease, chlamydia, and Rocky Mountain Spotted Fever.' ,
-          quantity: 3,
-          vendor_price: 4,
-          image_name: 'Doxycycline-Hyclate-100-mg-Tablet.jpg',
-          status: 3,
-          vendor_id: 5,
-          product_category_id: 4,
-          subcategory_id: 21,
-          pet_id: 1
-        },
+    {
+      name: 'Orbax Oral Suspension 30 mg/ml, 20 ml',
+      description: 'Orbax Oral Suspension is used to treat wound, soft tissue, or urinary tract infections. It cannot be detected by the taste buds, which makes it easy to administer.' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'Orbax-Oral-Suspension-30-mg-ml,-20-ml.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 21,
+      pet_id: 1
+    },
 
-        {
-          name: 'Ketoconazole 200 mg Tablet',
-          description: 'Ketoconazole is used to treat yeast infections, lung infections (histoplasmosis), aspergillosis, blastomycosis, and Cryptococcus neoformans infections (cryptococcosis). ' ,
-          quantity: 3,
-          vendor_price: 4,
-          image_name: 'Ketoconazole-200-mg-Tablet.jpg',
-          status: 3,
-          vendor_id: 5,
-          product_category_id: 4,
-          subcategory_id: 21,
-          pet_id: 1
-        },
+    {
+      name: 'Cefpoderm (Cefpodoxime Proxetil) Tablet',
+      description: 'Cefpodoxime Proxetil is useful in treating skin infection.' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'Cefpoderm-(Cefpodoxime-Proxetil)-Tablet.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 21,
+      pet_id: 1
+    },
 
-        {
-          name: 'ANTIROBE (Clindamycin Hydrochloride) Capsules',
-          description: 'Antirobe Capsules use Clindamycin Hydrochloride to treat soft tissue, dental, and bone infections caused by susceptible strains of bacteria.' ,
-          quantity: 3,
-          vendor_price: 4,
-          image_name: 'ANTIROBE-(Clindamycin-Hydrochloride)-Capsules.jpg',
-          status: 3,
-          vendor_id: 5,
-          product_category_id: 4,
-          subcategory_id: 21,
-          pet_id: 1
-        },
+    {
+      name: 'Doxycycline Hyclate 100 mg Tablet',
+      description: 'Doxycycline Hyclate is a bacteriostatic antibiotic that is useful in treating susceptible bacterial infections, including Lyme disease, chlamydia, and Rocky Mountain Spotted Fever.' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'Doxycycline-Hyclate-100-mg-Tablet.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 21,
+      pet_id: 1
+    },
 
-        //--- Dogs fleas and wormers ----//
+    {
+      name: 'Ketoconazole 200 mg Tablet',
+      description: 'Ketoconazole is used to treat yeast infections, lung infections (histoplasmosis), aspergillosis, blastomycosis, and Cryptococcus neoformans infections (cryptococcosis). ' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'Ketoconazole-200-mg-Tablet.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 21,
+      pet_id: 1
+    },
 
-        {
-          name: 'Frontline Plus Flea and Tick Treatment for Dogs (Large Dog, 45-88 Pounds, 6 Doses)',
-          description: 'Kills fleas and ticks: Frontline flea and tick treatment for dogs kills fleas, flea eggs, lice, and ticks.' ,
-          quantity: 3,
-          vendor_price: 4,
-          image_name: 'Frontline-Plus-Flea-and-Tick-Treatment-for-Dogs-(Large-Dog,-45-88-Pounds,-6-Doses).jpg',
-          status: 3,
-          vendor_id: 5,
-          product_category_id: 4,
-          subcategory_id: 23,
-          pet_id: 1
-        },
+    {
+      name: 'ANTIROBE (Clindamycin Hydrochloride) Capsules',
+      description: 'Antirobe Capsules use Clindamycin Hydrochloride to treat soft tissue, dental, and bone infections caused by susceptible strains of bacteria.' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'ANTIROBE-(Clindamycin-Hydrochloride)-Capsules.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 21,
+      pet_id: 1
+    },
 
-        {
-          name: 'TevraPet Activate II Flea and Tick Prevention for Dogs | Large 21-55 lbs | 4 Months | Fast Acting, Repels Mosquitoes',
-          description: 'Effective - This broad spectrum flea and tick topical kills all stages of fleas, flea eggs, ticks, and lice' ,
-          quantity: 3,
-          vendor_price: 4,
-          image_name: 'TevraPet-Activate-Flea-and-Tick-Prevention-for-Dogs-Large-21-55-lbs-4-Months-Fast-Acting,-Repels-Mosquitoes.jpg',
-          status: 3,
-          vendor_id: 5,
-          product_category_id: 4,
-          subcategory_id: 23,
-          pet_id: 1
-        },
+    //--- Dogs fleas and wormers ----//
 
-        {
-          name: 'CapAction Oral Flea Treatment Large Dog 6ct',
-          description: 'TREAT RE-INFESTATIONS FAST: If your pet gets re-invested with fleas simply apply another dose as often as once a day. ' ,
-          quantity: 3,
-          vendor_price: 4,
-          image_name: 'CapAction-Oral-Flea-Treatment-Large-Dog-6ct.jpg',
-          status: 3,
-          vendor_id: 5,
-          product_category_id: 4,
-          subcategory_id: 23,
-          pet_id: 1
-        },
+    {
+      name: 'Frontline Plus Flea and Tick Treatment for Dogs (Large Dog, 45-88 Pounds, 6 Doses)',
+      description: 'Kills fleas and ticks: Frontline flea and tick treatment for dogs kills fleas, flea eggs, lice, and ticks.' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'Frontline-Plus-Flea-and-Tick-Treatment-for-Dogs-(Large-Dog,-45-88-Pounds,-6-Doses).jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 23,
+      pet_id: 1
+    },
 
-        {
-          name: 'K9 advantix II Flea and Tick Prevention for Large Dogs, 21-55 Pounds',
-          description: 'Starts working to kill fleas within 12 hours and keeps working for 30 days' ,
-          quantity: 3,
-          vendor_price: 4,
-          image_name: 'K9-advantix-Flea-and-Tick-Prevention-for-Large-Dogs,-21-55-Pounds.jpg',
-          status: 3,
-          vendor_id: 5,
-          product_category_id: 4,
-          subcategory_id: 23,
-          pet_id: 1
-        },
+    {
+      name: 'TevraPet Activate II Flea and Tick Prevention for Dogs | Large 21-55 lbs | 4 Months | Fast Acting, Repels Mosquitoes',
+      description: 'Effective - This broad spectrum flea and tick topical kills all stages of fleas, flea eggs, ticks, and lice' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'TevraPet-Activate-Flea-and-Tick-Prevention-for-Dogs-Large-21-55-lbs-4-Months-Fast-Acting,-Repels-Mosquitoes.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 23,
+      pet_id: 1
+    },
 
-        {
-          name: 'Classics Lime Sulfur Dip ',
-          description: '8 oz Pet Care and Veterinary Treatment Agains Ringworm, Mange, Lice, Flea, Itchy and Dry Skin Extra Strength Formula - Safe Solution for Dog, Cat, Puppy, Kitten, Horse' ,
-          quantity: 3,
-          vendor_price: 4,
-          image_name: 'Classics-Lime-Sulfur-Dip_.jpg',
-          status: 3,
-          vendor_id: 5,
-          product_category_id: 4,
-          subcategory_id: 23,
-          pet_id: 1
-        },
+    {
+      name: 'CapAction Oral Flea Treatment Large Dog 6ct',
+      description: 'TREAT RE-INFESTATIONS FAST: If your pet gets re-invested with fleas simply apply another dose as often as once a day. ' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'CapAction-Oral-Flea-Treatment-Large-Dog-6ct.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 23,
+      pet_id: 1
+    },
 
-        {
-          name: '8in1 Safe-Guard Canine Dewormer for Small Dogs',
-          description: 'Safe-Guard treats against Tapeworms, Roundworms, Hookworms, and Whipworms' ,
-          quantity: 3,
-          vendor_price: 4,
-          image_name: '8in1-Safe-Guard-Canine-Dewormer-for-Small-Dogs.jpg',
-          status: 3,
-          vendor_id: 5,
-          product_category_id: 4,
-          subcategory_id: 23,
-          pet_id: 1
-        },
+    {
+      name: 'K9 advantix II Flea and Tick Prevention for Large Dogs, 21-55 Pounds',
+      description: 'Starts working to kill fleas within 12 hours and keeps working for 30 days' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'K9-advantix-Flea-and-Tick-Prevention-for-Large-Dogs,-21-55-Pounds.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 23,
+      pet_id: 1
+    },
 
-        {
-          name: 'TevraPet Activate II Flea and Tick Prevention for Dogs ',
-          description: '8 Months Supply | Medicine for Treatment and Control | Topical Drops' ,
-          quantity: 3,
-          vendor_price: 4,
-          image_name: 'TevraPet-Activate-Flea-and-Tick-Prevention-for-Dogs.jpg',
-          status: 3,
-          vendor_id: 5,
-          product_category_id: 4,
-          subcategory_id: 23,
-          pet_id: 1
-        },
+    {
+      name: 'Classics Lime Sulfur Dip ',
+      description: '8 oz Pet Care and Veterinary Treatment Agains Ringworm, Mange, Lice, Flea, Itchy and Dry Skin Extra Strength Formula - Safe Solution for Dog, Cat, Puppy, Kitten, Horse' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'Classics-Lime-Sulfur-Dip_.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 23,
+      pet_id: 1
+    },
 
-        {
-          name: 'Bayer Tapeworm Dewormer (praziquantel tablets) for Dogs,',
-          description: '5-count bottle of tapeworm dewormer for dogs' ,
-          quantity: 3,
-          vendor_price: 4,
-          image_name: 'Bayer-Tapeworm-Dewormer-(praziquantel-tablets)-for-Dogs.jpg',
-          status: 3,
-          vendor_id: 5,
-          product_category_id: 4,
-          subcategory_id: 23,
-          pet_id: 1
-        },
+    {
+      name: '8in1 Safe-Guard Canine Dewormer for Small Dogs',
+      description: 'Safe-Guard treats against Tapeworms, Roundworms, Hookworms, and Whipworms' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: '8in1-Safe-Guard-Canine-Dewormer-for-Small-Dogs.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 23,
+      pet_id: 1
+    },
+
+    {
+      name: 'TevraPet Activate II Flea and Tick Prevention for Dogs ',
+      description: '8 Months Supply | Medicine for Treatment and Control | Topical Drops' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'TevraPet-Activate-Flea-and-Tick-Prevention-for-Dogs.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 23,
+      pet_id: 1
+    },
+
+    {
+      name: 'Bayer Tapeworm Dewormer (praziquantel tablets) for Dogs,',
+      description: '5-count bottle of tapeworm dewormer for dogs' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'Bayer-Tapeworm-Dewormer-(praziquantel-tablets)-for-Dogs.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 23,
+      pet_id: 1
+    },
 
 
 
@@ -2017,5 +2007,5 @@ module.exports.bootstrap = async function() {
       pet_id: 2
     },
   ]);
-  
+
 };
