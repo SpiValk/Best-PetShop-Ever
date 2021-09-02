@@ -1053,6 +1053,31 @@ module.exports.bootstrap = async function() {
       pet_id: 1
     },
 
+    {
+      name: 'Armarkat Soothing Blue Memory Foam Mattress Dog Bed',
+      description: 'The Armarkat Model D08B medium bolstered pet bed is made with durable upholstery and a 7-inch thick memory foam mattress for maximum comfort.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Armarkat-Soothing-Blue-Memory-Foam-Mattress-Dog-Bed.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 18,
+      pet_id: 1
+    },
+    {
+      name: 'Carolina Pet Orthopedic Comfort Couch Personalized Dog Bed',
+      description: 'You can personalize this product with one line of personalization and up to 10 characters including spaces.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Carolina-Pet-Orthopedic-Comfort-Couch-Personalized-Dog-Bed.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 18,
+      pet_id: 1
+    },
+
     //-------- Dog Clothes --------//
     {
       name: 'Hopping Bunny Flannel Dog Pajamas',
@@ -1283,8 +1308,9 @@ module.exports.bootstrap = async function() {
       vendor_id: 6,
       product_category_id: 3,
       subcategory_id: 12,
-      pet_id: 1
-    },
+      pet_id: 1  },
+
+
     //---Dog muzzle---//
     {
       name: 'Baskerville Ultra 2.0 Muzzle',
@@ -1432,6 +1458,329 @@ module.exports.bootstrap = async function() {
       subcategory_id: 17,
       pet_id: 1
     },
+
+    // -----Dog houses ----//
+       
+    {
+      name: 'Petmate® Indigo Igloo-Style Dog House',
+      description: 'The Petmate Indigo Dog House with Microban is a top-of-the-line igloo-shaped doghouse, and is a sturdy and spacious option that provides security and comfort for your dog.' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'Petmate®-Indigo-Igloo-Style-Dog-House.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 3,
+      subcategory_id: 19,
+      pet_id: 1
+    },
+    {
+      name: 'Precision Pet Products® Outback Log Cabin Dog House',
+      description: 'Assembles in three simple steps, a great mountain retreat just outside the backdoor' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'Precision-Pet-Products®-Outback-Log-Cabin-Dog-House.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 3,
+      subcategory_id: 19,
+      pet_id: 1
+    },
+    {
+      name: 'TRIXIEs Log Cabin Dog House',
+      description: 'Give your pet a place to escape the elements with TRIXIEs Log Cabin Dog House with peaked roof.' ,
+      quantity: 3,
+      vendor_price: 5,
+      image_name: 'TRIXIEs-Log-Cabin-Dog-House.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 3,
+      subcategory_id: 19,
+      pet_id: 1
+    },
+    {
+      name: 'Petmate® Dogloo XT Dog House',
+      description: 'etmates Dogloo XT is an outdoor doghouse that helps to protect your dog from the elements.' ,
+      quantity: 2,
+      vendor_price: 3,
+      image_name: 'Petmate®-Dogloo-XT-Dog-House.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 3,
+      subcategory_id: 19,
+      pet_id: 1
+    },
+    {
+      name: 'New Age Pet® ecoFLEX™ Bunkhouse™ Dog House',
+      description: 'The New Age ecoFLEX Bunkhouse Dog House offers many wonderful features that include a traditional peaked roof line, raised floors and a step-in design. ' ,
+      quantity: 3,
+      vendor_price: 5,
+      image_name: 'New-Age-Pet®-ecoFLEX™-Bunkhouse™-Dog House.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 3,
+      subcategory_id: 19,
+      pet_id: 1
+    },
+    {
+      name: 'TRIXIEs Rustic Dog House',
+      description: 'Give your pet a place to escape the elements with TRIXIEs Rustic Dog House witha charming covered porch. ' ,
+      quantity: 3,
+      vendor_price: 5,
+      image_name: 'TRIXIEs-Rustic-Dog-House.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 3,
+      subcategory_id: 19,
+      pet_id: 1
+    },
+    {
+      name: 'Petmate® Husky Dog House',
+      description: 'Provide your dog with a place to call his own and protection from the elements while outside with this Petmate Husky Doghouse.' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Petmate®-Husky-Dog-House.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 3,
+      subcategory_id: 19,
+      pet_id: 1
+    },
+    {
+      name: 'Trixie Pet Products Dogs Inn Dog House',
+      description: 'Give your pet a place to escape the elements with TRIXIEs Dogs Inn Dog House.' ,
+      quantity: 2,
+      vendor_price: 4,
+      image_name: 'Trixie-Pet-Products-Dogs-Inn-Dog-House.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 3,
+      subcategory_id: 19,
+      pet_id: 1
+    },
+  
+      //------- Veterinary Products --------//
+
+         //--- Antiparasitics For Dogs ----//
+
+
+
+
+
+         //--- Antibiotics For Dogs ----//
+
+         {
+          name: 'Enroquin (Enrofloxacin Flavored Tab) 22.7 mg, 68 mg, 136 mg',
+          description: 'Enrofloxacin is an antibiotic that treats a broad range of susceptible bacterial infections.' ,
+          quantity: 3,
+          vendor_price: 4,
+          image_name: 'Enroquin-(Enrofloxacin-Flavored-Tab)-22.7-mg,-68-mg,-136-mg.jpg',
+          status: 3,
+          vendor_id: 5,
+          product_category_id: 4,
+          subcategory_id: 21,
+          pet_id: 1
+        },
+
+        {
+          name: 'Tylan Soluble Powder 100 gm',
+          description: 'Tylan Soluble Powder is a powdered antibiotic that is useful in treating CRD (chronic respiratory disease), controlling American Foulbrood of honey bees, treating and controlling swine dysentery.' ,
+          quantity: 3,
+          vendor_price: 4,
+          image_name: 'Tylan-Soluble-Powder-100-gm.jpg',
+          status: 3,
+          vendor_id: 5,
+          product_category_id: 4,
+          subcategory_id: 21,
+          pet_id: 1
+        },
+
+        {
+          name: 'Albon Tablet',
+          description: 'Albon is used to treat canine and feline soft tissue, enteric, genitourinary tract, and respiratory infections, including wound infections.' ,
+          quantity: 3,
+          vendor_price: 4,
+          image_name: 'Albon-Tablet.jpg',
+          status: 3,
+          vendor_id: 5,
+          product_category_id: 4,
+          subcategory_id: 21,
+          pet_id: 1
+        },
+
+        {
+          name: 'Orbax Oral Suspension 30 mg/ml, 20 ml',
+          description: 'Orbax Oral Suspension is used to treat wound, soft tissue, or urinary tract infections. It cannot be detected by the taste buds, which makes it easy to administer.' ,
+          quantity: 3,
+          vendor_price: 4,
+          image_name: 'Orbax-Oral-Suspension-30-mg-ml,-20-ml.jpg',
+          status: 3,
+          vendor_id: 5,
+          product_category_id: 4,
+          subcategory_id: 21,
+          pet_id: 1
+        },
+
+        {
+          name: 'Cefpoderm (Cefpodoxime Proxetil) Tablet',
+          description: 'Cefpodoxime Proxetil is useful in treating skin infection.' ,
+          quantity: 3,
+          vendor_price: 4,
+          image_name: 'Cefpoderm-(Cefpodoxime-Proxetil)-Tablet.jpg',
+          status: 3,
+          vendor_id: 5,
+          product_category_id: 4,
+          subcategory_id: 21,
+          pet_id: 1
+        },
+
+        {
+          name: 'Doxycycline Hyclate 100 mg Tablet',
+          description: 'Doxycycline Hyclate is a bacteriostatic antibiotic that is useful in treating susceptible bacterial infections, including Lyme disease, chlamydia, and Rocky Mountain Spotted Fever.' ,
+          quantity: 3,
+          vendor_price: 4,
+          image_name: 'Doxycycline-Hyclate-100-mg-Tablet.jpg',
+          status: 3,
+          vendor_id: 5,
+          product_category_id: 4,
+          subcategory_id: 21,
+          pet_id: 1
+        },
+
+        {
+          name: 'Ketoconazole 200 mg Tablet',
+          description: 'Ketoconazole is used to treat yeast infections, lung infections (histoplasmosis), aspergillosis, blastomycosis, and Cryptococcus neoformans infections (cryptococcosis). ' ,
+          quantity: 3,
+          vendor_price: 4,
+          image_name: 'Ketoconazole-200-mg-Tablet.jpg',
+          status: 3,
+          vendor_id: 5,
+          product_category_id: 4,
+          subcategory_id: 21,
+          pet_id: 1
+        },
+
+        {
+          name: 'ANTIROBE (Clindamycin Hydrochloride) Capsules',
+          description: 'Antirobe Capsules use Clindamycin Hydrochloride to treat soft tissue, dental, and bone infections caused by susceptible strains of bacteria.' ,
+          quantity: 3,
+          vendor_price: 4,
+          image_name: 'ANTIROBE-(Clindamycin-Hydrochloride)-Capsules.jpg',
+          status: 3,
+          vendor_id: 5,
+          product_category_id: 4,
+          subcategory_id: 21,
+          pet_id: 1
+        },
+
+        //--- Dogs fleas and wormers ----//
+
+        {
+          name: 'Frontline Plus Flea and Tick Treatment for Dogs (Large Dog, 45-88 Pounds, 6 Doses)',
+          description: 'Kills fleas and ticks: Frontline flea and tick treatment for dogs kills fleas, flea eggs, lice, and ticks.' ,
+          quantity: 3,
+          vendor_price: 4,
+          image_name: 'Frontline-Plus-Flea-and-Tick-Treatment-for-Dogs-(Large-Dog,-45-88-Pounds,-6-Doses).jpg',
+          status: 3,
+          vendor_id: 5,
+          product_category_id: 4,
+          subcategory_id: 23,
+          pet_id: 1
+        },
+
+        {
+          name: 'TevraPet Activate II Flea and Tick Prevention for Dogs | Large 21-55 lbs | 4 Months | Fast Acting, Repels Mosquitoes',
+          description: 'Effective - This broad spectrum flea and tick topical kills all stages of fleas, flea eggs, ticks, and lice' ,
+          quantity: 3,
+          vendor_price: 4,
+          image_name: 'TevraPet-Activate-Flea-and-Tick-Prevention-for-Dogs-Large-21-55-lbs-4-Months-Fast-Acting,-Repels-Mosquitoes.jpg',
+          status: 3,
+          vendor_id: 5,
+          product_category_id: 4,
+          subcategory_id: 23,
+          pet_id: 1
+        },
+
+        {
+          name: 'CapAction Oral Flea Treatment Large Dog 6ct',
+          description: 'TREAT RE-INFESTATIONS FAST: If your pet gets re-invested with fleas simply apply another dose as often as once a day. ' ,
+          quantity: 3,
+          vendor_price: 4,
+          image_name: 'CapAction-Oral-Flea-Treatment-Large-Dog-6ct.jpg',
+          status: 3,
+          vendor_id: 5,
+          product_category_id: 4,
+          subcategory_id: 23,
+          pet_id: 1
+        },
+
+        {
+          name: 'K9 advantix II Flea and Tick Prevention for Large Dogs, 21-55 Pounds',
+          description: 'Starts working to kill fleas within 12 hours and keeps working for 30 days' ,
+          quantity: 3,
+          vendor_price: 4,
+          image_name: 'K9-advantix-Flea-and-Tick-Prevention-for-Large-Dogs,-21-55-Pounds.jpg',
+          status: 3,
+          vendor_id: 5,
+          product_category_id: 4,
+          subcategory_id: 23,
+          pet_id: 1
+        },
+
+        {
+          name: 'Classics Lime Sulfur Dip ',
+          description: '8 oz Pet Care and Veterinary Treatment Agains Ringworm, Mange, Lice, Flea, Itchy and Dry Skin Extra Strength Formula - Safe Solution for Dog, Cat, Puppy, Kitten, Horse' ,
+          quantity: 3,
+          vendor_price: 4,
+          image_name: 'Classics-Lime-Sulfur-Dip_.jpg',
+          status: 3,
+          vendor_id: 5,
+          product_category_id: 4,
+          subcategory_id: 23,
+          pet_id: 1
+        },
+
+        {
+          name: '8in1 Safe-Guard Canine Dewormer for Small Dogs',
+          description: 'Safe-Guard treats against Tapeworms, Roundworms, Hookworms, and Whipworms' ,
+          quantity: 3,
+          vendor_price: 4,
+          image_name: '8in1-Safe-Guard-Canine-Dewormer-for-Small-Dogs.jpg',
+          status: 3,
+          vendor_id: 5,
+          product_category_id: 4,
+          subcategory_id: 23,
+          pet_id: 1
+        },
+
+        {
+          name: 'TevraPet Activate II Flea and Tick Prevention for Dogs ',
+          description: '8 Months Supply | Medicine for Treatment and Control | Topical Drops' ,
+          quantity: 3,
+          vendor_price: 4,
+          image_name: 'TevraPet-Activate-Flea-and-Tick-Prevention-for-Dogs.jpg',
+          status: 3,
+          vendor_id: 5,
+          product_category_id: 4,
+          subcategory_id: 23,
+          pet_id: 1
+        },
+
+        {
+          name: 'Bayer Tapeworm Dewormer (praziquantel tablets) for Dogs,',
+          description: '5-count bottle of tapeworm dewormer for dogs' ,
+          quantity: 3,
+          vendor_price: 4,
+          image_name: 'Bayer-Tapeworm-Dewormer-(praziquantel-tablets)-for-Dogs.jpg',
+          status: 3,
+          vendor_id: 5,
+          product_category_id: 4,
+          subcategory_id: 23,
+          pet_id: 1
+        },
+
+
+
+
 
     //--------------------- Cat ------------------------------//
     //--- Food ---//
@@ -1668,5 +2017,5 @@ module.exports.bootstrap = async function() {
       pet_id: 2
     },
   ]);
-  // ```
+  
 };
