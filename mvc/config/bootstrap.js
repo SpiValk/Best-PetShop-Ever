@@ -159,31 +159,24 @@ module.exports.bootstrap = async function() {
     //--------------------- CAT ------------------------------//
     //------ FOODS -------//
     {subcategory: 'cat-dry-food', category_id: 5},
-    {subcategory: 'cat-cans', category_id: 5},
+    {subcategory: 'cat-wet-food', category_id: 5},
     {subcategory: 'cat-treats-and-chews', category_id: 5},
     //------ GROOMING -------//
-    {subcategory: 'cat-diapers', category_id: 6},
     {subcategory: 'cat-shampoo', category_id: 6},
     {subcategory: 'cat-brushes-and-combs', category_id: 6},
     {subcategory: 'cat-scissors-and-clippers', category_id: 6},
-    {subcategory: 'cat-perfumes-and-fragrances', category_id: 6},
     //------ ACCESSORIES -------//
     {subcategory: 'cat-toys', category_id: 7},
+    {subcategory: 'cat-litters', category_id: 7},
     {subcategory: 'cat-clothes', category_id: 7},
     {subcategory: 'cat-collars', category_id: 7},
     {subcategory: 'cat-bowls-and-feeding', category_id: 7},
-    {subcategory: 'cat-leads', category_id: 7},
-    {subcategory: 'cat-harness', category_id: 7},
-    {subcategory: 'cat-poop-bags', category_id: 7},
-    {subcategory: 'cat-muzzle', category_id: 7},
     {subcategory: 'cat-transport-boxes', category_id: 7},
     {subcategory: 'cat-beds', category_id: 7},
-    {subcategory: 'cat-houses', category_id: 7},
     //------ VETERINARY -------//
     {subcategory: 'cat-antiparasitics', category_id: 8},
-    {subcategory: 'cat-antibiotics', category_id: 8},
+    {subcategory: 'cat-medicines', category_id: 8},
     {subcategory: 'cat-wound-care', category_id: 8},
-    {subcategory: 'cat-fleas-and-wormers', category_id: 8},
     {subcategory: 'cat-vitamins-minerals-electrolytes', category_id: 8},
 
   ]);
@@ -1113,7 +1106,7 @@ module.exports.bootstrap = async function() {
       pet_id: 1
     },
     {
-      name: 'Juicy Watermelon Dog Sundress',
+      name: 'Bobble Stitch Turtleneck Dog Sweater Pink',
       description: 'Adorable hand knitted (bobble stitch) turtleneck dog sweater, accented with a flower on the side. Made with soft acrylic yarn.' ,
       quantity: 1,
       vendor_price: 30,
@@ -1179,18 +1172,6 @@ module.exports.bootstrap = async function() {
       quantity: 1,
       vendor_price: 20,
       image_name: 'harvest-plaid-flannel-dog-collar-from-the-foggy-dog.jpeg',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 11,
-      pet_id: 1
-    },
-    {
-      name: 'OurPets Comfort Elevated Dog Bowl, Black 8 Inches',
-      description: 'This flannel collar features an all-American plaid in shades of red, white and blue.' ,
-      quantity: 1,
-      vendor_price: 20,
-      image_name: 'OurPets-Comfort-Elevated-Dog-Bowl-Black-8-Inches.jpeg',
       status: 1,
       vendor_id: 6,
       product_category_id: 3,
@@ -2220,7 +2201,7 @@ module.exports.bootstrap = async function() {
       description: 'Only Natural Pet Just Relax Herbal Calming Support Chews are holistically formulated natural calming treat for dogs to help reduce stress-related behavior and promise relaxation.' ,
       quantity: 2,
       vendor_price: 5,
-      image_name: 'only-natural-pet-just-relax-herbal-calming-support-soft-dog-chews.jps',
+      image_name: 'only-natural-pet-just-relax-herbal-calming-support-soft-dog-chews.jpeg',
       status: 3,
       vendor_id: 5,
       product_category_id: 5,

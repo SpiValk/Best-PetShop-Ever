@@ -36,38 +36,32 @@
          -Dog flea and wormers: #23
          -Dog vitamins minerals electrolytes: #24
 
-         
+
+
 # Cat
 
       - Cat foods: #5
-         - Dry Food: #26
-         - Cat Cans: #27
-         - Cat treats and chews: #28
+         - Cat Dry Food: #26
+         - Cat Wet Food: #27
+         - Cat Treats And Chews: #28
 
       - Cat grooming: #6
          - Cat shampoo: #29
          - Cat brushes & combs: #30
          - Cat scissors & clippers: #31
-         - Cat diapers: #32
-         - Cat perfumes & fragrances: #33
+
 
       - Cat Accessories: #7
-         -Cat toys: #34
-         -Cat clothes: #35
-         -Cat collars: #36
-         -Cat bowls and feeding: #37
-         -Cat leads: #38
-         -Cat harness: #39
-         -Cat poop bags: #40
-         -Cat muzzle: #41
-         -Cat transport boxes: #42
-         -Cat beds: #43
-         -Cat houses: #44
+         -Cat toys: #32
+         -Cat litters: #33
+         -Cat Clothes: #34
+         -Cat Collars: #35
+         -Cat Bowls & Feeding: #36
+         -Cat Transport Boxes: #37
+         -Cat beds: #38
 
 
-      - Cat Vetinary Products: #8
-         -Cat antiparasitics: #45
-         -Cat antibiotics: #46
-         -Cat wound care: #47
-         -Cat flea and wormers: #48
-         -Cat vitamins minerals electrolytes: #49
+      - Cat Veterinary Products: #8
+         -Cat antiparasitics: #39
+         -Cat Medicines: #40
+         -Cat vitamins minerals electrolytes: #41
