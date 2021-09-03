@@ -151,7 +151,7 @@ module.exports.bootstrap = async function() {
     //------ VETERINARY -------//
     {subcategory: 'dog-prescription-only-medicines', category_id: 4},
     {subcategory: 'dog-antibiotics', category_id: 4},
-    {subcategory: 'wound-care', category_id: 4},
+    {subcategory: 'dpg-wound-care', category_id: 4},
     {subcategory: 'dog-fleas-and-wormers', category_id: 4},
     {subcategory: 'dog-vitamins-minerals-electrolytes', category_id: 4},
     {subcategory: 'barf', category_id: 1}, //------- FOODS ------//
