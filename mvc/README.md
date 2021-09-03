@@ -45,10 +45,10 @@
          - Cat treats and chews: #28
 
       - Cat grooming: #6
-         - Cat diapers: #29
-         - Cat shampoo: #30
-         - Cat brushes & combs: #31
-         - Cat scissors & clippers: #32
+         - Cat shampoo: #29
+         - Cat brushes & combs: #30
+         - Cat scissors & clippers: #31
+         - Cat diapers: #32
          - Cat perfumes & fragrances: #33
 
       - Cat Accessories: #7
