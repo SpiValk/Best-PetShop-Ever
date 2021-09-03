@@ -1550,7 +1550,111 @@ module.exports.bootstrap = async function() {
 
     //------- Veterinary Products --------//
 
-    //--- Antiparasitics For Dogs ----//
+    //--- Prescription Mesicines For Dogs ----//
+
+    {
+      name: 'Hills® Prescription Diet® Metabolic + Mobility Weight + Joint Care Dog Food - Chicken',
+      description: 'Nutritionists & veterinarians developed Hill Prescription Diet Metabolic + Mobility Canine clinical nutrition specially to help manage your dogs weight and joint health.' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'Hills®-Prescription-Diet®-Metabolic-Weight-Management-Dog-Food-Chicken.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 20,
+      pet_id: 1
+    },
+
+    {
+    name: 'Ectoparasiticide spot-on for dog up to 4 kg',
+    description: 'The medicines are PoM (Prescription only Medicines) and must be used under veterinarian instructions and according to the approved Leaflets by the National Organization for Medicines (EOF) in Greece.' ,
+    quantity: 3,
+    vendor_price: 4,
+    image_name: 'Ectoparasiticide-spot-on-for-dog-up-to-4-kg.png',
+    status: 3,
+    vendor_id: 5,
+    product_category_id: 4,
+    subcategory_id: 20,
+    pet_id: 1
+  },
+
+    {
+      name: 'Endo-ecto parasiticide spot-on for dog up to 4 kg',
+      description: 'The medicines are PoM (Prescription only Medicines) and must be used under veterinarian instructions and according to the approved Leaflets by the National Organization for Medicines (EOF) in Greece.' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'Endo-ecto-parasiticide-spot-on-for-dog-up-to-4-kg.png',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 20,
+      pet_id: 1
+    },
+
+    {
+      name: 'Endo-ecto parasiticide spot-on for dog from 4 up to 10 kg',
+      description: 'The medicines are PoM (Prescription only Medicines) and must be used under veterinarian instructions and according to the approved Leaflets by the National Organization for Medicines (EOF) in Greece.' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'Endo-ecto-parasiticide-spot-on-for-dog-from-4-up-to-10-kg.png',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 20,
+      pet_id: 1
+    },
+
+    {
+      name: 'Ectoparasiticide spot-on for dog from 4 up to 10 kg',
+      description: 'The medicines are PoM (Prescription only Medicines) and must be used under veterinarian instructions and according to the approved Leaflets by the National Organization for Medicines (EOF) in Greece.' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'Ectoparasiticide-spot-on-for-dog-from-4-up-to-10-kg.png',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 20,
+      pet_id: 1
+    },
+
+    {
+      name: 'Hills® Prescription Diet® Metabolic Weight Management Dog Food - Chicken',
+      description: 'Nourish your furry best friend with the complete and balanced nutrition of Hills Prescription Diet Metabolic Weight Management Chicken Flavor Dry Dog Food. ' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'Hills®-Prescription-Diet®-Metabolic-Weight-Management-Dog-Food-Chicken.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 20,
+      pet_id: 1
+    },
+
+    {
+      name: 'Ectoparasiticide collar for dog above 8 kg',
+      description: 'The medicines are PoM (Prescription only Medicines) and must be used under veterinarian instructions and according to the approved Leaflets by the National Organization for Medicines (EOF) in Greece.' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'Ectoparasiticide-collar-for-dog-above-8-kg.png',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 20,
+      pet_id: 1
+    },
+
+    {
+      name: 'Hills® Prescription Diet® Derm Defense Environmental Sensitivities Dog Food - Chicken',
+      description: 'There are many types of environmental irritants that surround us and our pets each and every day including fleas, pollen and even the dust in our homes.' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'Hills®-Prescription-Diet®-Derm-Defense-Environmental-Sensitivities-Dog-Food-Chicken.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 20,
+      pet_id: 1
+    },
 
 
 
@@ -1661,6 +1765,116 @@ module.exports.bootstrap = async function() {
       subcategory_id: 21,
       pet_id: 1
     },
+
+     //--- Wound Care For Dogs ----//
+
+     {
+      name: 'Calm Paws Behavior Support™ Protective Inflatable Pet Collarby Calm Paw',
+      description: 'Help your pets injuries, rashes and wounds heal properly with this Calm Paws Pet Inflatable Protective Collar.' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'Calm-Paws-Behavior-Support™-Protective-Inflatable-Pet-Collarby-Calm-Paw.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 22,
+      pet_id: 1
+    }, 
+
+    {
+      name: 'Calm Paws Behavior Support™ Calming E-Collar',
+      description: 'Choose the safe and humane way to keep your pet from aggravating a healing wound or injury with the Calm Paws Calming E-Collar.' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'Calm-Paws-Behavior-Support™-Calming-E-Collar.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 22,
+      pet_id: 1
+    },
+
+    {
+      name: 'Zymox® 0.5% Hydrocortisone Pet Ear Solution',
+      description: 'Veterinarian recommended. ZYMOX Ear Solution with 0.5% hydrocortisone offers relief from ear infections on all animals including dogs and cats of any age. ' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'Zymox®-0.5%-Hydrocortisone-Pet-Ear-Solution.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 22,
+      pet_id: 1
+    },
+
+    {
+      name: 'MicrocynAH® Wound & Skin Pet Care',
+      description: 'Helps keep wounds, , cuts, lacerations, abrasions, sores and skin irritations clean' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'MicrocynAH®-Wound&Skin-Pet-Care.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 22,
+      pet_id: 1
+    },
+
+    {
+      name: 'MicrocynAH® Opthalmic Pet Gel',
+      description: 'Relieve burning in your pets eyes with MicrocynAH Opthalmic Gel.' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'MicrocynAH®-Opthalmic-Pet-Gel.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 22,
+      pet_id: 1
+    },
+
+    {
+      name: 'Purina ONE SmartBlend Sensitive Systems Adult Dog Food - Salmon',
+      description: 'Tend to your dogs specific nutritional needs with Purina ONE SmartBlend Natural Sensitive Systems Formula adult dry dog food.' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'Purina-ONE-SmartBlend-Sensitive-Systems-Adult-Dog-Food-Salmon.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 22,
+      pet_id: 1
+    },
+
+    {
+      name: 'Zymox® 0.5% Hydrocortisone Skin Support Topical Cream',
+      description: 'Veterinarian Recommended ZYMOX Topical Cream with 0.5% Hydrocortisone offers relief of hot spots, body fold irritations, wounds, cuts, and skin infections on all animals including dogs and cats of any age.' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'Zymox®-0.5%-Hydrocortisone-Skin-Support-Topical-Cream.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 22,
+      pet_id: 1
+    },
+
+    {
+      name: 'Dog MX™ Self Adhering Bandage Wrap',
+      description: 'Protect damages and let wounds heal correctly with the help of Dog MX Self-Adhering Wrap. ' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'Dog-MX™-Self-Adhering-Bandage-Wrap.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 22,
+      pet_id: 1
+    },
+
+    
+
+
 
     //--- Dogs fleas and wormers ----//
 
