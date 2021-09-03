@@ -2006,6 +2006,228 @@ module.exports.bootstrap = async function() {
       subcategory_id: 28,
       pet_id: 2
     },
+
+    //---Cat shampoo---//
+    {
+      name: 'Trixie Neutral Shampoo',
+      description: 'Moisturising Trixie Neutral shampoo is suitable for all breeds of dogs and cats.' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'trixie-neutral-shampoo.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 6,
+      subcategory_id: 29,
+      pet_id: 2
+    },
+    {
+      name: 'Advantage® Flea & Tick Kitten and Cat Shampoo',
+      description: 'Bayer Advantage Treatment Shampoo for cats and kittens kills fleas and ticks through contact.' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'advantage-flea&tick-kitten-and-cat-shampoo.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 6,
+      subcategory_id: 29,
+      pet_id: 2
+    },
+    {
+      name: 'Whisker City® Cat Hypoallergenic Shampoo - Unscented',
+      description: 'Help your cat feel squeaky clean with a sweet and gentle vanilla shampoo that helps calm sensitive skin: Whisker City Hypoallergenic Shampoo.' ,
+      quantity: 4,
+      vendor_price: 5,
+      image_name: 'whisker-city-cat-hypoallergenic-shampoo.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 6,
+      subcategory_id: 29,
+      pet_id: 2
+    },
+    {
+      name: 'Vets Best Flea + Tick Waterless Cat Bath Foam',
+      description: 'Vets Best Flea & Tick Waterless Bath Foam for Cats eliminates fleas, flea eggs, and ticks by contact, leaving your cat clean and spa day-fresh.' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'vets-best-flea-tick-waterless-cat-bath-foam.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 6,
+      subcategory_id: 29,
+      pet_id: 2
+    },
+    {
+      name: 'Pro Plan LIVECLEAR Rinse-Free Allergen Reducing Cat Shampoo',
+      description: 'Enjoy the time you spend with your exceptional cat to the fullest with Purina Pro Plan LIVECLEAR Rinse Free Allergen Reducing dry shampoo for cats.' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'pro-plan-liveclear-rinse-free-allergen-reducing-cat-shampoo.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 6,
+      subcategory_id: 29,
+      pet_id: 2
+    },
+    {
+      name: 'CHI for Cats 2-in-1 Conditioning Shampoo',
+      description: 'Chi for Cats 2-in-1 Conditioning Shampoo provides moisturizing and balancing ingredients that penetrate the coats cuticle, strengthening the follicles of the fur as they nourish it from the inside out.' ,
+      quantity: 5,
+      vendor_price: 6,
+      image_name: 'chi-for-cats-2-in-1-conditioning-shampoo.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 6,
+      subcategory_id: 29,
+      pet_id: 2
+    },
+
+    //---Cat brushes and combs---//
+    {
+      name: 'KONG Massage Brush Zoom Groom',
+      description: 'Special cat-shaped massage brush from KONG, for blissful fur care and gentle attention' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'kong-massage-brush-zoom-groom.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 6,
+      subcategory_id: 30,
+      pet_id: 2
+    },
+    {
+      name: 'Trixie Corner Massage Brush',
+      description: 'Brush for cats to clean their coats, affixes to wall corner, flexible bristles, cats can groom themselves whenever they like.' ,
+      quantity: 2,
+      vendor_price: 4,
+      image_name: 'trixie-corner-massage-brush.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 6,
+      subcategory_id: 30,
+      pet_id: 2
+    },
+    {
+      name: 'Double-Sided Wellness Glove',
+      description: 'Wellness glove with two sides, ideal for caring for your dog or cat’s coat and perfect for left- or right-handed owners.' ,
+      quantity: 3,
+      vendor_price: 5,
+      image_name: 'double-sided-wellness-glove.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 6,
+      subcategory_id: 30,
+      pet_id: 2
+    },
+    {
+      name: 'FURminator Bathing Brush',
+      description: 'Shampoo brush for dogs and cats, easy to refill and with a dispenser button on the top, with soft, flexible bristles' ,
+      quantity: 3,
+      vendor_price: 5,
+      image_name: 'furminator-bathing-brush.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 6,
+      subcategory_id: 30,
+      pet_id: 2
+    },
+    {
+      name: 'FURminator Short Hair Undercoat deShedding Cat Tool',
+      description: 'The FURminator Undercoat deShedding Tool for cats removes the loose hair from shedding, and helps keep the coat dirt- and debris-free.' ,
+      quantity: 4,
+      vendor_price: 5,
+      image_name: 'furminator-short-hair-undercoat-deshedding-cat-tool.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 6,
+      subcategory_id: 30,
+      pet_id: 2
+    },
+    {
+      name: 'Whisker City Soft Slicker Cat Brush',
+      description: 'Keep your kittys skin and coat looking their best with the help of this Whisker City Soft Slicker Brush.' ,
+      quantity: 4,
+      vendor_price: 3,
+      image_name: 'whisker-city-soft-slicker-cat-brush.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 6,
+      subcategory_id: 30,
+      pet_id: 2
+    },
+    {
+      name: 'Whisker City Cat Grooming Glove',
+      description: 'Make bath time special and enjoyable for your kitty using this Whisker City All in 1 Grooming Glove.' ,
+      quantity: 2,
+      vendor_price: 4,
+      image_name: 'whisker-city-cat-grooming-glove.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 6,
+      subcategory_id: 30,
+      pet_id: 2
+    },
+    {
+      name: 'Whisker City Cat Dematter',
+      description: 'Remove mats from your kittys hair in quick and easy fashion using this Whisker City Dematter.' ,
+      quantity: 2,
+      vendor_price: 3,
+      image_name: 'whisker-city-cat-dematter.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 6,
+      subcategory_id: 30,
+      pet_id: 2
+    },
+
+    //---Cat scissors & clippers---//
+    {
+      name: 'Trixie Deluxe Claw Clippers - Large',
+      description: 'Claw clippers with safety lock and adjustable blades.' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'trixie-deluxe-claw-clippers-large.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 6,
+      subcategory_id: 31,
+      pet_id: 2
+    },
+    {
+      name: 'Trixie Pet Scissors for Face and Paws',
+      description: 'These rounded scissors will prevent injuries when you are trimming the fur on your pets face or paws.' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'trixie-pet-scissors-for-face-and-paws.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 6,
+      subcategory_id: 31,
+      pet_id: 2
+    },
+    {
+      name: 'CHI® for Cats Nail Scissors',
+      description: 'The Chi for Cats Nail Scissors help you groom your cats nails in a clean and comfortable way.' ,
+      quantity: 4,
+      vendor_price: 3,
+      image_name: 'chi-for-cats-nail-scissors.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 6,
+      subcategory_id: 31,
+      pet_id: 2
+    },
+    {
+      name: 'Whisker City Cat Nail Scissors',
+      description: 'Help your kitty keep her nails in tip top shape with these Whisker City Nails Scissors.' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'whisker-city-cat-nail-scissors.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 6,
+      subcategory_id: 31,
+      pet_id: 2
+    },
   ]);
 
 };

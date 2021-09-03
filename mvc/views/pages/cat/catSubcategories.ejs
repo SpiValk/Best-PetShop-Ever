@@ -1,0 +1,26 @@
+<%- include("../head") %>
+
+   <body>
+      <%- include("../navbar") %>
+         <h2 class="text-center">Cat Products</h2>
+         <hr>
+         <h3 class="text-center capitalize">
+            <%= subcategory.replace(/-/g, " " ) %>
+         </h3>
+         <hr>
+         <div class="row">
+            <%catProducts.forEach((product)=> { %>
+               <div class="col-md-3 myProductBox">
+                  <img src="/img/product_images/cats/<%= category %>/<%= subcategory %>/<%=product.image_name%>"
+                     alt="purina veterinary" />
+                  <h4>
+                     <%= product.name %>
+                  </h4>
+                  <button class="btn bg-custom no-radius add"><i class="fas fa-shopping-cart"></i> Add To
+                     Cart</button>
+               </div>
+               <%})%>
+         </div>
+         <%-include("../footer") %>
+   </body>
+   <%- include("../scripts") %>

@@ -41,7 +41,8 @@ module.exports.routes = {
 
 
   //Cat
-  'GET /products/cat'         : { action: 'cat'},
+  'GET /products/cat/:category'               : { action: 'cat/categoriescontroller'},
+  'GET /products/cat/category/:subcategory'   : { action: 'cat/subcategoriescontroller'},
 
 
   /***************************************************************************
