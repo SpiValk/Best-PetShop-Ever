@@ -4,7 +4,7 @@
 var nav = document.getElementById('navbar');
 var list = nav.querySelectorAll('a');
 
-var navImages = ['/img/pet-shop-veterinary-with-food-animals-vector.jpg', '/img/199709573426d727965f5e814c7b9c95.jpg', '/img/Double-Pet-Bowls-Dog-Food-Water-Feeder-Stainless-Steel-Pet-Drinking-Dish-Feeder-Cat-Puppy-Feeding.jpg_Q90.jpg_.webp', '/img/a7e48fe4d2898693bc984aaa937f3bb4.png'];
+var navImages = ['/img/index_img/pet-shop-veterinary-with-food-animals-vector.jpg', '/img/index_img/shampoo.jpg', '/img/index_img/Bowls.webp', '/img/index_img/PetsCare.png'];
 var dropUl = document.getElementsByClassName('drop-ul');
 var dogCategoriesImg = document.getElementById('dogCategoriesPic');
 var catCategoriesImg = document.getElementById('catCategoriesPic');
