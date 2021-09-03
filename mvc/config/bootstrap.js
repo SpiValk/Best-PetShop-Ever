@@ -6,7 +6,7 @@
  * A function that runs just before your Sails app gets lifted.
  * > Need more flexibility?  You can also create a hook.
  *
- * For more information on seeding your app with fake data, check out:
+ * For more information on  seeding your app with fake data, check out:
  * https://sailsjs.com/config/bootstrap
  */
 
@@ -151,7 +151,7 @@ module.exports.bootstrap = async function() {
     //------ VETERINARY -------//
     {subcategory: 'dog-prescription-only-medicines', category_id: 4},
     {subcategory: 'dog-antibiotics', category_id: 4},
-    {subcategory: 'dpg-wound-care', category_id: 4},
+    {subcategory: 'dog-wound-care', category_id: 4},
     {subcategory: 'dog-fleas-and-wormers', category_id: 4},
     {subcategory: 'dog-vitamins-minerals-electrolytes', category_id: 4},
     {subcategory: 'barf', category_id: 1}, //------- FOODS ------//
@@ -196,6 +196,9 @@ module.exports.bootstrap = async function() {
 
     //--------------------- Dog ------------------------------//
 
+    //----------Dog Foods---------------//
+
+    //--------------DRY FOOD----------//
     {
       name: 'Bon Appetit Adult Dog Chicken & Rice Dry Food: hypoallergenic, gluten-free',
       description: 'A Bon Appetit dog food that is hypoallergenic and gluten-free suitable for all stages of life. 68% chicken, 32% Fruit and Vegetables and 0% gluten',
@@ -270,6 +273,8 @@ module.exports.bootstrap = async function() {
       pet_id: 1
 
     },
+
+    //---------- BARF -----------//
     {
       name: 'Natyka Gourmet Gluten Free Puppy Food',
       description: 'This gluten free puppy food is a complete semi-moist poultry food for puppies. It\'s a delicious composition based on poultry, dried potatoes, rice, salmon oil and a range of high quality ingredients.',
@@ -308,42 +313,10 @@ module.exports.bootstrap = async function() {
       subcategory_id: 25,
       pet_id: 1
     },
-    {
-      name: 'Ancol Ergo Wood Handle Soft Bristle Dog Brush',
-      description: 'Removes dead hair and promotes glossy coat. It comes with a wood handle for comfort',
-      quantity: 1,
-      vendor_price: 2,
-      image_name: 'Ancol-dog-brush-soft.jpeg',
-      status: 1,
-      vendor_id: 5,
-      product_category_id: 2,
-      subcategory_id: 7,
-      pet_id: 1
-    },
-    {
-      name: 'Record Pet Hair Remover Brush Set',
-      description: 'The Record Pet Hair Remover Brush is reusable, double-sided and can be used on sofas, car seats, clothes, pet beds, but also on the pet directly, as it does not leave glue residue or dangerous chemical materials.',
-      quantity: 1,
-      vendor_price: 5,
-      image_name: 'RECORD-Brush-Hair-Remover-5540.jpeg',
-      status: 1,
-      vendor_id: 5,
-      product_category_id: 2,
-      subcategory_id: 7,
-      pet_id: 1
-    },
-    {
-      name: 'Record Self Cleaning Slicker Brush',
-      description: 'A tool specially made for the daily grooming of long-haired cats and dogs. After having combed your pet you’ll need to push the button on the back of the brush and the plastic board will easily expel the combed hair.',
-      quantity: 1,
-      vendor_price: 5,
-      image_name: 'Record-self-cleaning-slicker-brush.jpeg',
-      status: 1,
-      vendor_id: 5,
-      product_category_id: 2,
-      subcategory_id: 7,
-      pet_id: 1
-    },
+
+
+    //**** DOG GROOMING ******//
+    //---Dog diapers---//
     {
       name: 'So Phresh Washable Diaper for Dogs, X-Small',
       description: 'Washable Diaper for Dogs, X-Small',
@@ -357,14 +330,12 @@ module.exports.bootstrap = async function() {
       pet_id: 1
     },
 
-    //**** DOG GROOMING ******//
-    //---Dog diapers---//
     {
       name: 'Top Paw® Disposable Dog Diapers - 30 Pack',
       description: 'Top Paw Disposable Diapers are the perfect choice for dogs and pet parents dealing with incontinence, females in heat, excitable urination, and travel.' ,
       quantity: 1,
       vendor_price: 6,
-      image_name: 'top-paw-disposable-dog-diapers-30-pack',
+      image_name: 'top-paw-disposable-dog-diapers-30-pack.jpg',
       status: 1,
       vendor_id: 6,
       product_category_id: 2,
@@ -473,7 +444,7 @@ module.exports.bootstrap = async function() {
       description: 'Frontline Pet Care Sensitive Skin Shampoo has been specifically developed for cat and dogs who suffer from irritable skin.' ,
       quantity: 2,
       vendor_price: 5,
-      image_name: 'frontline-pet-care-sensitive-skin-shampoo',
+      image_name: 'frontline-pet-care-sensitive-skin-shampoo.jpg',
       status: 1,
       vendor_id: 6,
       product_category_id: 2,
@@ -481,6 +452,42 @@ module.exports.bootstrap = async function() {
       pet_id: 1
     },
     //---Dog brushes & combs---//
+    {
+      name: 'Record Pet Hair Remover Brush Set',
+      description: 'The Record Pet Hair Remover Brush is reusable, double-sided and can be used on sofas, car seats, clothes, pet beds, but also on the pet directly, as it does not leave glue residue or dangerous chemical materials.',
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'RECORD-Brush-Hair-Remover-5540.jpeg',
+      status: 1,
+      vendor_id: 5,
+      product_category_id: 2,
+      subcategory_id: 6,
+      pet_id: 1
+    },
+    {
+      name: 'Record Self Cleaning Slicker Brush',
+      description: 'A tool specially made for the daily grooming of long-haired cats and dogs. After having combed your pet you’ll need to push the button on the back of the brush and the plastic board will easily expel the combed hair.',
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Record-self-cleaning-slicker-brush.jpeg',
+      status: 1,
+      vendor_id: 5,
+      product_category_id: 2,
+      subcategory_id: 6,
+      pet_id: 1
+    },
+    {
+      name: 'Ancol Ergo Wood Handle Soft Bristle Dog Brush',
+      description: 'Removes dead hair and promotes glossy coat. It comes with a wood handle for comfort',
+      quantity: 1,
+      vendor_price: 2,
+      image_name: 'Ancol-dog-brush-soft.jpeg',
+      status: 1,
+      vendor_id: 5,
+      product_category_id: 2,
+      subcategory_id: 6,
+      pet_id: 1
+    },
     {
       name: 'Moser Dematter',
       description: 'Effective dematting grooming tool for removing knotted and matted fur in your dog’s undercoat.' ,
@@ -1566,17 +1573,17 @@ module.exports.bootstrap = async function() {
     },
 
     {
-    name: 'Ectoparasiticide spot-on for dog up to 4 kg',
-    description: 'The medicines are PoM (Prescription only Medicines) and must be used under veterinarian instructions and according to the approved Leaflets by the National Organization for Medicines (EOF) in Greece.' ,
-    quantity: 3,
-    vendor_price: 4,
-    image_name: 'Ectoparasiticide-spot-on-for-dog-up-to-4-kg.png',
-    status: 3,
-    vendor_id: 5,
-    product_category_id: 4,
-    subcategory_id: 20,
-    pet_id: 1
-  },
+      name: 'Ectoparasiticide spot-on for dog up to 4 kg',
+      description: 'The medicines are PoM (Prescription only Medicines) and must be used under veterinarian instructions and according to the approved Leaflets by the National Organization for Medicines (EOF) in Greece.' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'Ectoparasiticide-spot-on-for-dog-up-to-4-kg.png',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 20,
+      pet_id: 1
+    },
 
     {
       name: 'Endo-ecto parasiticide spot-on for dog up to 4 kg',
@@ -1766,9 +1773,9 @@ module.exports.bootstrap = async function() {
       pet_id: 1
     },
 
-     //--- Wound Care For Dogs ----//
+    //--- Wound Care For Dogs ----//
 
-     {
+    {
       name: 'Calm Paws Behavior Support™ Protective Inflatable Pet Collarby Calm Paw',
       description: 'Help your pets injuries, rashes and wounds heal properly with this Calm Paws Pet Inflatable Protective Collar.' ,
       quantity: 3,
@@ -1779,7 +1786,7 @@ module.exports.bootstrap = async function() {
       product_category_id: 4,
       subcategory_id: 22,
       pet_id: 1
-    }, 
+    },
 
     {
       name: 'Calm Paws Behavior Support™ Calming E-Collar',
@@ -1799,7 +1806,7 @@ module.exports.bootstrap = async function() {
       description: 'Veterinarian recommended. ZYMOX Ear Solution with 0.5% hydrocortisone offers relief from ear infections on all animals including dogs and cats of any age. ' ,
       quantity: 3,
       vendor_price: 4,
-      image_name: 'Zymox®-0.5%-Hydrocortisone-Pet-Ear-Solution.jpg',
+      image_name: 'Zymox®-Hydrocortisone-Pet-Ear-Solution.jpg',
       status: 3,
       vendor_id: 5,
       product_category_id: 4,
@@ -1851,7 +1858,7 @@ module.exports.bootstrap = async function() {
       description: 'Veterinarian Recommended ZYMOX Topical Cream with 0.5% Hydrocortisone offers relief of hot spots, body fold irritations, wounds, cuts, and skin infections on all animals including dogs and cats of any age.' ,
       quantity: 3,
       vendor_price: 4,
-      image_name: 'Zymox®-0.5%-Hydrocortisone-Skin-Support-Topical-Cream.jpg',
+      image_name: 'Zymox-Hydrocortisone-Skin-Support-Topical-Cream.jpg',
       status: 3,
       vendor_id: 5,
       product_category_id: 4,
@@ -1872,7 +1879,7 @@ module.exports.bootstrap = async function() {
       pet_id: 1
     },
 
-    
+
 
 
 
