@@ -35,10 +35,13 @@ module.exports.routes = {
   'GET /products/edit/:id'    : { action: 'products/edit'},
   'GET /products/update/:id'  : { action: 'products/update'},
 
+  // Logging
+  '/login'                    : { action: 'users/login' },
+  'POST /login'               : { action: 'users/checklogin' },
+
   //Dog
   'GET /products/dog/:category'               : { action: 'dog/categoriescontroller'},
   'GET /products/dog/category/:subcategory'   : { action: 'dog/subcategoriescontroller'},
-
 
   //Cat
   'GET /products/cat/:category'               : { action: 'cat/categoriescontroller'},

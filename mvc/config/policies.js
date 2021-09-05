@@ -18,5 +18,9 @@ module.exports.policies = {
   ***************************************************************************/
 
   // '*': true,
+  // 'products/list' :true,
+  'dog/*' : 'users/isLoggedIn',
+  'cat/*' : 'users/isLoggedIn',
+  
 
 };
