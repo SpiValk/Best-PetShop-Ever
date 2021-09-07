@@ -24,6 +24,8 @@ module.exports.routes = {
   '/ourteam' :{view: 'pages/static/ourteam'},
   '/contactus' :{view: 'pages/static/contactus'},
   '/home' :{view: 'pages/index'},
+  '/login' :{view: 'pages/users/login'},
+  '/register' :{view: 'pages/users/register'},
 
 
 
@@ -39,10 +41,19 @@ module.exports.routes = {
   '/login'                    : { action: 'users/login' },
   'POST /login'               : { action: 'users/checklogin' },
   'GET /register'             : { action: 'users/savenewuser' },
-  'POST /register'             : { action: 'users/savenewuser' },
+  'POST /register'            : { action: 'users/savenewuser' },
   'GET /logout'               : { action: 'users/logout' },
 
+
+ 
+
+
+
   
+
+
+
+
 
   //Dog
   'GET /products/dog/:category'               : { action: 'dog/categoriescontroller'},

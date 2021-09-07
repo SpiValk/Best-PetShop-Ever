@@ -1,18 +1,18 @@
-module.exports = {
-    inputs: {
-        username: {type: 'string', requires: true},
-        password: {type: 'string', requires: true},
-        // email
-    },
+// module.exports = {
+//     inputs: {
+//         username: {type: 'string', requires: true},
+//         password: {type: 'string', requires: true},
+//         // email
+//     },
 
-    exits: {
-        success: {
-            vieTemplatePath: 'pages/users/successfullregistration'
-        }
-    },
+//     exits: {
+//         success: {
+//             vieTemplatePath: 'pages/users/successfullregistration'
+//         }
+//     },
 
-    fn: async function(inputs) {
-        await User.create({username: inputs.username, password: inputs.password, isAdmin: false})
-        return {}
-    }
-}
+//     fn: async function(inputs) {
+//         await User.create({username: inputs.username, password: inputs.password, isAdmin: false})
+//         return {}
+//     }
+// }

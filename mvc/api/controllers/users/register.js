@@ -1,11 +1,11 @@
-module.exports = {
-    exits: {
-        success: {
-            vieTemplatePath: 'pages/users/register'
-        }
-    },
+// module.exports = {
+//     exits: {
+//         success: {
+//             vieTemplatePath: 'pages/users/register'
+//         }
+//     },
 
-    fn: async function() {
-        return {}
-    }
-}
+//     fn: async function() {
+//         return {}
+//     }
+// }
