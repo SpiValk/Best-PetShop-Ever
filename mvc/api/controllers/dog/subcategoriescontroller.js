@@ -20,9 +20,6 @@ module.exports = {
     //take the array with all the products
     let dogProducts = await productSubcategory.pet_product_id;
     let category = await categoryTemp.category_id.category_name;
-
-    console.log(category);
-    console.log(subcategory);
     return this.res.view(`pages/dog/dogSubcategories`, {dogProducts, category, subcategory});
   }
 

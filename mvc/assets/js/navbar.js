@@ -5,15 +5,15 @@ var nav = document.getElementById('navbar');
 var list = nav.querySelectorAll('a');
 
 var navImages = ['/img/index_img/pet-shop-veterinary-with-food-animals-vector.jpg', '/img/index_img/shampoo.jpg', '/img/index_img/Bowls.webp', '/img/index_img/PetsCare.png'];
-var fishNavImages = ['/img/index_img/fish-food.jpg', '/img/index_img/aquarium.jpg', '/img/index_img/filter.webp', 'img/index_img/fish-care.jpg']
+var fishNavImages = ['/img/index_img/fish-food.jpg', '/img/index_img/aquarium.jpg', '/img/index_img/filter.webp', 'img/index_img/fish-care.jpg'];
 var birdNavImages = ['/img/index_img/bird-food.jpg', '/img/index_img/bird-accessories.jpg', '/img/index_img/bird-grooming.jpg'];
-var smallAnimalsImages=['/img/index_img/rabbit.jpg','/img/index_img/hamster.webp','/img/index_img/iguana.jpg']
+var smallAnimalsImages=['/img/index_img/rabbit.jpg','/img/index_img/hamster.webp','/img/index_img/iguana.jpg'];
 var dropUl = document.getElementsByClassName('drop-ul');
 var dogCategoriesImg = document.getElementById('dogCategoriesPic');
 var catCategoriesImg = document.getElementById('catCategoriesPic');
 var fishCategoriesImg = document.getElementById('fishCategoriesPic');
-var birdCategoriesImg = document.getElementById("birdCategoriesPic");
-var smallAnimalsCategoriesImg=document.getElementById("smallAnimalsCategoriesPic")
+var birdCategoriesImg = document.getElementById('birdCategoriesPic');
+var smallAnimalsCategoriesImg=document.getElementById('smallAnimalsCategoriesPic');
 // var ulHeader = document.querySelectorAll(".drop-ul > li:first-child")
 var picHeader = document.querySelectorAll('.li-header');
 var sublists = document.querySelectorAll('.drop-ul > li');
@@ -88,25 +88,25 @@ function slides(event) {
       break;
     case dropUl[11]:
       fishCategoriesImg.src = fishNavImages[3];
-      break
+      break;
     case dropUl[12]:
       birdCategoriesImg.src = birdNavImages[0];
-      break
+      break;
     case dropUl[13]:
       birdCategoriesImg.src = birdNavImages[1];
-      break
+      break;
     case dropUl[14]:
       birdCategoriesImg.src = birdNavImages[2];
-      break
-      case dropUl[15]:
+      break;
+    case dropUl[15]:
       smallAnimalsCategoriesImg.src = smallAnimalsImages[0];
-      break
-      case dropUl[16]:
+      break;
+    case dropUl[16]:
       smallAnimalsCategoriesImg.src = smallAnimalsImages[1];
-      break
-      case dropUl[17]:
+      break;
+    case dropUl[17]:
       smallAnimalsCategoriesImg.src = smallAnimalsImages[2];
-      break
+      break;
   }
 }
 

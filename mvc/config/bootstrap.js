@@ -86,21 +86,21 @@ module.exports.bootstrap = async function() {
       description: 'diapers,  flea and wormers, dog shampoo, ' +
                     'brushes & combs, scissors & clippers, perfumes & fragrances',
       pets_id: 1,
-      product_image:"shampoo.jpg"
-     
+      product_image:'shampoo.jpg'
+
     },
     {
       category_name: 'dog-accessories',
       description: 'toys, clothes, poop bags, collars, bowls & feeding, leads, harness, ' +
                     'muzles, transport boxes, beds, houses',
       pets_id: 1,
-      product_image:"Bowls.webp"
+      product_image:'Bowls.webp'
     },
     {
       category_name: 'dog-veterinary-products',
       description: 'antiparasitics, antibiotics, wound care, ',
       pets_id: 1,
-      product_image:"PetsCare.png"
+      product_image:'PetsCare.png'
     },
 
     //---Cat--//
@@ -115,84 +115,84 @@ module.exports.bootstrap = async function() {
       description: 'diapers,  flea and wormers, cat shampoo, ' +
                     'brushes & combs, scissors & clippers, perfumes & fragrances',
       pets_id: 2,
-      product_image:"shampoo.jpg"
+      product_image:'shampoo.jpg'
     },
     {
       category_name: 'cat-accessories',
       description: 'toys, clothes, poop bags, collars, bowls & feeding, leads, harness, ' +
                     'muzles, transport boxes, beds, houses',
       pets_id: 2,
-      product_image:"Bowls.webp"
+      product_image:'Bowls.webp'
     },
     {
       category_name: 'cat-veterinary-products',
       description: 'antiparasitics, antibiotics, wound care, ',
       pets_id: 2,
-      product_image:"PetsCare.png"
+      product_image:'PetsCare.png'
     },
     //-- fish --/
     {
       category_name:'fish-food',
       description:'fish flakes,granules/pellets/sticks',
       pets_id:3,
-      product_image:"fish-food.jpg"
+      product_image:'fish-food.jpg'
     },
     {
-      category_name:"aquariums-equipment-and-decor",
-      description:"aquariums & aquariums stands,aquarium substrate,artificial plants,gravel sand & stones,ornamnets,artificial plants,breeders & nets,heating & lighting accessories",
+      category_name:'aquariums-equipment-and-decor',
+      description:'aquariums & aquariums stands,aquarium substrate,artificial plants,gravel sand & stones,ornamnets,artificial plants,breeders & nets,heating & lighting accessories',
       pets_id:3,
-      product_image:"aquarium.jpg"
+      product_image:'aquarium.jpg'
     },
     {
-      category_name:"filters-and-pumps",
-      description:"air & water pumps,filters,filter media,replacement parts",
+      category_name:'filters-and-pumps',
+      description:'air & water pumps,filters,filter media,replacement parts',
       pets_id:3,
-      product_image:"filter.webp"
+      product_image:'filter.webp'
     },
     {
-      category_name:"fish-care",
-      description:"fish medicines,fresh water improvement,sea water improvement,tests",
+      category_name:'fish-care',
+      description:'fish medicines,fresh water improvement,sea water improvement,tests',
       pets_id:3,
-      product_image:"fish-care.jpg"
+      product_image:'fish-care.jpg'
     },
     //---- bird -- //
     {
-      category_name:"foods-and-treats",
-      description:"bird food,wild bird food,treats",
+      category_name:'foods-and-treats',
+      description:'bird food,wild bird food,treats',
       pets_id:4,
-      product_image:"bird-food.jpg"
+      product_image:'bird-food.jpg'
     },
     {
-      category_name:"bird-accessories",
-      description:"cages & stands,bowls & feeders,toys,travels carriers,bird perches,bird nest",
+      category_name:'bird-accessories',
+      description:'cages & stands,bowls & feeders,toys,travels carriers,bird perches,bird nest',
       pets_id:4,
-      product_image:"bird-accessories.jpg"
+      product_image:'bird-accessories.jpg'
     },
     {
-      category_name:"grooming-and-care",
-      description:"bird medication,bird sand,bird vitamins,bird baths,nail & break trimmers",
+      category_name:'grooming-and-care',
+      description:'bird medication,bird sand,bird vitamins,bird baths,nail & break trimmers',
       pets_id:4,
-      product_image:"bird-grooming.jpg"
+      product_image:'bird-grooming.jpg'
 
     },
     //---small animals ---//
     {
-      category_name:"rabbit",
-      description:"rabbit food,rabbit accessories,rabbit health care",
+      category_name:'rabbit',
+      description:'rabbit food,rabbit accessories,rabbit health care',
       pets_id:5,
-      product_image:"rabbit.jpg"
+      product_image:'rabbit.jpg'
     },
     {
-      category_name:"hamster",
-      description:"hamster food,hamster accessories,hamster health care",
+      category_name:'hamster',
+      description:'hamster food,hamster accessories,hamster health care',
       pets_id:5,
-      product_image:"hamster.webp",
+      product_image:'hamster.webp',
     },
     {
-      category_name:"iguana",
-      description:"iguana food,iguana accessories,iguana health care",
+      category_name:'iguana',
+      description:'iguana food,iguana accessories,iguana health care',
       pets_id:5,
-      product_image:"iguana.jpg"
+      product_image:'iguana.jpg'
     }
 
   ]);
@@ -343,7 +343,7 @@ module.exports.bootstrap = async function() {
     //---------DOG CANS ----------//
     {
       name: 'Purina Pro Plan Savor Adult Dog Food',
-      description: "Fill your dog's dish with Purina Pro Plan SAVOR Chicken and Rice Entree Classic adult wet dog food, and give him outstanding taste without compromise",
+      description: 'Fill your dog\'s dish with Purina Pro Plan SAVOR Chicken and Rice Entree Classic adult wet dog food, and give him outstanding taste without compromise',
       quantity: 1,
       vendor_price: 25,
       image_name: 'Purina-Pro-Plan-Savor-Adult-Dog-Food.jpeg',
@@ -356,7 +356,7 @@ module.exports.bootstrap = async function() {
     },
     {
       name: 'Simply Nourish® Shreds Adult Wet Dog Food',
-      description: "Make meal time delicious and nutritious for your dog by serving Simply Nourish Chicken & Rice Stew Adult Dog Food.",
+      description: 'Make meal time delicious and nutritious for your dog by serving Simply Nourish Chicken & Rice Stew Adult Dog Food.',
       quantity: 1,
       vendor_price: 25,
       image_name: 'Simply-Nourish-Shreds-Adult-Wet-Dog-Food-Natural.jpeg',
@@ -369,7 +369,7 @@ module.exports.bootstrap = async function() {
     },
     {
       name: 'Blue Buffalo Homestyle Recipe Adult Dog Food',
-      description: "Blue Buffalo Homestyle Recipe canned food is made from all-natural, wholesome ingredients to provide superior nutrition for your dog.",
+      description: 'Blue Buffalo Homestyle Recipe canned food is made from all-natural, wholesome ingredients to provide superior nutrition for your dog.',
       quantity: 1,
       vendor_price: 25,
       image_name: 'Blue-Buffalo-Homestyle-Recipe-Adult-Dog-Food.jpeg',
@@ -382,7 +382,7 @@ module.exports.bootstrap = async function() {
     },
     {
       name: 'Cesar® Canine Cuisine Adult Dog Food',
-      description: "Dogs with sophisticated palates will enjoy a rich culinary experience with CESAR Canine Cuisine Gourmet Wet Dog Food in meaty juices or in sauce.",
+      description: 'Dogs with sophisticated palates will enjoy a rich culinary experience with CESAR Canine Cuisine Gourmet Wet Dog Food in meaty juices or in sauce.',
       quantity: 1,
       vendor_price: 25,
       image_name: 'Cesar-Canine-Cuisine-Adult-Dog-Food.jpeg',
@@ -395,7 +395,7 @@ module.exports.bootstrap = async function() {
     },
     {
       name: 'Authority Cuts in Gravy Adult Wet Dog Food',
-      description: "Provide your dog with a delicious and nutritious meal time choice by serving Authority Chicken and Rice Entree Adult Wet Dog Food.",
+      description: 'Provide your dog with a delicious and nutritious meal time choice by serving Authority Chicken and Rice Entree Adult Wet Dog Food.',
       quantity: 1,
       vendor_price: 25,
       image_name: 'Authority-Cuts-in-Gravy-Adult-Wet-Dog-Food.jpeg',
@@ -408,7 +408,7 @@ module.exports.bootstrap = async function() {
     },
     {
       name: 'Wellness® Stews Adult Wet Dog Food - Natural',
-      description: "These deliciously chunky, slow-cooked classics use whole food ingredients that provide exceptional nutrition and extraordinary flavor.",
+      description: 'These deliciously chunky, slow-cooked classics use whole food ingredients that provide exceptional nutrition and extraordinary flavor.',
       quantity: 1,
       vendor_price: 25,
       image_name: 'Wellness-Stews-Adult-Wet-Dog-Food.jpeg',
@@ -421,7 +421,7 @@ module.exports.bootstrap = async function() {
     },
     {
       name: 'Purina ONE SmartBlend Tender Cuts in Gravy Wet Dog Food',
-      description: "Tempt your dog to his dish when you serve Purina ONE SmartBlend Tender Cuts Beef & Barley Entree in Gravy adult wet dog food.",
+      description: 'Tempt your dog to his dish when you serve Purina ONE SmartBlend Tender Cuts Beef & Barley Entree in Gravy adult wet dog food.',
       quantity: 1,
       vendor_price: 25,
       image_name: 'Purina-ONE-SmartBlend-Tender-Cuts-in-Gravy-Wet-Dog-Food.jpeg',
@@ -434,7 +434,7 @@ module.exports.bootstrap = async function() {
     },
     {
       name: 'Purina Pro Plan Savor Wet Dog Food, Grain Free',
-      description: "Serve up a wholesome meal combining high-quality nutrition and a delicious taste dogs love with Purina Pro Plan.",
+      description: 'Serve up a wholesome meal combining high-quality nutrition and a delicious taste dogs love with Purina Pro Plan.',
       quantity: 1,
       vendor_price: 25,
       image_name: 'Purina-Pro-Plan-Savor-Wet-Dog-Food.jpeg',
@@ -447,7 +447,7 @@ module.exports.bootstrap = async function() {
     },
     {
       name: 'Royal Canin® Canine Health Nutrition™ Advanced Nutrition Adult Dog Food',
-      description: "Founded by a veterinarian, Royal Canin has over 40 years experience in health nutrition.",
+      description: 'Founded by a veterinarian, Royal Canin has over 40 years experience in health nutrition.',
       quantity: 1,
       vendor_price: 25,
       image_name: 'Royal-Canin-Canine-Advanced-Nutrition-Dog-Food.jpeg',
@@ -461,7 +461,7 @@ module.exports.bootstrap = async function() {
     //---------DOG TREATS & CHEWS ----------//
     {
       name: 'Simply Nourish® Soft Chews Sticks Dog Treat - Natural',
-      description: "Make treat time delicious and nutritious for your dog by serving Simply Nourish Bacon & Cheese Recipe Soft Chews Dog Treats.",
+      description: 'Make treat time delicious and nutritious for your dog by serving Simply Nourish Bacon & Cheese Recipe Soft Chews Dog Treats.',
       quantity: 1,
       vendor_price: 25,
       image_name: 'Simply-Nourish-Soft-Chews-Sticks-Dog-Treat-Natural.jpeg',
@@ -474,7 +474,7 @@ module.exports.bootstrap = async function() {
     },
     {
       name: 'Milk-Bone Soft & Chewy Dog Snacks',
-      description: "Add more wholesome goodness to your dog's day with Milk-Bone Soft & Chewy Beef & Filet Mignon Recipe with Chuck Roast dog treats. ",
+      description: 'Add more wholesome goodness to your dog\'s day with Milk-Bone Soft & Chewy Beef & Filet Mignon Recipe with Chuck Roast dog treats. ',
       quantity: 1,
       vendor_price: 25,
       image_name: 'Milk-Bone-Soft-&-Chewy-Dog-Snacks.jpeg',
@@ -487,7 +487,7 @@ module.exports.bootstrap = async function() {
     },
     {
       name: 'Bil-Jac® Little-Jacs Chicken Liver Small Breed Training Treats',
-      description: "Bil-Jac Little-Jacs Training Treats are ideal for training your small dog.",
+      description: 'Bil-Jac Little-Jacs Training Treats are ideal for training your small dog.',
       quantity: 1,
       vendor_price: 25,
       image_name: 'Bil-Jac-Little-Jacs-Chicken-Liver-Small-Breed-Training-Treats.jpeg',
@@ -1182,8 +1182,8 @@ module.exports.bootstrap = async function() {
       pet_id: 1
     },
 
-     //------------ Dog Bowls And Feeding ------------//
-     {
+    //------------ Dog Bowls And Feeding ------------//
+    {
       name: 'Outward Hound Fun Feeder Drop, Turquoise, Large',
       description: 'Slow Feeder for obese pets' ,
       quantity: 1,
@@ -1627,10 +1627,10 @@ module.exports.bootstrap = async function() {
       pet_id: 1
     },
 
-    
-    
 
-   
+
+
+
 
 
     //---Dog muzzle---//
@@ -2318,7 +2318,7 @@ module.exports.bootstrap = async function() {
     //---DOG VITAMINS MINERAL & ELECTROLYTE SUPPLIMENTS FOR DOGS----////
     {
       name: 'PetHonesty 10 in 1 Dog Multivitamin with Glucosamine',
-      description: "10-For-1 Multivitamin chews combine a well-rounded blend of the most essential vitamins and supplements for dogs' overall daily health including glucosamine, probiotics, vitamins, and omega's." ,
+      description: '10-For-1 Multivitamin chews combine a well-rounded blend of the most essential vitamins and supplements for dogs\' overall daily health including glucosamine, probiotics, vitamins, and omega\'s.' ,
       quantity: 3,
       vendor_price: 4,
       image_name: 'PetHonesty-10-in-1-Dog-Multivitamin-with-Glucosamine.jpg',
@@ -2330,7 +2330,7 @@ module.exports.bootstrap = async function() {
     },
     {
       name: 'ProSense Vitamin Solutions 90 Count, Chewable Tablets for Dogs',
-      description: "Formulated with vitamins, minerals and antioxidants to support overall canine wellness" ,
+      description: 'Formulated with vitamins, minerals and antioxidants to support overall canine wellness' ,
       quantity: 3,
       vendor_price: 4,
       image_name: 'ProSense-Vitamin-Solutions-90-Count-Chewable-Tablets.jpg',
@@ -2342,7 +2342,7 @@ module.exports.bootstrap = async function() {
     },
     {
       name: 'VetIQ Supplements for Dogs',
-      description: "Formulated to help support Active Brain Function, Strong Immune System, and Healthy Digestive System." ,
+      description: 'Formulated to help support Active Brain Function, Strong Immune System, and Healthy Digestive System.' ,
       quantity: 3,
       vendor_price: 4,
       image_name: 'VetIQ-Supplements-for-Dogs.jpg',
@@ -2354,7 +2354,7 @@ module.exports.bootstrap = async function() {
     },
     {
       name: 'Pet Naturals - Daily Multi for Dogs, Daily Multivitamin Formula, 150 Bite Sized Chews',
-      description: "Daily Multi for dogs is a veterinarian formulated supplement for use in dogs of all ages. It includes 28 nutrients to help keep dogs of all ages in peak condition." ,
+      description: 'Daily Multi for dogs is a veterinarian formulated supplement for use in dogs of all ages. It includes 28 nutrients to help keep dogs of all ages in peak condition.' ,
       quantity: 3,
       vendor_price: 4,
       image_name: 'Pet-Naturals-Daily-Multi-for-Dogs-Daily-Multivitamin-Formula.jpg',
@@ -2366,7 +2366,7 @@ module.exports.bootstrap = async function() {
     },
     {
       name: 'Nutramax Laboratories 21 Count Crananidin Pet Supplement',
-      description: "Supports urinary tract by stopping bacteria from sticking in the urinary tract, allowing them to be flushed out in the urine.Helps to prevent urinary tract infections",
+      description: 'Supports urinary tract by stopping bacteria from sticking in the urinary tract, allowing them to be flushed out in the urine.Helps to prevent urinary tract infections',
       quantity: 3,
       vendor_price: 4,
       image_name: 'Nutramax-Laboratories-21-Count-Crananidin-Pet-Supplement.jpg',
@@ -2378,7 +2378,7 @@ module.exports.bootstrap = async function() {
     },
     {
       name: 'Natural Dog Company Multivitamin Supplement with Turmeric and Fish Oil',
-      description: "Effective dog multivitamin includes (1) 90 Count of Natural Dog Company Multivitamin Supplement Chews that are ideal for dogs of any age, size or breed.",
+      description: 'Effective dog multivitamin includes (1) 90 Count of Natural Dog Company Multivitamin Supplement Chews that are ideal for dogs of any age, size or breed.',
       quantity: 3,
       vendor_price: 4,
       image_name: 'Natural-Dog-Company-Multivitamin-Supplement-with-Turmeric-and-Fish-Oil.jpg',
@@ -2856,7 +2856,7 @@ module.exports.bootstrap = async function() {
 
     {
       name: 'KONG® Eight Track Cat Toy',
-      description: "Promote healthy exercise while fulfilling your cat's instinctual desire to chase, hunt and capture with the KONG Eight Track." ,
+      description: 'Promote healthy exercise while fulfilling your cat\'s instinctual desire to chase, hunt and capture with the KONG Eight Track.' ,
       quantity: 4,
       vendor_price: 4,
       image_name: 'KONG-Eight-Track-Cat-Toy.jpg',
@@ -2866,6 +2866,314 @@ module.exports.bootstrap = async function() {
       subcategory_id: 32,
       pet_id: 2
     },
+    {
+      name: 'Good Girl Laser Mouse Cat Toy',
+      description: 'The Good Girl Laser Mouse Cat Toy projects a mouse shaped laser beam that your cat will love to chase.' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'good-girl-laser-mouse-cat-toy.jpeg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 32,
+      pet_id: 2
+    },
+    {
+      name: 'Catit Senses 2.0 Self Groomer',
+      description: 'The Catit Senses 2.0 Self Groomer provides your cat with a constant source of rubbing and grooming pleasure.' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'catit-senses-20-self-groomer.jpeg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 32,
+      pet_id: 2
+    },
+    {
+      name: 'KONG Cat Teaser Snake Catnip Toy',
+      description: 'With natural feathers and an irresistible rattle sound, this soft, plush KONG Cat Snake Teaser is a great cat toy!' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'kong-cat-teaser-snake.jpeg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 32,
+      pet_id: 2
+    },
+    {
+      name: 'Play N Squeak Twice The Mice',
+      description: 'Now your pet can hunt two mice concurrently and make use of all its innate preying instincts, while its agility, and alertness will be pushed to the absolute limit.' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Play-N-Squeak-Twice-The-Mice.jpeg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 32,
+      pet_id: 2
+    },
+    {
+      name: 'Ancol Super Cat Play Tunnel',
+      description: 'The Ancol Super Cat Play Tunnel will help provide hours of fun and entertainment for your beloved cat.' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Ancol-Super-Cat-Play-Tunnel.jpeg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 32,
+      pet_id: 2
+    },
+    {
+      name: 'FroliCat Bolt Automatic Laser Light',
+      description: 'Simply hold the toy in your hand or place it on a flat surface, turn it on and watch your pet pounce, chase and bat at the exciting laser patterns.' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'FroliCat-Bolt-Automatic-Laser-Light.jpeg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 32,
+      pet_id: 2
+    },
+    {
+      name: 'KONG Play Spaces SeaQuins Cat Toy',
+      description: 'Uniquely designed to stay perched open, this toy fulfills natural hiding needs while supporting engaging stalk and grab play.' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'KONG-Play-Spaces-SeaQuins-Cat-Toy.jpeg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 32,
+      pet_id: 2
+    },
+
+    ///----Cat Litter Boxes------///
+
+    {
+      name: 'Frieda Litter Box Enclosure',
+      description: 'A house like this is a great option for giving your feline friend a spot to take care of their business while contributing to your home\'s style.' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Frieda-Litter-Box-Enclosure.jpeg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 33,
+      pet_id: 2
+    },
+    {
+      name: 'Ginny Litter Box Enclosure',
+      description: 'Hide your kitty\'s business with this versatile litter box and end table combo. Perfect for your master bath, laundry room, or den.' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Ginny-Litter-Box-Enclosure.jpeg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 33,
+      pet_id: 2
+    },
+    {
+      name: 'Plastic Standard Litter Box with Scoop',
+      description: 'Large open litter pan with an extra-tall shield to help contain litter scatter and spray. High-polished interior surfaces to make cleaning a snap.' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Plastic-Standard-Litter-Box-with-Scoop.jpeg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 33,
+      pet_id: 2
+    },
+    {
+      name: 'Litter Box Enclosure',
+      description: 'Hide your kitties business with this versatile litter box and end table combo.' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Litter-Box-Enclosure.jpeg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 33,
+      pet_id: 2
+    },
+    {
+      name: 'Elijah Covered Hidden Cat Litter Box with Decorative Planter',
+      description: 'Hide the cat litter at your home in a stylish way with this Archie & Oscar™ Covered Hidden Cat Litter Box / Decorative Planter' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Elijah-Covered-Hidden-Cat-Box-with-Decorative-Planter.jpeg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 33,
+      pet_id: 2
+    },
+    {
+      name: 'Cathey Litter Box Enclosure',
+      description: 'Cats are lovable, but their litter boxes? Not so much. Keep that essential around without disrupting your ensemble with this classic cabinet' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Cathey-Litter-Box-Enclosure.jpeg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 33,
+      pet_id: 2
+    },
+    {
+      name: 'Basic Hooded Standard Litter Box',
+      description: 'Combines price, appearance, and quality craftsmanships with multiple features into one litter box making this a great starter pan for your cat. ' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Basic-Hooded-Standard-Litter-Box.jpeg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 33,
+      pet_id: 2
+    },
+    {
+      name: 'Sulema Litter Box Enclosure',
+      description: 'The divider can be removed for a more spacious room. With a large top, it can double as a side table or nightstand.' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Sulema-Litter-Box-Enclosure.jpeg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 33,
+      pet_id: 2
+    },
+    {
+      name: 'Fason Litter Box Enclosure with Scoop',
+      description: 'The divider can be removed for a more spacious room. With a large top, it can double as a side table or nightstand.' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Litter-Box-Enclosure-with-Scoop.jpeg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 33,
+      pet_id: 2
+    },
+    {
+      name: 'Cat Litter Box Enclosure,Washroom Bench',
+      description: 'Amazing furniture to use both as home decor and for cat privacy. Give you a great odorless home.' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Cat-Litter-Box-Enclosure-Washroom-Bench.jpeg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 33,
+      pet_id: 2
+    },
+
+    ///----Cat Clothes------///
+
+    {
+      name: 'Cat Solid Bat Wing',
+      description: 'Bat wings for your kitten',
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Cat-Solid-Bat-Wing.webp',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 34,
+      pet_id: 2
+    },
+    {
+      name: 'Plain Pet Hoodie',
+      description: 'Plain Pet Hoodie for your kitten',
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Plain-Pet-Hoodie.webp',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 34,
+      pet_id: 2
+    },
+    {
+      name: 'PETSIN Solid Color Cat Sweater',
+      description: 'Solid Color Cat Sweater for your kitten',
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'PETSIN-Solid-Color-Cat-Sweater.webp',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 34,
+      pet_id: 2
+    },
+    {
+      name: 'Slogan Graphic Pet Tee',
+      description: 'Slogan Graphic Pet Tee for your kitten',
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Slogan-Graphic-Pet-Tee.webp',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 34,
+      pet_id: 2
+    },
+    {
+      name: 'Plain Pet Recovery Suit',
+      description: 'Plain Pet Recovery Suit for your kitten',
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Plain-Pet-Recovery-Suit.webp',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 34,
+      pet_id: 2
+    },
+    {
+      name: 'Bow Decor Pet Lace Dress',
+      description: 'Bow Decor Pet Lace Dress',
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Bow-Decor-Pet-Lace-Dress.webp',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 34,
+      pet_id: 2
+    },
+    {
+      name: 'PETSIN Argyle Turtleneck Cat Sweater',
+      description: 'Turtleneck Cat Sweater',
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'PETSIN-Argyle-Turtleneck-Cat-Sweater.webp',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 34,
+      pet_id: 2
+    },
+    {
+      name: 'Cowboy Design Pet Costume',
+      description: 'Cowboy Design Pet Costume',
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Cowboy-Design-Pet-Costume.webp',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 34,
+      pet_id: 2
+    },
+
+
   ]);
 
 };
