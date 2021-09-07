@@ -4,6 +4,7 @@ module.exports = {
   attributes: {
     category_name   : { type: 'string', columnName: 'category_name', required: true },
     description     : { type: 'string', columnName: 'description',   required: true },
+    product_image   : { type: 'string', columnName: 'product_image'                 },
 
     pet_product_id: {
       collection: 'pet_product',
