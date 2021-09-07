@@ -24,6 +24,7 @@ module.exports.routes = {
   '/ourteam' :{view: 'pages/static/ourteam'},
   '/contactus' :{view: 'pages/static/contactus'},
   '/home' :{view: 'pages/index'},
+  'GET /categories/:pet'     : { action: 'petcategorycontroller'},
 
 
 
@@ -38,6 +39,8 @@ module.exports.routes = {
   //Dog
   'GET /products/dog/:category'               : { action: 'dog/categoriescontroller'},
   'GET /products/dog/category/:subcategory'   : { action: 'dog/subcategoriescontroller'},
+ 
+  
 
 
   //Cat

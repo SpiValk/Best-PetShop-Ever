@@ -1,0 +1,27 @@
+<%- include("head") %>
+
+    <body>
+        <%- include("navbar") %>
+
+            <div class="petCategories">
+                <div class="row">
+                <%petCategories.forEach((category)=> { %>
+                   
+                        <div class="petChoice col-md-6 ">
+                            <div class="petCateg dog-categ">
+                                <a href="/products/<%=pet%>/<%=category.category_name%>">
+                                    <div style="background:url('/img/index_img/<%=category.product_image %>')" class="petDivImg"></div>
+                                </a>
+                            </div>
+                            <h3 class=" capitalize pets-heading">
+                                <%= category.category_name.replace(/-/g, " " ) %>
+                             </h3>
+
+                        </div>
+                    
+                    <%})%>
+                </div>
+            </div>
+            <%- include("footer") %>
+                <%- include("scripts") %>
+    </body>
