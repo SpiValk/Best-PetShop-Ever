@@ -16,16 +16,24 @@ module.exports = {
   },
 
   fn: async function({category}){
-    let productCategory = await Product_category.findOne({category_name: category}).populate('pet_product_id');
-    let products = await productCategory.pet_product_id;
-    let dogProducts = [];
+    if(!this.req.session.isAdmin) {
+      return this.res.view(`pages/dog/dogCategories`, {dogProducts, category,isAdmin: false}, {isAdmin: false});
+
+    } else {
+
+      let productCategory = await Product_category.findOne({category_name: category}).populate('pet_product_id');
+      let products = await productCategory.pet_product_id;
+      let dogProducts = [];
 
     for(let product of products){
       dogProducts.push(await Pet_product.findOne({name: product.name}).populate('subcategory_id'));
     }
+      return this.res.view(`pages/dog/dogCategories`, {dogProducts, category}, {isAdmin: this.req.session.isAdmin});
 
+    }
+    
 
-    return this.res.view(`pages/dog/dogCategories`, {dogProducts, category});
+    
   }
 
 };

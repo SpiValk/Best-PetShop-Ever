@@ -1,5 +1,5 @@
 module.exports = async function (req, res, proceed) {
-    if (req.session.username) {
+    if (req.session.isAdmin) {
         return proceed()
     }
    

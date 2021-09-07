@@ -35,9 +35,14 @@ module.exports.routes = {
   'GET /products/edit/:id'    : { action: 'products/edit'},
   'GET /products/update/:id'  : { action: 'products/update'},
 
-  // Logging
+  // Log in / log out user or admin
   '/login'                    : { action: 'users/login' },
   'POST /login'               : { action: 'users/checklogin' },
+  'GET /register'             : { action: 'users/savenewuser' },
+  'POST /register'             : { action: 'users/savenewuser' },
+  'GET /logout'               : { action: 'users/logout' },
+
+  
 
   //Dog
   'GET /products/dog/:category'               : { action: 'dog/categoriescontroller'},
