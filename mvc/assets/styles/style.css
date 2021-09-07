@@ -139,7 +139,7 @@
 }
 
 #cart {
-  margin-left: 500px;
+  margin-left: 350px;
 }
 
 .myBox button {
@@ -311,7 +311,7 @@ img#check {
   text-decoration:none;
 }
 
-@media only screen and (max-width: 971px) {
+@media only screen and (max-width: 991px) {
   .custom-categories {
     display: flex;
     flex-direction: column;
@@ -323,6 +323,9 @@ img#check {
     visibility: hidden;
 } 
 
+.carousel {
+  width: 100%;
+}
 }
 
 /--- ## Tablets and under -----/
