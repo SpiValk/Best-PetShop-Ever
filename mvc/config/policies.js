@@ -26,4 +26,8 @@ module.exports.policies = {
   // Admin login
   'dog/*' : 'users/isAdmin',
 
+  'users/register'  : 'users/isNotLoggedIn',
+  'users/login'     : 'users/isLoggedInShowLogout',
+
+
 };
