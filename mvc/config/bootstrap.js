@@ -1022,7 +1022,228 @@ module.exports.bootstrap = async function() {
       pet_id: 1
     },
 
-    //DOG ACCESSORIES/DOG LEADS
+    //-------- Dog Clothes --------//
+    {
+      name: 'Hopping Bunny Flannel Dog Pajamas',
+      description: 'XS dog Pajamas' ,
+      quantity: 1,
+      vendor_price: 30,
+      image_name: 'Hopping-Bunny-Flannel-Dog-Pajamas.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 10,
+      pet_id: 1
+    },
+    {
+      name: 'Sparkling Bow Ruffle Layered Dog Dress',
+      description: 'Adorable dog dress with a striped top and polka dots ruffle layered skirt. Made with soft knit cotton fabric, accented with an attached sparkling belt and sparkling bow.' ,
+      quantity: 1,
+      vendor_price: 30,
+      image_name: 'Sparkling-Bow-Ruffle-Layered-Dog-Dress.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 10,
+      pet_id: 1
+    },
+    {
+      name: 'Juicy Watermelon Dog Sundress',
+      description: 'Adorable and juicy watermelon dog sundress, with attached large D-ring for easy leash attachment. ' ,
+      quantity: 1,
+      vendor_price: 30,
+      image_name: 'Juicy-Watermelon-Dog-Sundress.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 10,
+      pet_id: 1
+    },
+    {
+      name: 'Bobble Stitch Turtleneck Dog Sweater Pink',
+      description: 'Adorable hand knitted (bobble stitch) turtleneck dog sweater, accented with a flower on the side. Made with soft acrylic yarn.' ,
+      quantity: 1,
+      vendor_price: 30,
+      image_name: 'Bobble-Stitch-Turtleneck-Dog-Sweater-Pink.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 10,
+      pet_id: 1
+    },
+    {
+      name: 'Sun Shield Dog Tee Pebble',
+      description: 'The Sun Shield Dog Tee is a silky soft, lightweight stretch jersey with a UPF-50 rating that blocks 98% of the sun\'s harmful UV rays.' ,
+      quantity: 1,
+      vendor_price: 30,
+      image_name: 'Sun-Shield-Dog-Tee-Pebble.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 10,
+      pet_id: 1
+    },
+    {
+      name: 'Stretch Fleece Onesie Dog Pajamas Navy/Winter Mod',
+      description: 'These are unbeatable dog pajamas but aren\'t they also perfect for the next polar vortex on their own or under a waterproof coat?' ,
+      quantity: 1,
+      vendor_price: 30,
+      image_name: 'Stretch-Fleece-Onesie-Dog-Pajamas-NavyWinter-Mod.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 10,
+      pet_id: 1
+    },
+
+    //---------------- Dog Collars --------------//
+    {
+      name: 'Buttercup Plaid Flannel Dog Collar',
+      description: 'A mellow yellow plaid in soft, thick flannel.' ,
+      quantity: 1,
+      vendor_price: 20,
+      image_name: 'buttercup-plaid-flannel-dog-collar-from-the-foggy-dog.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 11,
+      pet_id: 1
+    },
+    {
+      name: 'Harbor Plaid Flannel Dog Collar',
+      description: 'A timeless plaid in a calming cornflower blue made from soft flannel.' ,
+      quantity: 1,
+      vendor_price: 20,
+      image_name: 'harbor-plaid-flannel-dog-collar-from-the-foggy-dog.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 11,
+      pet_id: 1
+    },
+    {
+      name: 'Harvest Plaid Flannel Dog Collar',
+      description: 'A beautiful autumn collar made from soft flannel in shades of yellow, gray, orange and cream.' ,
+      quantity: 1,
+      vendor_price: 20,
+      image_name: 'harvest-plaid-flannel-dog-collar-from-the-foggy-dog.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 11,
+      pet_id: 1
+    },
+    {
+      name: 'Pink Herringbone Flannel Dog Collar',
+      description: 'A gentle pink collar with a subtle herringbone pattern made from luxuriously thick flannel.' ,
+      quantity: 1,
+      vendor_price: 20,
+      image_name: 'pink-herringbone-flannel-dog-collar-from-the-foggy-dog.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 11,
+      pet_id: 1
+    },
+    {
+      name: 'Sunset Flannel Dog Collar',
+      description: 'This flannel collar features warm jewel tones in purple, pink, and orange.' ,
+      quantity: 1,
+      vendor_price: 20,
+      image_name: 'sunset-flannel-dog-collar-from-the-foggy-dog.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 11,
+      pet_id: 1
+    },
+    {
+      name: 'Red and Black Buffalo Check Dog Collar',
+      description: 'A classic red and black buffalo plaid pattern is perfect during the winter and year-round.' ,
+      quantity: 1,
+      vendor_price: 20,
+      image_name: 'red-and-black-buffalo-check-dog-collar-from-the-foggy-dog.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 11,
+      pet_id: 1
+    },
+    {
+      name: 'Upcycled Denim Dog Collar',
+      description: 'Part of our Upcycled Denim capsule, a collection that is as beautiful as it is sustainable. Made in a zero-waste textile.' ,
+      quantity: 1,
+      vendor_price: 20,
+      image_name: 'upcycled-denim-dog-collar-from-the-foggy-dog.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 11,
+      pet_id: 1
+    },
+
+     //------------ Dog Bowls And Feeding ------------//
+     {
+      name: 'Outward Hound Fun Feeder Drop, Turquoise, Large',
+      description: 'Slow Feeder for obese pets' ,
+      quantity: 1,
+      vendor_price: 10,
+      image_name: 'pet-slow-feeder.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 12,
+      pet_id: 1
+    },
+    {
+      name: 'OurPets Comfort Elevated Dog Bowl, Black 8 Inches',
+      description: 'This Feeder Is Perfect For Small Dogs' ,
+      quantity: 1,
+      vendor_price: 10,
+      image_name: 'OurPets-Comfort-Elevated-Dog-Bowl-Black-8-Inches.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 12,
+      pet_id: 1
+    },
+    {
+      name: 'Our Pets Durapet Stainless Steel Bowl, 7 Cups',
+      description: 'Permanently-bonded rubber ring on bottom of bowl' ,
+      quantity: 1,
+      vendor_price: 10,
+      image_name: 'OurPets-Durapet-Stainless-Steel-Bowl-7-Cups.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 12,
+      pet_id: 1
+    },
+    {
+      name: 'Play On Matte Blue Ceramic Dog Bowl, Large, 33 Ounces',
+      description: 'High-end style, oven fired and hand painted' ,
+      quantity: 1,
+      vendor_price: 10,
+      image_name: 'Play-On-Matte-Blue-Ceramic-Dog-Bowl-Large-33-Ounces.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 12,
+      pet_id: 1
+    },
+    {
+      name: 'Play On Floral Melamine Bowl, Small, 8 Ounces',
+      description: 'Non-skid bottom allows for stable dinning' ,
+      quantity: 1,
+      vendor_price: 10,
+      image_name: 'Play-On-Floral-Melamine-Bowl-Small-8-Ounces.jpeg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 12,
+      pet_id: 1  },
+
+    //----DOG LEADS---//
     {
       name: 'KONG® Comfort Dog Leash',
       description: 'The KONG Padded Hands-Free Leash offers you more freedom while still being in control on walks with your furry friend' ,
@@ -1157,7 +1378,7 @@ module.exports.bootstrap = async function() {
     },
 
 
-    //DOG ACCESSORIES/DOG HARNESS
+    //---DOG HARNESS---//
     {
       name: 'KONG® Reflective Pocket Dog Harness',
       description: 'Keep your dog safer and more comfortable on walks with this stylish KONG Reflective Pocket Dog Harness.' ,
@@ -1195,14 +1416,119 @@ module.exports.bootstrap = async function() {
       pet_id: 1
     },
 
+    //---DOG POOP BAGS ---//
+
+    {
+      name: 'Beco Eco-Friendly Poop Bags',
+      description: 'Beco Bags make cleaning up after your pet as eco-friendly as possible, thanks to our degradable material.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Beco-Eco-Friendly-Poop-Bags_1.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 15,
+      pet_id: 1
+    },
+    {
+      name: 'T. Forrest Our Dog Biodegradable Poo Bags - 50 Bags',
+      description: 'When buying poop bags, look for biodegradable bags, which are better for the environment. Biodegradable poop bags are typically made out of GMO free corn or other starches and vegetable oil.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'T-Forrest-Our-Dog-Biodegradable-Poo-Bags.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 15,
+      pet_id: 1
+    },
+    {
+      name: 'Bags on Board Blue Refill Poo Bags - 60 Pack',
+      description: 'The super quality Bags on Board Refill blue bags are fantastic value forthe consumer.The clean-up bags are toughlong and robust making them easy to place the hand inside securely.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Bags-on-Board-Blue-Refill-Poo-Bags.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 15,
+      pet_id: 1
+    },
+    {
+      name: 'Bags On Board Refill Neutral Coloured Poo Bags - 140 Pack',
+      description: 'Bags on Board Neutral Dog Waste Bags makes picking up dog poop and pet waste quick, easy, and simple whether on a walk or in the Garden' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Bags-On-Board-Refill-Neutral-Coloured-Poo-Bags.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 15,
+      pet_id: 1
+    },
+    {
+      name: 'Good Boy Antibacterial Degradable Poo Bags - 100 Pack ',
+      description: 'Good Boy Degradable Poo Bags are a great way of cleaning up after your dog, allowing quick, easy and hygienic disposal. ' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Good-Boy-Antibacterial-Degradable-Poo-Bags.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 15,
+      pet_id: 1
+    },
+    {
+      name: 'KONG Handi POD Refill Bags for Dogs',
+      description: 'KONG is renowned for high quality and durability, KONG HandiPOD has been developed to bring dog walkers useful solutions for when they are out and about.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'KONG-Handi-POD-Refill-Bags-for-Dogs.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 15,
+      pet_id: 1
+    },
+    {
+      name: 'Beco Compostable Poo Bags - 96 Pack ',
+      description: 'Made from a plant based material these bags are certified both home compostable and biodegradable. Made to be extra long and thick these bags protect your hands and cater for all poop bag sizes.',
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Beco-Compostable-Poo-Bags-96-Pack.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 15,
+      pet_id: 1
+    },
+    {
+      name: 'Pedigree Easi Scoop Refill 50s',
+      description: 'Clean easy method of removing droppings. A handy & hygenic device to help quickly & safely lift & dispose of dog mess. 50 refills for Easi Scoop.',
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Pedigree-Easi-Scoop-Refill-50s.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 15,
+      pet_id: 1
+    },
+    {
+      name: 'Bags On Board Grey Cushy Dispenser with 14 Bags',
+      description: 'New Cushy waste pick-up dispensers are made from lightweight soft silicon, to give your pet extra comfort when out walking',
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Bags-On-Board-Grey-Cushy-Dispenser-with-14-Bags.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 15,
+      pet_id: 1
+    },
 
 
-
-
-
-
-
-    //**** DOG ACCESORIES/DOG BEDS ******//
+    //------DOG BEDS -------//
     {
       name: 'Top Paw® Grey Hearts Classic Pillow Dog Bed',
       description: 'This Top Paw Grey Hearts Core Classic Pillow Dog Bed is lightweight enough for your dog to sleep anywhere. It features a field of colorful hearts at the heart of its design, and features soft polyfill for optimal comfort.' ,
@@ -1301,225 +1627,10 @@ module.exports.bootstrap = async function() {
       pet_id: 1
     },
 
-    //-------- Dog Clothes --------//
-    {
-      name: 'Hopping Bunny Flannel Dog Pajamas',
-      description: 'XS dog Pajamas' ,
-      quantity: 1,
-      vendor_price: 30,
-      image_name: 'Hopping-Bunny-Flannel-Dog-Pajamas.jpeg',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 10,
-      pet_id: 1
-    },
-    {
-      name: 'Sparkling Bow Ruffle Layered Dog Dress',
-      description: 'Adorable dog dress with a striped top and polka dots ruffle layered skirt. Made with soft knit cotton fabric, accented with an attached sparkling belt and sparkling bow.' ,
-      quantity: 1,
-      vendor_price: 30,
-      image_name: 'Sparkling-Bow-Ruffle-Layered-Dog-Dress.jpeg',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 10,
-      pet_id: 1
-    },
-    {
-      name: 'Juicy Watermelon Dog Sundress',
-      description: 'Adorable and juicy watermelon dog sundress, with attached large D-ring for easy leash attachment. ' ,
-      quantity: 1,
-      vendor_price: 30,
-      image_name: 'Juicy-Watermelon-Dog-Sundress.jpeg',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 10,
-      pet_id: 1
-    },
-    {
-      name: 'Bobble Stitch Turtleneck Dog Sweater Pink',
-      description: 'Adorable hand knitted (bobble stitch) turtleneck dog sweater, accented with a flower on the side. Made with soft acrylic yarn.' ,
-      quantity: 1,
-      vendor_price: 30,
-      image_name: 'Bobble-Stitch-Turtleneck-Dog-Sweater-Pink.jpeg',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 10,
-      pet_id: 1
-    },
-    {
-      name: 'Sun Shield Dog Tee Pebble',
-      description: 'The Sun Shield Dog Tee is a silky soft, lightweight stretch jersey with a UPF-50 rating that blocks 98% of the sun\'s harmful UV rays.' ,
-      quantity: 1,
-      vendor_price: 30,
-      image_name: 'Sun-Shield-Dog-Tee-Pebble.jpeg',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 10,
-      pet_id: 1
-    },
-    {
-      name: 'Stretch Fleece Onesie Dog Pajamas Navy/Winter Mod',
-      description: 'These are unbeatable dog pajamas but aren\'t they also perfect for the next polar vortex on their own or under a waterproof coat?' ,
-      quantity: 1,
-      vendor_price: 30,
-      image_name: 'Stretch-Fleece-Onesie-Dog-Pajamas-NavyWinter-Mod.jpeg',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 10,
-      pet_id: 1
-    },
-    //---------------- Dog Collars --------------//
-    {
-      name: 'Buttercup Plaid Flannel Dog Collar',
-      description: 'A mellow yellow plaid in soft, thick flannel.' ,
-      quantity: 1,
-      vendor_price: 20,
-      image_name: 'buttercup-plaid-flannel-dog-collar-from-the-foggy-dog.jpeg',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 11,
-      pet_id: 1
-    },
-    {
-      name: 'Harbor Plaid Flannel Dog Collar',
-      description: 'A timeless plaid in a calming cornflower blue made from soft flannel.' ,
-      quantity: 1,
-      vendor_price: 20,
-      image_name: 'harbor-plaid-flannel-dog-collar-from-the-foggy-dog.jpeg',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 11,
-      pet_id: 1
-    },
-    {
-      name: 'Harvest Plaid Flannel Dog Collar',
-      description: 'A beautiful autumn collar made from soft flannel in shades of yellow, gray, orange and cream.' ,
-      quantity: 1,
-      vendor_price: 20,
-      image_name: 'harvest-plaid-flannel-dog-collar-from-the-foggy-dog.jpeg',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 11,
-      pet_id: 1
-    },
-    {
-      name: 'Pink Herringbone Flannel Dog Collar',
-      description: 'A gentle pink collar with a subtle herringbone pattern made from luxuriously thick flannel.' ,
-      quantity: 1,
-      vendor_price: 20,
-      image_name: 'pink-herringbone-flannel-dog-collar-from-the-foggy-dog.jpeg',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 11,
-      pet_id: 1
-    },
-    {
-      name: 'Sunset Flannel Dog Collar',
-      description: 'This flannel collar features warm jewel tones in purple, pink, and orange.' ,
-      quantity: 1,
-      vendor_price: 20,
-      image_name: 'sunset-flannel-dog-collar-from-the-foggy-dog.jpeg',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 11,
-      pet_id: 1
-    },
-    {
-      name: 'Red and Black Buffalo Check Dog Collar',
-      description: 'A classic red and black buffalo plaid pattern is perfect during the winter and year-round.' ,
-      quantity: 1,
-      vendor_price: 20,
-      image_name: 'red-and-black-buffalo-check-dog-collar-from-the-foggy-dog.jpeg',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 11,
-      pet_id: 1
-    },
-    {
-      name: 'Upcycled Denim Dog Collar',
-      description: 'Part of our Upcycled Denim capsule, a collection that is as beautiful as it is sustainable. Made in a zero-waste textile.' ,
-      quantity: 1,
-      vendor_price: 20,
-      image_name: 'upcycled-denim-dog-collar-from-the-foggy-dog.jpeg',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 11,
-      pet_id: 1
-    },
+    
+    
 
-    //------------ Dog Bowls And Feeding ------------//
-    {
-      name: 'Outward Hound Fun Feeder Drop, Turquoise, Large',
-      description: 'Slow Feeder for obese pets' ,
-      quantity: 1,
-      vendor_price: 10,
-      image_name: 'pet-slow-feeder.jpeg',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 12,
-      pet_id: 1
-    },
-    {
-      name: 'OurPets Comfort Elevated Dog Bowl, Black 8 Inches',
-      description: 'This Feeder Is Perfect For Small Dogs' ,
-      quantity: 1,
-      vendor_price: 10,
-      image_name: 'OurPets-Comfort-Elevated-Dog-Bowl-Black-8-Inches.jpeg',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 12,
-      pet_id: 1
-    },
-    {
-      name: 'Our Pets Durapet Stainless Steel Bowl, 7 Cups',
-      description: 'Permanently-bonded rubber ring on bottom of bowl' ,
-      quantity: 1,
-      vendor_price: 10,
-      image_name: 'OurPets-Durapet-Stainless-Steel-Bowl-7-Cups.jpeg',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 12,
-      pet_id: 1
-    },
-    {
-      name: 'Play On Matte Blue Ceramic Dog Bowl, Large, 33 Ounces',
-      description: 'High-end style, oven fired and hand painted' ,
-      quantity: 1,
-      vendor_price: 10,
-      image_name: 'Play-On-Matte-Blue-Ceramic-Dog-Bowl-Large-33-Ounces.jpeg',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 12,
-      pet_id: 1
-    },
-    {
-      name: 'Play On Floral Melamine Bowl, Small, 8 Ounces',
-      description: 'Non-skid bottom allows for stable dinning' ,
-      quantity: 1,
-      vendor_price: 10,
-      image_name: 'Play-On-Floral-Melamine-Bowl-Small-8-Ounces.jpeg',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 12,
-      pet_id: 1  },
+   
 
 
     //---Dog muzzle---//
@@ -2191,7 +2302,7 @@ module.exports.bootstrap = async function() {
     },
 
     {
-      name: 'Bayer Tapeworm Dewormer (praziquantel tablets) for Dogs,',
+      name: 'Bayer Tapeworm Dewormer (praziquantel tablets) for Dogs',
       description: '5-count bottle of tapeworm dewormer for dogs' ,
       quantity: 3,
       vendor_price: 4,
@@ -2202,6 +2313,82 @@ module.exports.bootstrap = async function() {
       subcategory_id: 23,
       pet_id: 1
     },
+
+
+    //---DOG VITAMINS MINERAL & ELECTROLYTE SUPPLIMENTS FOR DOGS----////
+    {
+      name: 'PetHonesty 10 in 1 Dog Multivitamin with Glucosamine',
+      description: "10-For-1 Multivitamin chews combine a well-rounded blend of the most essential vitamins and supplements for dogs' overall daily health including glucosamine, probiotics, vitamins, and omega's." ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'PetHonesty-10-in-1-Dog-Multivitamin-with-Glucosamine.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 24,
+      pet_id: 1
+    },
+    {
+      name: 'ProSense Vitamin Solutions 90 Count, Chewable Tablets for Dogs',
+      description: "Formulated with vitamins, minerals and antioxidants to support overall canine wellness" ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'ProSense-Vitamin-Solutions-90-Count-Chewable-Tablets.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 24,
+      pet_id: 1
+    },
+    {
+      name: 'VetIQ Supplements for Dogs',
+      description: "Formulated to help support Active Brain Function, Strong Immune System, and Healthy Digestive System." ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'VetIQ-Supplements-for-Dogs.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 24,
+      pet_id: 1
+    },
+    {
+      name: 'Pet Naturals - Daily Multi for Dogs, Daily Multivitamin Formula, 150 Bite Sized Chews',
+      description: "Daily Multi for dogs is a veterinarian formulated supplement for use in dogs of all ages. It includes 28 nutrients to help keep dogs of all ages in peak condition." ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'Pet-Naturals-Daily-Multi-for-Dogs-Daily-Multivitamin-Formula.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 24,
+      pet_id: 1
+    },
+    {
+      name: 'Nutramax Laboratories 21 Count Crananidin Pet Supplement',
+      description: "Supports urinary tract by stopping bacteria from sticking in the urinary tract, allowing them to be flushed out in the urine.Helps to prevent urinary tract infections",
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'Nutramax-Laboratories-21-Count-Crananidin-Pet-Supplement.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 24,
+      pet_id: 1
+    },
+    {
+      name: 'Natural Dog Company Multivitamin Supplement with Turmeric and Fish Oil',
+      description: "Effective dog multivitamin includes (1) 90 Count of Natural Dog Company Multivitamin Supplement Chews that are ideal for dogs of any age, size or breed.",
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'Natural-Dog-Company-Multivitamin-Supplement-with-Turmeric-and-Fish-Oil.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 24,
+      pet_id: 1
+    },
+
 
 
 
@@ -2661,6 +2848,22 @@ module.exports.bootstrap = async function() {
       vendor_id: 5,
       product_category_id: 6,
       subcategory_id: 31,
+      pet_id: 2
+    },
+
+    //*********CAT ACCESSORIES *******//
+    //----Cat Toys------///
+
+    {
+      name: 'KONG® Eight Track Cat Toy',
+      description: "Promote healthy exercise while fulfilling your cat's instinctual desire to chase, hunt and capture with the KONG Eight Track." ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'KONG-Eight-Track-Cat-Toy.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 32,
       pet_id: 2
     },
   ]);
