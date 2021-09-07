@@ -78,49 +78,123 @@ module.exports.bootstrap = async function() {
     {
       category_name: 'dog-foods',
       description: 'dry food, dog cans, dog-treats & chews',
-      pets_id: 1
+      pets_id: 1,
+      product_image:'pet-shop-veterinary-with-food-animals-vector.jpg'
     },
     {
       category_name: 'dog-grooming',
       description: 'diapers,  flea and wormers, dog shampoo, ' +
                     'brushes & combs, scissors & clippers, perfumes & fragrances',
-      pets_id: 1
+      pets_id: 1,
+      product_image:"shampoo.jpg"
+     
     },
     {
       category_name: 'dog-accessories',
       description: 'toys, clothes, poop bags, collars, bowls & feeding, leads, harness, ' +
                     'muzles, transport boxes, beds, houses',
-      pets_id: 1
+      pets_id: 1,
+      product_image:"Bowls.webp"
     },
     {
       category_name: 'dog-veterinary-products',
       description: 'antiparasitics, antibiotics, wound care, ',
-      pets_id: 1
+      pets_id: 1,
+      product_image:"PetsCare.png"
     },
 
     //---Cat--//
     {
       category_name: 'cat-foods',
       description: 'dry food, cat cans, cat-treats & chews',
-      pets_id: 2
+      pets_id: 2,
+      product_image:'pet-shop-veterinary-with-food-animals-vector.jpg'
     },
     {
       category_name: 'cat-grooming',
       description: 'diapers,  flea and wormers, cat shampoo, ' +
                     'brushes & combs, scissors & clippers, perfumes & fragrances',
-      pets_id: 2
+      pets_id: 2,
+      product_image:"shampoo.jpg"
     },
     {
       category_name: 'cat-accessories',
       description: 'toys, clothes, poop bags, collars, bowls & feeding, leads, harness, ' +
                     'muzles, transport boxes, beds, houses',
-      pets_id: 2
+      pets_id: 2,
+      product_image:"Bowls.webp"
     },
     {
       category_name: 'cat-veterinary-products',
       description: 'antiparasitics, antibiotics, wound care, ',
-      pets_id: 2
+      pets_id: 2,
+      product_image:"PetsCare.png"
     },
+    //-- fish --/
+    {
+      category_name:'fish-food',
+      description:'fish flakes,granules/pellets/sticks',
+      pets_id:3,
+      product_image:"fish-food.jpg"
+    },
+    {
+      category_name:"aquariums-equipment-and-decor",
+      description:"aquariums & aquariums stands,aquarium substrate,artificial plants,gravel sand & stones,ornamnets,artificial plants,breeders & nets,heating & lighting accessories",
+      pets_id:3,
+      product_image:"aquarium.jpg"
+    },
+    {
+      category_name:"filters-and-pumps",
+      description:"air & water pumps,filters,filter media,replacement parts",
+      pets_id:3,
+      product_image:"filter.webp"
+    },
+    {
+      category_name:"fish-care",
+      description:"fish medicines,fresh water improvement,sea water improvement,tests",
+      pets_id:3,
+      product_image:"fish-care.jpg"
+    },
+    //---- bird -- //
+    {
+      category_name:"foods-and-treats",
+      description:"bird food,wild bird food,treats",
+      pets_id:4,
+      product_image:"bird-food.jpg"
+    },
+    {
+      category_name:"bird-accessories",
+      description:"cages & stands,bowls & feeders,toys,travels carriers,bird perches,bird nest",
+      pets_id:4,
+      product_image:"bird-accessories.jpg"
+    },
+    {
+      category_name:"grooming-and-care",
+      description:"bird medication,bird sand,bird vitamins,bird baths,nail & break trimmers",
+      pets_id:4,
+      product_image:"bird-grooming.jpg"
+
+    },
+    //---small animals ---//
+    {
+      category_name:"rabbit",
+      description:"rabbit food,rabbit accessories,rabbit health care",
+      pets_id:5,
+      product_image:"rabbit.jpg"
+    },
+    {
+      category_name:"hamster",
+      description:"hamster food,hamster accessories,hamster health care",
+      pets_id:5,
+      product_image:"hamster.webp",
+    },
+    {
+      category_name:"iguana",
+      description:"iguana food,iguana accessories,iguana health care",
+      pets_id:5,
+      product_image:"iguana.jpg"
+    }
+
   ]);
 
   //------------------ CREATE SUBCATEGORIES -------------------//
@@ -266,6 +340,165 @@ module.exports.bootstrap = async function() {
       pet_id: 1
 
     },
+    //---------DOG CANS ----------//
+    {
+      name: 'Purina Pro Plan Savor Adult Dog Food',
+      description: "Fill your dog's dish with Purina Pro Plan SAVOR Chicken and Rice Entree Classic adult wet dog food, and give him outstanding taste without compromise",
+      quantity: 1,
+      vendor_price: 25,
+      image_name: 'Purina-Pro-Plan-Savor-Adult-Dog-Food.jpeg',
+      status: 1,
+      vendor_id: 2,
+      product_category_id: 1,
+      subcategory_id: 2,
+      pet_id: 1
+
+    },
+    {
+      name: 'Simply Nourish® Shreds Adult Wet Dog Food',
+      description: "Make meal time delicious and nutritious for your dog by serving Simply Nourish Chicken & Rice Stew Adult Dog Food.",
+      quantity: 1,
+      vendor_price: 25,
+      image_name: 'Simply-Nourish-Shreds-Adult-Wet-Dog-Food-Natural.jpeg',
+      status: 1,
+      vendor_id: 2,
+      product_category_id: 1,
+      subcategory_id: 2,
+      pet_id: 1
+
+    },
+    {
+      name: 'Blue Buffalo Homestyle Recipe Adult Dog Food',
+      description: "Blue Buffalo Homestyle Recipe canned food is made from all-natural, wholesome ingredients to provide superior nutrition for your dog.",
+      quantity: 1,
+      vendor_price: 25,
+      image_name: 'Blue-Buffalo-Homestyle-Recipe-Adult-Dog-Food.jpeg',
+      status: 1,
+      vendor_id: 2,
+      product_category_id: 1,
+      subcategory_id: 2,
+      pet_id: 1
+
+    },
+    {
+      name: 'Cesar® Canine Cuisine Adult Dog Food',
+      description: "Dogs with sophisticated palates will enjoy a rich culinary experience with CESAR Canine Cuisine Gourmet Wet Dog Food in meaty juices or in sauce.",
+      quantity: 1,
+      vendor_price: 25,
+      image_name: 'Cesar-Canine-Cuisine-Adult-Dog-Food.jpeg',
+      status: 1,
+      vendor_id: 2,
+      product_category_id: 1,
+      subcategory_id: 2,
+      pet_id: 1
+
+    },
+    {
+      name: 'Authority Cuts in Gravy Adult Wet Dog Food',
+      description: "Provide your dog with a delicious and nutritious meal time choice by serving Authority Chicken and Rice Entree Adult Wet Dog Food.",
+      quantity: 1,
+      vendor_price: 25,
+      image_name: 'Authority-Cuts-in-Gravy-Adult-Wet-Dog-Food.jpeg',
+      status: 1,
+      vendor_id: 2,
+      product_category_id: 1,
+      subcategory_id: 2,
+      pet_id: 1
+
+    },
+    {
+      name: 'Wellness® Stews Adult Wet Dog Food - Natural',
+      description: "These deliciously chunky, slow-cooked classics use whole food ingredients that provide exceptional nutrition and extraordinary flavor.",
+      quantity: 1,
+      vendor_price: 25,
+      image_name: 'Wellness-Stews-Adult-Wet-Dog-Food.jpeg',
+      status: 1,
+      vendor_id: 2,
+      product_category_id: 1,
+      subcategory_id: 2,
+      pet_id: 1
+
+    },
+    {
+      name: 'Purina ONE SmartBlend Tender Cuts in Gravy Wet Dog Food',
+      description: "Tempt your dog to his dish when you serve Purina ONE SmartBlend Tender Cuts Beef & Barley Entree in Gravy adult wet dog food.",
+      quantity: 1,
+      vendor_price: 25,
+      image_name: 'Purina-ONE-SmartBlend-Tender-Cuts-in-Gravy-Wet-Dog-Food.jpeg',
+      status: 1,
+      vendor_id: 2,
+      product_category_id: 1,
+      subcategory_id: 2,
+      pet_id: 1
+
+    },
+    {
+      name: 'Purina Pro Plan Savor Wet Dog Food, Grain Free',
+      description: "Serve up a wholesome meal combining high-quality nutrition and a delicious taste dogs love with Purina Pro Plan.",
+      quantity: 1,
+      vendor_price: 25,
+      image_name: 'Purina-Pro-Plan-Savor-Wet-Dog-Food.jpeg',
+      status: 1,
+      vendor_id: 2,
+      product_category_id: 1,
+      subcategory_id: 2,
+      pet_id: 1
+
+    },
+    {
+      name: 'Royal Canin® Canine Health Nutrition™ Advanced Nutrition Adult Dog Food',
+      description: "Founded by a veterinarian, Royal Canin has over 40 years experience in health nutrition.",
+      quantity: 1,
+      vendor_price: 25,
+      image_name: 'Royal-Canin-Canine-Advanced-Nutrition-Dog-Food.jpeg',
+      status: 1,
+      vendor_id: 2,
+      product_category_id: 1,
+      subcategory_id: 2,
+      pet_id: 1
+
+    },
+    //---------DOG TREATS & CHEWS ----------//
+    {
+      name: 'Simply Nourish® Soft Chews Sticks Dog Treat - Natural',
+      description: "Make treat time delicious and nutritious for your dog by serving Simply Nourish Bacon & Cheese Recipe Soft Chews Dog Treats.",
+      quantity: 1,
+      vendor_price: 25,
+      image_name: 'Simply-Nourish-Soft-Chews-Sticks-Dog-Treat-Natural.jpeg',
+      status: 1,
+      vendor_id: 2,
+      product_category_id: 1,
+      subcategory_id: 3,
+      pet_id: 1
+
+    },
+    {
+      name: 'Milk-Bone Soft & Chewy Dog Snacks',
+      description: "Add more wholesome goodness to your dog's day with Milk-Bone Soft & Chewy Beef & Filet Mignon Recipe with Chuck Roast dog treats. ",
+      quantity: 1,
+      vendor_price: 25,
+      image_name: 'Milk-Bone-Soft-&-Chewy-Dog-Snacks.jpeg',
+      status: 1,
+      vendor_id: 2,
+      product_category_id: 1,
+      subcategory_id: 3,
+      pet_id: 1
+
+    },
+    {
+      name: 'Bil-Jac® Little-Jacs Chicken Liver Small Breed Training Treats',
+      description: "Bil-Jac Little-Jacs Training Treats are ideal for training your small dog.",
+      quantity: 1,
+      vendor_price: 25,
+      image_name: 'Bil-Jac-Little-Jacs-Chicken-Liver-Small-Breed-Training-Treats.jpeg',
+      status: 1,
+      vendor_id: 2,
+      product_category_id: 1,
+      subcategory_id: 3,
+      pet_id: 1
+
+    },
+
 
     //---------- BARF -----------//
     {
