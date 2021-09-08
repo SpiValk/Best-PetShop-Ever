@@ -1,7 +1,7 @@
 module.exports = {
     exits: {
       success: {
-        viewTemplatePath: '/pages/static/loggedout'
+        viewTemplatePath: '/pages/users/loggedout'
       }
     },
   

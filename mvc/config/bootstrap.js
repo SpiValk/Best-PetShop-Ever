@@ -34,8 +34,8 @@ module.exports.bootstrap = async function() {
 
   //-------------- CREATE USERS ---------------//
   await User.createEach([
-    {username:'admin', password: 'admin', email: 'admin@admin.com',  isAdmin: 1, customer_id: 1},
-    {username:'john', password: 'doe', email: 'john@doe.com', isAdmin: 0, unique: true, customer_id: 2, payment_id: 1} //only one payment per user???
+    {username:'admin', password:await sails.helpers.passwords.hashPassword('admin'), email: 'admin@admin.com',  isAdmin: 1, customer_id: 1},
+    {username:'john', password:await sails.helpers.passwords.hashPassword('doe'), email: 'john@doe.com', isAdmin: 0, unique: true, customer_id: 2, payment_id: 1} //only one payment per user???
   ]);
 
 

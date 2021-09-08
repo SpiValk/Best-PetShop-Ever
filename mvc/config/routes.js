@@ -42,7 +42,7 @@ module.exports.routes = {
   'POST /login'               : { action: 'users/checklogin' },
   'GET /register'             : { action: 'users/register' },
   'POST /register'            : { action: 'users/savenewuser' },
-  'GET /logout'               : { action: 'users/logoutbutton' },
+  'GET /logout'               : { action: 'users/logout' },
 
 
  
