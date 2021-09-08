@@ -1,0 +1,20 @@
+<%- include("head") %>
+
+    <body>
+        <%- include("navbar") %>
+
+            <div class="card myProductBox"> 
+               <img src="/img/product_images/dogs/<%=product.product_category_id.category_name %>/<%= product.subcategory_id.subcategory %>/<%=product.image_name%>"> 
+                <div class="card-body">
+                    <h5><b>
+                            <%= product.name %>
+                                <span hidden>
+                                    <%=product.id%>
+                                </span>
+                        </b> </h5>
+                </div>
+            </div>
+
+            <%- include("footer") %>
+                <%- include("scripts") %>
+    </body>

@@ -142,14 +142,14 @@
   margin-right: auto;
 }
 .myProductBox img {
-  max-height: 150px;
-  display: block;
+  max-height: 150px !important;
+  display: block !important;
   margin-left: auto;
   margin-right: auto;
 }
 .myProductBox h4 {
   text-align: center;
-  font-size:0.8rem;
+  font-size:0.8rem !important;
 }
 
 .myBox h4 {
@@ -376,6 +376,8 @@ img#check {
   overflow: hidden;
   transition: all 1s ease-in-out;
 }
+
+
 
 
 

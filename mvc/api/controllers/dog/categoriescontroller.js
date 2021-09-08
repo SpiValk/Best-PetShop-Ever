@@ -20,12 +20,15 @@ module.exports = {
     let products = await productCategory.pet_product_id;
     let dogProducts = [];
 
+    let subcategoryTemp=await Product_category.findOne({category_name: category}).populate('subcategory_id');
+    let subcategories=subcategoryTemp.subcategory_id
+
     for(let product of products){
       dogProducts.push(await Pet_product.findOne({name: product.name}).populate('subcategory_id'));
     }
 
 
-    return this.res.view(`pages/dog/dogCategories`, {dogProducts, category});
+    return this.res.view(`pages/dog/dogCategories`, {dogProducts, category,subcategories});
   }
 
 };
