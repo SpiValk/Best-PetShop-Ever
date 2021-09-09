@@ -24,8 +24,9 @@ module.exports.routes = {
   '/ourteam' :{view: 'pages/static/ourteam'},
   '/contactus' :{view: 'pages/static/contactus'},
   '/home' :{view: 'pages/index'},
-  '/login' :{view: 'pages/users/login'},
-  '/register' :{view: 'pages/users/register'},
+  // '/login' :{view: 'pages/users/login'},
+  // '/register' :{view: 'pages/users/register'},
+  // '/logout' :{view: 'pages/index'},
 
 
 
@@ -38,11 +39,11 @@ module.exports.routes = {
   'GET /products/update/:id'  : { action: 'products/update'},
 
   // Log in / log out user or admin
-  '/login'                    : { action: 'users/login' },
-  'POST /login'               : { action: 'users/checklogin' },
-  'GET /register'             : { action: 'users/register' },
-  'POST /register'            : { action: 'users/savenewuser' },
-  'GET /logout'               : { action: 'users/logout' },
+  // '/login'                    : { action: 'users/login' },
+  // 'POST /login'               : { action: 'users/checklogin' },
+  // 'GET /register'             : { action: 'users/register' },
+  // 'POST /register'            : { action: 'users/savenewuser' },
+  // 'GET /logout'               : { action: 'users/logout' },
 
 
  
