@@ -12,7 +12,7 @@
             <%dogProducts.forEach((product)=> { %>
                <div class="col-md-3 myProductBox">
                   <img
-                     src="/img/product_images/dogs/<%= category %>/<%= product.subcategory_id.subcategory %>/<%=product.image_name%>"
+                     src="/img/product_images/dogs/<%= category %>/<%= subCategs[product.subcategory_id - 1][product.subcategory_id] %>/<%=product.image_name%>"
                      alt="purina veterinary" />
                   <h4>
                      <%= product.name %>
