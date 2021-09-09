@@ -63,24 +63,26 @@
             <div class="row col-md-9">
                <%dogProducts.forEach((product)=> { %>
                   <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
-                     
-                     <div class="card myProductBox"><a href="/products/view/<%=product.id%>"> <img src="/img/product_images/dogs/<%= category %>/<%= product.subcategory_id.subcategory %>/<%=product.image_name%>">
-                        <div class="card-body">
-                           <h5><b>
-                                 <%= product.name %>
-                                 <span hidden><%=product.id%></span>
-                              </b> </h5>
-                           <div class="d-flex flex-row my-2">
-                              <div class="text-muted">₹110/loaf</div></a>
-                              <div class="ml-auto"> <button class="border rounded bg-white sign"><span
-                                       class="fa fa-plus" id="orange"></span></button> <span class="px-sm-1">1
-                                    loaf</span> <button class="border rounded bg-white sign"><span class="fa fa-minus"
-                                       id="orange"></span></button> </div>
-                           </div> <button class="btn w-100 rounded my-2">Add to cart</button>
-                        </div>
-                     </div>
+
+                     <div class="card myProductBox"><a href="/products/view/<%=product.id%>"> <img
+                              src="/img/product_images/dogs/<%= category %>/<%= product.subcategory_id.subcategory %>/<%=product.image_name%>">
+                           <div class="card-body">
+                              <h4>
+                                 <b>
+                                    <%= product.name %>
+                                 </b>
+
+                              </h4>
+                              <div class="d-flex flex-row my-2">
+                        </a>
+                        <div class="select-size"><div id="quantity"><button class="border rounded quantity-button"><span class="fa fa-plus"
+                           id="orange"></span></button> <span class="px-sm-1">1</span> <button class="border rounded quantity-button"><span class="fa fa-minus"
+                           id="orange"></span></button> </div></div> 
+                     </div> <button class="btn w-100 rounded my-2 addtocart"><i class="fas fa-shopping-cart"></i> Add to cart</button>
                   </div>
-                  <%})%>
+            </div>
+         </div>
+         <%})%>
             </div>
             <!-- <div class="row col-md-9">
                <%dogProducts.forEach((product)=> { %>
@@ -96,7 +98,7 @@
                   </div>
                   <%})%>
             </div> -->
-         </div>
-         <%-include("../footer") %>
+            </div>
+            <%-include("../footer") %>
    </body>
    <%- include("../scripts") %>

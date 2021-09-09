@@ -29,7 +29,10 @@
                             </a>
                         </span>
                         <!--stock-label-->
-                        <span class="stock">In Stock</span>
+                        <%if(product.status==1){%>
+                        <span class="stock">In Stock</span><%}
+                        else {%>
+                            <span class="out-of-stock">Out Of Stock</span><%}%>
                         <h1>
                             <%= product.name %>
                         </h1>
@@ -38,7 +41,7 @@
                             <!--price-->
                             <div class="block-price clearfix">
                                 <div class="price-new clearfix">
-                                    <span class="price-new-dollar">$399</span>
+                                    <span class="price-new-dollar">$ <%=product.vendor_price%></span>
                                     <span class="price-new-cent">90</span>
                                 </div>
                                 <div class="price-old clearfix">
