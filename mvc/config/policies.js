@@ -19,4 +19,15 @@ module.exports.policies = {
 
   // '*': true,
 
+  // User login
+  // 'products/list' :true,    <---- which page we want to be seen from CUSTOMER and not a USER
+  // 'cat/*' : 'users/isLoggedIn',
+  
+  // Admin login
+  // 'dog/*' : 'users/isAdmin',
+
+  // 'users/register'  : 'users/isNotLoggedIn',
+  // 'users/login'     : 'users/alreadyLoggedIn',
+
+
 };

@@ -21,12 +21,17 @@ module.exports.routes = {
 
   '/'                         : { view: 'pages/index' },
 
+
   '/ourteam'                  : { view: 'pages/static/ourteam'},
   '/contactus'                : { view: 'pages/static/contactus'},
   '/home'                     : { view: 'pages/index'},
+  // '/login' :{view: 'pages/users/login'},
+  // '/register' :{view: 'pages/users/register'},
+  // '/logout' :{view: 'pages/index'},
 
 
   'GET /categories/:pet'      : { action: 'petcategorycontroller'},
+
 
 
 
@@ -38,12 +43,26 @@ module.exports.routes = {
   'GET /products/edit/:id'    : { action: 'products/edit'},
   'GET /products/update/:id'  : { action: 'products/update'},
 
+  // Log in / log out user or admin
+  // '/login'                    : { action: 'users/login' },
+  // 'POST /login'               : { action: 'users/checklogin' },
+  // 'GET /register'             : { action: 'users/register' },
+  // 'POST /register'            : { action: 'users/savenewuser' },
+  // 'GET /logout'               : { action: 'users/logout' },
+
+
+ 
+
+
+  
+
+
+
+
+
   //Dog
   'GET /products/dog/:category'               : { action: 'dog/categoriescontroller'},
   'GET /products/dog/category/:subcategory'   : { action: 'dog/subcategoriescontroller'},
-
-
-
 
   //Cat
   'GET /products/cat/:category'               : { action: 'cat/categoriescontroller'},
