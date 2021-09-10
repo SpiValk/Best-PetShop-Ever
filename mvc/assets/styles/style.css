@@ -961,23 +961,25 @@ button:focus {
     }
 }
 /******************************cart navbar**************************/
-.producstOnCart {
-    overflow: hidden;
+.productsOnCart {
+    overflow-x: hidden;
     overflow-y: scroll;
     scroll-behavior: smooth;
     overscroll-behavior: contain;
     background-color: rgb(30, 116, 48);
-    width: 300px;
+    width: 0px;
     height: 500px;
     color: #f0f0f0;
     z-index: 100;
     position: fixed;
-    top: 20px;
+    top: 200px;
     right: 0;
+    transition:.5s;
     text-align: center;
+    cursor:pointer;
 }
 
-.producstOnCart::-webkit-scrollbar {
+.productsOnCart::-webkit-scrollbar {
     width: 0;
     background: transparent;
 }
@@ -986,26 +988,29 @@ button:focus {
     display: none;
 }
 
-.producstOnCart ul {
+.productsOnCart ul {
     text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition:.5s;
 }
 
-.producstOnCart .buyItem {
+.productsOnCart .buyItem {
     border-bottom: #aaa 1px solid;
     width: 90%;
     padding: 10px 0;
     display: flex;
+    transition:.5s;
 }
 
-.producstOnCart img {
+.productsOnCart img {
     width: 90px;
+    transition:.5s;
 }
 
-.producstOnCart .top {
+.productsOnCart .top {
     display: flex;
     background-color: orange;
     text-align: center;
@@ -1013,6 +1018,7 @@ button:focus {
     position: sticky;
     top: 0;
     width: 100%;
+    transition:.5s;
 }
 
 .top button {
@@ -1044,8 +1050,13 @@ button:focus {
     padding: 10px 20px;
     color: #eee;
     cursor: pointer;
+    transition:.5s;
 }
 
-.hidden {
+/* .hidden {
   display: none;
 }
+.stopScrolling {
+  height: 100vh;
+  overflow: hidden;
+} */
