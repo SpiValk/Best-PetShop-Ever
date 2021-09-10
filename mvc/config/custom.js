@@ -19,7 +19,8 @@ module.exports.custom = {
   // stripeSecret: 'sk_test_Zzd814nldl91104qor5911gjald',
   // …
 
-  // H E R E ! ! !   U N CO M M E N T  ! ! !
+
+  // H E R E ! ! !   U N C O M M E N T  ! ! !
   // rememberMeCookieMaxAge: 30*24*60*60*1000,
 
 };

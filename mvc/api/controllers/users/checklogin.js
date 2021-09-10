@@ -21,7 +21,6 @@
 // fn: async function({username, password}) {
         
 //     let theUser = await User.findOne({username})
-//     //  npm install sails-hook-organics --save
 //     await sails.helpers.passwords.checkPassword(password, theUser.password).intercept('incorrect', 'badCombo')
 //     if(theUser.isAdmin) {
 //         console.log(this.req.session)
