@@ -79,49 +79,123 @@ module.exports.bootstrap = async function() {
     {
       category_name: 'dog-foods',
       description: 'dry food, dog cans, dog-treats & chews',
-      pets_id: 1
+      pets_id: 1,
+      product_image:'pet-shop-veterinary-with-food-animals-vector.jpg'
     },
     {
       category_name: 'dog-grooming',
       description: 'diapers,  flea and wormers, dog shampoo, ' +
                     'brushes & combs, scissors & clippers, perfumes & fragrances',
-      pets_id: 1
+      pets_id: 1,
+      product_image:'shampoo.jpg'
+
     },
     {
       category_name: 'dog-accessories',
       description: 'toys, clothes, poop bags, collars, bowls & feeding, leads, harness, ' +
                     'muzles, transport boxes, beds, houses',
-      pets_id: 1
+      pets_id: 1,
+      product_image:'Bowls.webp'
     },
     {
       category_name: 'dog-veterinary-products',
       description: 'antiparasitics, antibiotics, wound care, ',
-      pets_id: 1
+      pets_id: 1,
+      product_image:'PetsCare.png'
     },
 
     //---Cat--//
     {
       category_name: 'cat-foods',
       description: 'dry food, cat cans, cat-treats & chews',
-      pets_id: 2
+      pets_id: 2,
+      product_image:'pet-shop-veterinary-with-food-animals-vector.jpg'
     },
     {
       category_name: 'cat-grooming',
       description: 'diapers,  flea and wormers, cat shampoo, ' +
                     'brushes & combs, scissors & clippers, perfumes & fragrances',
-      pets_id: 2
+      pets_id: 2,
+      product_image:'shampoo.jpg'
     },
     {
       category_name: 'cat-accessories',
       description: 'toys, clothes, poop bags, collars, bowls & feeding, leads, harness, ' +
                     'muzles, transport boxes, beds, houses',
-      pets_id: 2
+      pets_id: 2,
+      product_image:'Bowls.webp'
     },
     {
       category_name: 'cat-veterinary-products',
       description: 'antiparasitics, antibiotics, wound care, ',
-      pets_id: 2
+      pets_id: 2,
+      product_image:'PetsCare.png'
     },
+    //-- fish --/
+    {
+      category_name:'fish-food',
+      description:'fish flakes,granules/pellets/sticks',
+      pets_id:3,
+      product_image:'fish-food.jpg'
+    },
+    {
+      category_name:'aquariums-equipment-and-decor',
+      description:'aquariums & aquariums stands,aquarium substrate,artificial plants,gravel sand & stones,ornamnets,artificial plants,breeders & nets,heating & lighting accessories',
+      pets_id:3,
+      product_image:'aquarium.jpg'
+    },
+    {
+      category_name:'filters-and-pumps',
+      description:'air & water pumps,filters,filter media,replacement parts',
+      pets_id:3,
+      product_image:'filter.webp'
+    },
+    {
+      category_name:'fish-care',
+      description:'fish medicines,fresh water improvement,sea water improvement,tests',
+      pets_id:3,
+      product_image:'fish-care.jpg'
+    },
+    //---- bird -- //
+    {
+      category_name:'foods-and-treats',
+      description:'bird food,wild bird food,treats',
+      pets_id:4,
+      product_image:'bird-food.jpg'
+    },
+    {
+      category_name:'bird-accessories',
+      description:'cages & stands,bowls & feeders,toys,travels carriers,bird perches,bird nest',
+      pets_id:4,
+      product_image:'bird-accessories.jpg'
+    },
+    {
+      category_name:'grooming-and-care',
+      description:'bird medication,bird sand,bird vitamins,bird baths,nail & break trimmers',
+      pets_id:4,
+      product_image:'bird-grooming.jpg'
+
+    },
+    //---small animals ---//
+    {
+      category_name:'rabbit',
+      description:'rabbit food,rabbit accessories,rabbit health care',
+      pets_id:5,
+      product_image:'rabbit.jpg'
+    },
+    {
+      category_name:'hamster',
+      description:'hamster food,hamster accessories,hamster health care',
+      pets_id:5,
+      product_image:'hamster.webp',
+    },
+    {
+      category_name:'iguana',
+      description:'iguana food,iguana accessories,iguana health care',
+      pets_id:5,
+      product_image:'iguana.jpg'
+    }
+
   ]);
 
   //------------------ CREATE SUBCATEGORIES -------------------//
@@ -267,6 +341,165 @@ module.exports.bootstrap = async function() {
       pet_id: 1
 
     },
+    //---------DOG CANS ----------//
+    {
+      name: 'Purina Pro Plan Savor Adult Dog Food',
+      description: 'Fill your dog\'s dish with Purina Pro Plan SAVOR Chicken and Rice Entree Classic adult wet dog food, and give him outstanding taste without compromise',
+      quantity: 1,
+      vendor_price: 25,
+      image_name: 'Purina-Pro-Plan-Savor-Adult-Dog-Food.jpeg',
+      status: 1,
+      vendor_id: 2,
+      product_category_id: 1,
+      subcategory_id: 2,
+      pet_id: 1
+
+    },
+    {
+      name: 'Simply Nourish® Shreds Adult Wet Dog Food',
+      description: 'Make meal time delicious and nutritious for your dog by serving Simply Nourish Chicken & Rice Stew Adult Dog Food.',
+      quantity: 1,
+      vendor_price: 25,
+      image_name: 'Simply-Nourish-Shreds-Adult-Wet-Dog-Food-Natural.jpeg',
+      status: 1,
+      vendor_id: 2,
+      product_category_id: 1,
+      subcategory_id: 2,
+      pet_id: 1
+
+    },
+    {
+      name: 'Blue Buffalo Homestyle Recipe Adult Dog Food',
+      description: 'Blue Buffalo Homestyle Recipe canned food is made from all-natural, wholesome ingredients to provide superior nutrition for your dog.',
+      quantity: 1,
+      vendor_price: 25,
+      image_name: 'Blue-Buffalo-Homestyle-Recipe-Adult-Dog-Food.jpeg',
+      status: 1,
+      vendor_id: 2,
+      product_category_id: 1,
+      subcategory_id: 2,
+      pet_id: 1
+
+    },
+    {
+      name: 'Cesar® Canine Cuisine Adult Dog Food',
+      description: 'Dogs with sophisticated palates will enjoy a rich culinary experience with CESAR Canine Cuisine Gourmet Wet Dog Food in meaty juices or in sauce.',
+      quantity: 1,
+      vendor_price: 25,
+      image_name: 'Cesar-Canine-Cuisine-Adult-Dog-Food.jpeg',
+      status: 1,
+      vendor_id: 2,
+      product_category_id: 1,
+      subcategory_id: 2,
+      pet_id: 1
+
+    },
+    {
+      name: 'Authority Cuts in Gravy Adult Wet Dog Food',
+      description: 'Provide your dog with a delicious and nutritious meal time choice by serving Authority Chicken and Rice Entree Adult Wet Dog Food.',
+      quantity: 1,
+      vendor_price: 25,
+      image_name: 'Authority-Cuts-in-Gravy-Adult-Wet-Dog-Food.jpeg',
+      status: 1,
+      vendor_id: 2,
+      product_category_id: 1,
+      subcategory_id: 2,
+      pet_id: 1
+
+    },
+    {
+      name: 'Wellness® Stews Adult Wet Dog Food - Natural',
+      description: 'These deliciously chunky, slow-cooked classics use whole food ingredients that provide exceptional nutrition and extraordinary flavor.',
+      quantity: 1,
+      vendor_price: 25,
+      image_name: 'Wellness-Stews-Adult-Wet-Dog-Food.jpeg',
+      status: 1,
+      vendor_id: 2,
+      product_category_id: 1,
+      subcategory_id: 2,
+      pet_id: 1
+
+    },
+    {
+      name: 'Purina ONE SmartBlend Tender Cuts in Gravy Wet Dog Food',
+      description: 'Tempt your dog to his dish when you serve Purina ONE SmartBlend Tender Cuts Beef & Barley Entree in Gravy adult wet dog food.',
+      quantity: 1,
+      vendor_price: 25,
+      image_name: 'Purina-ONE-SmartBlend-Tender-Cuts-in-Gravy-Wet-Dog-Food.jpeg',
+      status: 1,
+      vendor_id: 2,
+      product_category_id: 1,
+      subcategory_id: 2,
+      pet_id: 1
+
+    },
+    {
+      name: 'Purina Pro Plan Savor Wet Dog Food, Grain Free',
+      description: 'Serve up a wholesome meal combining high-quality nutrition and a delicious taste dogs love with Purina Pro Plan.',
+      quantity: 1,
+      vendor_price: 25,
+      image_name: 'Purina-Pro-Plan-Savor-Wet-Dog-Food.jpeg',
+      status: 1,
+      vendor_id: 2,
+      product_category_id: 1,
+      subcategory_id: 2,
+      pet_id: 1
+
+    },
+    {
+      name: 'Royal Canin® Canine Health Nutrition™ Advanced Nutrition Adult Dog Food',
+      description: 'Founded by a veterinarian, Royal Canin has over 40 years experience in health nutrition.',
+      quantity: 1,
+      vendor_price: 25,
+      image_name: 'Royal-Canin-Canine-Advanced-Nutrition-Dog-Food.jpeg',
+      status: 1,
+      vendor_id: 2,
+      product_category_id: 1,
+      subcategory_id: 2,
+      pet_id: 1
+
+    },
+    //---------DOG TREATS & CHEWS ----------//
+    {
+      name: 'Simply Nourish® Soft Chews Sticks Dog Treat - Natural',
+      description: 'Make treat time delicious and nutritious for your dog by serving Simply Nourish Bacon & Cheese Recipe Soft Chews Dog Treats.',
+      quantity: 1,
+      vendor_price: 25,
+      image_name: 'Simply-Nourish-Soft-Chews-Sticks-Dog-Treat-Natural.jpeg',
+      status: 1,
+      vendor_id: 2,
+      product_category_id: 1,
+      subcategory_id: 3,
+      pet_id: 1
+
+    },
+    {
+      name: 'Milk-Bone Soft & Chewy Dog Snacks',
+      description: 'Add more wholesome goodness to your dog\'s day with Milk-Bone Soft & Chewy Beef & Filet Mignon Recipe with Chuck Roast dog treats. ',
+      quantity: 1,
+      vendor_price: 25,
+      image_name: 'Milk-Bone-Soft-&-Chewy-Dog-Snacks.jpeg',
+      status: 1,
+      vendor_id: 2,
+      product_category_id: 1,
+      subcategory_id: 3,
+      pet_id: 1
+
+    },
+    {
+      name: 'Bil-Jac® Little-Jacs Chicken Liver Small Breed Training Treats',
+      description: 'Bil-Jac Little-Jacs Training Treats are ideal for training your small dog.',
+      quantity: 1,
+      vendor_price: 25,
+      image_name: 'Bil-Jac-Little-Jacs-Chicken-Liver-Small-Breed-Training-Treats.jpeg',
+      status: 1,
+      vendor_id: 2,
+      product_category_id: 1,
+      subcategory_id: 3,
+      pet_id: 1
+
+    },
+
 
     //---------- BARF -----------//
     {
@@ -790,285 +1023,6 @@ module.exports.bootstrap = async function() {
       pet_id: 1
     },
 
-    //DOG ACCESSORIES/DOG LEADS
-    {
-      name: 'KONG® Comfort Dog Leash',
-      description: 'The KONG Padded Hands-Free Leash offers you more freedom while still being in control on walks with your furry friend' ,
-      quantity: 1,
-      vendor_price: 5,
-      image_name: 'KONG-Comfort-Dog-Leash.png',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 13,
-      pet_id: 1
-    },
-    {
-      name: 'Top Paw® Nylon Dog Leash: 6-ft long',
-      description: 'This Top Paw Standard Navy Nylon Dog Leash makes walks safer and more enjoyable for you and your dog' ,
-      quantity: 1,
-      vendor_price: 5,
-      image_name: 'Top-Paw-Nylon-Dog-Leash.png',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id:13,
-      pet_id: 1
-    },
-    {
-      name: 'flexi® New Classic Retractable Cord Dog Leash',
-      description: 'Keep your dog safe on walks while giving him a bit of room to roam with the Flexi New Classic Retractable Cord Dog Leash.' ,
-      quantity: 1,
-      vendor_price: 5,
-      image_name: 'flexi-New-Retractable-Cord-Dog-Leash.png',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 13,
-      pet_id: 1
-    },
-    {
-      name: 'KONG® Rope Dog Leash',
-      description: 'The KONG Red Rope Leash offers pet parents more comfort and control on walks' ,
-      quantity: 1,
-      vendor_price: 5,
-      image_name: 'KONG-Rope-Dog-Leash.png',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 13,
-      pet_id: 1
-    },
-    {
-      name: 'Arcadia Trail™ Reflective Rope Dog Leash: 4-ft long',
-      description: 'This Arcadia Trail Berry Reflective Rope Dog Leash is the perfect choice for doggie/pet parent duos that love enjoying the outdoors together' ,
-      quantity: 1,
-      vendor_price: 5,
-      image_name: 'Arcadia-Trail-Reflective-Rope-Dog-Leash.png',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id:13,
-      pet_id: 1
-    },
-    {
-      name: 'Top Paw® Rope Dog Leash',
-      description: 'Make walks with your pup safer and more enjoyable with the Top Paw Rope Leash.' ,
-      quantity: 1,
-      vendor_price: 5,
-      image_name: 'Top-Paw-Rope-Dog-Leash.png',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 13,
-      pet_id: 1
-    },
-    {
-      name: 'Thrills & Chills™ Halloween Orange & Black Waste Bag Dispenser Leash Set: 4-ft long',
-      description: 'Walking your dog, and cleaning up after him in convenient fashion, is a breeze with this Thrills & Chills Waste Bag Dispenser Leash Set.' ,
-      quantity: 1,
-      vendor_price: 5,
-      image_name: 'Thrills-&-Chills-Halloween-Waste-Bag-Dispenser-Leash-Set.png',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 13,
-      pet_id: 1
-    },
-    {
-      name: 'Lucy & Co. Dilly Lily Dog Leash',
-      description: 'Make walks safer and more enjoyable for you and your pup with this Lucy & Co. Teal Floral Dog Leash' ,
-      quantity: 1,
-      vendor_price: 5,
-      image_name: 'Lucy-&-Co-Dilly-Lily-Dog-Leash.png',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id:13,
-      pet_id: 1
-    },
-    {
-      name: 'Top Paw® Blue Multi-Bone Dog Leash: 6-ft long, 5/8-in wide',
-      description: 'This colorful leash is strong and sturdy, and offers you more control while the two of you enjoy walks together' ,
-      quantity: 1,
-      vendor_price: 5,
-      image_name: 'Top-Paw-Blue-Multi-Bone-Dog-Leash.png',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 13,
-      pet_id: 1
-    },
-    {
-      name: 'Lucy & Co. Posy Pink Dog Leash',
-      description: 'This great-looking leash comes in vibrant pink, and offers you optimal control as well as a padded handle for maximum comfort while the two of you enjoy walks together' ,
-      quantity: 1,
-      vendor_price: 5,
-      image_name: 'Lucy-&-Co-Posy-Pink-Dog-Leash.png',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 13,
-      pet_id: 1
-    },
-    {
-      name: 'KONG® Reflective Padded Hands-Free Dog Leash',
-      description: 'The KONG Reflective Padded Hands-Free Leash offers you more freedom while still being in control on walks with your furry friend' ,
-      quantity: 1,
-      vendor_price: 5,
-      image_name: 'KONG-Reflective-Padded-Hands-Free-Dog-Leash.png',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 13,
-      pet_id: 1
-    },
-
-
-    //DOG ACCESSORIES/DOG HARNESS
-    {
-      name: 'KONG® Reflective Pocket Dog Harness',
-      description: 'Keep your dog safer and more comfortable on walks with this stylish KONG Reflective Pocket Dog Harness.' ,
-      quantity: 1,
-      vendor_price: 5,
-      image_name: 'KONG-Reflective-Pocket-Dog-Harness.png',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id:14,
-      pet_id: 1
-    },
-    {
-      name: 'Top Paw® Gunmetal Core Adjustable Dog Harness',
-      description: 'The Top Paw Gunmetal Core Adjustable Harness is colorful and stylish, and provides you and your dog with the vehicle to make walks and other outdoor excursions safer and more enjoyable.' ,
-      quantity: 1,
-      vendor_price: 5,
-      image_name: 'Top-Paw-Gunmetal-Core-Adjustable-Dog-Harness.png',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 14,
-      pet_id: 1
-    },
-    {
-      name: 'Arcadia Trail™ Neoprene Sport Dog Harness',
-      description: 'Dogs and their humans that are serious about their tandem outdoor excursions will love this Arcadia Trail Yellow Neoprene Sport Harness' ,
-      quantity: 1,
-      vendor_price: 5,
-      image_name: 'Arcadia-Trail-Neoprene-Sport-Dog-Harness.png',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 14,
-      pet_id: 1
-    },
-
-
-
-
-
-
-
-
-    //**** DOG ACCESORIES/DOG BEDS ******//
-    {
-      name: 'Top Paw® Grey Hearts Classic Pillow Dog Bed',
-      description: 'This Top Paw Grey Hearts Core Classic Pillow Dog Bed is lightweight enough for your dog to sleep anywhere. It features a field of colorful hearts at the heart of its design, and features soft polyfill for optimal comfort.' ,
-      quantity: 1,
-      vendor_price: 5,
-      image_name: 'Top-Paw®-Grey-Hearts-Classic-Pillow-Dog-Bed_files.jpg',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 18,
-      pet_id: 1
-    },
-    {
-      name: 'Top Paw® Orthopedic Lounger Dog Bed',
-      description: 'This Top Paw Orthopedic Lounger Bed is overstuffed for a dreamy blend of support your dog will love.' ,
-      quantity: 1,
-      vendor_price: 5,
-      image_name: 'Top-Paw®-Orthopedic-Lounger-Dog Bed.jpg',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 18,
-      pet_id: 1
-    },
-    {
-      name: 'Top Paw® Orthopedic Memory Foam Quilt Mattress Dog Bed',
-      description: 'The KONG SqueakAir Tennis Ball Dog Toy combines two classic dog toys -the tennis ball and the squeaker toy-to create the perfect fetch toy. This durable, high-quality Squeakair tennis ball will not wear down your dog\'s teeth' ,
-      quantity: 1,
-      vendor_price: 5,
-      image_name: 'Top-Paw®-Orthopedic-Memory-Foam-Quilt-Mattress-Dog-Bed.jpg',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 18,
-      pet_id: 1
-    },
-    {
-      name: 'Top Paw® Orthopedic Cuddler Dog Bed',
-      description: 'This Top Paw Grey Heather Orthopedic Cuddler Bed features dual layers the delicately balance softness and support.' ,
-      quantity: 1,
-      vendor_price: 5,
-      image_name: 'Top-Paw®-Orthopedic-Cuddler-Dog-Bed.jpg',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 18,
-      pet_id: 1
-    },
-    {
-      name: 'Top Paw® Orthopedic Super Support Cuddler Dog Bed',
-      description: 'Your pet will experience ultimate relaxation when cradled against the cushioned walls of the new and improved Top Paw Orthopedic Cuddler Bed.' ,
-      quantity: 1,
-      vendor_price: 5,
-      image_name: 'Top-Paw®-Orthopedic-Super-Support-Cuddler-Dog-Bed.jpg',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 18,
-      pet_id: 1
-    },
-    {
-      name: 'PAIKKA Recovery Burrow Pet Bed',
-      description: 'The PAIKKA Recovery Burrow Bed supports restful sleep and offers a warm hiding place for your dog. ' ,
-      quantity: 1,
-      vendor_price: 5,
-      image_name: 'PAIKKA-Recovery-Burrow-Pet-Bed.jpg',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 18,
-      pet_id: 1
-    },
-
-    {
-      name: 'Armarkat Soothing Blue Memory Foam Mattress Dog Bed',
-      description: 'The Armarkat Model D08B medium bolstered pet bed is made with durable upholstery and a 7-inch thick memory foam mattress for maximum comfort.' ,
-      quantity: 1,
-      vendor_price: 5,
-      image_name: 'Armarkat-Soothing-Blue-Memory-Foam-Mattress-Dog-Bed.jpg',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 18,
-      pet_id: 1
-    },
-    {
-      name: 'Carolina Pet Orthopedic Comfort Couch Personalized Dog Bed',
-      description: 'You can personalize this product with one line of personalization and up to 10 characters including spaces.' ,
-      quantity: 1,
-      vendor_price: 5,
-      image_name: 'Carolina-Pet-Orthopedic-Comfort-Couch-Personalized-Dog-Bed.jpg',
-      status: 1,
-      vendor_id: 6,
-      product_category_id: 3,
-      subcategory_id: 18,
-      pet_id: 1
-    },
-
     //-------- Dog Clothes --------//
     {
       name: 'Hopping Bunny Flannel Dog Pajamas',
@@ -1142,6 +1096,7 @@ module.exports.bootstrap = async function() {
       subcategory_id: 10,
       pet_id: 1
     },
+
     //---------------- Dog Collars --------------//
     {
       name: 'Buttercup Plaid Flannel Dog Collar',
@@ -1288,6 +1243,395 @@ module.exports.bootstrap = async function() {
       product_category_id: 3,
       subcategory_id: 12,
       pet_id: 1  },
+
+    //----DOG LEADS---//
+    {
+      name: 'KONG® Comfort Dog Leash',
+      description: 'The KONG Padded Hands-Free Leash offers you more freedom while still being in control on walks with your furry friend' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'KONG-Comfort-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 13,
+      pet_id: 1
+    },
+    {
+      name: 'Top Paw® Nylon Dog Leash: 6-ft long',
+      description: 'This Top Paw Standard Navy Nylon Dog Leash makes walks safer and more enjoyable for you and your dog' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Top-Paw-Nylon-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id:13,
+      pet_id: 1
+    },
+    {
+      name: 'flexi® New Classic Retractable Cord Dog Leash',
+      description: 'Keep your dog safe on walks while giving him a bit of room to roam with the Flexi New Classic Retractable Cord Dog Leash.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'flexi-New-Retractable-Cord-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 13,
+      pet_id: 1
+    },
+    {
+      name: 'KONG® Rope Dog Leash',
+      description: 'The KONG Red Rope Leash offers pet parents more comfort and control on walks' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'KONG-Rope-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 13,
+      pet_id: 1
+    },
+    {
+      name: 'Arcadia Trail™ Reflective Rope Dog Leash: 4-ft long',
+      description: 'This Arcadia Trail Berry Reflective Rope Dog Leash is the perfect choice for doggie/pet parent duos that love enjoying the outdoors together' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Arcadia-Trail-Reflective-Rope-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id:13,
+      pet_id: 1
+    },
+    {
+      name: 'Top Paw® Rope Dog Leash',
+      description: 'Make walks with your pup safer and more enjoyable with the Top Paw Rope Leash.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Top-Paw-Rope-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 13,
+      pet_id: 1
+    },
+    {
+      name: 'Thrills & Chills™ Halloween Orange & Black Waste Bag Dispenser Leash Set: 4-ft long',
+      description: 'Walking your dog, and cleaning up after him in convenient fashion, is a breeze with this Thrills & Chills Waste Bag Dispenser Leash Set.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Thrills-&-Chills-Halloween-Waste-Bag-Dispenser-Leash-Set.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 13,
+      pet_id: 1
+    },
+    {
+      name: 'Lucy & Co. Dilly Lily Dog Leash',
+      description: 'Make walks safer and more enjoyable for you and your pup with this Lucy & Co. Teal Floral Dog Leash' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Lucy-&-Co-Dilly-Lily-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id:13,
+      pet_id: 1
+    },
+    {
+      name: 'Top Paw® Blue Multi-Bone Dog Leash: 6-ft long, 5/8-in wide',
+      description: 'This colorful leash is strong and sturdy, and offers you more control while the two of you enjoy walks together' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Top-Paw-Blue-Multi-Bone-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 13,
+      pet_id: 1
+    },
+    {
+      name: 'Lucy & Co. Posy Pink Dog Leash',
+      description: 'This great-looking leash comes in vibrant pink, and offers you optimal control as well as a padded handle for maximum comfort while the two of you enjoy walks together' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Lucy-&-Co-Posy-Pink-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 13,
+      pet_id: 1
+    },
+    {
+      name: 'KONG® Reflective Padded Hands-Free Dog Leash',
+      description: 'The KONG Reflective Padded Hands-Free Leash offers you more freedom while still being in control on walks with your furry friend' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'KONG-Reflective-Padded-Hands-Free-Dog-Leash.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 13,
+      pet_id: 1
+    },
+
+
+    //---DOG HARNESS---//
+    {
+      name: 'KONG® Reflective Pocket Dog Harness',
+      description: 'Keep your dog safer and more comfortable on walks with this stylish KONG Reflective Pocket Dog Harness.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'KONG-Reflective-Pocket-Dog-Harness.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id:14,
+      pet_id: 1
+    },
+    {
+      name: 'Top Paw® Gunmetal Core Adjustable Dog Harness',
+      description: 'The Top Paw Gunmetal Core Adjustable Harness is colorful and stylish, and provides you and your dog with the vehicle to make walks and other outdoor excursions safer and more enjoyable.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Top-Paw-Gunmetal-Core-Adjustable-Dog-Harness.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 14,
+      pet_id: 1
+    },
+    {
+      name: 'Arcadia Trail™ Neoprene Sport Dog Harness',
+      description: 'Dogs and their humans that are serious about their tandem outdoor excursions will love this Arcadia Trail Yellow Neoprene Sport Harness' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Arcadia-Trail-Neoprene-Sport-Dog-Harness.png',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 14,
+      pet_id: 1
+    },
+
+    //---DOG POOP BAGS ---//
+
+    {
+      name: 'Beco Eco-Friendly Poop Bags',
+      description: 'Beco Bags make cleaning up after your pet as eco-friendly as possible, thanks to our degradable material.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Beco-Eco-Friendly-Poop-Bags_1.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 15,
+      pet_id: 1
+    },
+    {
+      name: 'T. Forrest Our Dog Biodegradable Poo Bags - 50 Bags',
+      description: 'When buying poop bags, look for biodegradable bags, which are better for the environment. Biodegradable poop bags are typically made out of GMO free corn or other starches and vegetable oil.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'T-Forrest-Our-Dog-Biodegradable-Poo-Bags.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 15,
+      pet_id: 1
+    },
+    {
+      name: 'Bags on Board Blue Refill Poo Bags - 60 Pack',
+      description: 'The super quality Bags on Board Refill blue bags are fantastic value forthe consumer.The clean-up bags are toughlong and robust making them easy to place the hand inside securely.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Bags-on-Board-Blue-Refill-Poo-Bags.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 15,
+      pet_id: 1
+    },
+    {
+      name: 'Bags On Board Refill Neutral Coloured Poo Bags - 140 Pack',
+      description: 'Bags on Board Neutral Dog Waste Bags makes picking up dog poop and pet waste quick, easy, and simple whether on a walk or in the Garden' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Bags-On-Board-Refill-Neutral-Coloured-Poo-Bags.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 15,
+      pet_id: 1
+    },
+    {
+      name: 'Good Boy Antibacterial Degradable Poo Bags - 100 Pack ',
+      description: 'Good Boy Degradable Poo Bags are a great way of cleaning up after your dog, allowing quick, easy and hygienic disposal. ' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Good-Boy-Antibacterial-Degradable-Poo-Bags.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 15,
+      pet_id: 1
+    },
+    {
+      name: 'KONG Handi POD Refill Bags for Dogs',
+      description: 'KONG is renowned for high quality and durability, KONG HandiPOD has been developed to bring dog walkers useful solutions for when they are out and about.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'KONG-Handi-POD-Refill-Bags-for-Dogs.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 15,
+      pet_id: 1
+    },
+    {
+      name: 'Beco Compostable Poo Bags - 96 Pack ',
+      description: 'Made from a plant based material these bags are certified both home compostable and biodegradable. Made to be extra long and thick these bags protect your hands and cater for all poop bag sizes.',
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Beco-Compostable-Poo-Bags-96-Pack.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 15,
+      pet_id: 1
+    },
+    {
+      name: 'Pedigree Easi Scoop Refill 50s',
+      description: 'Clean easy method of removing droppings. A handy & hygenic device to help quickly & safely lift & dispose of dog mess. 50 refills for Easi Scoop.',
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Pedigree-Easi-Scoop-Refill-50s.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 15,
+      pet_id: 1
+    },
+    {
+      name: 'Bags On Board Grey Cushy Dispenser with 14 Bags',
+      description: 'New Cushy waste pick-up dispensers are made from lightweight soft silicon, to give your pet extra comfort when out walking',
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Bags-On-Board-Grey-Cushy-Dispenser-with-14-Bags.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 15,
+      pet_id: 1
+    },
+
+
+    //------DOG BEDS -------//
+    {
+      name: 'Top Paw® Grey Hearts Classic Pillow Dog Bed',
+      description: 'This Top Paw Grey Hearts Core Classic Pillow Dog Bed is lightweight enough for your dog to sleep anywhere. It features a field of colorful hearts at the heart of its design, and features soft polyfill for optimal comfort.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Top-Paw®-Grey-Hearts-Classic-Pillow-Dog-Bed_files.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 18,
+      pet_id: 1
+    },
+    {
+      name: 'Top Paw® Orthopedic Lounger Dog Bed',
+      description: 'This Top Paw Orthopedic Lounger Bed is overstuffed for a dreamy blend of support your dog will love.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Top-Paw®-Orthopedic-Lounger-Dog Bed.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 18,
+      pet_id: 1
+    },
+    {
+      name: 'Top Paw® Orthopedic Memory Foam Quilt Mattress Dog Bed',
+      description: 'The KONG SqueakAir Tennis Ball Dog Toy combines two classic dog toys -the tennis ball and the squeaker toy-to create the perfect fetch toy. This durable, high-quality Squeakair tennis ball will not wear down your dog\'s teeth' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Top-Paw®-Orthopedic-Memory-Foam-Quilt-Mattress-Dog-Bed.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 18,
+      pet_id: 1
+    },
+    {
+      name: 'Top Paw® Orthopedic Cuddler Dog Bed',
+      description: 'This Top Paw Grey Heather Orthopedic Cuddler Bed features dual layers the delicately balance softness and support.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Top-Paw®-Orthopedic-Cuddler-Dog-Bed.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 18,
+      pet_id: 1
+    },
+    {
+      name: 'Top Paw® Orthopedic Super Support Cuddler Dog Bed',
+      description: 'Your pet will experience ultimate relaxation when cradled against the cushioned walls of the new and improved Top Paw Orthopedic Cuddler Bed.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Top-Paw®-Orthopedic-Super-Support-Cuddler-Dog-Bed.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 18,
+      pet_id: 1
+    },
+    {
+      name: 'PAIKKA Recovery Burrow Pet Bed',
+      description: 'The PAIKKA Recovery Burrow Bed supports restful sleep and offers a warm hiding place for your dog. ' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'PAIKKA-Recovery-Burrow-Pet-Bed.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 18,
+      pet_id: 1
+    },
+
+    {
+      name: 'Armarkat Soothing Blue Memory Foam Mattress Dog Bed',
+      description: 'The Armarkat Model D08B medium bolstered pet bed is made with durable upholstery and a 7-inch thick memory foam mattress for maximum comfort.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Armarkat-Soothing-Blue-Memory-Foam-Mattress-Dog-Bed.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 18,
+      pet_id: 1
+    },
+    {
+      name: 'Carolina Pet Orthopedic Comfort Couch Personalized Dog Bed',
+      description: 'You can personalize this product with one line of personalization and up to 10 characters including spaces.' ,
+      quantity: 1,
+      vendor_price: 5,
+      image_name: 'Carolina-Pet-Orthopedic-Comfort-Couch-Personalized-Dog-Bed.jpg',
+      status: 1,
+      vendor_id: 6,
+      product_category_id: 3,
+      subcategory_id: 18,
+      pet_id: 1
+    },
+
+
+
+
+
 
 
     //---Dog muzzle---//
@@ -1959,7 +2303,7 @@ module.exports.bootstrap = async function() {
     },
 
     {
-      name: 'Bayer Tapeworm Dewormer (praziquantel tablets) for Dogs,',
+      name: 'Bayer Tapeworm Dewormer (praziquantel tablets) for Dogs',
       description: '5-count bottle of tapeworm dewormer for dogs' ,
       quantity: 3,
       vendor_price: 4,
@@ -1970,6 +2314,7 @@ module.exports.bootstrap = async function() {
       subcategory_id: 23,
       pet_id: 1
     },
+
 
 
           // Dog Vitamins Minerals Electrolytes
@@ -2081,6 +2426,82 @@ module.exports.bootstrap = async function() {
             subcategory_id: 24,
             pet_id: 1
           },
+
+    {
+      name: 'PetHonesty 10 in 1 Dog Multivitamin with Glucosamine',
+      description: '10-For-1 Multivitamin chews combine a well-rounded blend of the most essential vitamins and supplements for dogs\' overall daily health including glucosamine, probiotics, vitamins, and omega\'s.' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'PetHonesty-10-in-1-Dog-Multivitamin-with-Glucosamine.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 24,
+      pet_id: 1
+    },
+    {
+      name: 'ProSense Vitamin Solutions 90 Count, Chewable Tablets for Dogs',
+      description: 'Formulated with vitamins, minerals and antioxidants to support overall canine wellness' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'ProSense-Vitamin-Solutions-90-Count-Chewable-Tablets.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 24,
+      pet_id: 1
+    },
+    {
+      name: 'VetIQ Supplements for Dogs',
+      description: 'Formulated to help support Active Brain Function, Strong Immune System, and Healthy Digestive System.' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'VetIQ-Supplements-for-Dogs.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 24,
+      pet_id: 1
+    },
+    {
+      name: 'Pet Naturals - Daily Multi for Dogs, Daily Multivitamin Formula, 150 Bite Sized Chews',
+      description: 'Daily Multi for dogs is a veterinarian formulated supplement for use in dogs of all ages. It includes 28 nutrients to help keep dogs of all ages in peak condition.' ,
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'Pet-Naturals-Daily-Multi-for-Dogs-Daily-Multivitamin-Formula.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 24,
+      pet_id: 1
+    },
+    {
+      name: 'Nutramax Laboratories 21 Count Crananidin Pet Supplement',
+      description: 'Supports urinary tract by stopping bacteria from sticking in the urinary tract, allowing them to be flushed out in the urine.Helps to prevent urinary tract infections',
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'Nutramax-Laboratories-21-Count-Crananidin-Pet-Supplement.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 24,
+      pet_id: 1
+    },
+    {
+      name: 'Natural Dog Company Multivitamin Supplement with Turmeric and Fish Oil',
+      description: 'Effective dog multivitamin includes (1) 90 Count of Natural Dog Company Multivitamin Supplement Chews that are ideal for dogs of any age, size or breed.',
+      quantity: 3,
+      vendor_price: 4,
+      image_name: 'Natural-Dog-Company-Multivitamin-Supplement-with-Turmeric-and-Fish-Oil.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id: 4,
+      subcategory_id: 24,
+      pet_id: 1
+    },
+
+
+
 
 
 
@@ -2541,6 +2962,330 @@ module.exports.bootstrap = async function() {
       subcategory_id: 31,
       pet_id: 2
     },
+
+    //*********CAT ACCESSORIES *******//
+    //----Cat Toys------///
+
+    {
+      name: 'KONG® Eight Track Cat Toy',
+      description: 'Promote healthy exercise while fulfilling your cat\'s instinctual desire to chase, hunt and capture with the KONG Eight Track.' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'KONG-Eight-Track-Cat-Toy.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 32,
+      pet_id: 2
+    },
+    {
+      name: 'Good Girl Laser Mouse Cat Toy',
+      description: 'The Good Girl Laser Mouse Cat Toy projects a mouse shaped laser beam that your cat will love to chase.' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'good-girl-laser-mouse-cat-toy.jpeg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 32,
+      pet_id: 2
+    },
+    {
+      name: 'Catit Senses 2.0 Self Groomer',
+      description: 'The Catit Senses 2.0 Self Groomer provides your cat with a constant source of rubbing and grooming pleasure.' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'catit-senses-20-self-groomer.jpeg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 32,
+      pet_id: 2
+    },
+    {
+      name: 'KONG Cat Teaser Snake Catnip Toy',
+      description: 'With natural feathers and an irresistible rattle sound, this soft, plush KONG Cat Snake Teaser is a great cat toy!' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'kong-cat-teaser-snake.jpeg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 32,
+      pet_id: 2
+    },
+    {
+      name: 'Play N Squeak Twice The Mice',
+      description: 'Now your pet can hunt two mice concurrently and make use of all its innate preying instincts, while its agility, and alertness will be pushed to the absolute limit.' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Play-N-Squeak-Twice-The-Mice.jpeg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 32,
+      pet_id: 2
+    },
+    {
+      name: 'Ancol Super Cat Play Tunnel',
+      description: 'The Ancol Super Cat Play Tunnel will help provide hours of fun and entertainment for your beloved cat.' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Ancol-Super-Cat-Play-Tunnel.jpeg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 32,
+      pet_id: 2
+    },
+    {
+      name: 'FroliCat Bolt Automatic Laser Light',
+      description: 'Simply hold the toy in your hand or place it on a flat surface, turn it on and watch your pet pounce, chase and bat at the exciting laser patterns.' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'FroliCat-Bolt-Automatic-Laser-Light.jpeg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 32,
+      pet_id: 2
+    },
+    {
+      name: 'KONG Play Spaces SeaQuins Cat Toy',
+      description: 'Uniquely designed to stay perched open, this toy fulfills natural hiding needs while supporting engaging stalk and grab play.' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'KONG-Play-Spaces-SeaQuins-Cat-Toy.jpeg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 32,
+      pet_id: 2
+    },
+
+    ///----Cat Litter Boxes------///
+
+    {
+      name: 'Frieda Litter Box Enclosure',
+      description: 'A house like this is a great option for giving your feline friend a spot to take care of their business while contributing to your home\'s style.' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Frieda-Litter-Box-Enclosure.jpeg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 33,
+      pet_id: 2
+    },
+    {
+      name: 'Ginny Litter Box Enclosure',
+      description: 'Hide your kitty\'s business with this versatile litter box and end table combo. Perfect for your master bath, laundry room, or den.' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Ginny-Litter-Box-Enclosure.jpeg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 33,
+      pet_id: 2
+    },
+    {
+      name: 'Plastic Standard Litter Box with Scoop',
+      description: 'Large open litter pan with an extra-tall shield to help contain litter scatter and spray. High-polished interior surfaces to make cleaning a snap.' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Plastic-Standard-Litter-Box-with-Scoop.jpeg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 33,
+      pet_id: 2
+    },
+    {
+      name: 'Litter Box Enclosure',
+      description: 'Hide your kitties business with this versatile litter box and end table combo.' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Litter-Box-Enclosure.jpeg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 33,
+      pet_id: 2
+    },
+    {
+      name: 'Elijah Covered Hidden Cat Litter Box with Decorative Planter',
+      description: 'Hide the cat litter at your home in a stylish way with this Archie & Oscar™ Covered Hidden Cat Litter Box / Decorative Planter' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Elijah-Covered-Hidden-Cat-Box-with-Decorative-Planter.jpeg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 33,
+      pet_id: 2
+    },
+    {
+      name: 'Cathey Litter Box Enclosure',
+      description: 'Cats are lovable, but their litter boxes? Not so much. Keep that essential around without disrupting your ensemble with this classic cabinet' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Cathey-Litter-Box-Enclosure.jpeg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 33,
+      pet_id: 2
+    },
+    {
+      name: 'Basic Hooded Standard Litter Box',
+      description: 'Combines price, appearance, and quality craftsmanships with multiple features into one litter box making this a great starter pan for your cat. ' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Basic-Hooded-Standard-Litter-Box.jpeg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 33,
+      pet_id: 2
+    },
+    {
+      name: 'Sulema Litter Box Enclosure',
+      description: 'The divider can be removed for a more spacious room. With a large top, it can double as a side table or nightstand.' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Sulema-Litter-Box-Enclosure.jpeg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 33,
+      pet_id: 2
+    },
+    {
+      name: 'Fason Litter Box Enclosure with Scoop',
+      description: 'The divider can be removed for a more spacious room. With a large top, it can double as a side table or nightstand.' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Litter-Box-Enclosure-with-Scoop.jpeg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 33,
+      pet_id: 2
+    },
+    {
+      name: 'Cat Litter Box Enclosure,Washroom Bench',
+      description: 'Amazing furniture to use both as home decor and for cat privacy. Give you a great odorless home.' ,
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Cat-Litter-Box-Enclosure-Washroom-Bench.jpeg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 33,
+      pet_id: 2
+    },
+
+    ///----Cat Clothes------///
+
+    {
+      name: 'Cat Solid Bat Wing',
+      description: 'Bat wings for your kitten',
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Cat-Solid-Bat-Wing.webp',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 34,
+      pet_id: 2
+    },
+    {
+      name: 'Plain Pet Hoodie',
+      description: 'Plain Pet Hoodie for your kitten',
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Plain-Pet-Hoodie.webp',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 34,
+      pet_id: 2
+    },
+    {
+      name: 'PETSIN Solid Color Cat Sweater',
+      description: 'Solid Color Cat Sweater for your kitten',
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'PETSIN-Solid-Color-Cat-Sweater.webp',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 34,
+      pet_id: 2
+    },
+    {
+      name: 'Slogan Graphic Pet Tee',
+      description: 'Slogan Graphic Pet Tee for your kitten',
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Slogan-Graphic-Pet-Tee.webp',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 34,
+      pet_id: 2
+    },
+    {
+      name: 'Plain Pet Recovery Suit',
+      description: 'Plain Pet Recovery Suit for your kitten',
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Plain-Pet-Recovery-Suit.webp',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 34,
+      pet_id: 2
+    },
+    {
+      name: 'Bow Decor Pet Lace Dress',
+      description: 'Bow Decor Pet Lace Dress',
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Bow-Decor-Pet-Lace-Dress.webp',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 34,
+      pet_id: 2
+    },
+    {
+      name: 'PETSIN Argyle Turtleneck Cat Sweater',
+      description: 'Turtleneck Cat Sweater',
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'PETSIN-Argyle-Turtleneck-Cat-Sweater.webp',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 34,
+      pet_id: 2
+    },
+    {
+      name: 'Cowboy Design Pet Costume',
+      description: 'Cowboy Design Pet Costume',
+      quantity: 4,
+      vendor_price: 4,
+      image_name: 'Cowboy-Design-Pet-Costume.webp',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 34,
+      pet_id: 2
+    },
+
+
   ]);
 
 };

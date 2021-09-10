@@ -19,14 +19,19 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': { view: 'pages/index' },
+  '/'                         : { view: 'pages/index' },
 
-  '/ourteam' :{view: 'pages/static/ourteam'},
-  '/contactus' :{view: 'pages/static/contactus'},
-  '/home' :{view: 'pages/index'},
+
+  '/ourteam'                  : { view: 'pages/static/ourteam'},
+  '/contactus'                : { view: 'pages/static/contactus'},
+  '/home'                     : { view: 'pages/index'},
   // '/login' :{view: 'pages/users/login'},
   // '/register' :{view: 'pages/users/register'},
   // '/logout' :{view: 'pages/index'},
+
+
+  'GET /categories/:pet'      : { action: 'petcategorycontroller'},
+
 
 
 

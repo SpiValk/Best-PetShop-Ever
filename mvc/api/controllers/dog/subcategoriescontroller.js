@@ -8,7 +8,7 @@ module.exports = {
     subcategory:{
       type: 'string',
       required: true
-    }
+    },
 
   },
 
@@ -17,12 +17,11 @@ module.exports = {
     let productSubcategory = await Product_subcategory.findOne({subcategory: subcategory}).populate('pet_product_id');
     let categoryTemp = await Product_subcategory.findOne({subcategory: subcategory}).populate('category_id');
 
+
+
     //take the array with all the products
     let dogProducts = await productSubcategory.pet_product_id;
     let category = await categoryTemp.category_id.category_name;
-
-    console.log(category);
-    console.log(subcategory);
     return this.res.view(`pages/dog/dogSubcategories`, {dogProducts, category, subcategory});
   }
 

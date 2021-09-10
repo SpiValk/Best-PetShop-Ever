@@ -1,6 +1,7 @@
 module.exports={
   tableName:'user',
   attributes:{
+    
     username :{
     type:'string',
     columnName:'username',
@@ -32,6 +33,7 @@ module.exports={
          columnName:'isAdmin',     
          required:true},
 
+
     customer_id:{
       collection: 'customer',
       via: 'user_id'
@@ -52,6 +54,6 @@ module.exports={
       through:    'donation',
     }
 
-    
+
   }
 }
