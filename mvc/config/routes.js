@@ -24,6 +24,12 @@ module.exports.routes = {
   '/ourteam'                  : { view: 'pages/static/ourteam'},
   '/contactus'                : { view: 'pages/static/contactus'},
   '/home'                     : { view: 'pages/index'},
+  '/privacy-policy'           : { view: 'pages/static/privacy-policy'},
+  '/delivery'                 : { view: 'pages/static/delivery'},
+  '/terms-and-condition.'     : { view: 'pages/static/terms-of-use'},
+  '/ways-to-order'            : { view: 'pages/static/ways-to-order'},
+  '/policy-of-return'         : { view: 'pages/static/policy-of-return'},
+
 
 
   'GET /categories/:pet'      : { action: 'petcategorycontroller'},
