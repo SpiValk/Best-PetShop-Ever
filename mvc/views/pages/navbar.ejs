@@ -26,9 +26,9 @@
             </li>
            
             <li class="nav-item ">
-               <a class="nav-link shoppingCartButton" id="cart" ><i class="fas fa-shopping-cart"></i> Your
-                  Cart!
+               <a class="nav-link shoppingCartButton" id="cart" ><i id="sum-prices" class="fas fa-shopping-cart navicon"> Cart</i> 
                </a>
+               
                
             </li>
             <li class="nav-item">
@@ -50,7 +50,7 @@
 
    <ul class="navbar-nav ul-custom">
       <li class="nav-item active">
-         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"><i class="fas fa-dog"></i> Dog</a>
+         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"><i class="fas fa-dog navicon"></i> Dog</a>
          <ul class="dropdown-menu sub_ul-custom" style="width: 100%;">
             <div class="dropdown-ul">
                <div class="ul-part">
@@ -137,7 +137,7 @@
 
       <li class="nav-item active">
          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" aria-expanded="false"><i
-               class="fas fa-cat"></i> Cat</a>
+               class="fas fa-cat navicon"></i> Cat</a>
          <ul class="dropdown-menu sub_ul-custom" style="width: 100%;">
             <div class="dropdown-ul">
                <div class="ul-part">
@@ -202,7 +202,7 @@
          </ul>
       </li>
       <li class="nav-item active">
-         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"><i class="fas fa-fish"></i>
+         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"><i class="fas fa-fish navicon"></i>
             Fish</a>
          <ul class="dropdown-menu sub_ul-custom" style="width: 100%;">
             <div class="dropdown-ul">
@@ -261,7 +261,7 @@
            <a class="nav-link" href="#">Reptile</a>
        </li> -->
       <li class="nav-item active">
-         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"><i class="fas fa-crow"></i>
+         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"><i class="fas fa-crow navicon"></i>
             Bird</a>
          <ul class="dropdown-menu sub_ul-custom" style="width: 100%;">
             <div class="dropdown-ul">
@@ -307,7 +307,7 @@
          </ul>
       </li>
       <li class="nav-item active">
-         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"><i class="fas fa-otter"></i>
+         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"><i class="fas fa-otter navicon"></i>
             Small Animals </a>
          <ul class="dropdown-menu sub_ul-custom" style="width: 100%;">
             <div class="dropdown-ul">
@@ -359,7 +359,7 @@
        <button id="closeButton">
            <i class="fas fa-times-circle"></i>
        </button>
-       <h3>Cart</h3>
+       <h3><i class="fas fa-shopping-cart"></i> Cart</h3>
    </div>
    <ul id="buyItems">
        <h4 class="empty">Your shopping cart is empty</h4>
@@ -376,7 +376,8 @@
      </div>
   </li> -->
    </ul>
-   <button class="btn checkout hidden">Check out</button>
+   <i class="fab fa-cc-visa checkouticon"></i> <i class="fab fa-cc-paypal checkouticon"></i> <i class="fab fa-cc-mastercard checkouticon"></i>
+   <button class="btn checkout hidden"> Check out</button>
 </div>
 
 

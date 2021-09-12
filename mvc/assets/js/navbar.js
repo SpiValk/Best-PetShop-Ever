@@ -122,12 +122,11 @@ sublists.forEach((list) => {
 const sideCart = document.querySelector('.productsOnCart')
 const navCart =document.querySelector(".shoppingCartButton")
 const closeBtn=document.getElementById("closeButton")
-console.log(sideCart.style.width)
+// console.log(sideCart.style.width)
 
 function toggleSideCart() {
-  
   if(sideCart.style.width=="0px"){
-  sideCart.style.width="300px"}
+  sideCart.style.width="400px"}
   else{
     sideCart.style.width="0px"
   }
@@ -143,14 +142,18 @@ closeSideCart=()=>{
 
 closeBtn.addEventListener("click",closeSideCart)
 
-//SIDE CART ADD TO THE LOCAL STORAE
+//SIDE CART ADD TO THE LOCAL STORAGE
+
+let addToCartBtn=document.getElementsByClassName("addtocart")
+console.log(addToCartBtn)
 let productsInCart = JSON.parse(localStorage.getItem('shoppingCart'));
 if(!productsInCart){
 	productsInCart = [];
 }
 const parentElement = document.querySelector('#buyItems');
 const cartSumPrice = document.querySelector('#sum-prices');
-const products = document.querySelectorAll('.product-under');
+const products = document.querySelectorAll('.cartbox');
+console.log(cartSumPrice.innerHTML)
 
 
 const countTheSumPrice = function () { // 4
@@ -167,14 +170,14 @@ const updateShoppingCartHTML = function () {  // 3
 		let result = productsInCart.map(product => {
 			return `
 				<li class="buyItem">
-					<img src="${product.image}">
-					<div>
-						<h5>${product.name}</h5>
-						<h6>$${product.price}</h6>
-						<div>
-							<button class="button-minus" data-id=${product.id}>-</button>
+					<img class="sideCartImg" src="${product.image}">
+					<div class="mainBodySideCart">
+						<h5 class="sideCartName">${product.name}</h5>
+						<h6>€ ${product.price}</h6>
+						<div class="sideCartBtns">
+							<button class="button-minus sideCountBtn" data-id=${product.id}>-</button>
 							<span class="countOfProduct">${product.count}</span>
-							<button class="button-plus" data-id=${product.id}>+</button>
+							<button class="button-plus sideCountBtn" data-id=${product.id}>+</button>
 						</div>
 					</div>
 				</li>`
@@ -204,10 +207,10 @@ function updateProductsInCart(product) { // 2
 
 products.forEach(item => {   // 1
 	item.addEventListener('click', (e) => {
-		if (e.target.classList.contains('addToCart')) {
+		if (e.target.classList.contains('addtocart')) {
 			const productID = e.target.dataset.productId;
 			const productName = item.querySelector('.productName').innerHTML;
-			const productPrice = item.querySelector('.priceValue').innerHTML;
+			const productPrice = item.querySelector('.price').innerHTML;
 			const productImage = item.querySelector('img').src;
 			let product = {
 				name: productName,
@@ -251,4 +254,15 @@ updateShoppingCartHTML();
 
 
 
+//toast pop up
+$(document).ready(function(){
+  $(".addtocart").click(function(){
+    toastr.success("The product added to cart");
+})
+})
 
+
+
+
+
+// localStorage.clear()
