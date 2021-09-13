@@ -16,7 +16,6 @@
 
 module.exports.bootstrap = async function() {
 
-
   // By convention, this is a good place to set up fake data during development.
   //
   // For example:
@@ -283,11 +282,11 @@ module.exports.bootstrap = async function() {
     {
       name: 'Bon Appetit Adult Dog Lamb & Salmon & Rice Dry Food: hypoallergenic, gluten-free',
       description: 'A premium Bon Appetit dog food that is hypoallergenic and gluten free suitable for all stages of life. 62% lamb and salmon, 38% fruit and vegetables and 0% gluten. ',
-      quantity: 1,
+      quantity: 2,
       vendor_price: 10,
       retail_price: 17.40,
       image_name: 'Bon-Appetit-premium-gluten-free-hypoallergenic-dog-food-adult-lamb-salmon-rice.png',
-      status: 1,
+      status: 2,
       vendor_id: 1,
       product_category_id: 1,
       subcategory_id: 1,

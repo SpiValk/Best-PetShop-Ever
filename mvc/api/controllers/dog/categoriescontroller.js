@@ -12,11 +12,11 @@ module.exports = {
   },
 
   fn: async function({category}){
-
     if(!this.req.session.isAdmin) {
       return this.res.view(`pages/dog/dogCategories`, {dogProducts, category, subCategs, isAdmin: false});
 
     } else {
+
 
       const subCategs = await sails.helpers.getSubcategories();
 
