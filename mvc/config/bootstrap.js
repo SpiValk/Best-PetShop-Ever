@@ -16,7 +16,7 @@
 
 module.exports.bootstrap = async function() {
 
-  console.log("hello motherfucker im from bootstrap")
+
 
   // By convention, this is a good place to set up fake data during development.
   //
@@ -76,7 +76,7 @@ module.exports.bootstrap = async function() {
 
   //------------------ CREATE PRODUCT CATEGORIES --------------//
   //---Dog--//
-  await Product_category.createEach([
+  var shopProducts=await Product_category.createEach([
     {
       category_name: 'dog-foods',
       description: 'dry food, dog cans, dog-treats & chews',
@@ -2868,6 +2868,7 @@ module.exports.bootstrap = async function() {
       subcategory_id: 32,
       pet_id: 2
     },
-  ]);
+  ]).fetch();
 
 };
+
