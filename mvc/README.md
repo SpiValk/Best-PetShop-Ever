@@ -66,3 +66,7 @@
          -Cat Medicines: #40
          -Cat vitamins minerals electrolytes: #41
 
+
+
+      ***  npm install sails-hook-organics --save ***
+

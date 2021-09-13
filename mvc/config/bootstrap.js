@@ -16,6 +16,7 @@
 
 module.exports.bootstrap = async function() {
 
+
   // By convention, this is a good place to set up fake data during development.
   //
   // For example:
@@ -33,8 +34,8 @@ module.exports.bootstrap = async function() {
 
   //-------------- CREATE USERS ---------------//
   await User.createEach([
-    {username:'admin', password: 'admin', email: 'admin@admin.com', isAdmin: 1, customer_id: 1},
-    {username:'john', password: 'doe', email: 'john@doe.com', isAdmin: 0, customer_id: 2, payment_id: 1} //only one payment per user???
+    {username:'admin', password:await sails.helpers.passwords.hashPassword('admin'), email: 'admin@admin.com',  isAdmin: 1, customer_id: 1},
+    {username:'john', password:await sails.helpers.passwords.hashPassword('doe'), email: 'john@doe.com', isAdmin: 0, unique: true, customer_id: 2, payment_id: 1} //only one payment per user???
   ]);
 
 
@@ -2315,7 +2316,117 @@ module.exports.bootstrap = async function() {
     },
 
 
-    //---DOG VITAMINS MINERAL & ELECTROLYTE SUPPLIMENTS FOR DOGS----////
+
+          // Dog Vitamins Minerals Electrolytes
+
+          {
+            name: 'Vitamin K1 for Dogs and Cats 50 mg, 50 Capsules',
+            description: 'Vitamin K1 Capsules are vitamin supplements that promote health. ' ,
+            quantity: 3,
+            vendor_price: 4,
+            image_name: 'Vitamin-K1-for-Dogs-and-Cats-50-mg,-50-Capsules.jpg',
+            status: 3,
+            vendor_id: 5,
+            product_category_id: 4,
+            subcategory_id: 24,
+            pet_id: 1
+          },
+
+          {
+            name: 'Vitamin B Complex 150 mg - ml - 100 ml',
+            description: 'Vitamin B Complex delivers a source of Vitamin B.' ,
+            quantity: 3,
+            vendor_price: 4,
+            image_name: 'Vitamin-B-Complex-150-mg-ml-100-ml.jpg',
+            status: 3,
+            vendor_id: 5,
+            product_category_id: 4,
+            subcategory_id: 24,
+            pet_id: 1
+          },
+
+          {
+            name: 'NaturVet All-in-One Dog Supplement - for Joint Support, Digestion, Skin, Coat Care',
+            description: 'Dog Vitamins, Minerals, Omega-3, 6, 9 – Wheat-Free Supplements for Dogs ' ,
+            quantity: 3,
+            vendor_price: 4,
+            image_name: 'NaturVet-All-in-One-Dog-Supplement-for-Joint-Support,Digestion,Skin,Coat-Care.jpg',
+            status: 3,
+            vendor_id: 5,
+            product_category_id: 4,
+            subcategory_id: 24,
+            pet_id: 1
+          },
+
+
+          {
+            name: 'True Earth Mineral Spa Dog Shampoo - Cherry Blossom',
+            description: 'Wet coat. Then apply a generous amount of shampoo while massaging deeply into the coat for 2-3 minutes. ' ,
+            quantity: 3,
+            vendor_price: 4,
+            image_name: 'True-Earth-Mineral-Spa-Dog-Shampoo-Cherry-Blossom.jpg',
+            status: 3,
+            vendor_id: 5,
+            product_category_id: 4,
+            subcategory_id: 24,
+            pet_id: 1
+          },
+
+
+
+          {
+            name: 'Dog Greens- Organic and Wild Harvested Vitamin and Mineral Supplement for Dogs',
+            description: 'Add to Home Made Dog Food, RAW Food or Kibble' ,
+            quantity: 3,
+            vendor_price: 4,
+            image_name: 'Dog-Greens-Organic-and-Wild-Harvested-Vitamin-and-Mineral-Supplement-for-Dogs.jpg',
+            status: 3,
+            vendor_id: 5,
+            product_category_id: 4,
+            subcategory_id: 24,
+            pet_id: 1
+          },
+
+
+          {
+            name: 'Annamaet Enhance Vitamins and Mineral Supplement for Raw and Home Cook Meals for Dogs, 8.5-oz jar',
+            description: 'Annamaet ENHANCE is a vitamin and mineral supplement designed to simply balance your dog’s home-prepared or raw diet.' ,
+            quantity: 3,
+            vendor_price: 4,
+            image_name: 'Annamaet-Enhance-Vitamins-and-Mineral-Supplement-for-Raw-and-Home-Cook-Meals-for-Dogs,-8.5-oz-jar.jpg',
+            status: 3,
+            vendor_id: 5,
+            product_category_id: 4,
+            subcategory_id: 24,
+            pet_id: 1
+          },
+
+          {
+            name: 'Wholistic Pet Organics Canine Complete: Dog Multivitamin for Total Body Health',
+            description: 'Dog Supplement with Vitamins, Minerals, Prebiotics, Probiotics, Antioxidants and More' ,
+            quantity: 3,
+            vendor_price: 4,
+            image_name: 'Wholistic-Pet-Organics-Canine-Complete-Dog-Multivitamin-for-Total-Body-Health.jpg',
+            status: 3,
+            vendor_id: 5,
+            product_category_id: 4,
+            subcategory_id: 24,
+            pet_id: 1
+          },
+
+          {
+            name: 'Nupro Nutri-Pet Research Electrolytes for Dogs',
+            description: 'Maintain proper fluid balance in the blood and tissues' ,
+            quantity: 3,
+            vendor_price: 4,
+            image_name: 'Nupro-Nutri-Pet-Research-Electrolytes-for-Dogs.jpg',
+            status: 3,
+            vendor_id: 5,
+            product_category_id: 4,
+            subcategory_id: 24,
+            pet_id: 1
+          },
+
     {
       name: 'PetHonesty 10 in 1 Dog Multivitamin with Glucosamine',
       description: '10-For-1 Multivitamin chews combine a well-rounded blend of the most essential vitamins and supplements for dogs\' overall daily health including glucosamine, probiotics, vitamins, and omega\'s.' ,
@@ -2388,6 +2499,7 @@ module.exports.bootstrap = async function() {
       subcategory_id: 24,
       pet_id: 1
     },
+
 
 
 

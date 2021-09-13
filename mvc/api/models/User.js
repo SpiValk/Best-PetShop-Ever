@@ -1,12 +1,37 @@
 module.exports={
   tableName:'user',
   attributes:{
-    username        :{type:'string',  columnName:'username',     required:true},
-    password        :{type:'string',  columnName:'password',     required:true},
-    email           :{type:'string', isEmail: true,   columnName:'email',        required:true},
-    isAdmin         :{type:'number',  columnName:'is_admin',     required:true},
+    
+    username :{
+    type:'string',
+    columnName:'username',
+    required:true,
+    unique: true,
+    // isEmail: true
+   }, 
 
 
+    password :{
+      type:'string',
+      columnName:'password', 
+      required:true, 
+      protect: true},
+
+    // avatar:{type:'blob',required:true},
+    //  contact_number  :{type:'number',  columnName:'phone_number', required:true},
+
+    email :{
+       type:'string',
+       isEmail: true,
+       columnName:'email', 
+       required:true,
+       unique: true},
+
+
+       isAdmin :{
+         type:'number',  
+         columnName:'isAdmin',     
+         required:true},
 
 
     customer_id:{
@@ -15,7 +40,7 @@ module.exports={
     },
 
     order_id:{
-      model:'order'
+    model:'order'
     },
 
     payment_id: {
@@ -31,4 +56,4 @@ module.exports={
 
 
   }
-};
+}
