@@ -25,9 +25,20 @@ module.exports.routes = {
   '/ourteam'                  : { view: 'pages/static/ourteam'},
   '/contactus'                : { view: 'pages/static/contactus'},
   '/home'                     : { view: 'pages/index'},
+
+  
+  '/privacy-policy'           : { view: 'pages/static/privacy-policy'},
+  '/delivery'                 : { view: 'pages/static/delivery'},
+  '/terms-and-condition.'     : { view: 'pages/static/terms-and-condition'},
+  '/ways-to-order'            : { view: 'pages/static/ways-to-order'},
+  '/policy-of-return'         : { view: 'pages/static/policy-of-return'},
+  '/reason-to-smile'          : { view: 'pages/static/reason-to-smile'},
+
+
   // '/login' :{view: 'pages/users/login'},
   // '/register' :{view: 'pages/users/register'},
   // '/logout' :{view: 'pages/index'},
+
 
 
   'GET /categories/:pet'      : { action: 'petcategorycontroller'},

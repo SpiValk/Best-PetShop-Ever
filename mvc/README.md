@@ -68,6 +68,5 @@
 
 
 
+      ***  npm install sails-hook-organics --save ***
 
-
-         npm install sails-hook-organics --save

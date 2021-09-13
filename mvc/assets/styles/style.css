@@ -131,6 +131,8 @@
     font-size:2rem;
 } */
 
+
+
 .myBox img {
   max-height: 225px;
   display: block;
@@ -393,4 +395,15 @@ img#check {
   .top-shipping-img {
     visibility: hidden;
   }
+}
+
+/* --- Reason to smile --- */
+#reason-to-smile {
+font-weight: bold;
+text-transform: capitalize;
+}
+
+#reason-to-smile img {
+  width: 20vw;
+  height:25vh;
 }
