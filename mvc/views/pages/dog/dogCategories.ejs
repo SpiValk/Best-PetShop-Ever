@@ -65,7 +65,7 @@
                   <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
 
                      <div class="card myProductBox cartbox"><a href="/products/view/<%=product.id%>"> <img
-                              src="/img/product_images/dogs/<%= category %>/<%= product.subcategory_id.subcategory %>/<%=product.image_name%>">
+                              src="/img/product_images/dogs/<%= category %>/<%= subCategs[product.subcategory_id - 1][product.subcategory_id]%>">
                            <div class="card-body">
                               <h4 class="productName">
                                  <%= product.name %>
@@ -85,23 +85,10 @@
                            class="fas fa-shopping-cart"></i> Add to cart </button>
                   </div>
             </div>
+
          </div>
          <%})%>
             </div>
-            <!-- <div class="row col-md-9">
-               <%dogProducts.forEach((product)=> { %>
-                  <div class="col-md-3 myProductBox">
-                     <img
-                        src="/img/product_images/dogs/<%= category %>/<%= product.subcategory_id.subcategory %>/<%=product.image_name%>"
-                        alt="purina veterinary" />
-                     <h4>
-                        <%= product.name %>
-                     </h4>
-                     <button class="bg-custom no-radius add"><i class="fas fa-shopping-cart"></i> Add To
-                        Cart</button>
-                  </div>
-                  <%})%>
-            </div> -->
             </div>
             <%-include("../footer") %>
    </body>

@@ -19,14 +19,43 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': { view: 'pages/index' },
+  '/'                         : { view: 'pages/index' },
+
+
+  '/ourteam'                  : { view: 'pages/static/ourteam'},
+  '/contactus'                : { view: 'pages/static/contactus'},
+  '/home'                     : { view: 'pages/index'},
+
+
+  '/privacy-policy'           : { view: 'pages/static/privacy-policy'},
+  '/delivery'                 : { view: 'pages/static/delivery'},
+
+
+
+  '/terms-and-conditions'     : { view: 'pages/static/terms-and-conditions'},
+
+  '/ways-to-order'            : { view: 'pages/static/ways-to-order'},
+  '/policy-of-return'         : { view: 'pages/static/policy-of-return'},
+  '/reason-to-smile'          : { view: 'pages/static/reason-to-smile'},
+
+
+  // '/login' :{view: 'pages/users/login'},
+  // '/register' :{view: 'pages/users/register'},
+  // '/logout' :{view: 'pages/index'},
+
+
+
+  'GET /categories/:pet'      : { action: 'petcategorycontroller'},
+
 
   '/ourteam' :{view: 'pages/static/ourteam'},
   '/contactus' :{view: 'pages/static/contactus'},
   '/home' :{view: 'pages/index'},
+  
   'GET /categories/:pet'     : { action: 'petcategorycontroller'},
   'GET /products/view/:id'   : { action: 'productviewcontroller'},
   'GET /addtocart/:id'       : { action:'addtocartcontroller' },
+
 
 
 
@@ -38,12 +67,26 @@ module.exports.routes = {
   'GET /products/edit/:id'    : { action: 'products/edit'},
   'GET /products/update/:id'  : { action: 'products/update'},
 
+  // Log in / log out user or admin
+  // '/login'                    : { action: 'users/login' },
+  // 'POST /login'               : { action: 'users/checklogin' },
+  // 'GET /register'             : { action: 'users/register' },
+  // 'POST /register'            : { action: 'users/savenewuser' },
+  // 'GET /logout'               : { action: 'users/logout' },
+
+
+
+
+
+
+
+
+
+
+
   //Dog
   'GET /products/dog/:category'               : { action: 'dog/categoriescontroller'},
   'GET /products/dog/category/:subcategory'   : { action: 'dog/subcategoriescontroller'},
- 
-  
-
 
   //Cat
   'GET /products/cat/:category'               : { action: 'cat/categoriescontroller'},
