@@ -29,7 +29,11 @@ module.exports.routes = {
 
   '/privacy-policy'           : { view: 'pages/static/privacy-policy'},
   '/delivery'                 : { view: 'pages/static/delivery'},
+
+
+
   '/terms-and-conditions'     : { view: 'pages/static/terms-and-conditions'},
+
   '/ways-to-order'            : { view: 'pages/static/ways-to-order'},
   '/policy-of-return'         : { view: 'pages/static/policy-of-return'},
   '/reason-to-smile'          : { view: 'pages/static/reason-to-smile'},
