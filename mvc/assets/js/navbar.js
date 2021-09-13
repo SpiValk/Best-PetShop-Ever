@@ -145,7 +145,6 @@ closeBtn.addEventListener("click",closeSideCart)
 //SIDE CART ADD TO THE LOCAL STORAGE
 
 let addToCartBtn=document.getElementsByClassName("addtocart")
-console.log(addToCartBtn)
 let productsInCart = JSON.parse(localStorage.getItem('shoppingCart'));
 if(!productsInCart){
 	productsInCart = [];
@@ -264,5 +263,22 @@ $(document).ready(function(){
 
 
 
+//to clear the localstorage
+
 
 // localStorage.clear()
+
+
+///**********SEARCH BAR *************** */
+
+
+function sendData(e){
+  fetch('/',{
+    method:"POST",
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({payload:e.value})
+  }).then(res=>res.json()).then(data=>{
+    let payload=data.payload;
+    console.log(payload)
+  })
+}
