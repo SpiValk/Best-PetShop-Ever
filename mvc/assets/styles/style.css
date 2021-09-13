@@ -396,3 +396,14 @@ img#check {
     visibility: hidden;
   }
 }
+
+/* --- Reason to smile --- */
+#reason-to-smile {
+font-weight: bold;
+text-transform: capitalize;
+}
+
+#reason-to-smile img {
+  width: 20vw;
+  height:25vh;
+}
