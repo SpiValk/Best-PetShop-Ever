@@ -5,9 +5,8 @@ module.exports={
     lastName        : { type:'string', columnName:'last_name',      required:true },
     address         : { type:'string', columnName:'address',        required:true },
     contact_number  : { type:'number', columnName:'contact_number', required:true },
-    //  email           : { type:'string', columnName:'email',          required:true },
-    
-   
+
+
     user_id: {
       model:'user',
       unique: true

@@ -20,11 +20,12 @@ module.exports = {
 
     const subCategs = await sails.helpers.getSubcategories();
 
-    let subcategoryTemp=await Product_category.findOne({category_name: category}).populate('subcategory_id');
-    let subcategories=subcategoryTemp.subcategory_id;
+    let subcategoryTemp = await Product_category.findOne({category_name: category}).populate('subcategory_id');
+    let subcategories = subcategoryTemp.subcategory_id;
 
     let productCategory = await Product_category.findOne({category_name: category}).populate('pet_product_id');
     let dogProducts = await productCategory.pet_product_id;
+
 
 
     return this.res.view(`pages/dog/dogCategories`, {dogProducts, category, subCategs, subcategories}, {isAdmin: this.req.session.isAdmin});
