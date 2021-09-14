@@ -335,6 +335,30 @@ img#check {
   transform: scale(1.4);
 }
 
+/******** FOOTER ******/
+
+.footer  a {
+  color: #26962a;
+  text-decoration: none;
+  margin-left: 62px;
+
+}
+
+.footer h4 {
+
+  margin-left: 62px;
+
+}
+
+.footer  a:hover {
+  color:rgb(14, 190, 52);
+}
+
+.copyright {
+  position: relative;
+  bottom: -165px; left: 6px;
+}
+
 
 /******** PRODUCT VIEW *********/
 .imgView{
@@ -1088,5 +1112,10 @@ button:focus {
 }
 .checkouticon{
   font-size:25px;
+}
+
+#sidebar {
+  margin-left: 72px;
+  width: 280px;
 }
 
