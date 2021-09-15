@@ -3525,6 +3525,114 @@ module.exports.bootstrap = async function() {
       pet_id: 2
     },
 
+    //-------- Cat Collars ---------//
+
+    {
+      name: 'Red Dingo Nylon Reflective Breakaway Cat Collar with Bell',
+      description: 'Take your cat outdoors safely in a versatile, good looking collar. With style and strength, the quality nylon webbing and abrasion resistant ribbon ensure long lasting comfort. Featuring a safety release fish clip and wildlife protection bell.',
+      quantity: 4,
+      vendor_price: 3.00,
+      retail_price: 6.90,
+      image_name: 'Red-Dingo-Nylon-Reflective-Breakaway-Cat-Collar-with-Bell.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 35,
+      pet_id: 2
+    },
+
+    {
+      name: 'Pawtitas Glow in the Dark Nylon Breakaway Cat Collar with Bell',
+      description: 'Take your cat outdoors safely in a versatile, good looking collar. With style and strength, the quality nylon webbing and abrasion resistant ribbon ensure long lasting comfort. Featuring a safety release fish clip and wildlife protection bell.',
+      quantity: 4,
+      vendor_price: 3.00,
+      retail_price: 9.90,
+      image_name: 'Pawtitas-Glow-in-the–Nylon-Cat-Collar-with-Bell.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 35,
+      pet_id: 2
+    },
+    {
+      name: 'Country Brook Design Paint Splatter Polyester Breakaway Cat Collar with Bell',
+      description: 'Add some color to your kitty’s life with the Paint Splatter Breakaway Cat Collar. This lightweight collar was made in the USA from a soft yet durable polyester webbing that won’t scratch or irritate your furry friend’s sensitive skin.',
+      quantity: 4,
+      vendor_price: 3.00,
+      retail_price: 9.90,
+      image_name: 'Country-Brook-Design-Paint-Splatter-Polyester-Breakaway-Cat-Collar-with-Bell.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 35,
+      pet_id: 2
+    },
+    {
+      name: 'Country Brook Design Tie-Dye Flowers Polyester Breakaway Cat Collar with Bell',
+      description: 'You and your best bud will be feeling the love and good vibes with the Tie-Dye Flowers Breakaway Cat Collar.',
+      quantity: 4,
+      vendor_price: 3.00,
+      retail_price: 9.90,
+      image_name: 'Country-Brook-Design-Tie-Flowers-Polyester-Breakaway-Cat-Collar-with-Bell.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 35,
+      pet_id: 2
+    },
+    {
+      name: 'Safe Cat Snag-Proof Polyester Breakaway Cat Collar with Bell',
+      description: 'The Safe Cat Adjustable Snag-Proof Breakaway Cat Collar helps keep your feline friend safe through every pounce and purr.',
+      quantity: 4,
+      vendor_price: 3.00,
+      retail_price: 6.50,
+      image_name: 'Safe-Cat-Snag-Proof-Polyester-Breakaway-Cat-Collar-with-Bell.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 35,
+      pet_id: 2
+    },
+    {
+      name: 'Necoichi Japanese Kimono Bow Tie Cotton Breakaway Cat Collar with Bell',
+      description: 'Upgrade your kitty’s swagger with the Necoichi Japanese Kimono Style Bow Tie Cat Collar. Whether he’s an indoor cuddle buddy or an outdoor adventurist―or both―this handcrafted collar is purr-fect for daily wear.',
+      quantity: 4,
+      vendor_price: 3.00,
+      retail_price: 9.90,
+      image_name: 'Necoichi-Japanese-Kimono-Bow-Tie-Cotton-Breakaway-Cat-Collar-with-Bell.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 35,
+      pet_id: 2
+    },
+    {
+      name: 'Pettsie Cotton Breakaway Cat Collar with Friendship Bracelet, Red',
+      description: 'Share a special and fashionable connection with your feline best friend with the Pettsie Cat Collar with Friendship Bracelet. Your kitty will be able to sport a unique and comfy 100% cotton collar',
+      quantity: 4,
+      vendor_price: 7.00,
+      retail_price: 15.90,
+      image_name: 'Pettsie-Cotton-Cat-Collar-with-Friendship-Bracele-Red.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 35,
+      pet_id: 2
+    },
+    {
+      name: 'Pettsie Heart Cotton Breakaway Cat Collar with Friendship Bracelet',
+      description: 'Share a special and fashionable connection with your feline best friend with the Pettsie Heart Cat Collar with Friendship Bracelet.',
+      quantity: 4,
+      vendor_price: 7.00,
+      retail_price: 18.99,
+      image_name: 'Pettsie-Heart-Breakaway-Cat-Collar-with-Friendship-Bracelet.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 35,
+      pet_id: 2
+    },
+
 
   ]);
 
