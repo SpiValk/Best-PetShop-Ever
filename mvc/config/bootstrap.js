@@ -3525,6 +3525,89 @@ module.exports.bootstrap = async function() {
       pet_id: 2
     },
 
+    //********Cat Veterinary Products *******//
+    //----Cat Antiparasitics------///
+    {
+      name: 'Vectra Felis Anti-parasite pipette for cats 3 pipettes',
+      description: 'Antiparasitic pipette for cats from 0.6 kg or 7 weeks that repels and kills fleas for a whole month.',
+      quantity: 3,
+      vendor_price: 7.00,
+      retail_price: 18.00,
+      image_name: 'vectra-felis-antiparastiario-para-gatos_1_g.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:8,
+      subcategory_id: 39,
+      pet_id: 2
+    },
+    {
+      name: 'Hills Prescription Diet Feline',
+      description: 'Hills Prescription Diet c / d Urinary Stresss diet food for adult cats with bladder inflammation (FIC) due to stress.',
+      quantity: 4,
+      vendor_price: 8.00,
+      retail_price: 21.00,
+      image_name: 'pla_pd_feline_cd_stress_2842u_f_1.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:8,
+      subcategory_id: 39,
+      pet_id: 2
+    },
+    {
+      name: 'Beaphar Natural Antiparasitic Tablets',
+      description: 'Antiparasitic tablets for cats contain herbs used traditionally to promote the expulsion of intestinal parasites creating a hostile terrain for their development.',
+      quantity: 5,
+      vendor_price: 5.00,
+      retail_price: 11.00,
+      image_name: 'beaphar-natural-antiparasitic-tablets.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:8,
+      subcategory_id: 39,
+      pet_id: 2
+    },
+    {
+      name: 'Advocate Large Cat 4-8kg (9-18lbs), 6 Pack',
+      description: 'For the treatment and prevention of flea infestation in catsthe treatment of ear mite infestation in catsthe treatment of notoedric mange.',
+      quantity: 3,
+      vendor_price: 15.00,
+      retail_price: 59.00,
+      image_name: 'advocate-large-cat-4-8kg-6-pack.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:8,
+      subcategory_id: 39,
+      pet_id: 2
+    },
+    {
+      name: 'Bio Band natural antiparasitic collar dogs and cats',
+      description: 'Specific and waterproof collar for the protection of dogs and cats against the bites of ticks, fleas, lice, flies and mosquitoes (including Phlebotomes, carrier of leishmaniosis).',
+      quantity: 5,
+      vendor_price: 4.00,
+      retail_price: 12.00,
+      image_name: 'bio-band-natural-antiparasitic-collar-dogs-and-cats.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:8,
+      subcategory_id: 39,
+      pet_id: 2
+    },
+
+    //----Cat Medicines------///
+    {
+      name: 'Bio Band natural antiparasitic collar dogs and cats',
+      description: 'Specific and waterproof collar for the protection of dogs and cats against the bites of ticks, fleas, lice, flies and mosquitoes (including Phlebotomes, carrier of leishmaniosis).',
+      quantity: 5,
+      vendor_price: 4.00,
+      retail_price: 12.00,
+      image_name: 'bio-band-natural-antiparasitic-collar-dogs-and-cats.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:8,
+      subcategory_id: 40,
+      pet_id: 2
+    },
+
 
   ]);
 

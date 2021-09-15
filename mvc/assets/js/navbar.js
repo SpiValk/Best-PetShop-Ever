@@ -23,14 +23,14 @@ window.onscroll = function () {
   if (window.pageYOffset > 150) {
     // nav.style.background =  "transparent";
     nav.style.background = 'rgba(255, 249, 192, 0.7)';
-    nav.style.height = '3rem';
+    // nav.style.height = '3rem';
     list.forEach(element => {
       element.style.color = 'green';
     });
 
   } else {
     nav.style.background = 'green';
-    nav.style.height = '6.9rem';
+    // nav.style.height = '6.9rem';
     list.forEach(element => {
       element.style.color = 'lightgrey';
     });
