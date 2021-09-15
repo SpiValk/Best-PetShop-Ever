@@ -5,6 +5,10 @@
 module.exports = {
   description: 'Makes all product_subcategory based controllers come through here',
   inputs:{
+    //  category: {
+    //    type: 'string'
+    //  },
+
     subcategory:{
       type: 'string',
       required: true
@@ -13,6 +17,7 @@ module.exports = {
   },
 
   fn: async function({subcategory}){
+
     //finds the input category and brings all the pet_products in it
     let productSubcategory = await Product_subcategory.findOne({subcategory: subcategory}).populate('pet_product_id');
     let categoryTemp = await Product_subcategory.findOne({subcategory: subcategory}).populate('category_id');
