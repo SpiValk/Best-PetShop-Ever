@@ -273,15 +273,27 @@ $(document).ready(function(){
 
 
 async function sendData(e){
+  const searchResults=document.getElementById("searchResults")
   const searchBox=document.getElementById("search-box").value
   await fetch('/',{
     method:"POST",
     headers:{'Accept': 'application/json',
              'Content-Type':'application/json'},
-    body:JSON.stringify(sakis={payload:searchBox})
+    body:JSON.stringify({payload:e.value})
   }).then(res=>res.json()).then(data=>{
 
-    let dimitris=data.sakis;
-    return console.log(sakis)
+    let payload=data.payload;
+    searchResults.innerHTML="";
+    if(payload<1){
+      searchResults.innerHTML=`<p> Sorry.Nothing Found </p>`;
+      return
+    }
+    payload.forEach((item,index)=>{
+if(index>0) searchResults.innerHTML+='<hr>';
+searchResults.innerHTML+=`<p> ${item.name} </p>`
+
+    })
+    return;
+
   })
 }
