@@ -20,6 +20,7 @@ module.exports.routes = {
   ***************************************************************************/
 
   'POST /': { action: 'indexcontroller' },
+  '/'     : {view:'pages/index'},
 
   '/ourteam' :{view: 'pages/static/ourteam'},
   '/contactus' :{view: 'pages/static/contactus'},

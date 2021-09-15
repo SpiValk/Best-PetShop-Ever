@@ -272,13 +272,16 @@ $(document).ready(function(){
 ///**********SEARCH BAR *************** */
 
 
-function sendData(e){
-  fetch('/',{
+async function sendData(e){
+  const searchBox=document.getElementById("search-box").value
+  await fetch('/',{
     method:"POST",
-    headers:{'Content-Type':'application/json'},
-    body:JSON.stringify({payload:e.value})
+    headers:{'Accept': 'application/json',
+             'Content-Type':'application/json'},
+    body:JSON.stringify(sakis={payload:searchBox})
   }).then(res=>res.json()).then(data=>{
-    let payload=data.payload;
-    console.log(payload)
+
+    let dimitris=data.sakis;
+    return console.log(sakis)
   })
 }

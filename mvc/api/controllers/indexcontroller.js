@@ -3,7 +3,7 @@ module.exports={
 
     inputs:{
         payload:{
-            type:"string",
+            type:"json",
             required:true
         }
     },
@@ -11,8 +11,8 @@ module.exports={
     fn: async function({payload}){
 
 
-
-        var search=await Pet_product.find({name:{$regex: new RegExp('^'+payload+'.*','i')}}).exec();
+        const regex=new RegExp('^'+payload+'.*','i')
+        var search=await Pet_product.find({name:regex});
         //limit the search
         search=search.slice(0,10);
         return this.res.view('pages/index',{payload:search})
