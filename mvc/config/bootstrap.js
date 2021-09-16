@@ -3704,12 +3704,103 @@ module.exports.bootstrap = async function() {
 
     //----Cat Medicines------///
     {
-      name: 'Bio Band natural antiparasitic collar dogs and cats',
-      description: 'Specific and waterproof collar for the protection of dogs and cats against the bites of ticks, fleas, lice, flies and mosquitoes (including Phlebotomes, carrier of leishmaniosis).',
+      name: 'Feliway Optimum 30 Day Refill for Cats',
+      description: 'The products contain complex pheromones that convey impactful messages to your cat helping them cope and adjust to our lifestyles.',
       quantity: 5,
+      vendor_price: 6.00,
+      retail_price: 19.00,
+      image_name: 'feliway-optimum-30-day-refill-for-cats.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:8,
+      subcategory_id: 40,
+      pet_id: 2
+    },
+    {
+      name: 'Panacur Oral Suspension for Dogs and Cats',
+      description: 'Panacur Small Animal 10% Suspension is a broad spectrum wormer for the treatment of roundworms, tapeworms and lungworms in dogs, cats, puppies and kittens.',
+      quantity: 4,
+      vendor_price: 5.00,
+      retail_price: 18.00,
+      image_name: 'panacur-oral-suspension-for-dogs-and-cats.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:8,
+      subcategory_id: 40,
+      pet_id: 2
+    },
+    {
+      name: 'Feliway Classic Travel Pack for Cats - Spray & Cat Carrier Cover',
+      description: 'To comfort your cat during travelling use the FELIWAY design cage-cover together with the FELIWAY Classic Spray 20ml.',
+      quantity: 4,
       vendor_price: 4.00,
+      retail_price: 14.00,
+      image_name: 'feliway-classic-travel-pack-for-cats.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:8,
+      subcategory_id: 40,
+      pet_id: 2
+    },
+    {
+      name: 'Johnsons Hairball Remedy 50g',
+      description: 'A tasty malt-flavoured paste to aid the elimination and prevention of hairballs in cats and kittens.',
+      quantity: 7,
+      vendor_price: 1.00,
+      retail_price: 5.00,
+      image_name: 'johnsons-hairball-remedy.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:8,
+      subcategory_id: 40,
+      pet_id: 2
+    },
+    {
+      name: 'Beaphar CatComfort Calming 30 Day Refill',
+      description: 'Beaphar CatComfort is a simple and effective solution to reducing problem behaviour in cats, such as inappropriate scratching and urination, or general feelings of anxiety.',
+      quantity: 7,
+      vendor_price: 4.00,
+      retail_price: 11.00,
+      image_name: 'beaphar-cat-comfort-calming-refill.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:8,
+      subcategory_id: 40,
+      pet_id: 2
+    },
+    {
+      name: 'Protexin Pro-Kolin for Cats & Dogs',
+      description: 'Protexin Pro-Kolin+ is a carefully formulated probiotic and intestinal calming product for use in cats and dogs.',
+      quantity: 5,
+      vendor_price: 6.00,
+      retail_price: 16.00,
+      image_name: 'protexin-pro-kolin.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:8,
+      subcategory_id: 40,
+      pet_id: 2
+    },
+    {
+      name: 'Beaphar Calming Spot On For Cats',
+      description: 'Beaphar Calming Spot On for cats naturally and effectively calms and reduces problem behaviour in cats of all breeds and ages.',
+      quantity: 8,
+      vendor_price: 2.00,
+      retail_price: 7.00,
+      image_name: 'beaphar-calming-spot-on-for-cats.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:8,
+      subcategory_id: 40,
+      pet_id: 2
+    },
+    {
+      name: 'Optixcare Eye Lube for Dogs & Cats',
+      description: 'Optixcare Eye Lube is formulated for pets, both those dealing with dry eyes and those going under anaesthetic.',
+      quantity: 6,
+      vendor_price: 5.00,
       retail_price: 12.00,
-      image_name: 'bio-band-natural-antiparasitic-collar-dogs-and-cats.jpg',
+      image_name: 'optixcare-eye-ube.jpg',
       status: 3,
       vendor_id: 5,
       product_category_id:8,
@@ -3717,6 +3808,86 @@ module.exports.bootstrap = async function() {
       pet_id: 2
     },
 
+    //----Cat vitamins minerals electrolytes------///
+    {
+      name: 'GimCat Nutri Pockets with Catnip and Multi-Vitamin',
+      description: 'Nutri pockets with catnip and multi-vitamin.',
+      quantity: 7,
+      vendor_price: 0.50,
+      retail_price: 1.50,
+      image_name: 'gimcat-nutri-pockets-with-catnip-and-multi-vitamin.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:8,
+      subcategory_id: 41,
+      pet_id: 2
+    },
+    {
+      name: 'GimCat Multi-Vitamin Paste',
+      description: 'A strong immune system is the prerequisite for a healthy and long cat life.',
+      quantity: 5,
+      vendor_price: 6.00,
+      retail_price: 13.00,
+      image_name: 'gimcat-multi-vitamin-paste.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:8,
+      subcategory_id: 41,
+      pet_id: 2
+    },
+    {
+      name: 'Vet IQ Nutri-Vit Plus Vitamin Energiser for Cats & Kittens',
+      description: 'VetIQ Nutri-Vit Plus Cat Vitamin Mineral Support is a high calorie, tasty and nutritional supplement providing a range of vitamins & minerals for your cat.',
+      quantity: 5,
+      vendor_price: 3.00,
+      retail_price: 8.00,
+      image_name: 'mark-chappell-nurish-um-cat.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:8,
+      subcategory_id: 41,
+      pet_id: 2
+    },
+    {
+      name: 'Dodson and Horrell Daily Vitamins and Minerals',
+      description: 'A broad-spectrum pelleted vitamin and mineral supplement for equine diets.',
+      quantity: 4,
+      vendor_price: 7.00,
+      retail_price: 17.00,
+      image_name: 'dodson-and-horrell-daily-vitamins-and-minerals.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:8,
+      subcategory_id: 41,
+      pet_id: 2
+    },
+    {
+      name: 'Collo-Cal D Calcium & Vitamin D Liquid Supplement for Dogs & Cats',
+      description: 'Collo-Cal D is a palatable Calcium and Vitamin D Supplement developed for young animals and whelping bitches/nursing queens.',
+      quantity: 3,
+      vendor_price: 6.00,
+      retail_price: 15.00,
+      image_name: 'collo-cal-d-vitamin-supplement.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:8,
+      subcategory_id: 41,
+      pet_id: 2
+    },
+    {
+      name: 'Dodson and Horrell Performance Vitamins and Minerals',
+      description: 'Vitamin and mineral supplement for equine use. Suitable for all horses and ponies including mares and youngstock.',
+      quantity: 4,
+      vendor_price: 10.00,
+      retail_price: 26.00,
+      image_name: 'dodson-and-horrell-performance-vitamins-and-minerals.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:8,
+      subcategory_id: 41,
+      pet_id: 2
+    },
+    
 
   ]);
 
