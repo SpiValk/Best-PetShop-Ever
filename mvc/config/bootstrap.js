@@ -139,7 +139,7 @@ module.exports.bootstrap = async function() {
     },
     {
       category_name:'aquariums-equipment-and-decor',
-      description:'aquariums & aquariums stands,aquarium substrate,artificial plants,gravel sand & stones,ornamnets,artificial plants,breeders & nets,heating & lighting accessories',
+      description:'aquariums & aquariums stands,aquarium substrate,artificial plants,gravel sand & stones,ornaments,breeders & nets,heating & lighting accessories',
       pets_id:3,
       product_image:'aquarium.jpg'
     },
@@ -252,7 +252,28 @@ module.exports.bootstrap = async function() {
     {subcategory: 'cat-medicines', category_id: 8},
     {subcategory: 'cat-wound-care', category_id: 8},
     {subcategory: 'cat-vitamins-minerals-electrolytes', category_id: 8},
-
+    //--------------------- FISH ------------------------------//
+    //------ FOODS -------//
+    {subcategory: 'fish-flakes', category_id: 9},
+    {subcategory: 'fish-granules-pellets-sticks', category_id: 9},
+    //------ aquariums equipment and decor -------//
+    {subcategory: 'fish-aquariums-and-aquariums-stands', category_id: 10},
+    {subcategory: 'fish-aquarium-substrate', category_id: 10},
+    {subcategory: 'fish-artificial-plants', category_id: 10},
+    {subcategory: 'fish-gravel-sand-and-stones', category_id: 10},
+    {subcategory: 'fish-ornaments', category_id: 10},
+    {subcategory: 'fish-breeders-and-nets', category_id: 10},
+    {subcategory: 'fish-heating-and-lighting-accessories', category_id: 10},
+    //------ filters and pumps -------//
+    {subcategory: 'fish-air-and-water-pumps', category_id: 11},
+    {subcategory: 'fish-filters', category_id: 11},
+    {subcategory: 'fish-filter-media', category_id: 11},
+    {subcategory: 'fish-replacement-parts', category_id: 11},
+    //------ care -------//
+    {subcategory: 'fish-fish-medicines', category_id: 12},
+    {subcategory: 'fish-fresh-water-improvement', category_id: 12},
+    {subcategory: 'fish-sea-water-improvement', category_id: 12},
+    {subcategory: 'fish-tests', category_id: 12},
   ]);
 
 
@@ -3633,6 +3654,298 @@ module.exports.bootstrap = async function() {
       pet_id: 2
     },
 
+    //-------- Cat Bowls & Feeding ---------//
+    {
+      name: 'Mason Cash Lettered High Water Bowl',
+      description: 'This bowl features thick sides to prevent chipping, is made from heavy stoneware to ensure durability & keep the food cool and fresh.',
+      quantity: 3,
+      vendor_price: 4.00,
+      retail_price: 9.00,
+      image_name: 'mason-cash-lettered-high-water-bowl.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 36,
+      pet_id: 2
+    },
+    {
+      name: 'Food Scoop - 1 Cup',
+      description: 'Food Scoop - 1 Cup.',
+      quantity: 6,
+      vendor_price: 0.50,
+      retail_price: 2.00,
+      image_name: 'food-scoop-1-cup.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 36,
+      pet_id: 2
+    },
+    {
+      name: 'Mason Cash Cat Drinking Saucer - 5',
+      description: 'This bowl features thick sides to prevent chipping, is made from heavy stoneware to ensure durability & keep the food cool and fresh.',
+      quantity: 5,
+      vendor_price: 1.50,
+      retail_price: 4.00,
+      image_name: 'mason-cash-cat-drinking-saucer.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 36,
+      pet_id: 2
+    },
+    {
+      name: 'Radiator Heat Transferring Cat Bed',
+      description: 'This Radiator Pet Bed simply attaches to radiators in the home to offer cats and small dogs a warm place to sleep and rest.',
+      quantity: 2,
+      vendor_price: 3.50,
+      retail_price: 8.00,
+      image_name: 'radiator-cat-bed.png',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 36,
+      pet_id: 2
+    },
+    {
+      name: 'Catit 2.0 Flower Stainless Steel Water Fountain',
+      description: 'Cat drinking fountain with stainless steel top, the shallow hygienic top doesn’t irritate your cat’s whiskers or skin.',
+      quantity: 2,
+      vendor_price: 13.00,
+      retail_price: 27.00,
+      image_name: 'catit-2-flower-stainless-steel-water-fountain.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 36,
+      pet_id: 2
+    },
+    {
+      name: 'Snugglesafe Microwavable Heat Pad with Cozy Cover',
+      description: 'The Snugglesafe Heatpad is a fabulous invention suitable for all animals.',
+      quantity: 4,
+      vendor_price: 12.00,
+      retail_price: 24.00,
+      image_name: 'snugglesafe-microwavable-heat-pad-with-free-cozy-cover.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 36,
+      pet_id: 2
+    },
+    {
+      name: 'Catit Double Diner Pink Cat Bowl',
+      description: 'Catit Double Diner Pink Cat Bowl.',
+      quantity: 6,
+      vendor_price: 2.00,
+      retail_price: 5.00,
+      image_name: 'catit-double-diner-pink.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 36,
+      pet_id: 2
+    },
+    {
+      name: 'Lickimat Salmon & Catnip Cat Sprinkles',
+      description: 'Lickimat Sprinkles are freshly baked biscuits that have been crushed into small crumbs to shake on to a Lickimat.',
+      quantity: 5,
+      vendor_price: 1.00,
+      retail_price: 4.00,
+      image_name: 'lickimat-salmon-catnip-cat-sprinkles.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 36,
+      pet_id: 2
+    },
+
+    //----Cat Transport Boxes------///
+    {
+      name: 'Onoen Carry Bag with Run',
+      description: 'This Onoen Carry Bag with Run offers comfort on any journey and makes the ideal carry case for both owners and pets.',
+      quantity: 3,
+      vendor_price: 19.00,
+      retail_price: 40.00,
+      image_name: 'pla-tragetasche-onoen-fg.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 37,
+      pet_id: 2
+    },
+    {
+      name: 'Hard Case Carrier Bag Sandy',
+      description: 'The mobile pet home has a variety of different functions and manages to look elegant at the same time.',
+      quantity: 2,
+      vendor_price: 20.00,
+      retail_price: 55.00,
+      image_name: 'tragetasche-sandy.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 37,
+      pet_id: 2
+    },
+    {
+      name: 'Trixie Friends on Tour Ryan Pet Carrier',
+      description: 'This handy travel bag from Trixie is suitable for cats and small dogs, ideal for trips to the vet or short car, bus and train journeys.',
+      quantity: 4,
+      vendor_price: 8.00,
+      retail_price: 18.00,
+      image_name: 'trixie-friends-on-tour-ryan-pet-carrier.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 37,
+      pet_id: 2
+    },
+    {
+      name: 'Catit Voyageur White Tiger Crate - White',
+      description: 'The stylish Catit Voyageur White Tiger Crate is a great way to transport your pet safely and comfort.',
+      quantity: 5,
+      vendor_price: 10.00,
+      retail_price: 23.00,
+      image_name: 'catit-voyageur-white-tiger-crate.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 37,
+      pet_id: 2
+    },
+    {
+      name: 'Catit Voyageur White Tiger Crate - Black',
+      description: 'The stylish Catit Voyageur White Tiger Pet Carrier - Black is a great way to transport your pet safely and comfort.',
+      quantity: 5,
+      vendor_price: 13.00,
+      retail_price: 29.00,
+      image_name: 'catit-voyageur-white-tiger-crate-black.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 37,
+      pet_id: 2
+    },
+    {
+      name: 'Trixie Capri Open Top Pet Carrier',
+      description: 'The Trixie Capri Open Top Pet Carrier has been thoughtfully designed to be stable and to offer excellent ventilation thanks to the air slits.',
+      quantity: 4,
+      vendor_price: 15.00,
+      retail_price: 33.00,
+      image_name: 'trixie-capri-open-top-pet-carrier.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 37,
+      pet_id: 2
+    },
+
+    //----Cat beds------///
+    {
+      name: 'Trixie Mijou Cuddly Cat Bed',
+      description: 'Trixie’s Mijou cuddly cat bed is a soft, lovingly designed place for your cat to snuggle into.',
+      quantity: 3,
+      vendor_price: 5.00,
+      retail_price: 14.00,
+      image_name: 'trixie-mijou-cuddly-cat-bed.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 38,
+      pet_id: 2
+    },
+    {
+      name: 'Modern Living Visby Cat Bed',
+      description: 'Modern Living was created for pet owners with high standards who look for the finest, long-lasting products.',
+      quantity: 1,
+      vendor_price: 25.00,
+      retail_price: 50.00,
+      image_name: 'modern-living-visby-cat-bed.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 38,
+      pet_id: 2
+    },
+    {
+      name: 'Cat Bed Branca Two in One',
+      description: 'The Cat Bed Branca Two in One offers flexibility and comfort.',
+      quantity: 4,
+      vendor_price: 5.00,
+      retail_price: 12.00,
+      image_name: 'cat-bed-branca-two-in-one.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 38,
+      pet_id: 2
+    },
+    {
+      name: 'Snuggle Cat Bed',
+      description: 'This elegant Snuggle Cat Bed offers the perfect place for your cat or small dog to dream away a few hours.',
+      quantity: 3,
+      vendor_price: 14.00,
+      retail_price: 30.00,
+      image_name: 'snuggle-cat-bed.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 38,
+      pet_id: 2
+    },
+    {
+      name: 'Vanilla Cat Bed',
+      description: 'Your pet will not want to get up from this warm, comfortable snuggle bed with its high, padded sides which are perfect to cosy up to or to lean against.',
+      quantity: 3,
+      vendor_price: 5.00,
+      retail_price: 12.00,
+      image_name: 'vanilla-cat-bed.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 38,
+      pet_id: 2
+    },
+    {
+      name: 'Luxus Radiator Cat Bed',
+      description: 'This cuddly Luxus Radiator Cat Bed is a cat’s dream! It is simple to hang this bed over any radiator with a maximum depth of 7.5cm.',
+      quantity: 2,
+      vendor_price: 12.00,
+      retail_price: 29.00,
+      image_name: 'luxus-radiator-cat-bed.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 38,
+      pet_id: 2
+    },
+    {
+      name: 'Mochi Cat Bed – Light Grey',
+      description: 'The Mochi Cat Bed offers your cat an extremely cosy and snug environment to snooze and sleep in.',
+      quantity: 4,
+      vendor_price: 7.00,
+      retail_price: 16.00,
+      image_name: 'mochi-cat-bed-light-grey.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 38,
+      pet_id: 2
+    },
+    {
+      name: 'Cosma Snuggle Bed',
+      description: 'The Cosma Snuggle bed for cats is ideal for the trendsetter cat.',
+      quantity: 3,
+      vendor_price: 9.00,
+      retail_price: 23.00,
+      image_name: 'cosma-snuggle-bed.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:7,
+      subcategory_id: 38,
+      pet_id: 2
+    },
+
 
     //********Cat Veterinary Products *******//
     //----Cat Antiparasitics------///
@@ -3714,6 +4027,23 @@ module.exports.bootstrap = async function() {
       vendor_id: 5,
       product_category_id:8,
       subcategory_id: 40,
+      pet_id: 2
+    },
+
+    //--------------------- Fish ------------------------------//
+    //--- Food ---//
+    //--- Fish Flakes ---//
+    {
+      name: 'Bio Band natural antiparasitic collar dogs and cats',
+      description: 'Specific and waterproof collar for the protection of dogs and cats against the bites of ticks, fleas, lice, flies and mosquitoes (including Phlebotomes, carrier of leishmaniosis).',
+      quantity: 5,
+      vendor_price: 4.00,
+      retail_price: 12.00,
+      image_name: 'bio-band-natural-antiparasitic-collar-dogs-and-cats.jpg',
+      status: 3,
+      vendor_id: 5,
+      product_category_id:9,
+      subcategory_id: 42,
       pet_id: 2
     },
 
