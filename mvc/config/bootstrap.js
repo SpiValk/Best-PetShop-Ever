@@ -4215,7 +4215,7 @@ module.exports.bootstrap = async function() {
       vendor_id: 5,
       product_category_id:9,
       subcategory_id: 42,
-      pet_id: 2
+      pet_id: 3
     },
     {
       name: 'Omega One Frozen Bloodworms',
@@ -4228,7 +4228,7 @@ module.exports.bootstrap = async function() {
       vendor_id: 5,
       product_category_id:9,
       subcategory_id: 42,
-      pet_id: 2
+      pet_id: 3
     },
     {
       name: 'Hikari Algae Wafers™ Fish Food',
@@ -4241,7 +4241,7 @@ module.exports.bootstrap = async function() {
       vendor_id: 5,
       product_category_id:9,
       subcategory_id: 42,
-      pet_id: 2
+      pet_id: 3
     },
     {
       name: 'San Francisco Bay Brand® Sallys Frozen Beefheart Fish Food',
@@ -4254,7 +4254,7 @@ module.exports.bootstrap = async function() {
       vendor_id: 5,
       product_category_id:9,
       subcategory_id: 42,
-      pet_id: 2
+      pet_id: 3
     },
     {
       name: 'Tetra TetraColor Tropical Fish Flakes',
@@ -4267,7 +4267,7 @@ module.exports.bootstrap = async function() {
       vendor_id: 5,
       product_category_id:9,
       subcategory_id: 42,
-      pet_id: 2
+      pet_id: 3
     },
     {
       name: 'API Bottom Feeder Premium Shrimp Pellets Fish Food',
@@ -4280,7 +4280,7 @@ module.exports.bootstrap = async function() {
       vendor_id: 5,
       product_category_id:9,
       subcategory_id: 42,
-      pet_id: 2
+      pet_id: 3
     },
     {
       name: 'Omega Betta Buffet Flakes Fish Food',
@@ -4293,7 +4293,7 @@ module.exports.bootstrap = async function() {
       vendor_id: 5,
       product_category_id:9,
       subcategory_id: 42,
-      pet_id: 2
+      pet_id: 3
     },
     {
       name: 'Top Fin Pro Series Betta Crumbles Fish Food',
@@ -4306,7 +4306,7 @@ module.exports.bootstrap = async function() {
       vendor_id: 5,
       product_category_id:9,
       subcategory_id: 42,
-      pet_id: 2
+      pet_id: 3
     },
     {
       name: 'Aqueon Betta Color Enhancing Pellets Fish Food',
@@ -4319,7 +4319,7 @@ module.exports.bootstrap = async function() {
       vendor_id: 5,
       product_category_id:9,
       subcategory_id: 42,
-      pet_id: 2
+      pet_id: 3
     },
     {
       name: 'Omega One Frozen Blood Worms Fish Food',
@@ -4332,12 +4332,10 @@ module.exports.bootstrap = async function() {
       vendor_id: 5,
       product_category_id:9,
       subcategory_id: 42,
-      pet_id: 2
+      pet_id: 3
     },
 
-    
-
-
+   
   ]);
 
 };
