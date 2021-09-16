@@ -45,12 +45,12 @@ module.exports.routes = {
 
 
 
-  'GET /categories/:pet'      : { action: 'petcategorycontroller'},
+  'GET /categories/:pet'     : { action: 'petcategorycontroller'},
 
 
-  '/ourteam' :{view: 'pages/static/ourteam'},
-  '/contactus' :{view: 'pages/static/contactus'},
-  '/home' :{view: 'pages/index'},
+  '/ourteam'                 :{view: 'pages/static/ourteam'},
+  '/contactus'               :{view: 'pages/static/contactus'},
+  '/home'                    :{view: 'pages/index'},
   
   'GET /categories/:pet'     : { action: 'petcategorycontroller'},
   'GET /products/view/:id'   : { action: 'productviewcontroller'},
@@ -75,22 +75,27 @@ module.exports.routes = {
   // 'GET /logout'               : { action: 'users/logout' },
 
 
-
-
-
-
-
-
-
-
-
   //Dog
-  'GET /products/dog/:category'               : { action: 'dog/categoriescontroller'},
-  'GET /products/dog/category/:subcategory'   : { action: 'dog/subcategoriescontroller'},
+  'GET /products/dog/:category'                         : { action: 'dog/categoriescontroller'},
+  'GET /products/dog/category/:subcategory'             : { action: 'dog/subcategoriescontroller'},
+  //Dog product DELETE
+  'GET /products/dog/delete:id'                         : { action: 'dog/deleteproductcontroller'},
+  //Dog category DELETE
+  'GET /products/dog/category/delete/:id'               : { action: 'dog/deleteproductcategorycontroller'},
+  //Dog subcategory DELETE
+  'GET /products/dog/category/subcategory/delete/:id'   : { action: 'dog/deletesubcategorycontroller'},
 
+
+  
   //Cat
-  'GET /products/cat/:category'               : { action: 'cat/categoriescontroller'},
-  'GET /products/cat/category/:subcategory'   : { action: 'cat/subcategoriescontroller'},
+  'GET /products/cat/:category'                         : { action: 'cat/categoriescontroller'},
+  'GET /products/cat/category/:subcategory'             : { action: 'cat/subcategoriescontroller'},
+  //Cat product DELETE
+  'GET /products/cat/delete/:id'                        : { action: 'cat/deleteproductcontroller'},
+  // Cat category DELETE
+  'GET /products/cat/category/delete/:id'               : { action: 'cat/deleteproductcategorycontroller'},
+  //Cat subcategory DELETE
+  'GET /products/cat/category/subcategory/delete/:id'   : { action: 'cat/deletesubcategorycontroller'},
 
 
   /***************************************************************************
