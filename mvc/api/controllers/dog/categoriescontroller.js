@@ -24,11 +24,11 @@ module.exports = {
     let subcategories = subcategoryTemp.subcategory_id;
 
     let productCategory = await Product_category.findOne({category_name: category}).populate('pet_product_id');
-    let fishProducts = await productCategory.pet_product_id;
+    let dogProducts = await productCategory.pet_product_id;
 
 
 
-    return this.res.view(`pages/fish/fishCategories`, {fishProducts, category, subCategs, subcategories}, {isAdmin: this.req.session.isAdmin});
+    return this.res.view(`pages/dog/dogCategories`, {dogProducts, category, subCategs, subcategories}, {isAdmin: this.req.session.isAdmin});
 
     //  }
 

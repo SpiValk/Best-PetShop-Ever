@@ -2313,7 +2313,7 @@ module.exports.bootstrap = async function() {
       quantity: 3,
       vendor_price: 7.45,
       retail_price: 15.00,
-      image_name: 'McrocynAH®-Wound&Skin-Pet-Care.jpg',
+      image_name: 'MicrocynAH®-Wound&Skin-Pet-Care.jpg',
       status: 3,
       vendor_id: 5,
       product_category_id: 4,

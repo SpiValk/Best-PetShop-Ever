@@ -254,7 +254,9 @@ img#check {
 .image4 {
   /* width:100%;
     height:100%; */
-  background: url("https://bestanimations.com/media/fish/1147880813animated-tropical-fish-6.gif")
+  /* background: url("https://bestanimations.com/media/fish/1147880813animated-tropical-fish-6.gif")
+    center center no-repeat; */
+  background: url("https://img.cdn.schooljotter2.com/sampled/3344156/900/0/nocrop//")
     center center no-repeat;
   background-size: contain;
   overflow: hidden;
@@ -263,7 +265,7 @@ img#check {
 .image3 {
   /* width:100%;
     height:100%; */
-  background: url("https://www.nicepng.com/png/detail/1-14552_hummingbird-quality-png-picture-hummingbirds-png.png")
+  background: url("https://cdn.edu.buncee.com/user-uploads/app/59bd578c843b47cb9f7360e344f6e5e0/MeKHWORwTDCu698Gpu2s_COLIBRI-CUADRADO-SINFONDO.gif?timestamp=14032842")
     center center no-repeat;
   background-size: contain;
   overflow: hidden;
