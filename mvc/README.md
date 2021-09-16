@@ -69,32 +69,32 @@
 
 # Fish
       - Fish foods: #9
-         -Fish flakes: #42
-         -Fish granules pellets sticks: #43
+         -Fish flakes: #43
+         -Fish granules pellets sticks: #44
 
 
       - Fish aquariums equipment and decor: #10
-         -Fish aquariums & aquariums stands: #44
-         -Fish aquarium substrate: #45
-         -Fish artificial plants: #46
-         -Fish gravel sand & stones: #47
-         -Fish ornaments: #48
-         -Fish breeders & nets: #49
-         -Fish heating & lighting accessories: #50
+         -Fish aquariums & aquariums stands: #45
+         -Fish aquarium substrate: #46
+         -Fish artificial plants: #47
+         -Fish gravel sand & stones: #48
+         -Fish ornaments: #49
+         -Fish breeders & nets: #50
+         -Fish heating & lighting accessories: #51
 
 
       - Fish filters and pumps: #11
-         -Fish air & water pumps: #51
-         -Fish filters: #52
-         -Fish filter media: #53
-         -Fish replacement parts: #54
+         -Fish air & water pumps: #52
+         -Fish filters: #53
+         -Fish filter media: #54
+         -Fish replacement parts: #55
 
 
       - Fish care: #12
-         -Fish fish medicines: #55
-         -Fish fresh water improvement: #56
-         -Fish sea water improvement: #57
-         -Fish tests: #58
+         -Fish fish medicines: #56
+         -Fish fresh water improvement: #57
+         -Fish sea water improvement: #58
+         -Fish tests: #59
          
 
       ***  npm install sails-hook-organics --save ***

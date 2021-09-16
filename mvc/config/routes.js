@@ -85,6 +85,10 @@ module.exports.routes = {
   'GET /products/cat/:category'               : { action: 'cat/categoriescontroller'},
   'GET /products/cat/category/:subcategory'   : { action: 'cat/subcategoriescontroller'},
 
+  //Fish
+  'GET /products/fish/:category'              : { action: 'fish/categoriescontroller'},
+  'GET /products/fish/category/:subcategory'  : { action: 'fish/subcategoriescontroller'},
+
 
   /***************************************************************************
   *                                                                          *
