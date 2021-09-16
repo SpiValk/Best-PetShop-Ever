@@ -1088,6 +1088,17 @@ button:focus {
 }
 
 #sidebar {
-  margin-left: 72px;
-  width: 280px;
+  margin-left: 52px;
+  width: 300px;
+}
+
+/* #dog-dry-food {
+  position: relative;
+  top: 25px;
+} */
+
+.form-group input {
+  position: relative;
+  top: 26px;
+  left: 56px;
 }
