@@ -88,6 +88,10 @@ module.exports.routes = {
   //Fish
   'GET /products/fish/:category'              : { action: 'fish/categoriescontroller'},
   'GET /products/fish/category/:subcategory'  : { action: 'fish/subcategoriescontroller'},
+  
+  //Bird
+  'GET /products/bird/:category'              : { action: 'bird/categoriescontroller'},
+  'GET /products/bird/category/:subcategory'  : { action: 'bird/subcategoriescontroller'},
 
 
   /***************************************************************************
