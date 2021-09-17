@@ -95,6 +95,32 @@
          -Fish fresh water improvement: #56
          -Fish sea water improvement: #57
          -Fish tests: #58
+
+
+# Bird
+      - Bird Foods and Treats: #13
+         -Bird food: #59
+         -Wild bird food: #60
+         -Bird treats: #61
+
+
+      - Bird Accessories: #14
+         -Bird cages & stands: #62
+         -Bird bowls & feeders: #63
+         -Bird toys: #64
+         -Bird travels carriers: #65
+         -Bird perches: #66
+         -Bird nest: #67
+
+
+      - Bird Grooming and Care: #15
+         -Bird medication: #68
+         -Bird sand: #69
+         -Bird vitamins: #70
+         -Bird baths: #71
+         -Bird nail & break trimmers: #72
+
+
          
 
       ***  npm install sails-hook-organics --save ***
