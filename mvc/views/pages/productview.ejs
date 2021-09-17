@@ -1,121 +1,117 @@
 <%- include("head") %>
 
 
-    <body>
-        <%- include("navbar") %>
-            <div class="content">
-                <a href="/products/<%=pet.pet_id.name%>/<%=product.product_category_id.category_name%>">
-                    <div class="shop-bg"></div>
-                </a>
-                <div class="cartbox"> 
-                    <div class="pop-up clearfix row ">
+   <body>
+      <%- include("navbar") %>
+         <div class="content">
+            <a href="/products/<%=pet.pet_id.name%>/<%=product.product_category_id.category_name%>">
+               <div class="shop-bg"></div>
+            </a>
+            <div class="cartbox">
+               <div class="pop-up clearfix row ">
 
-                    <!--GALLERY-->
+                  <!--GALLERY-->
 
-                    <div class="pics zoomArea col-md-7">
-                        <!-- <span class="main-img "> -->
-                        <img id="zoomImg"
-                            src="/img/product_images/dogs/<%=product.product_category_id.category_name%>/<%= subproduct.subcategory_id.subcategory %>/<%=product.image_name%>">
-                        <!-- </span> -->
-                    </div>
-                    <!-- PRODUCT INFORMATION -->
-                    <div class="product col-md-5 ">
-                        <!-- <span class="stock">&#10006;</span> -->
-                        <span class="category capitalize">
-                            <a href="/products/<%=pet.pet_id.name%>/<%=product.product_category_id.category_name%>">
-                                <%=product.product_category_id.category_name.replace( /-/g, " " )%>
+                  <div class="pics zoomArea col-md-7">
+                     <!-- <span class="main-img "> -->
+                     <img id="zoomImg"
+                        src="/img/product_images/dog/<%=product.product_category_id.category_name%>/<%= subproduct.subcategory_id.subcategory %>/<%=product.image_name%>">
+                     <!-- </span> -->
+                  </div>
+                  <!-- PRODUCT INFORMATION -->
+                  <div class="product col-md-5 ">
+                     <!-- <span class="stock">&#10006;</span> -->
+                     <span class="category capitalize">
+                        <a href="/products/<%=pet.pet_id.name%>/<%=product.product_category_id.category_name%>">
+                           <%=product.product_category_id.category_name.replace( /-/g, " " )%>
 
-                            </a>
-                        </span>
-                        <!--category-breadcrumb-->
-                        <span class="category capitalize">
-                            <a
-                                href="/products/<%=pet.pet_id.name%>/category/<%= subproduct.subcategory_id.subcategory %>">
-                                <%= subproduct.subcategory_id.subcategory.replace(/-/g, " " ) %>
-                            </a>
-                        </span>
-                        <!--stock-label-->
-                        <%if(product.status==1){%>
-                            <span class="stock">In Stock</span>
-                            <%} else {%>
-                                <span class="out-of-stock">Out Of Stock</span>
-                                <%}%>
+                        </a>
+                     </span>
+                     <!--category-breadcrumb-->
+                     <span class="category capitalize">
+                        <a href="/products/<%=pet.pet_id.name%>/category/<%= subproduct.subcategory_id.subcategory %>">
+                           <%= subproduct.subcategory_id.subcategory.replace(/-/g, " " ) %>
+                        </a>
+                     </span>
+                     <!--stock-label-->
+                     <%if(product.status==1){%>
+                        <span class="stock">In Stock</span>
+                        <%} else {%>
+                           <span class="out-of-stock">Out Of Stock</span>
+                           <%}%>
 
-                                    <h1 class="productName">
-                                        <%= product.name %>
-                                    </h1>
-                                    <!--PRICE-RATING-REVIEW-->
-                                    <div class="block-price-rating clearfix">
-                                        <!--price-->
-                                        <div class="block-price clearfix">
-                                            <div class="price-new clearfix">
-                                                <span class="price-new-dollar price">
-                                                    <%=product.vendor_price%>
-                                                </span>
-                                                <span class="price-new-cent">90</span>
-                                            </div>
-                                            <div class="price-old clearfix">
-                                                <span class="price-old-dollar">$599</span>
-                                                <span class="price-old-cent">&#8228;90</span>
-                                            </div>
-                                        </div>
-
-
-                                        <!--PRODUCT DESCRIPTION-->
-                                        <div class="descr-div">
-                                            <p class="descr-paragraph">
-                                                <%=product.description %>
-                                            </p>
-                                        </div>
-                                        <!--SELECT BLOCK-->
-                                        <div class="block-select clearfix">
-                                            <div id="productViewForm">
-                                                <div class="select-size"><span>quantity</span>
-                                                    <div id="quantity">
-                                                        <button class="border rounded button-plus quantity-button"><span
-                                                                class="fa fa-plus"></span></button> <span
-                                                            id="quantity-number" class="px-sm-1 quanNumber">1
-                                                        </span> <button class="border rounded button-minus quantity-button"><span
-                                                                class="fa fa-minus" id="orange"></span></button>
-                                                    </div>
-                                                </div>
-                                                <!--BUTTON-->
-                                                <button class="btn addtocart"data-product-id="<%=product.id%>"><i class="fas fa-shopping-cart"></i>
-                                                    Add
-                                                    To Cart</button>
-                                            </div>
-
-                                        </div>
+                              <h1 class="productName">
+                                 <%= product.name %>
+                              </h1>
+                              <!--PRICE-RATING-REVIEW-->
+                              <div class="block-price-rating clearfix">
+                                 <!--price-->
+                                 <div class="block-price clearfix">
+                                    <div class="price-new clearfix">
+                                       <span class="price-new-dollar price">
+                                          <%=product.vendor_price%>
+                                       </span>
+                                       <span class="price-new-cent">90</span>
                                     </div>
-                                    <!--LINKS-->
-                                    <div class="block-footer clearfix">
-                                        <div class="block-links">
-                                            <div class="send">
-                                                <img
-                                                    src="http://www.free-icons-download.net/images/share-icon-20724.png">
-                                                <span>Send to a friend</span>
-                                            </div>
-                                            <div class="wishlist">
-                                                <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/23243-200.png">
-                                                <span>Save for later</span>
-                                            </div>
-                                        </div>
-                                        <!--SOCIAL-->
-                                        <div class="social" style="font-size:30px;color:black;">
-                                            <a href="https://www.facebook.com/" class="fab fa-facebook-f"
-                                                title="facebook"></a>
-                                            <a href="https://www.instagram.com/" class="fab fa-instagram"
-                                                title="instgram"></a>
-                                            <a href="https://twitter.com/" class="fab fa-twitter-square"
-                                                title="twitter"></a>
-                                            <!-- <a href="#"><img src="http://www.nataliemorgan.co.nz/images/Pinterest.png"></a> -->
-                                        </div>
+                                    <div class="price-old clearfix">
+                                       <span class="price-old-dollar">$599</span>
+                                       <span class="price-old-cent">&#8228;90</span>
                                     </div>
-                    </div>
-                </div>
+                                 </div>
+
+
+                                 <!--PRODUCT DESCRIPTION-->
+                                 <div class="descr-div">
+                                    <p class="descr-paragraph">
+                                       <%=product.description %>
+                                    </p>
+                                 </div>
+                                 <!--SELECT BLOCK-->
+                                 <div class="block-select clearfix">
+                                    <div id="productViewForm">
+                                       <div class="select-size"><span>quantity</span>
+                                          <div id="quantity">
+                                             <button class="border rounded button-plus quantity-button"><span
+                                                   class="fa fa-plus"></span></button> <span id="quantity-number"
+                                                class="px-sm-1 quanNumber">1
+                                             </span> <button class="border rounded button-minus quantity-button"><span
+                                                   class="fa fa-minus" id="orange"></span></button>
+                                          </div>
+                                       </div>
+                                       <!--BUTTON-->
+                                       <button class="btn addtocart" data-product-id="<%=product.id%>"><i
+                                             class="fas fa-shopping-cart"></i>
+                                          Add
+                                          To Cart</button>
+                                    </div>
+
+                                 </div>
+                              </div>
+                              <!--LINKS-->
+                              <div class="block-footer clearfix">
+                                 <div class="block-links">
+                                    <div class="send">
+                                       <img src="http://www.free-icons-download.net/images/share-icon-20724.png">
+                                       <span>Send to a friend</span>
+                                    </div>
+                                    <div class="wishlist">
+                                       <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/23243-200.png">
+                                       <span>Save for later</span>
+                                    </div>
+                                 </div>
+                                 <!--SOCIAL-->
+                                 <div class="social" style="font-size:30px;color:black;">
+                                    <a href="https://www.facebook.com/" class="fab fa-facebook-f" title="facebook"></a>
+                                    <a href="https://www.instagram.com/" class="fab fa-instagram" title="instgram"></a>
+                                    <a href="https://twitter.com/" class="fab fa-twitter-square" title="twitter"></a>
+                                    <!-- <a href="#"><img src="http://www.nataliemorgan.co.nz/images/Pinterest.png"></a> -->
+                                 </div>
+                              </div>
+                  </div>
+               </div>
             </div>
 
             <%- include("footer") %>
-                <%- include("scripts") %>
-                    <script type="text/javascript" src="productview.js"></script>
-    </body>
+               <%- include("scripts") %>
+                  <script type="text/javascript" src="productview.js"></script>
+   </body>

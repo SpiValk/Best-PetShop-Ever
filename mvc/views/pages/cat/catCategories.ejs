@@ -61,7 +61,7 @@
                <%catProducts.forEach((product)=> { %>
                   <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
                      <div class="card myProductBox cartbox"><a href="/products/view/<%=product.id%>"> <img
-                              src="/img/product_images/cats/<%= category %>/<%= subCategs[product.subcategory_id -1][product.subcategory_id] %>/<%= product.image_name %>">
+                              src="/img/product_images/cat/<%= category %>/<%= subCategs[product.subcategory_id -1][product.subcategory_id] %>/<%= product.image_name %>">
                            <div class="card-body">
                               <h4 class="productName">
                                  <%= product.name %>

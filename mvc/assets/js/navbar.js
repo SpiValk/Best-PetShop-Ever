@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 
 //DECLARE VARIABLES
 var nav = document.getElementById('navbar');
@@ -256,6 +257,34 @@ updateShoppingCartHTML();
 $(document).ready(() => {
   $('.addtocart').click(() => {
     toastr.success('The product added to cart');
+  });
+});
+
+///**********SEARCH BAR *************** */
+
+$(document).ready(() => {
+  // $.ajaxSetup({ cache: false });
+  $('#search').keyup(() => {
+    $('#result').html('');
+    //  $('#state').val('');
+    var searchField = $('#search').val();
+    var expression = new RegExp(searchField, 'i');
+    $.getJSON('/pet_product', (data) => {
+      $.each(data, (key, value) => {
+        // let value=value.slice(1,6)
+        if (value.name.search(expression) != -1 || value.location.search(expression) != -1)
+        {
+          $('#result').append('<li class="nav-item link-class"><span hidden>'+value.id+' ' + value.description+' '+value.quantity+' '+value.vendor_price+' ' +value.status+' </span><img src="/img/product_images/'+value.pet_id.name+'/'+value.product_category_id.category_name+'/'+ value.subcategory_id.subcategory+'/'+value.image_name+'" height="40" width="40" class="img-thumbnail" /> '+ value.name +'</li>');
+          $('.link-class').slice(1,6);
+        }
+      });
+    });
+  });
+
+  $('#result').on('click', 'li', function() {
+    var click_text = $(this).text().split('|');
+    $('#search').val($.trim(click_text[0]));
+    $('#result').html('');
   });
 });
 
