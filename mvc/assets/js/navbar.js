@@ -26,11 +26,11 @@ window.onscroll = function () {
     nav.style.background = 'rgba(255, 249, 192, 0.7)';
     // nav.style.height = '3rem';
     list.forEach(element => {
-      element.style.color = 'green';
+      element.style.color = 'rgb(30, 116, 48)';
     });
 
   } else {
-    nav.style.background = 'green';
+    nav.style.background = 'rgb(30, 116, 48)';
     // nav.style.height = '6.9rem';
     list.forEach(element => {
       element.style.color = 'lightgrey';
