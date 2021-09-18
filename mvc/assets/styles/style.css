@@ -1104,3 +1104,32 @@ button:focus {
   top: 26px;
   left: 56px;
 }
+
+/*********SEARCH BAR **********/
+#search{
+  margin-left:10px;
+  width:320px;
+}
+#result {
+  margin-left:10px;
+  font-size:12px;
+  font-weight:bold;
+  position: absolute;
+  width: 100%;
+  max-width:320px;
+  cursor: pointer;
+  overflow-y: auto;
+  max-height: 350px;
+  box-sizing: border-box;
+  z-index: 1001;
+  color:black;
+  background-color:white;
+ }
+ .link-class{
+   border-bottom:1px solid grey;
+ }
+ .link-class:hover{
+  background-color:rgb(30, 116, 48);
+  color:white;
+
+ }
