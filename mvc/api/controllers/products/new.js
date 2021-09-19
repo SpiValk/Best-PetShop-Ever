@@ -1,6 +1,7 @@
 module.exports = {
+
   exits: {
-    success: {
+    success:{
       viewTemplatePath: 'pages/products/new'
     }
   },
