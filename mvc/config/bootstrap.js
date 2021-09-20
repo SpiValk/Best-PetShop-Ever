@@ -163,7 +163,7 @@ module.exports.bootstrap = async function() {
       product_image:'bird-food.jpg'
     },
     {
-      category_name:'bird-bird-accessories',
+      category_name:'bird-accessories',
       description:'cages & stands,bowls & feeders,toys,travels carriers,bird perches,bird nest',
       pets_id:4,
       product_image:'bird-accessories.jpg'
@@ -3575,8 +3575,8 @@ module.exports.bootstrap = async function() {
       subcategory_id: 34,
       pet_id: 2
     },
-    
-     //-------- Cat Collars ---------//
+
+    //-------- Cat Collars ---------//
 
     {
       name: 'Red Dingo Nylon Reflective Breakaway Cat Collar with Bell',
@@ -4231,8 +4231,8 @@ module.exports.bootstrap = async function() {
       subcategory_id: 41,
       pet_id: 2
     },
-    
-//--------------------- Fish ------------------------------//
+
+    //--------------------- Fish ------------------------------//
     //--- Food ---//
     //--- Fish Flakes ---//
     {
@@ -5171,7 +5171,7 @@ module.exports.bootstrap = async function() {
       quantity: 6,
       vendor_price: 1.00,
       retail_price: 4.00,
-      image_name: 'topfin-aquarium-check-valve.jpgv',
+      image_name: 'topfin-aquarium-check-valve.jpg',
       status: 3,
       vendor_id: 5,
       product_category_id: 11,
@@ -7840,7 +7840,7 @@ module.exports.bootstrap = async function() {
       status: 3,
       vendor_id: 5,
       product_category_id: 18,
-      subcategory_id: 80,
+      subcategory_id: 81,
       pet_id: 5
     },
     {
@@ -7853,7 +7853,7 @@ module.exports.bootstrap = async function() {
       status: 3,
       vendor_id: 5,
       product_category_id: 18,
-      subcategory_id: 80,
+      subcategory_id: 81,
       pet_id: 5
     },
     {
@@ -7866,7 +7866,7 @@ module.exports.bootstrap = async function() {
       status: 3,
       vendor_id: 5,
       product_category_id: 18,
-      subcategory_id: 80,
+      subcategory_id: 81,
       pet_id: 5
     },
     {
@@ -7879,11 +7879,9 @@ module.exports.bootstrap = async function() {
       status: 3,
       vendor_id: 5,
       product_category_id: 18,
-      subcategory_id: 80,
+      subcategory_id: 81,
       pet_id: 5
-    },
-
-   
+    }
   ]);
 
 };
