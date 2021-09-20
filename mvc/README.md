@@ -121,6 +121,25 @@
          -Bird nail & break trimmers: #72
 
 
+# Small Animals
+      - Rabbit: #16
+         -Rabbit food: #73
+         -Rabbit accessories: #74
+         -Rabbit health care: #75
+
+
+      - Hamster: #17
+         -Hamster food: #76
+         -Hamster accessories: #77
+         -Hamster health care: #78
+
+
+      - Iguana: #18
+         -Iguana food: #79
+         -Iguana accessories: #80
+         -Iguana health care: #81
+
+
          
 
       ***  npm install sails-hook-organics --save ***
