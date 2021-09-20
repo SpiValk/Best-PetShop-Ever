@@ -210,8 +210,8 @@ img#check {
 
 .top-shipping {
   position: fixed;
-  bottom: 350px;
-  right: 20px;
+  top: 150px;
+  right: 10px;
   color: rgb(219, 124, 34);
   width: 200px;
   font-family: Arial, Helvetica, sans-serif;
