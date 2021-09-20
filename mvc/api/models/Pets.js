@@ -5,7 +5,6 @@ module.exports={
     name          :{type:'string', columnName: 'name',        required:true},
     description   :{type:'string', columnName: 'description', required:true},
 
-
     pet_product_id:{
       collection: 'pet_product',
       via: 'pet_id'

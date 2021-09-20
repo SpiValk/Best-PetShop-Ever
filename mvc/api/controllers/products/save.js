@@ -49,6 +49,7 @@ module.exports = {
       dirname: require('path').resolve(sails.config.appPath, `assets/img/product_images/${pet}/${category}/${subCategory}`) //the path for the image to be saved
     },async (err, uploadedFile) => {
       if(err) {return 'badRequest';}
+      if(uploadedFile.length === 0) {return 'No image was uploaded!';}
 
       const fdIntoArray = uploadedFile[0].fd.split('/');
       const hashedImageName = fdIntoArray[fdIntoArray.length - 1]; //image name for the Pet_product.create()
