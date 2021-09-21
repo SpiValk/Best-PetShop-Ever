@@ -26,9 +26,7 @@ module.exports = {
     let productCategory = await Product_category.findOne({category_name: category}).populate('pet_product_id');
     let birdProducts = await productCategory.pet_product_id;
 
-
-
-    return this.res.view(`pages/bird/birdCategories`, {birdProducts, category, subCategs, subcategories}, {isAdmin: this.req.session.isAdmin});
+    return this.res.view(`pages/bird/birdCategories`, {birdProducts, category, subCategs, subcategories, isAdmin: this.req.session.isAdmin});
 
     //  }
 
