@@ -22,37 +22,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row d-flex justify-content-center border-top">
-                    <div class="col-5">
-                        <div class="row d-flex">
-                            <div class="book"> <img src="https://i.imgur.com/2DsA49b.jpg" class="book-img"> </div>
-                            <div class="my-auto flex-column d-flex pad-left">
-                                <h6 class="mob-text">Thinking, Fast and Slow</h6>
-                                <p class="mob-text">Daniel Kahneman</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="my-auto col-7">
-                        <div class="row text-right">
-                            <div class="col-4">
-                                <p class="mob-text">Digital</p>
-                            </div>
-                            <div class="col-4">
-                                <div class="row d-flex justify-content-end px-3">
-                                    <p class="mb-0" id="cnt1">1</p>
-                                    <div class="d-flex flex-column plus-minus"> <span class="vsm-text plus">+</span>
-                                        <span class="vsm-text minus">-</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <h6 class="mob-text">$9.99</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row d-flex justify-content-center border-top">
-                    <div class="col-5">
+                <!-- <div class="row d-flex justify-content-center border-top"> -->
+                    <!-- <div class="col-5">
                         <div class="row d-flex">
                             <div class="book"> <img src="https://i.imgur.com/Oj1iQUX.jpg" class="book-img"> </div>
                             <div class="my-auto flex-column d-flex pad-left">
@@ -60,8 +31,9 @@
                                 <p class="mob-text">Yuval Noah Harari</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="my-auto col-7">
+                    </div> -->
+                <div id="display-product-in-cart-view">
+                    <!-- <div class="my-auto col-7">
                         <div class="row text-right">
                             <div class="col-4">
                                 <p class="mob-text">Paperback</p>
@@ -78,8 +50,9 @@
                                 <h6 class="mob-text">$13.50</h6>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
+            </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-12">
                         <div class="card">
@@ -124,10 +97,10 @@
                                     </div>
                                     <div class="row d-flex justify-content-between px-4" id="tax">
                                         <p class="mb-1 text-left">Total (tax included)</p>
-                                        <h6 class="mb-1 text-right">$26.48</h6>
+                                        <h6 class="mb-1 text-right final-price">$26.48</h6>
                                     </div> <button class="btn-block btn-blue"> <span> <span
-                                                id="checkout">Checkout</span>
-                                            <span id="check-amt">$26.48</span> </span> </button>
+                                                id="checkout"class="final-price">
+                                             <span id="check-amt"> </span> </button>
                                 </div>
                             </div>
                         </div>
@@ -137,5 +110,6 @@
 
             <%- include("footer") %>
                 <%- include("scripts") %>
+                <!-- <script type="text/javascript" src="addtocart.js"></script> -->
 
     </body>
