@@ -2,7 +2,7 @@ module.exports = {
 
   exits: {
     success:{
-      viewTemplatePath: 'pages/products/new'
+      viewTemplatePath: 'partials/adminNavbar'
     }
   },
 

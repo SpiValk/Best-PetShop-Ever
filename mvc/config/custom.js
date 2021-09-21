@@ -21,6 +21,6 @@ module.exports.custom = {
 
 
   // H E R E ! ! !   U N C O M M E N T  ! ! !
-  // rememberMeCookieMaxAge: 30*24*60*60*1000,
+  rememberMeCookieMaxAge: 30*24*60*60*1000,
 
 };

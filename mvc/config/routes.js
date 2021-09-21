@@ -69,6 +69,9 @@ module.exports.routes = {
   'POST /register'            : { action: 'users/savenewuser' },
   'GET /logout'               : { action: 'users/logout' },
 
+  // ADMIN navbar
+
+
   
 
 
