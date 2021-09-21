@@ -304,9 +304,9 @@ module.exports.bootstrap = async function() {
     {subcategory: 'hamster-accessories', category_id: 17},
     {subcategory: 'hamster-health-care', category_id: 17},
     //------ Iguana -------//
-    {subcategory: 'iguana-food', category_id: 17},
-    {subcategory: 'iguana-accessories', category_id: 17},
-    {subcategory: 'iguana-health-care', category_id: 17},
+    {subcategory: 'iguana-food', category_id: 18},
+    {subcategory: 'iguana-accessories', category_id: 18},
+    {subcategory: 'iguana-health-care', category_id: 18},
   ]);
 
 
