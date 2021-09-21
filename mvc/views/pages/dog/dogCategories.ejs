@@ -1,8 +1,8 @@
 <%- include("../head") %>
 
    <body>
-      <%- include("../navbar") %>
-         <h2 class="text-center">Dog Products</h2>
+      <%- partial("../../partials/navbar.ejs") %>        
+       <h2 class="text-center">Dog Products</h2>
          <hr>
          <h3 class="text-center capitalize">
             <%= category.replace(/-/g, " " ) %>

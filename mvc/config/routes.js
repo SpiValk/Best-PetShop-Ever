@@ -50,6 +50,8 @@ module.exports.routes = {
   'GET /addtocart/:id'       : { action:'addtocartcontroller' },
 
 
+  
+
 
 
   // Product
@@ -61,11 +63,13 @@ module.exports.routes = {
   'GET /products/update/:id'  : { action: 'products/update'},
 
   // Log in / log out user or admin
-  // '/login'                    : { action: 'users/login' },
-  // 'POST /login'               : { action: 'users/checklogin' },
-  // 'GET /register'             : { action: 'users/register' },
-  // 'POST /register'            : { action: 'users/savenewuser' },
-  // 'GET /logout'               : { action: 'users/logout' },
+  '/login'                    : { action: 'users/login' },
+  'POST /login'               : { action: 'users/checklogin' },
+  'GET /register'             : { action: 'users/register' },
+  'POST /register'            : { action: 'users/savenewuser' },
+  'GET /logout'               : { action: 'users/logout' },
+
+  
 
 
 

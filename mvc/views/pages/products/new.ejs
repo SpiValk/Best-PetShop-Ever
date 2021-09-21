@@ -1,7 +1,7 @@
 <%- include("../head") %>
 
    <body>
-      <%- include("../navbar") %>
+      <%- partial("../../partials/navbar.ejs") %>
          <h3>Create a new Product</h3>
          <form action="/products/new" enctype="multipart/form-data" accept="image/jpeg, .jpeg, .jpg" method="post">
             Name: <input type="text" name="name"><br>

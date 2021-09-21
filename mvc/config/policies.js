@@ -24,10 +24,9 @@ module.exports.policies = {
   // 'cat/*' : 'users/isLoggedIn',
   
   // Admin login
-  // 'dog/*' : 'users/isAdmin',
-
-  // 'users/register'  : 'users/isNotLoggedIn',
-  // 'users/login'     : 'users/alreadyLoggedIn',
+  'products/new' : 'users/isAdmin',
+  'users/register'  : 'users/isNotLoggedIn',
+  'users/login'     : 'users/alreadyLoggedIn',
 
 
 };

@@ -28,7 +28,7 @@ module.exports = {
 
 
 
-    return this.res.view(`pages/bird/birdCategories`, {birdProducts, category, subCategs, subcategories}, {isAdmin: this.req.session.isAdmin});
+    return this.res.view(`pages/bird/birdCategories`, {birdProducts, category, subCategs, subcategories, isAdmin: this.req.session.isAdmin});
 
     //  }
 
