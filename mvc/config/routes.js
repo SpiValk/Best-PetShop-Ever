@@ -47,7 +47,10 @@ module.exports.routes = {
 
   'GET /categories/:pet'     : { action: 'petcategorycontroller'},
   'GET /products/view/:id'   : { action: 'productviewcontroller'},
-  'GET /addtocart/:id'       : { action: 'addtocartcontroller' },
+
+
+  'GET /addtocart'       : { action:'addtocartcontroller' },
+
 
 
 
