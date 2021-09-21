@@ -47,7 +47,7 @@ module.exports.routes = {
 
   'GET /categories/:pet'     : { action: 'petcategorycontroller'},
   'GET /products/view/:id'   : { action: 'productviewcontroller'},
-  'GET /addtocart/:id'       : { action:'addtocartcontroller' },
+  'GET /addtocart'           : { action:'addtocartcontroller' },
 
 
 
@@ -94,7 +94,7 @@ module.exports.routes = {
   'GET /products/bird/category/:subcategory'  : { action: 'bird/subcategoriescontroller'},
 
   //Small Animals
-  'GET /products/small-animals/:category'         : { action: 'smallanimals/categoriescontroller'},
+  'GET /products/small-animals/:category'              : { action: 'smallanimals/categoriescontroller'},
   'GET /products/small-animals/category/:subcategory'  : { action: 'smallanimals/subcategoriescontroller'},
 
 
