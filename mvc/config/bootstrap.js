@@ -251,6 +251,7 @@ module.exports.bootstrap = async function() {
     {subcategory: 'cat-antiparasitics', category_id: 8},
     {subcategory: 'cat-medicines', category_id: 8},
     {subcategory: 'cat-vitamins-minerals-electrolytes', category_id: 8},
+
     //--------------------- FISH ------------------------------//
     //------ FOODS -------//
     {subcategory: 'fish-flakes', category_id: 9},
