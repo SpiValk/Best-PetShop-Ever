@@ -1,0 +1,125 @@
+
+
+
+
+
+/* .mainContainer{
+    margin: 5px auto;
+    max-width: 550px;
+} */
+
+/* .navBar nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo img{
+    width: 150px;
+    height: 100%;
+} */
+
+/* .menu {
+    width: 400px;
+    background-color: rgb(53, 53, 53);
+    /* justify-content: end; */
+
+/* 
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 1.3rem;
+}
+
+.menu li{
+    padding: 1rem;
+    width: 100px;
+
+    
+} */
+
+.mainPopUpSection{
+    background-image: url("../img/pexels-miguel-constantin-montes-2623968.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    width: 550px;
+    height: 615px;
+    border: 10px solid green;
+    border-radius: 30px;
+}
+
+#pop-up-section{
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2rem;
+    line-height: 38px;
+    text-align: center;
+}
+
+#pop-up-section button{
+    border: none;
+    padding: 1rem;
+}
+
+#pop-up-section button{
+    background-color: rgb(255, 180, 41);
+    font-size: 1.5rem;
+}
+#pop-up-section button:hover{
+    cursor: pointer;
+}
+
+#pop-up-section p:first-child{
+    font-size: x-large;
+}
+#pop-up-section p:last-child{
+    /* padding-top: 5px; */
+    font-size: small;
+}
+.cross{
+    background-color: rgb(90, 95, 95);
+    display: flex;
+    position: relative;
+    top: 1%;
+    left: 92%;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#xbuttton:hover{
+    color:rgb(255, 180, 41);
+}
+.span-popUp{
+    position: absolute;
+    font-size: 2em;
+    font-family:initial;
+}
+.span-popUp:hover{
+    cursor: pointer;
+    color: rgb(233, 233, 30);
+}
+
+.mainPopUpContainer {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  .bg-active {
+    z-index: 100;
+    visibility: visible;
+    opacity: 1;
+  }
