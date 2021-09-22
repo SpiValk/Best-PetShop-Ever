@@ -1,7 +1,6 @@
 /* eslint-disable eqeqeq */
 /* eslint-disable no-undef */
 $(document).ready(() => {
-  // $.ajaxSetup({ cache: false });
   $('#pet').on('change',(e) => {
     e.preventDefault();
     $('#pet-category').html(''); //?

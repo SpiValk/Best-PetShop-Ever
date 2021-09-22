@@ -1,31 +1,14 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Crete Round;
-}
 
-/* div{
-    border: 1px solid red;
-} */
-a {
-    text-decoration: none;
-    color: white;
-}
-a:hover {
-    text-decoration: none;
-    color: rgb(233, 233, 30);
-}
 
-ul {
-    list-style: none;
-}
+
+
+
 /* .mainContainer{
     margin: 5px auto;
     max-width: 550px;
 } */
 
-.navBar nav{
+/* .navBar nav{
     display: flex;
     flex-direction: row;
 }
@@ -33,14 +16,14 @@ ul {
 .logo img{
     width: 150px;
     height: 100%;
-}
+} */
 
-.menu {
+/* .menu {
     width: 400px;
     background-color: rgb(53, 53, 53);
     /* justify-content: end; */
-}
 
+/* 
 .menu ul{
     display: flex;
     flex-direction: row;
@@ -54,9 +37,9 @@ ul {
     width: 100px;
 
     
-}
+} */
 
-.mainSection{
+.mainPopUpSection{
     background-image: url("../img/pexels-miguel-constantin-montes-2623968.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -65,29 +48,29 @@ ul {
     height: 615px;
 }
 
-section{
+#pop-up-section{
     width: 75%;
     margin: 0 auto;
     padding-top: 2rem;
     line-height: 38px;
 }
 
-section form input, button{
+#pop-up-section button{
     border: none;
     padding: 1rem;
 }
 
-section form button{
+#pop-up-section button{
     background-color: rgb(233, 233, 30);
 }
-section form button:hover{
+#pop-up-section button:hover{
     cursor: pointer;
 }
 
-section p:first-child{
+#pop-up-section p:first-child{
     font-size: x-large;
 }
-section p:last-child{
+#pop-up-section p:last-child{
     /* padding-top: 5px; */
     font-size: small;
 }
@@ -103,17 +86,17 @@ section p:last-child{
     align-items: center;
     justify-content: center;
 }
-span{
+.span-popUp{
     position: absolute;
     font-size: 2em;
     font-family:initial;
 }
-span:hover{
+.span-popUp:hover{
     cursor: pointer;
     color: rgb(233, 233, 30);
 }
 
-.mainContainer {
+.mainPopUpContainer {
     width: 100%;
     height: 100vh;
     position: fixed;

@@ -19,7 +19,7 @@ window.onload = function(){
 }
 document.getElementById("xbuttton").addEventListener('click', function(e){
     
-    document.querySelector('.mainSection').style.display = 'none'
+    document.querySelector('.mainPopUpSection').style.display = 'none'
     popUpContainer.classList.remove('bg-active');
    
 })
