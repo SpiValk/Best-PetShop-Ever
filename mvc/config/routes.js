@@ -19,7 +19,8 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/'                         : { view: 'pages/index' },
+  // '/'                         : { view: 'pages/index' },
+  '/'                         : {action:'indexcontroller'},
 
 
   '/ourteam'                  : { view: 'pages/static/ourteam'},
