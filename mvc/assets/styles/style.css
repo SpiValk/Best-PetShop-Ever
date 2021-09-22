@@ -411,6 +411,11 @@ img#check {
   transition: all 1s ease-in-out;
 }
 
+#sidebar {
+  margin-left: 42px;
+  width: 270px;
+}
+
 @media only screen and (max-width: 991px) {
   .custom-categories {
     display: flex;
@@ -423,6 +428,11 @@ img#check {
   }
   .carousel {
     width: 100%;
+  }
+
+  #sidebar {
+    margin-left: 22px;
+    width: 180px;
   }
 }
 
@@ -1087,10 +1097,7 @@ button:focus {
   font-size: 25px;
 }
 
-#sidebar {
-  margin-left: 52px;
-  width: 300px;
-}
+
 
 /* #dog-dry-food {
   position: relative;
@@ -1101,4 +1108,8 @@ button:focus {
   position: relative;
   top: 26px;
   left: 56px;
+}
+
+.card {
+  height: 420px;
 }
