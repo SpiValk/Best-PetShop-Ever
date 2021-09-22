@@ -19,13 +19,13 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  // '/'                         : { view: 'pages/index' },
+
   '/'                         : {action:'indexcontroller'},
 
 
   '/ourteam'                  : { view: 'pages/static/ourteam'},
   '/contactus'                : { view: 'pages/static/contactus'},
-  '/home'                     : { view: 'pages/index'},
+  '/home'                     : { action: 'indexcontroller'},
 
 
   '/privacy-policy'           : { view: 'pages/static/privacy-policy'},

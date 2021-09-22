@@ -2,209 +2,219 @@
 
    <body>
       <%- include("navbar") %>
-      <div class="main">
-         <div id="carouselExampleCaptions" class="carousel slide main1-custom col-md-12" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                  aria-current="true" aria-label="Slide 1"></button>
-               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                  aria-label="Slide 2"></button>
-               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                  aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-               <div class="carousel-item active">
+         <div class="main">
+            <div id="carouselExampleCaptions" class="carousel slide main1-custom col-md-12" data-bs-ride="carousel">
+               <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                     aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                     aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                     aria-label="Slide 3"></button>
+               </div>
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <a href=".." class="carousel_a-custom">
+                        <img src="/img/index_img/carousel1 (2).jpg" class="d-block w-100 custom-img" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                           <h5>First slide label</h5>
+                           <p>Some representative placeholder content for the first slide.</p>
+                     </a>
+                  </div>
+               </div>
+               <div class="carousel-item">
                   <a href=".." class="carousel_a-custom">
-                     <img
-                        src="/img/index_img/carousel1 (2).jpg"
-                        class="d-block w-100 custom-img" alt="...">
+                     <img src="/img/index_img/carousel2.jpg" class="d-block w-100 custom-img" alt="...">
                      <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
                   </a>
                </div>
             </div>
             <div class="carousel-item">
                <a href=".." class="carousel_a-custom">
-                  <img
-                     src="/img/index_img/carousel2.jpg"
-                     class="d-block w-100 custom-img" alt="...">
+                  <img src="/img/index_img/carousel3.jpg" class="d-block w-100 custom-img" alt="...">
                   <div class="carousel-caption d-none d-md-block">
-                     <h5>Second slide label</h5>
-                     <p>Some representative placeholder content for the second slide.</p>
+                     <h5>Third slide label</h5>
+                     <p>Some representative placeholder content for the third slide.</p>
+
+                  </div>
                </a>
+
             </div>
          </div>
-         <div class="carousel-item">
-            <a href=".." class="carousel_a-custom">
-               <img src="/img/index_img/carousel3.jpg"
-                  class="d-block w-100 custom-img" alt="...">
-               <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+         </button>
+         </div>
 
+
+         </div>
+
+         <div class="container">
+            <h2 class="text-center">Categories</h2>
+            <hr>
+         </div>
+         <div class="container">
+
+            <div class="custom-categories">
+               <div class="petchoice ">
+                  <div class="pet-categ dog-categ">
+                     <a href="/categories/dog">
+                        <div class="image1 pet"></div>
+                     </a>
+                  </div>
+                  <p class="pets-heading">Dog</p>
                </div>
-            </a>
-
-         </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-         data-bs-slide="prev">
-         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-         <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-         data-bs-slide="next">
-         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-         <span class="visually-hidden">Next</span>
-      </button>
-      </div>
-
-      
-      </div>
-
-      <div class="container">
-         <h2 class="text-center">Categories</h2>
-         <hr>
-      </div>
-      <div class="container">
-
-         <div class="custom-categories">
-            <div class="petchoice ">
-               <div class="pet-categ dog-categ">
-                  <a href="/categories/dog">
-                     <div class="image1 pet"></div>
-                  </a>
+               <div class="petchoice ">
+                  <div class="pet-categ cat-categ">
+                     <a href="/categories/cat">
+                        <div class="image2 pet"></div>
+                     </a>
+                  </div>
+                  <p class="pets-heading">Cat</p>
                </div>
-               <p class="pets-heading">Dog</p>
-            </div>
-            <div class="petchoice ">
-               <div class="pet-categ cat-categ">
-                  <a href="/categories/cat">
-                     <div class="image2 pet"></div>
-                  </a>
-               </div>
-               <p class="pets-heading">Cat</p>
-            </div>
-            <div class="petchoice ">
-               <div class="pet-categ bird-categ">
-                  <a href="/categories/bird">
-                     <div class="image3 pet"></div>
-                  </a>
+               <div class="petchoice ">
+                  <div class="pet-categ bird-categ">
+                     <a href="/categories/bird">
+                        <div class="image3 pet"></div>
+                     </a>
 
+                  </div>
+                  <p class="pets-heading">Bird</p>
                </div>
-               <p class="pets-heading">Bird</p>
+
+               <div class="petchoice">
+                  <div class="pet-categ fish-categ">
+                     <a href="/categories/fish">
+                        <div class="image4 pet"></div>
+                     </a>
+                  </div>
+                  <p class="pets-heading">Fish</p>
+               </div>
+
+               <div class="petchoice">
+                  <div class="pet-categ small-pets-categ">
+                     <a href="/categories/small animals">
+                        <div class="image5 pet"></div>
+                     </a>
+                  </div>
+                  <p class="pets-heading">Small Animals</p>
+               </div>
+            </div>
+            <h2 class="text-center">New Arrivals</h2>
+            <div class="row col-md-12">
+               <%newArrivals.forEach((product)=> { %>
+                  <div class="col-lg-3 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                     <div class="card myProductBox cartbox"><a href="/products/view/<%=product.id%>"> 
+                        <img src="/img/product_images/<%=allPets[product.pet_id - 1][product.pet_id]%>/<%= categs[product.product_category_id-1][product.product_category_id] %>/<%= subCategs[product.subcategory_id -1][product.subcategory_id] %>/<%= product.image_name %>">
+                           <div class="card-body">
+                              <h4 class="productName">
+                                 <%= product.name %>
+                              </h4>
+                              <h4 class="price" hidden>
+                                 <%=product.vendor_price%>
+                              </h4>
+                              <div class="d-flex flex-row my-2">
+                        </a>
+                        <div class="select-size">
+
+                           <div id="quantity"><span class="retail-price">€ <%=product.retail_price %></span> </div>
+
+
+                           <!-- <div id="quantity"><button class="border rounded quantity-button"><span class="fa fa-plus"
+                                 id="orange"></span></button> <span class="px-sm-1 quanNumber">1</span> <button
+                              class="border rounded quantity-button"><span class="fa fa-minus"
+                                 id="orange"></span></button> </div> -->
+                        </div>
+                     </div> <button class="btn w-100 rounded my-2 addtocart" data-product-id="<%=product.id%>"><i
+                           class="fas fa-shopping-cart"></i> Add to cart </button>
+                  </div>
             </div>
 
-            <div class="petchoice">
-               <div class="pet-categ fish-categ">
-                  <a href="/categories/fish">
-                     <div class="image4 pet"></div>
-                  </a>
-               </div>
-               <p class="pets-heading">Fish</p>
+         </div>
+         <%})%>
             </div>
 
-            <div class="petchoice">
-               <div class="pet-categ small-pets-categ">
-                  <a href="/categories/small animals">
-                     <div class="image5 pet"></div>
-                  </a>
-               </div>
-               <p class="pets-heading">Small Animals</p>
-            </div>
-         </div>
-         <h2 class="text-center">New Arrivals</h2>
-         <hr>
-         <div class="row">
-            <div class="col-md-3 myProductBox">
-               <img src="img/index_img/PPVD_Cat_and_Dog.jpg" alt="purina veterinary" />
-               <h4>Purina veterinary</h4>
-               <button class="bg-custom no-radius add"><i class="fas fa-shopping-cart"></i> Add To
-                  Cart</button>
-            </div>
-            <div class="col-md-3 myProductBox">
-               <img src="img/index_img/sprays.jpg" alt="greenfields spray" />
-               <h4>greenfields spray</h4>
-               <button class="bg-custom no-radius add"><i class="fas fa-shopping-cart"></i> Add To
-                  Cart</button>
-            </div>
-            <div class="col-md-3 myProductBox">
-               <img src="img/index_img/PPVD_DogCan.jpg" alt="purina veterinary" />
-               <h4>Purina veterinary</h4>
-               <button class=" bg-custom no-radius add"><i class="fas fa-shopping-cart"></i> Add To
-                  Cart</button>
-            </div>
-            <div class="col-md-3 myProductBox">
-               <img src="img/index_img/PRIMORDIAL_DOGfood_12KG.jpg" alt="primordial dog food" />
-               <h4>Primordial dog food</h4>
-               <button class=" bg-custom no-radius add"><i class="fas fa-shopping-cart"></i> Add To
-                  Cart</button>
-            </div>
-         </div>
+            <h2 class="text-center">Featured Sales Products</h2>
+            <hr>
+            <div class="row col-md-12">
+               <%featuredSales.forEach((product)=> { %>
+                  <div class="col-lg-3 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                     <div class="card myProductBox cartbox"><a href="/products/view/<%=product.id%>"> 
+                        <img src="/img/product_images/<%=allPets[product.pet_id - 1][product.pet_id]%>/<%= categs[product.product_category_id-1][product.product_category_id] %>/<%= subCategs[product.subcategory_id -1][product.subcategory_id] %>/<%= product.image_name %>">
+                           <div class="card-body">
+                              <h4 class="productName">
+                                 <%= product.name %>
+                              </h4>
+                              <h4 class="price" hidden>
+                                 <%=product.vendor_price%>
+                              </h4>
+                              <div class="d-flex flex-row my-2">
+                        </a>
+                        <div class="select-size">
 
-         <h2 class="text-center">Featured Sales Products</h2>
-         <hr>
-         <div class="row">
-            <div class="col-md-3 myProductBox">
-               <img src="img/index_img/Dog_park.jpg" alt="Dog Park" />
-               <h4>DingGin Dogparks</h4>
-               <button class=" bg-custom no-radius add"><i class="fas fa-shopping-cart"></i> Add To
-                  Cart</button>
+                           <div id="quantity"><span class="retail-price">€ <%=product.retail_price %></span> </div>
+
+
+                           <!-- <div id="quantity"><button class="border rounded quantity-button"><span class="fa fa-plus"
+                                 id="orange"></span></button> <span class="px-sm-1 quanNumber">1</span> <button
+                              class="border rounded quantity-button"><span class="fa fa-minus"
+                                 id="orange"></span></button> </div> -->
+                        </div>
+                     </div> <button class="btn w-100 rounded my-2 addtocart" data-product-id="<%=product.id%>"><i
+                           class="fas fa-shopping-cart"></i> Add to cart </button>
+                  </div>
             </div>
-            <div class="col-md-3 myProductBox">
-               <img src="img/index_img/RoyalCanin_DryFood.jpg" alt="Royal Canin" />
-               <h4>Royal Canin Dry Foods</h4>
-               <button class=" bg-custom no-radius add"><i class="fas fa-shopping-cart"></i> Add To
-                  Cart</button>
-            </div>
-            <div class="col-md-3 myProductBox">
-               <img src="img/index_img/kennel.jpg" alt="Kennel Box" />
-               <h4>Kennel Dog Carrying Boxes</h4>
-               <button class="bg-custom no-radius add"><i class="fas fa-shopping-cart"></i> Add To
-                  Cart</button>
-            </div>
-            <div class="col-md-3 myProductBox">
-               <img src="img/index_img/dog_ball.webp" alt="dog ball" />
-               <h4>Dog Balls</h4>
-               <button class="bg-custom no-radius add"><i class="fas fa-shopping-cart"></i> Add To
-                  Cart</button>
-            </div>
+
          </div>
-         <h2 class="text-center">Best Sellers Product</h2>
-         <hr>
-         <div class="row">
-            <div class="col-md-3 myProductBox">
-               <img src="img/index_img/Dog_park.jpg" alt="Dog Park" />
-               <h4>DingGin Dogparks</h4>
-               <button class=" bg-custom no-radius add"><i class="fas fa-shopping-cart"></i> Add To
-                  Cart</button>
+         <%})%>
             </div>
-            <div class="col-md-3 myProductBox">
-               <img src="img/index_img/RoyalCanin_DryFood.jpg" alt="Royal Canin" />
-               <h4>Royal Canin Dry Foods</h4>
-               <button class=" bg-custom no-radius add"><i class="fas fa-shopping-cart"></i> Add To
-                  Cart</button>
+            <h2 class="text-center">Best Sellers Product</h2>
+            <hr>
+            <div class="row col-md-12">
+               <%bestSellers.forEach((product)=> { %>
+                  <div class="col-lg-3 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                     <div class="card myProductBox cartbox"><a href="/products/view/<%=product.id%>">
+                         <img src="/img/product_images/<%=allPets[product.pet_id - 1][product.pet_id]%>/<%= categs[product.product_category_id-1][product.product_category_id] %>/<%= subCategs[product.subcategory_id -1][product.subcategory_id] %>/<%= product.image_name %>">
+                           <div class="card-body">
+                              <h4 class="productName">
+                                 <%= product.name %>
+                              </h4>
+                              <h4 class="price" hidden>
+                                 <%=product.vendor_price%>
+                              </h4>
+                              <div class="d-flex flex-row my-2">
+                        </a>
+                        <div class="select-size">
+
+                           <div id="quantity"><span class="retail-price">€ <%=product.retail_price %></span> </div>
+
+
+                           <!-- <div id="quantity"><button class="border rounded quantity-button"><span class="fa fa-plus"
+                                 id="orange"></span></button> <span class="px-sm-1 quanNumber">1</span> <button
+                              class="border rounded quantity-button"><span class="fa fa-minus"
+                                 id="orange"></span></button> </div> -->
+                        </div>
+                     </div> <button class="btn w-100 rounded my-2 addtocart" data-product-id="<%=product.id%>"><i
+                           class="fas fa-shopping-cart"></i> Add to cart </button>
+                  </div>
             </div>
-            <div class="col-md-3 myProductBox">
-               <img src="img/index_img/kennel.jpg" alt="Kennel Box" />
-               <h4>Kennel Dog Carrying Boxes</h4>
-               <button class="bg-custom no-radius add"><i class="fas fa-shopping-cart"></i> Add To
-                  Cart</button>
-            </div>
-            <div class="col-md-3 myProductBox">
-               <img src="img/index_img/dog_ball.webp" alt="dog ball" />
-               <h4>Dog Balls</h4>
-               <button class="bg-custom no-radius add"><i class="fas fa-shopping-cart"></i> Add To
-                  Cart</button>
-            </div>
+
          </div>
+         <%})%>
             </div>
-         </div>
-      </div>
-      <br>
-      <%- include("footer") %>
-      <%- include("scripts") %>
+            </div>
+            </div>
+            </div>
+            <br>
+            <%- include("footer") %>
+               <%- include("scripts") %>
    </body>
-
-   
