@@ -1,6 +1,6 @@
-<%- include("../head") %>
+<%- partial("../partials/head.ejs") %>
 <body>
-<%- include("../navbar") %>
+  <%- partial("../partials/navbar.ejs") %>        
 
 <div class="container text-center" id="reason-to-smile">
  
@@ -29,7 +29,7 @@
 
  </div>
 
-<%- include("../footer") %>
-<%- include("../scripts") %>
+ <%-partial("../partials/footer.ejs") %>
+ <%- partial("../partials/scripts.ejs") %>
 
 </body>
