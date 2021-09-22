@@ -413,6 +413,11 @@ img#check {
   transition: all 1s ease-in-out;
 }
 
+#sidebar {
+  margin-left: 42px;
+  width: 270px;
+}
+
 @media only screen and (max-width: 991px) {
   .custom-categories {
     display: flex;
@@ -425,6 +430,11 @@ img#check {
   }
   .carousel {
     width: 100%;
+  }
+
+  #sidebar {
+    margin-left: 22px;
+    width: 180px;
   }
 }
 
@@ -815,7 +825,12 @@ select.size {
   background-color: white;
 }
 /******************************** CART *************************************/
-
+/* #display-product-in-cart-view{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  align-items:center;
+} */
 .plus-minus {
   position: relative;
 }
@@ -861,6 +876,9 @@ select.size {
   border-radius: 20px;
   border: none;
   box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.2);
+  height: 420px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 input,
@@ -969,10 +987,7 @@ button:focus {
     height: 150px;
   }
 
-  .card {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+
 
   .mob-text {
     font-size: 13px;
@@ -1106,10 +1121,7 @@ button:focus {
   font-size: 25px;
 }
 
-#sidebar {
-  margin-left: 52px;
-  width: 300px;
-}
+
 
 /* #dog-dry-food {
   position: relative;
@@ -1121,6 +1133,9 @@ button:focus {
   top: 26px;
   left: 56px;
 }
+
+
+
 
 /*********SEARCH BAR **********/
 #search{
@@ -1148,5 +1163,5 @@ button:focus {
  .link-class:hover{
   background-color:rgb(30, 116, 48);
   color:white;
-
  }
+
