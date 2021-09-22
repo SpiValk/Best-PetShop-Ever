@@ -6,7 +6,7 @@ var zoomArea=document.getElementsByClassName('zoomArea')[0];
 var zoomImg=document.getElementById('zoomImg');
 
 
-zoomArea.addEventListener('mousemove',(event) => {
+zoomArea.addEventListener('mousemover',(event) => {
   let clientX = event.clientX - zoomArea.offsetLeft;
   let clientY = event.clientY - zoomArea.offsetTop;
 

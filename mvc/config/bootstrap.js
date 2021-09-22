@@ -25,16 +25,33 @@ module.exports.bootstrap = async function() {
     return;
   }
 
-  //------------ CREATE CUSTOMERS ---------------//
-  await Customer.createEach([
-    { firstName: 'super', lastName: 'admin', address: 'In da house', contact_number: '1313', user_id: 1},
-    { firstName: 'John', lastName: 'Doe', address: 'elpinikis 8, patisia', contact_number: '1212', user_id: 2},
-  ]);
 
   //-------------- CREATE USERS ---------------//
   await User.createEach([
-    {username:'admin', password:await sails.helpers.passwords.hashPassword('admin'), email: 'admin@admin.com',  isAdmin: 1, customer_id: 1},
-    {username:'john', password:await sails.helpers.passwords.hashPassword('doe'), email: 'john@doe.com', isAdmin: 0, unique: true, customer_id: 2, payment_id: 1} //only one payment per user???
+    {
+      username:'admin',
+      password:await sails.helpers.passwords.hashPassword('admin'),
+      firstName: 'super',
+      lastName: 'admin',
+      address: 'In da house',
+      contact_number: '1313',
+      email: 'admin@admin.com',
+      isAdmin: 1,
+      payment_id: 1
+    },
+
+    {
+      username:'john',
+      firstName: 'Bon',
+      lastName: 'Doe',
+      contact_number: '1212',
+      address: 'elpinikis 8, patisia',
+      password:await sails.helpers.passwords.hashPassword('doe'),
+      email: 'john@doe.com',
+      isAdmin: 0,
+      payment_id: 1
+    } //only one payment per user???
+
   ]);
 
 
@@ -7759,7 +7776,7 @@ module.exports.bootstrap = async function() {
       vendor_price: 4.00,
       retail_price: 15.00,
       image_name: 'thrive-wood-hide-reptile-decor.jpg',
-      status: 3,
+      status: 1,
       vendor_id: 5,
       product_category_id: 18,
       subcategory_id: 80,
@@ -7772,7 +7789,7 @@ module.exports.bootstrap = async function() {
       vendor_price: 4.00,
       retail_price: 20.00,
       image_name: 'thrive-driftwood-reptile-decor.jpg',
-      status: 3,
+      status: 1,
       vendor_id: 5,
       product_category_id: 18,
       subcategory_id: 80,
@@ -7785,7 +7802,7 @@ module.exports.bootstrap = async function() {
       vendor_price: 1.50,
       retail_price: 7.00,
       image_name: 'thrive-nighttime-reptile-heat-bulb.jpg',
-      status: 3,
+      status: 1,
       vendor_id: 5,
       product_category_id: 18,
       subcategory_id: 80,
@@ -7798,7 +7815,7 @@ module.exports.bootstrap = async function() {
       vendor_price: 4.00,
       retail_price: 13.00,
       image_name: 'thrive-critter-reptile-tote.jpg',
-      status: 3,
+      status: 1,
       vendor_id: 5,
       product_category_id: 18,
       subcategory_id: 80,
@@ -7811,7 +7828,7 @@ module.exports.bootstrap = async function() {
       vendor_price: 9.00,
       retail_price: 21.00,
       image_name: 'thrive-reptile-terrarium-dome-lamp-with-switch.jpg',
-      status: 3,
+      status: 1,
       vendor_id: 5,
       product_category_id: 18,
       subcategory_id: 80,
@@ -7824,7 +7841,7 @@ module.exports.bootstrap = async function() {
       vendor_price: 6.00,
       retail_price: 15.00,
       image_name: 'thrive-reptile-bogwood-decor.jpg',
-      status: 3,
+      status: 1,
       vendor_id: 5,
       product_category_id: 18,
       subcategory_id: 80,
@@ -7838,7 +7855,7 @@ module.exports.bootstrap = async function() {
       vendor_price: 6.00,
       retail_price: 15.00,
       image_name: 'zilla-reptile-health-supplies-vitamin-supplement-food-spray.jpg',
-      status: 3,
+      status: 1,
       vendor_id: 5,
       product_category_id: 18,
       subcategory_id: 81,

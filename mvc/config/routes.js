@@ -40,11 +40,6 @@ module.exports.routes = {
   '/reason-to-smile'          : { view: 'pages/static/reason-to-smile'},
 
 
-  // '/login' :{view: 'pages/users/login'},
-  // '/register' :{view: 'pages/users/register'},
-  // '/logout' :{view: 'pages/index'},
-
-
 
   'GET /categories/:pet'     : { action: 'petcategorycontroller'},
   'GET /products/view/:id'   : { action: 'productviewcontroller'},
@@ -67,8 +62,8 @@ module.exports.routes = {
   // Log in / log out user or admin
   // '/login'                    : { action: 'users/login' },
   // 'POST /login'               : { action: 'users/checklogin' },
-  // 'GET /register'             : { action: 'users/register' },
-  // 'POST /register'            : { action: 'users/savenewuser' },
+  'GET /register'             : { action: 'users/register' },
+  'POST /register'            : { action: 'users/savenewuser' },
   // 'GET /logout'               : { action: 'users/logout' },
 
 
