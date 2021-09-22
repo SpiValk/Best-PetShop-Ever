@@ -1,4 +1,3 @@
-
 //DECLARE VARIABLES
 
 var nav = document.getElementById('navbar');

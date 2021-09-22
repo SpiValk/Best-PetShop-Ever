@@ -1,4 +1,4 @@
-<%- include("../head") %>
+<%- partial("../../partials/head.ejs") %>
 
    <body>
       <%- partial("../../partials/navbar.ejs") %>        
@@ -86,6 +86,6 @@
          <%})%>
             </div>
             </div>
-            <%-include("../footer") %>
-   </body>
-   <%- include("../scripts") %>
+            <%- partial("../../partials/footer.ejs") %>
+            <%- partial("../../partials/scripts.ejs") %>       
+           </body>
