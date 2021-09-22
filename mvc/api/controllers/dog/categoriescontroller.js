@@ -28,7 +28,8 @@ module.exports = {
 
 
 
-    return this.res.view(`pages/dog/dogCategories`, {dogProducts, category, subCategs, subcategories}, {isAdmin: this.req.session.isAdmin});
+
+    return this.res.view(`pages/dog/dogCategories`, {dogProducts, category, subCategs, subcategories, isAdmin: this.req.session.isAdmin});
 
     //  }
 
