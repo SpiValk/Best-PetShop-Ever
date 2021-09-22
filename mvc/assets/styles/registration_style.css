@@ -46,6 +46,8 @@
     background-position: center center;
     width: 550px;
     height: 615px;
+    border: 10px solid green;
+    border-radius: 30px;
 }
 
 #pop-up-section{
@@ -53,6 +55,7 @@
     margin: 0 auto;
     padding-top: 2rem;
     line-height: 38px;
+    text-align: center;
 }
 
 #pop-up-section button{
@@ -61,7 +64,8 @@
 }
 
 #pop-up-section button{
-    background-color: rgb(233, 233, 30);
+    background-color: rgb(255, 180, 41);
+    font-size: 1.5rem;
 }
 #pop-up-section button:hover{
     cursor: pointer;
@@ -85,6 +89,9 @@
     border-radius: 100%;
     align-items: center;
     justify-content: center;
+}
+#xbuttton:hover{
+    color:rgb(255, 180, 41);
 }
 .span-popUp{
     position: absolute;
