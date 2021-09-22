@@ -1,27 +1,12 @@
 module.exports = {
   inputs: {
-    username: {type: 'string', requires: true},
-    password: {type: 'string', requires: true},
-    // email
-  },
-
-  exits: {
-    success: {
-      viewTemplatePath: 'pages/users/successfullregistration'
-    }
-  },
-
-  fn: async function(inputs) {
-    await User.create({username: inputs.username, password: inputs.password, isAdmin: false});
-    return {};
-  }
-};
-
-module.exports = {
-  inputs: {
-    username: { type: 'string', required: true },
-    password: { type: 'string', required: true },
-    email:    { type: 'string', required: true },
+    username:        { type: 'string', required: true },
+    password:        { type: 'string', required: true },
+    email:           { type: 'string',  required: true },
+    firstName:       { type: 'string', required: true },
+    lastName:        { type: 'string', required: true },
+    address:         { type: 'string', required: true },
+    contact_number:  { type: 'string', required: true },
 
   },
   exits: {
@@ -34,7 +19,13 @@ module.exports = {
     await User.create({
       username: inputs.username,
       password: await sails.helpers.passwords.hashPassword(inputs.password),
-      email: inputs.email, isAdmin: 0,});
+      email: inputs.email,
+      firstName: inputs.firstName,
+      lastName: inputs.lastName,
+      address:  inputs.address,
+      contact_number: inputs.contact_number,
+      isAdmin: 0,
+    });
     return {};
   }
 };
