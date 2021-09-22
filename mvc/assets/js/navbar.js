@@ -1,5 +1,6 @@
 
 //DECLARE VARIABLES
+
 var nav = document.getElementById('navbar');
 var list = nav.querySelectorAll('a');
 
@@ -20,19 +21,22 @@ var sublists = document.querySelectorAll('.drop-ul > li');
 
 /******* 1st NAVBAR EFFECT **********/
 window.onscroll = function () {
-  if (window.pageYOffset > 150) {
+  if (window.pageYOffset > 100) {
     // nav.style.background =  "transparent";
     nav.style.background = 'rgba(255, 249, 192, 0.7)';
     // nav.style.height = '3rem';
     list.forEach(element => {
-      element.style.color = 'green';
+
+      element.style.color = 'rgb(30, 116, 48)';
     });
 
   } else {
-    nav.style.background = 'green';
+    nav.style.background = 'rgb(30, 116, 48)';
     // nav.style.height = '6.9rem';
+
     list.forEach(element => {
       element.style.color = 'lightgrey';
+
     });
   }
 };
@@ -122,9 +126,8 @@ const closeBtn=document.getElementById('closeButton');
 // console.log(sideCart.style.width)
 
 function toggleSideCart() {
-  if(sideCart.style.width === '0px'){
-
-    sideCart.style.width ='400px';}
+  if(sideCart.style.width=='0px'){
+    sideCart.style.width='400px';}
   else{
     sideCart.style.width='0px';
   }
@@ -143,7 +146,6 @@ closeBtn.addEventListener('click',closeSideCart);
 //SIDE CART ADD TO THE LOCAL STORAGE
 
 let addToCartBtn=document.getElementsByClassName('addtocart');
-console.log(addToCartBtn);
 let productsInCart = JSON.parse(localStorage.getItem('shoppingCart'));
 if(!productsInCart){
   productsInCart = [];
@@ -194,7 +196,7 @@ const updateShoppingCartHTML = function () {  // 3
 
 function updateProductsInCart(product) { // 2
   for (let i = 0; i < productsInCart.length; i++) {
-    if (productsInCart[i].id === product.id) {
+    if (productsInCart[i].id == product.id) {
       productsInCart[i].count += 1;
       productsInCart[i].price = productsInCart[i].basePrice * productsInCart[i].count;
       return;
@@ -262,5 +264,66 @@ $(document).ready(() => {
 
 
 
+//to clear the localstorage
 
-// localStorage.clear();
+
+// localStorage.clear()
+
+
+///**********SEARCH BAR *************** */
+
+$(document).ready(() => {
+  // $.ajaxSetup({ cache: false });
+  $('#search').keyup(() => {
+    $('#result').html('');
+    //  $('#state').val('');
+    var searchField = $('#search').val();
+    console.log(searchField);
+    if(searchField==''){ $('#result').html('');}else{
+      var expression = new RegExp(searchField,'i');//('^'+searchField+'.*',"i");
+      $.getJSON('/pet_product', (data) => {
+        $.each(data, (key, value) => {
+          console.log(expression.test(value.name));
+          if (expression.test(value.name)!=false)
+          {
+            $('#result').append(`<li class="nav-item link-class"><a href="/products/view/${value.id}"><span hidden>${value.id} ${value.description} ${value.quantity} ${value.vendor_price} ${value.status} </span><img src="/img/product_images/${value.pet_id.name}/${value.product_category_id.category_name}/${value.subcategory_id.subcategory}/${value.image_name}" height="40px" width="40px" class="img-thumbnail" /> ${value.name}</a></li>`);
+
+          }
+        });
+      });
+    }});
+
+  $('#result').on('click', 'li', function() {
+    var click_text = $(this).text().split('|');
+    // console.log(click_text)
+    $('#search').val($.trim(click_text[0]));
+    $('#result').html('');
+  });
+});
+
+
+// async function sendData(e){
+//   const searchResults=document.getElementById("searchResults")
+//   const searchBox=document.getElementById("search-box").value
+//   await fetch('/pet_product',{
+//     method:"POST",
+//     headers:{'Accept': 'application/json; odata=verbose',
+//              'Content-Type':'application/json'},
+//     body:JSON.stringify({payload:e.value})
+//   }).then(res=>res.text()).then(data=>{
+
+//     let payload=data.payload;
+//     searchResults.innerHTML="";
+//     if(payload<1){
+//       searchResults.innerHTML=`<p> Sorry.Nothing Found </p>`;
+//       return
+//     }
+//     payload.forEach((item,index)=>{
+// if(index>0) searchResults.innerHTML+='<hr>';
+// searchResults.innerHTML+=`<p> ${item.name} </p>`
+
+//     })
+//     return;
+
+//   })
+// }

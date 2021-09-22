@@ -47,7 +47,10 @@ module.exports.routes = {
 
   'GET /categories/:pet'     : { action: 'petcategorycontroller'},
   'GET /products/view/:id'   : { action: 'productviewcontroller'},
-  'GET /addtocart/:id'       : { action:'addtocartcontroller' },
+
+
+  'GET /addtocart'       : { action:'addtocartcontroller' },
+
 
 
 
@@ -84,6 +87,18 @@ module.exports.routes = {
   //Cat
   'GET /products/cat/:category'               : { action: 'cat/categoriescontroller'},
   'GET /products/cat/category/:subcategory'   : { action: 'cat/subcategoriescontroller'},
+
+  //Fish
+  'GET /products/fish/:category'              : { action: 'fish/categoriescontroller'},
+  'GET /products/fish/category/:subcategory'  : { action: 'fish/subcategoriescontroller'},
+
+  //Bird
+  'GET /products/bird/:category'              : { action: 'bird/categoriescontroller'},
+  'GET /products/bird/category/:subcategory'  : { action: 'bird/subcategoriescontroller'},
+
+  //Small Animals
+  'GET /products/small-animals/:category'         : { action: 'smallanimals/categoriescontroller'},
+  'GET /products/small-animals/category/:subcategory'  : { action: 'smallanimals/subcategoriescontroller'},
 
 
   /***************************************************************************
