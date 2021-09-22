@@ -15,7 +15,7 @@ window.onload = function(){
         // popUpContainer.style.display = "block"
         // popUpContainer.style.zIndex = "999"
         popUpContainer.classList.add('bg-active');
-    }, 2000);
+    }, 1000);
 }
 document.getElementById("xbuttton").addEventListener('click', function(e){
     
