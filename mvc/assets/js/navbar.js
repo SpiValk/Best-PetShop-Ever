@@ -151,8 +151,8 @@ let productsInCart = JSON.parse(localStorage.getItem('shoppingCart'));
 if (!productsInCart) {
   productsInCart = [];
 }
-const parentElement = document.querySelector('#buyItems');
-const cartSumPrice = document.querySelector('#sum-prices');
+let parentElement = document.querySelector('#buyItems');
+let cartSumPrice = document.querySelector('#sum-prices');
 const products = document.querySelectorAll('.cartbox');
 console.log(cartSumPrice.innerHTML);
 
@@ -199,7 +199,7 @@ function updateProductsInCart(product) { // 2
   for (let i = 0; i < productsInCart.length; i++) {
     if (productsInCart[i].id == product.id) {
       productsInCart[i].count += 1;
-      productsInCart[i].price = productsInCart[i].basePrice * productsInCart[i].count;
+      productsInCart[i].price = productsInCart[i].vendorPrice * productsInCart[i].count;
       return;
     }
   }
@@ -219,7 +219,7 @@ products.forEach(item => {   // 1
         id: productID,
         count: 1,
         price: +productPrice,
-        basePrice: +productPrice,
+        vendorPrice: +productPrice,
       };
       updateProductsInCart(product);
       updateShoppingCartHTML();

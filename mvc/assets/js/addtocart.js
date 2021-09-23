@@ -7,8 +7,10 @@ let finalOrderPrice=document.getElementById("check-amt")
 let removeProductBtns=document.getElementsByClassName("cart-product-remove")
 let cartProductBox=document.getElementsByClassName("cartViewProduct")
 let cartProductId=document.getElementsByClassName("id")
-// const parentElement = document.querySelector('#buyItems');
-// const cartSumPrice = document.querySelector('#sum-prices');
+// let parentElement = document.querySelector('#buyItems');
+// let cartSumPrice = document.querySelector('#sum-prices');
+// console.log(cartSumPrice1)
+// console.log(parentElement1)
 // console.log(cartProductId)
 // console.log(typeof cartProductId)
 // console.log(cartProductId.length)
@@ -28,6 +30,8 @@ const countSumPrice1 = function () { // 4
 
 
 console.log(pull)
+console.log(localStorage)
+console.log(Itemonly)
 if (pull.length > 0) {
     let result = pull.map(carprod => {
         return ` <div class="row d-flex justify-content-center border-top cartViewProduct">
@@ -53,7 +57,7 @@ if (pull.length > 0) {
                     <h6 class="mob-text">$${carprod.price}</h6>
                 </div>
                 <div class="col-4">
-                    <button class="btn bg-danger cart-product-remove">Remove</button>
+                    <button class="btn btn-danger cart-product-remove">Remove</button>
                 </div>
             </div>
         </div>
@@ -72,59 +76,95 @@ finalOrderPrice.innerHTML="Checkout $"+countSumPrice1()
 
 
 //REMOVE ELEMENTS FROM CART VIEW
-// const countTheSumPrice1 = function () { // 4
-//     let sum = 0;
-//     productsInCart.forEach(item => {
-//       sum += item.price;
-//     });
-//     return sum;
-//   };
+
+function localremove(){ 
+    
+    for (let i=0;i <pull.length; i++){
+        // setTimeout(function(){console.log(pull[i])},1000)
+        // setTimeout(function(){console.log(pull)},1000)
+        console.log(pull.length)
+        for(let viewProduct of cartProductId){
+            // console.log(cartProductId)
+            // console.log(pull[i].id!==viewProduct.innerHTML)
+        if(pull[i].id===viewProduct.innerHTML){
+            console.log(pull[i].id===id)
+      pull.splice(i,1)
+      localStorage.setItem('shoppingCart', JSON.stringify(pull));}}
+          console.log(pull)
+          
+          
+          console.log(localStorage)
+            if (pull.length > 0) {
+              let result = pull.map(product => {
+                return `
+                          <li class="buyItem">
+                              <img class="sideCartImg" src="${product.image}">
+                              <div class="mainBodySideCart">
+                                  <h5 class="sideCartName">${product.name}</h5>
+                                  <h6>€ ${product.price}</h6>
+                                  <div class="sideCartBtns">
+                                      <button class="button-minus sideCountBtn" data-id=${product.id}>-</button>
+                                      <span class="countOfProduct">${product.count}</span>
+                                      <button class="button-plus sideCountBtn" data-id=${product.id}>+</button>
+                                  </div>
+                              </div>
+                          </li>`;
+              });
+              parentElement.innerHTML = result.join('');
+              document.querySelector('.checkout').classList.remove('hidden');
+              cartSumPrice.innerHTML = '$' + countSumPrice1();
+          
+            }
+            else {
+              document.querySelector('.checkout').classList.add('hidden');
+              parentElement.innerHTML = '<h4 class="empty">Your shopping cart is empty</h4>';
+              cartSumPrice.innerHTML = '';
+            }
+
+        }}
+
+// function localremove(){
+//     let pullProducts
+//     for(let viewProduct of cartProductId){
+//         console.log(pull)
+//     pullProducts=pull.filter(product=>console.log(product.id!==viewProduct.innerHTML)
+//     )
+
+    
+//     }
+//     localStorage.setItem('shoppingCart', JSON.stringify(pullProducts))
+  
+// // console.log(pullProducts)
+// console.log(localStorage)
+// console.log(pull)}
+
+
 
 function removeElement(event){
+    
     for(let box of cartProductBox){
         if(box.contains(event.target)){
             box.remove()
-           
+           localremove()
 
-        }
-    }
-  setTimeout(function(){ 
-    for (let i=0;i <pull.length; i++){
-        // console.log(product.id)
-        for(let viewProduct of cartProductId){
-        if(pull[i].id==viewProduct.innerHTML){
-          pull.splice(i,1)
-        //   console.log(pull)
+        }}
+    
+  }
 
-        }}}},0)}
+// function removeElement(event){
+//     for(let box of cartProductBox){
+//                 if(box.contains(event.target)){
+//                     box.remove()
+                   
         
-            // localStorage.setItem('shoppingCart', JSON.stringify(pull));
-            // if (pull.length > 0) {
-            //   let result = pull.map(product => {
-            //     return `
-            //               <li class="buyItem">
-            //                   <img class="sideCartImg" src="${product.image}">
-            //                   <div class="mainBodySideCart">
-            //                       <h5 class="sideCartName">${product.name}</h5>
-            //                       <h6>€ ${product.price}</h6>
-            //                       <div class="sideCartBtns">
-            //                           <button class="button-minus sideCountBtn" data-id=${product.id}>-</button>
-            //                           <span class="countOfProduct">${product.count}</span>
-            //                           <button class="button-plus sideCountBtn" data-id=${product.id}>+</button>
-            //                       </div>
-            //                   </div>
-            //               </li>`;
-            //   });
-            //   parentElement.innerHTML = result.join('');
-            //   document.querySelector('.checkout').classList.remove('hidden');
-            //   cartSumPrice.innerHTML = '$' + countSumPrice1();
-          
-            // }
-            // else {
-            //   document.querySelector('.checkout').classList.add('hidden');
-            //   parentElement.innerHTML = '<h4 class="empty">Your shopping cart is empty</h4>';
-            //   cartSumPrice.innerHTML = '';
-            // }
+//                 }}
+
+//                 // let storageProducts = JSON.parse(localStorage.getItem('products'));
+//                 let products = pull.filter(product => product.productId !== productId );
+//                 localStorage.setItem('products', JSON.stringify(products));
+//             }    
+
+// }
           
     
 
