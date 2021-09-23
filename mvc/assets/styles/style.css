@@ -815,15 +815,24 @@ select.size {
 .descr-paragraph {
   word-break: break-all;
 }
+.quantity-btn{
+  width:14%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.quanNumber{
+  margin:0 10px;
+}
 
-.quantity-button {
+/* .quantity-button {
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 30%;
   background-color: white;
-}
+} */
 /******************************** CART *************************************/
 /* #display-product-in-cart-view{
   display:flex;
