@@ -199,7 +199,7 @@ function updateProductsInCart(product) { // 2
   for (let i = 0; i < productsInCart.length; i++) {
     if (productsInCart[i].id == product.id) {
       productsInCart[i].count += 1;
-      productsInCart[i].price = productsInCart[i].basePrice * productsInCart[i].count;
+      productsInCart[i].price = productsInCart[i].vendorPrice * productsInCart[i].count;
       return;
     }
   }
@@ -219,7 +219,7 @@ products.forEach(item => {   // 1
         id: productID,
         count: 1,
         price: +productPrice,
-        basePrice: +productPrice,
+        vendorPrice: +productPrice,
       };
       updateProductsInCart(product);
       updateShoppingCartHTML();
@@ -239,7 +239,7 @@ parentElement.addEventListener('click', (e) => { // Last
         else if (isMinusButton) {
           productsInCart[i].count -= 1;
         }
-        productsInCart[i].price = productsInCart[i].basePrice * productsInCart[i].count;
+        productsInCart[i].price = productsInCart[i].vendorPrice * productsInCart[i].count;
 
       }
       if (productsInCart[i].count <= 0) {
@@ -460,62 +460,62 @@ $(document).ready(() => {
     $('#result').html('');
     //  $('#state').val('');
     var searchField = $('#search').val();
-    var url = "/product_category"
+    var url = '/product_category';
 
     if (searchField == '') { $('#result').html(''); } else{
-      var expression = new RegExp('^'+searchField+'.*',"i");;//('^'+searchField+'.*',"i");searchField, "i"
+      var expression = new RegExp('^'+searchField+'.*','i');//('^'+searchField+'.*',"i");searchField, "i"
       $.getJSON(url, (data) => {
         // console.log(data)
         // console.log("*******************data up value down*********************8888")
-        var finalData = []
-       $.each(data,(key,value)=>{
+        var finalData = [];
+        $.each(data,(key,value)=>{
         // console.log(value)
           $.each(value.pet_product_id, (key, value1) => {
             // console.log(".....................................................................")
             // console.log(value1)
             if (expression.test(value1.name) ) {
-              console.log("*********************************************sorted value1*****************")
-              console.log(value1)
+              console.log('*********************************************sorted value1*****************');
+              console.log(value1);
 
               $.each(value.subcategory_id,(key,value2)=>{
                 if(value2.id==value1.subcategory_id){
-                console.log(value2)
-               
+                  console.log(value2);
 
-                finalData.push( prod={name:value1.name,petName:value.pets_id.name, imageName:value1.image_name,id:value1.id,catName:value.category_name,subCatName:value2.subcategory})
-                  let uniqueFinalData=finalData.filter(function(item, pos){
-                    return finalData.indexOf(item)== pos; 
+
+                  finalData.push( prod={name:value1.name,petName:value.pets_id.name, imageName:value1.image_name,id:value1.id,catName:value.category_name,subCatName:value2.subcategory});
+                  let uniqueFinalData=finalData.filter((item, pos) => {
+                    return finalData.indexOf(item)== pos;
                   });
-                  console.log
-                $.each(uniqueFinalData,(key,value3)=>{
-               
-                // for (prod in finalData){
-                $('#result').append(`<li class="nav-item link-class"><a href="/products/view/${value3.id}"><img src="/img/product_images/${value3.petName}/${value3.catName}/${value3.subCatName}/${value3.imageName}" height="40px" width="40px" class="img-thumbnail" /> ${value3.name}</a></li>`)})}
+                  console.log;
+                  $.each(uniqueFinalData,(key,value3)=>{
 
-                
-              })  }
-            })
-          })
-       
-        })
-        // $.getJSON(url1,(data)=>{
-        //   $.each(data,(key,value)=>{
-        //     // console.log(value.name)
-        //     $.each(value.product_category_id,(key,value2)=>{
-        //       // console.log(value2.category_name)
-
-        //     })
-        //   })
-        // })
-      }
-      })
-      // console.log(valCateg)
+                    // for (prod in finalData){
+                    $('#result').append(`<li class="nav-item link-class"><a href="/products/view/${value3.id}"><img src="/img/product_images/${value3.petName}/${value3.catName}/${value3.subCatName}/${value3.imageName}" height="40px" width="40px" class="img-thumbnail" /> ${value3.name}</a></li>`);});}
 
 
-      // $('#result').on('click', 'li', function () {
-      //   var click_text = $(this).text().split('|');
-      //   // console.log(click_text)
-      //   $('#search').val($.trim(click_text[0]));
-      //   $('#result').html('');
-      // });
-    });
+              });  }
+          });
+        });
+
+      });
+      // $.getJSON(url1,(data)=>{
+      //   $.each(data,(key,value)=>{
+      //     // console.log(value.name)
+      //     $.each(value.product_category_id,(key,value2)=>{
+      //       // console.log(value2.category_name)
+
+      //     })
+      //   })
+      // })
+    }
+  });
+  // console.log(valCateg)
+
+
+  // $('#result').on('click', 'li', function () {
+  //   var click_text = $(this).text().split('|');
+  //   // console.log(click_text)
+  //   $('#search').val($.trim(click_text[0]));
+  //   $('#result').html('');
+  // });
+});

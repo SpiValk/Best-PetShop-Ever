@@ -72,9 +72,9 @@
 }
 
 /* #dogCategoriesPic{
-  width:100%;
-  height:100%;
-} */
+   width:100%;
+   height:100%;
+ } */
 .li-header {
   text-align: center;
 }
@@ -98,8 +98,8 @@
 }
 
 /* .carousel{
-  height: 25em;
-} */
+   height: 25em;
+ } */
 
 .carousel_a-custom {
   text-decoration: none;
@@ -116,7 +116,7 @@
   list-style: none;
   margin-top: 0;
   /* display:flex;
-    flex-direction:row; */
+     flex-direction:row; */
 }
 .sub_ul-custom > li {
   list-style: none;
@@ -140,8 +140,8 @@
 }
 
 /* .cart-custom{
-    font-size:2rem;
-} */
+     font-size:2rem;
+ } */
 
 .myBox img {
   max-height: 225px;
@@ -199,14 +199,14 @@ img#check {
 }
 
 /* .text-center {
-  margin-top: 35px;
-} */
+   margin-top: 35px;
+ } */
 
 /* .myBox img{
-    border: 5px;
-    border-color: black;
-
-} */
+     border: 5px;
+     border-color: black;
+ 
+ } */
 
 .top-shipping {
   position: fixed;
@@ -244,7 +244,7 @@ img#check {
 
 .image5 {
   /* width:100%;
-    height:100%; */
+     height:100%; */
   background: url("https://static.wixstatic.com/media/8be24b_a85e8ba0b93849d6afa748fa9b3dc556~mv2.gif")
     center center no-repeat;
   background-size: contain;
@@ -253,9 +253,9 @@ img#check {
 }
 .image4 {
   /* width:100%;
-    height:100%; */
+     height:100%; */
   /* background: url("https://bestanimations.com/media/fish/1147880813animated-tropical-fish-6.gif")
-    center center no-repeat; */
+     center center no-repeat; */
   background: url("https://img.cdn.schooljotter2.com/sampled/3344156/900/0/nocrop//")
     center center no-repeat;
   background-size: contain;
@@ -264,7 +264,7 @@ img#check {
 }
 .image3 {
   /* width:100%;
-    height:100%; */
+     height:100%; */
   background: url("https://cdn.edu.buncee.com/user-uploads/app/59bd578c843b47cb9f7360e344f6e5e0/MeKHWORwTDCu698Gpu2s_COLIBRI-CUADRADO-SINFONDO.gif?timestamp=14032842")
     center center no-repeat;
   background-size: contain;
@@ -274,7 +274,7 @@ img#check {
 
 .image2 {
   /* width:100%;
-    height:100%; */
+     height:100%; */
   background: url("https://c.tenor.com/EPLB9VPvzN0AAAAC/cat-cats.gif") center
     center;
   background-size: contain;
@@ -284,7 +284,7 @@ img#check {
 
 .image1 {
   /* width:100%;
-    height:100%; */
+     height:100%; */
   background: url("https://thumbs.gfycat.com/BasicInconsequentialDuck.webp")
     center center no-repeat;
   background-size: contain;
@@ -801,7 +801,7 @@ select.size {
   color: red;
   /* position: absolute; */
   /* top: 10px;
-  right: 16px; */
+   right: 16px; */
   cursor: pointer;
   font-weight: bold;
   size: 20rem;
@@ -815,22 +815,31 @@ select.size {
 .descr-paragraph {
   word-break: break-all;
 }
-
-.quantity-button {
-  text-align: center;
+.quantity-btn {
+  width: 14%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30%;
-  background-color: white;
 }
+.quanNumber {
+  margin: 0 10px;
+}
+
+/* .quantity-button {
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 30%;
+   background-color: white;
+ } */
 /******************************** CART *************************************/
 /* #display-product-in-cart-view{
-  display:flex;
-  flex-direction:row;
-  justify-content:space-around;
-  align-items:center;
-} */
+   display:flex;
+   flex-direction:row;
+   justify-content:space-around;
+   align-items:center;
+ } */
 .plus-minus {
   position: relative;
 }
@@ -904,38 +913,36 @@ textarea:focus {
   font-weight: 400;
 }
 
-
 button:focus {
   -moz-box-shadow: none !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
   outline-width: 0;
 }
-.custom-div-form{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
+.custom-div-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.custom-style{
-  height:120px;
-  text-align:center;
-  
+.custom-style {
+  height: 120px;
+  text-align: center;
 }
 .pay {
   width: 100%;
-  height:80%;
+  height: 80%;
   border-radius: 5px;
   border: 1px solid #673ab7;
   margin: auto;
   cursor: pointer;
   box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.2);
 }
-.custom-p{
-  margin-top:10px;
+.custom-p {
+  margin-top: 10px;
 }
-.input-cart{
-  width:75%;
-  margin:10px;
+.input-cart {
+  width: 75%;
+  margin: 10px;
 }
 
 .gray {
@@ -986,8 +993,6 @@ button:focus {
     width: 100px;
     height: 150px;
   }
-
-
 
   .mob-text {
     font-size: 13px;
@@ -1121,12 +1126,10 @@ button:focus {
   font-size: 25px;
 }
 
-
-
 /* #dog-dry-food {
-  position: relative;
-  top: 25px;
-} */
+   position: relative;
+   top: 25px;
+ } */
 
 .form-group input {
   position: relative;
@@ -1134,34 +1137,30 @@ button:focus {
   left: 56px;
 }
 
-
-
-
 /*********SEARCH BAR **********/
-#search{
-  margin-left:10px;
-  width:320px;
+#search {
+  margin-left: 10px;
+  width: 320px;
 }
 #result {
-  margin-left:10px;
-  font-size:12px;
-  font-weight:bold;
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: bold;
   position: absolute;
   width: 100%;
-  max-width:320px;
+  max-width: 320px;
   cursor: pointer;
   overflow-y: auto;
   max-height: 350px;
   box-sizing: border-box;
   z-index: 1001;
-  color:black;
-  background-color:white;
- }
- .link-class{
-   border-bottom:1px solid grey;
- }
- .link-class:hover{
-  background-color:rgb(30, 116, 48);
-  color:white;
- }
-
+  color: black;
+  background-color: white;
+}
+.link-class {
+  border-bottom: 1px solid grey;
+}
+.link-class:hover {
+  background-color: rgb(30, 116, 48);
+  color: white;
+}
