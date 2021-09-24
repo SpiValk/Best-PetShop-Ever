@@ -1,8 +1,8 @@
-<%- include("head") %>
+<%- partial("partials/head.ejs") %>        
 
 
    <body>
-      <%- include("navbar") %>
+      <%- partial("partials/navbar.ejs") %>        
          <div class="content">
             <a href="/products/<%=pet.pet_id.name%>/<%=product.product_category_id.category_name%>">
                <div class="shop-bg"></div>
@@ -111,6 +111,5 @@
                </div>
             </div>
 
-            <%- include("footer") %>
-               <%- include("scripts") %>
+            <%- partial("partials/footer.ejs") %>        
    </body>

@@ -1,7 +1,5 @@
-<%- include("head") %>
-
     <body>
-        <%- include("navbar") %>
+            <%- partial("partials/navbar.ejs") %>
 
             <div class="petCategories">
                 <div class="row">
@@ -22,6 +20,5 @@
                     <%})%>
                 </div>
             </div>
-            <%- include("footer") %>
-                <%- include("scripts") %>
-    </body>
+            <%- partial("partials/footer.ejs") %>
+        </body>
