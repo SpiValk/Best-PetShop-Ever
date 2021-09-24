@@ -86,7 +86,7 @@ module.exports.bootstrap = async function() {
     {name: 'cat', description:'cat...'},
     {name: 'fish', description:'fish...'},
     {name: 'bird', description:'bird...'},
-    {name: 'small animals', description:'little animals'}
+    {name: 'small-animals', description:'little animals'}
   ]);
 
   //------------------ CREATE PRODUCT CATEGORIES --------------//
