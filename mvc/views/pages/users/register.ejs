@@ -33,7 +33,6 @@
   </form> -->
 
   
-  <form action="/register" method="POST">
 
   <div class="container">
     <div class="row">
@@ -42,8 +41,12 @@
               <form action="/register" method="POST">
                 <h4>Registration Form</h4>
                     <div class="col-12">
+                        <label>Username:</label>
+                        <input type="text" name="username"  class="form-control" placeholder="Username" /><br> 
+                    </div>
+                    <div class="col-12">
                         <label>E-mail:</label>
-                        <input type="text" name="email"  class="form-control" placeholder="email" /><br 
+                        <input type="text" name="email"  class="form-control" placeholder="email" /><br> 
                     </div>
                     <div class="col-12">
                       <label>Password:</label>
@@ -51,11 +54,11 @@
                     </div>
                     <div class="col-12">
                           <label >First Name:</label>
-                          <input type="text" name="first_name" class="form-control" placeholder="Fisrt Name"><br />
+                          <input type="text" name="firstName" class="form-control" placeholder="Fisrt Name"><br />
                            </div>
                     <div class="col-12">
                            <label >Last Name:</label>
-                           <input type="text" name="last_name" class="form-control" placeholder="Last Name"><br />
+                           <input type="text" name="lastName" class="form-control" placeholder="Last Name"><br />
                     </div>
                     <div class="col-12">
                       <label >Address:</label>
@@ -63,17 +66,18 @@
                     </div>
                     <div class="col-12">
                          <label >Contact Number:</label>
-                         <input type="text" name="contact_number" class="form-control" placeholder="Contact Number"><br />
+                         <input type="text" name="contact_number" class="form-control" placeholder="Contact Number"><br/>
                          </div>
                     <div class="col-12">
-                       <button type="button" class="btn btn-success">Register</button>
+                      <input type="submit" class="btn btn-success" value="Register">
+
                     </div>
-               
+                  </form>
+
             </div>
         </div>
     </div>
 </div>
-</form>
 
 <%- partial("../partials/footer.ejs") %> 
 
