@@ -1,9 +1,8 @@
 module.exports = {
 
     inputs : {
-        username: { type: 'string'},
-        password: { type: 'string'},
-        email:    { type: 'string'}
+        password: { type: 'string', required:true},
+        email:    { type: 'string', required:true}
     },
 
     exits: {
@@ -18,21 +17,21 @@ module.exports = {
 //     
 
 
-fn: async function({username, password}) {
+fn: async function({email, password}) {
         
-    let theUser = await User.findOne({username})
+    let theUser = await User.findOne({email})
     await sails.helpers.passwords.checkPassword(password, theUser.password).intercept('incorrect', 'badCombo')
     if(theUser.isAdmin) {
         console.log(this.req.session)
         this.req.session.cookie.maxAge = sails.config.custom.rememberMeCookieMaxAge
-        this.req.session.username = username; // <----- This is the actual login!!!!! :0)
+        this.req.session.email = email; // <----- This is the actual login!!!!! :0)
         this.req.session.userId = theUser.id
         this.req.session.isAdmin = true
        
     }
     if(!theUser.isAdmin) {
         this.req.session.cookie.maxAge = sails.config.custom.rememberMeCookieMaxAge
-        this.req.session.username = username;
+        this.req.session.email = email;
         this.req.session.userId = theUser.id
         this.req.session.isAdmin = false
     }
