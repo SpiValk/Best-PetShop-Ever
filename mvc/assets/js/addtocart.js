@@ -1,4 +1,3 @@
-
 var Items = localStorage.getItem('shoppingCart');
 // console.log(Itemonly)
 // console.log(typeof Itemonly)
@@ -18,19 +17,18 @@ let cartProductId = document.getElementsByClassName('id');
 // console.log(Object.keys(cartProductId))
 
 var pull = JSON.parse(Items);
-const countSumPrice1 = function () { // 4
+const countSumPrice1 = function () {
+  // 4
   let sum = 0;
-  pull.forEach(item => {
+  pull.forEach((item) => {
+
     sum += item.price;
   });
   return sum;
 };
 
-
-
-
 if (pull.length > 0) {
-  let result = pull.map(carprod => {
+  let result = pull.map((carprod) => {
     return ` <div class="row d-flex justify-content-center border-top cartViewProduct">         
         <div class="col-5">
             <div class="row d-flex">
@@ -57,36 +55,26 @@ if (pull.length > 0) {
             </div>
         </div>
     </div>  
-    `;}
-  );
+    `;
+  });
   productsCartView.innerHTML = result;
-}
-else {
+} else {
   productsCartView.innerHTML = 'Your shopping cart is empty';
 }
 
-
-
 finalOrderPrice.innerHTML = 'Checkout $' + countSumPrice1();
 
-
 // <p hidden><span class="id">${carprod.id}</span></p>
-
 
 //REMOVE ELEMENTS FROM CART VIEW
 
 function localremove(e) {
-
-
   for (let i = 0; i < pull.length; i++) {
-
-
     if (pull[i].id == e.target.id) {
       // setTimeout(function(){console.log(pull[i].id)},0)
 
       pull.splice(i, 1);
       console.log(pull);
-
     }
 
     //   console.log(newPull)
@@ -94,7 +82,7 @@ function localremove(e) {
     localStorage.setItem('shoppingCart', JSON.stringify(pull));
 
     if (pull.length > 0) {
-      let result = pull.map(product => {
+      let result = pull.map((product) => {
         return `
                           <li class="buyItem">
                               <img class="sideCartImg" src="${product.image}">
@@ -112,28 +100,22 @@ function localremove(e) {
       parentElement.innerHTML = result.join('');
       document.querySelector('.checkout').classList.remove('hidden');
       cartSumPrice.innerHTML = '$' + countSumPrice1();
-
-    }
-    else {
+    } else {
       document.querySelector('.checkout').classList.add('hidden');
-      parentElement.innerHTML = '<h4 class="empty">Your shopping cart is empty</h4>';
+      parentElement.innerHTML =
+        '<h4 class="empty">Your shopping cart is empty</h4>';
       cartSumPrice.innerHTML = '';
     }
-
   }
 }
 
 function removeElement(event) {
-
   for (let box of cartProductBox) {
     if (box.contains(event.target)) {
       localremove(event);
       box.remove();
-
-
     }
   }
-
 }
 
 for (let btn of removeProductBtns) {

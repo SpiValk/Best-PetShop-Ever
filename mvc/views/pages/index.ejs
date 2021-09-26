@@ -123,13 +123,13 @@
                                  <%= product.name %>
                               </h4>
                               <h4 class="price" hidden>
-                                 <%=product.vendor_price%>
+                                 <%=product.retail_price.toFixed(2)%>
                               </h4>
                               <div class="d-flex flex-row my-2">
                         </a>
                         <div class="select-size">
 
-                           <div id="quantity"><span class="retail-price">€ <%=product.retail_price %></span> </div>
+                           <div id="quantity"><span class="retail-price">€ <%=product.retail_price.toFixed(2) %></span> </div>
 
 
                            <!-- <div id="quantity"><button class="border rounded quantity-button"><span class="fa fa-plus"
@@ -158,13 +158,13 @@
                                  <%= product.name %>
                               </h4>
                               <h4 class="price" hidden>
-                                 <%=product.vendor_price%>
+                                 <%=product.retail_price.toFixed(2)%>
                               </h4>
                               <div class="d-flex flex-row my-2">
                         </a>
                         <div class="select-size">
 
-                           <div id="quantity"><span class="retail-price">€ <%=product.retail_price %></span> </div>
+                           <div id="quantity"><span class="retail-price">€ <%=product.retail_price.toFixed(2) %></span> </div>
 
 
                            <!-- <div id="quantity"><button class="border rounded quantity-button"><span class="fa fa-plus"
@@ -180,7 +180,7 @@
          </div>
          <%})%>
             </div>
-            <h2 class="text-center">Best Sellers Product</h2>
+            <h2 class="text-center">Best Sellers</h2>
             <hr>
             <div class="row col-md-12">
                <%bestSellers.forEach((product)=> { %>
@@ -192,13 +192,13 @@
                                  <%= product.name %>
                               </h4>
                               <h4 class="price" hidden>
-                                 <%=product.vendor_price%>
+                                 <%=product.retail_price.toFixed(2)%>
                               </h4>
                               <div class="d-flex flex-row my-2">
                         </a>
                         <div class="select-size">
 
-                           <div id="quantity"><span class="retail-price">€ <%=product.retail_price %></span> </div>
+                           <div id="quantity"><span class="retail-price">€ <%=product.retail_price.toFixed(2) %></span> </div>
 
 
                            <!-- <div id="quantity"><button class="border rounded quantity-button"><span class="fa fa-plus"

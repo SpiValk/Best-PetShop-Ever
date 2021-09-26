@@ -41,8 +41,6 @@ module.exports.routes = {
 
 
 
-  'GET /categories/:pet'     : { action: 'petcategorycontroller'},
-  'GET /products/view/:id'   : { action: 'productviewcontroller'},
 
 
   'GET /addtocart'       : { action:'addtocartcontroller' },
@@ -51,7 +49,7 @@ module.exports.routes = {
 
 
 
-  // Product
+  // Admin Products
   'GET /products'             : { action: 'products/list'},
   'GET /products/new'         : { action: 'products/new'},
   'POST /products/new'        : { action: 'products/save'},
@@ -59,12 +57,19 @@ module.exports.routes = {
   'GET /products/edit/:id'    : { action: 'products/edit'},
   'GET /products/update/:id'  : { action: 'products/update'},
 
-  // Log in / log out user or admin
-  // '/login'                    : { action: 'users/login' },
-  // 'POST /login'               : { action: 'users/checklogin' },
-  'GET /register'             : { action: 'users/register' },
-  'POST /register'            : { action: 'users/savenewuser' },
-  // 'GET /logout'               : { action: 'users/logout' },
+  'GET /categories/:pet'     : { action: 'petcategorycontroller'},
+  'GET /products/view/:id'   : { action: 'productviewcontroller'},
+
+
+
+
+  //Users
+  'GET  /login'                    : { action: 'users/login' },
+  'POST /login'                    : { action: 'users/checklogin' },
+  'GET  /register'                 : { action: 'users/register' },
+  'POST /register'                 : { action: 'users/savenewuser' },
+  'GET  /logout'                   : { action: 'users/logout' },
+  'GET /users/info'                : { action: 'users/userinfo'},
 
 
 
@@ -96,6 +101,9 @@ module.exports.routes = {
   'GET /products/small-animals/:category'         : { action: 'smallanimals/categoriescontroller'},
   'GET /products/small-animals/category/:subcategory'  : { action: 'smallanimals/subcategoriescontroller'},
 
+
+  //sorting
+  //   'GET /products/:pet/category/:subcategory/:filtering/:order' :{ action: 'sorting'},
 
   /***************************************************************************
   *                                                                          *

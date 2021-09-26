@@ -1,7 +1,8 @@
 module.exports = async function(req, res, proceed) {
-    if(!req.session.username) {
-        return proceed()
-    }
-    res.status(200)
-    return res.view('pages/users/logoutbutton')
-}
+  if(!req.session.email) {
+    return proceed();
+
+  }
+  res.status(403);
+  return res.view('errors/alreadyLoggedIn');
+};

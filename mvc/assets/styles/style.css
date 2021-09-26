@@ -486,7 +486,8 @@ html {
 }
 .pop-up {
   width: 900px;
-  height: auto;
+  /* height: auto; */
+  height: 70vh;
   margin-left: auto !important;
   margin-right: auto !important;
   margin-top: 80px;
@@ -892,7 +893,7 @@ select.size {
 
 input,
 textarea {
-  background-color: #f3e5f5;
+  background-color: white;
   padding: 8px 15px 8px 15px;
   width: 100%;
   border-radius: 5px !important;
@@ -1011,7 +1012,9 @@ button:focus {
   overscroll-behavior: contain;
   background-color: rgb(243, 240, 240);
   /* border:0.5px solid black; */
-  border-radius: 20px;
+  /* border-radius: 20px; */
+  border-bottom-left-radius: 12px;
+  border-top-left-radius: 12px;
   box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.212);
   width: 0px;
   height: 500px;

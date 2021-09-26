@@ -15,7 +15,7 @@
                   <div class="pics zoomArea col-md-7">
                      <!-- <span class="main-img "> -->
                      <img id="zoomImg"
-                        src="/img/product_images/dog/<%=product.product_category_id.category_name%>/<%= subproduct.subcategory_id.subcategory %>/<%=product.image_name%>">
+                        src="/img/product_images/<%=pet.pet_id.name%>/<%=product.product_category_id.category_name%>/<%= subproduct.subcategory_id.subcategory %>/<%=product.image_name%>">
                      <!-- </span> -->
                   </div>
                   <!-- PRODUCT INFORMATION -->
@@ -48,10 +48,12 @@
                                  <!--price-->
                                  <div class="block-price clearfix">
                                     <div class="price-new clearfix">
+                                       <%let priceTemp = product.retail_price.toFixed(2).toString();
+                                         price = priceTemp.split('.') %>
                                        <span class="price-new-dollar price">
-                                          <%=product.vendor_price%>
+                                          <%= price[0] %>
                                        </span>
-                                       <span class="price-new-cent">90</span>
+                                       <span class="price-new-cent"><%= price[1] %></span>
                                     </div>
                                     <div class="price-old clearfix">
                                        <span class="price-old-dollar">$599</span>

@@ -49,7 +49,18 @@
                   </form>
                </div>
             </section>
-            <div class="row col-md-9">
+
+            <!-- sorting -->
+            <div class="col md-1">
+               <select name="" id="arrange" onchange="location = this.value;">
+                  <option value="/products/dog/category/<%=subcategory%>/retail_price/ASC">Price ASC</option>
+                  <option value="/products/dog/category/<%=subcategory%>/retail_price/DESC">Price DESC</option>
+                  <option value="/products/dog/category/<%=subcategory%>/date/ASC0">Date Added</option>
+                  <option value="/products/dog/category/<%=subcategory%>/availability/ASC">Availability</option>
+               </select>
+            </div>
+
+            <div class="row col-md-8">  <!-- Change this to col-md-9 if you remove sorting above -->
                <%dogProducts.forEach((product)=> { %>
                   <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
 
@@ -66,7 +77,7 @@
                               <!-- <div class="text-muted">₹110/loaf</div> -->
                         </a>
                         <div class="select-size">
-                           <div id="quantity"><span class="retail-price">€ <%=product.retail_price%></span></div>
+                           <div id="quantity"><span class="retail-price">€ <%=product.retail_price.toFixed(2) %></span></div>
                            <!-- <div id="quantity"><button class="border rounded quantity-button"><span class="fa fa-plus"
                                     id="orange"></span></button> <span class="px-sm-1 quanNumber">1</span> <button
                                  class="border rounded quantity-button"><span class="fa fa-minus"
@@ -84,5 +95,4 @@
          </div>
          <%-partial("../partials/footer.ejs") %>
          <%- partial("../partials/scripts.ejs") %>
-
       </body>

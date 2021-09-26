@@ -11,6 +11,7 @@ module.exports={
     lastName        : { type:'string', columnName:'last_name',      required:true },
     address         : { type:'string', columnName:'address',        required:true },
     contact_number  : { type:'number', columnName:'contact_number', required:true },
+    //  wallet          : { type:'number', required:true },
 
 
 
