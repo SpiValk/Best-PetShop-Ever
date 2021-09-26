@@ -14,7 +14,7 @@
 
 .bg-custom {
   background-color: rgb(30, 116, 48);
-  border-bottom: 3px solid orange;
+  border-bottom: 2px solid orange;
   /*background-image: url("img/download.png");*/
   color: white;
 }
@@ -165,7 +165,23 @@
 }
 
 #cart {
-  margin-left: 350px;
+  margin-left: 200px;
+}
+
+.our-team {
+  margin-left: 45px;
+}
+
+.navbar-brand {
+  margin-left: -50px;
+}
+
+.user-icon {
+  height: 35px;
+  width: 35px;
+  margin-left: 8px;
+  margin-bottom: 8px;
+  color: white;
 }
 
 .myBox button {
@@ -1137,7 +1153,7 @@ button:focus {
   left: 56px;
 }
 
-/*********SEARCH BAR **********/
+/********* SEARCH BAR **********/
 #search {
   margin-left: 10px;
   width: 320px;
@@ -1164,6 +1180,8 @@ button:focus {
   background-color: rgb(30, 116, 48);
   color: white;
 }
+
+/***********  LOG IN *********/
 
 .loged-user-info,
 .loged-in, 
