@@ -1164,3 +1164,23 @@ button:focus {
   background-color: rgb(30, 116, 48);
   color: white;
 }
+
+.loged-user-info,
+.loged-in, 
+.register-form{
+  background-image: url('../img/index_img/logedinfo-bckround.jpg');
+  background-size: contain;
+}
+
+.change-info {
+  background-color: #9fa8da;
+}
+
+.login-form {
+  margin-bottom: 50px;
+  border-radius: 5%;
+  box-shadow: 3px 6px #888888 ;
+  
+
+}
+

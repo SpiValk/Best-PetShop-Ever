@@ -1,31 +1,29 @@
-<!-- <div class="custom-modal-bg">
-   <form class="modal-login">
-      <h2>Log In!</h2>
-      <label for="email">Email: </label>
-      <input type="email" autocomplete="username" name="email" id="email">
-      <label for="pass">Password: </label>
-      <input type="password" autocomplete="current-password" name="password" id="password">
-      <input type="submit" value="submit" id="login-submit">
-      <span class="modal-close"> &#10006; </span>
-   </form>
-</div> -->
-
-
 <%- partial("../partials/head.ejs") %>
-<%- partial("../partials/navbar.ejs") %>
-<div class="loged-in" > 
-    <div class="container">
+
+   <body class="loged-user-info">
+      <%- partial("../partials/navbar.ejs") %>
+
+      <div class="container">
         <div class="row">
             <div class="col-md-4 offset-md-4">
                 <div class="login-form bg-light mt-4 p-4">
                     <form action="/login" method="POST" class="row g-3">
 
-                        <h4>Login Form</h4>
-                       
+                        <h4>User's Information</h4>
                         <div class="col-12">
                             <label>E-mail:</label>
-                            <input type="text" name="email" class="form-control" placeholder="E-mail">
+                            <input type="text" name="email" class="form-control" placeholder="E-mail" disabled>
                         </div>
+                        <div class="col-12">
+                            <label>Name:</label>
+                            <input type="text" name="email" class="form-control" >
+                        </div>
+                        <div class="col-12">
+                            <label>Lastname:</label>
+                            <input type="text" name="email" class="form-control" >
+                        </div>
+                        
+                        
                         <div class="col-12">
                             <label>Password:</label>
                             <input type="password" name="password" class="form-control" placeholder="Password">
@@ -37,23 +35,21 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <input type="submit" class="btn btn-success" value="Log In">
+                            <input type="submit" class="btn btn-success change-info" value="Change Info">
                            
                         </div>
                    
                     <hr class="mt-4">
-                    <div class="col-12">
-                        <p class="text-center mb-0">Have not account yet? <a href="/register">Signup</a></p>
-                    </div>
+                    
                 </form>
 
                 </div>
             </div>
         </div>
     </div>
-</div>
-
-    <%- partial("../partials/footer.ejs") %>
-    
 
 
+      <%- partial("../partials/footer.ejs") %>
+            
+      <%- partial("../partials/scripts.ejs") %>
+   </body>
