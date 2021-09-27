@@ -1,8 +1,6 @@
 module.exports={
   tableName:'user',
   attributes:{
-
-    username        : { type:'string', columnName:'username', required:true, unique: true,},
     password        : { type:'string', columnName:'password', required:true, protect: true},
     email           : { type:'string', isEmail: true, columnName:'email', required:true,unique: true},
     isAdmin         : { type:'number', columnName:'isAdmin', required:true},

@@ -1184,8 +1184,8 @@ button:focus {
 
 /***********  LOG IN *********/
 
-.loged-user-info,
-.loged-in,
+.logged-user-info,
+.logged-in,
 .register-form {
   background-image: url("../img/index_img/logedinfo-bckround.jpg");
   background-size: contain;
