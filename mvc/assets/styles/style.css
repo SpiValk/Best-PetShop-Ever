@@ -11,12 +11,17 @@
 }
 
 /***** NAVBAR *****/
-
+#secondNav{
+  display: none;
+}
 .bg-custom {
-  background-color: rgb(30, 116, 48);
-  border-bottom: 2px solid orange;
-  /*background-image: url("img/download.png");*/
-  color: white;
+  background: url("../img/index_img/nav_bar_bg.jpg");
+  /* visibility: visible ; */
+}
+
+#navbarNav .navbar-nav .nav-item a{
+  color: rgb(49, 24, 24) !important;
+  font-weight: bold;
 }
 
 .navicon {
@@ -28,14 +33,17 @@
   margin: 0;
   padding: 0;
 }
+
 .dropdown-menu {
   color: orange;
   background-color: rgb(30, 116, 48);
 }
+
 .drop-ul li a {
   color: rgba(255, 255, 255, 0.55);
   text-decoration: none;
 }
+
 .drop-ul li:first-child a:hover {
   text-decoration: underline;
 }
@@ -44,7 +52,7 @@
   display: block;
   position: absolute;
   left: 0;
-  top: 47px;
+  top: 59px;
   background-color: rgb(30, 116, 48);
   color: orange;
 }
