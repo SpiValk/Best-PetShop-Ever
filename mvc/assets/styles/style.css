@@ -502,7 +502,8 @@ html {
 }
 .pop-up {
   width: 900px;
-  height: auto;
+  /* height: auto; */
+  height: 70vh;
   margin-left: auto !important;
   margin-right: auto !important;
   margin-top: 80px;
@@ -1184,9 +1185,9 @@ button:focus {
 /***********  LOG IN *********/
 
 .loged-user-info,
-.loged-in, 
-.register-form{
-  background-image: url('../img/index_img/logedinfo-bckround.jpg');
+.loged-in,
+.register-form {
+  background-image: url("../img/index_img/logedinfo-bckround.jpg");
   background-size: contain;
 }
 
@@ -1197,10 +1198,6 @@ button:focus {
 .login-form {
   margin-bottom: 50px;
   border-radius: 1%;
-  box-shadow: 3px 6px #888888 ;
-  border: 0.2px solid  rgb(139, 126, 126) ;
-
+  box-shadow: 3px 6px #888888;
+  border: 0.2px solid rgb(139, 126, 126);
 }
-
-
-

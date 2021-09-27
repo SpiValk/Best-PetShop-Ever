@@ -17,17 +17,21 @@ module.exports.policies = {
   *                                                                          *
   ***************************************************************************/
 
-  // '*': true,
+  //   Admin
+  'products'           :  'users/isAdmin',
+  'products/list'      :  'users/isAdmin',
+  'products/new'       :  'users/isAdmin',
+  'products/save'      :  'users/isAdmin',
+  'products/edit'      :  'users/isAdmin',
+  'products/update'    :  'users/isAdmin',
+  'products/delete'    :  'users/isAdmin',
 
-  // User login
-  // 'products/list' :true,    <---- which page we want to be seen from CUSTOMER and not a USER
-  'cat/*' : 'users/isLoggedIn',
-  
-  // Admin login
-  'dog/*' : 'users/isAdmin',
 
-  'users/register'  : 'users/isNotLoggedIn',
-  'users/login'     : 'users/alreadyLoggedIn',
-
+  //Users
+  'users/register'     :  'users/isNotLoggedIn',
+  'users/login'        :  'users/alreadyLoggedIn',
+  'users/logout'       :  'users/isLoggedIn',
+  'users/userinfo'     :  'users/isLoggedIn',
 
 };
+

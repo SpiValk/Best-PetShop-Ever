@@ -48,13 +48,15 @@
                                  <!--price-->
                                  <div class="block-price clearfix">
                                     <div class="price-new clearfix">
+                                       <%let priceTemp = product.retail_price.toFixed(2).toString();
+                                         price = priceTemp.split('.') %>
                                        <span class="price-new-dollar price">
-                                          <%=product.vendor_price%>
+                                          <%= price[0] %>
                                        </span>
-                                       <span class="price-new-cent">90</span>
+                                       <span class="price-new-cent"><%= price[1] %></span>
                                     </div>
                                     <div class="price-old clearfix">
-                                       <span class="price-old-dollar">$599</span>
+                                       <span class="price-old-dollar">€ 599</span>
                                        <span class="price-old-cent">&#8228;90</span>
                                     </div>
                                  </div>
