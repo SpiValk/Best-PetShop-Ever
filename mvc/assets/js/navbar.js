@@ -23,19 +23,19 @@ var sublists = document.querySelectorAll('.drop-ul > li');
 window.onscroll = function () {
   if (window.pageYOffset > 100) {
     // nav.style.background =  "transparent";
-    nav.style.background = 'rgba(255, 249, 192, 0.7)';
+    nav.style.background = 'rgba(226, 224, 202, 0.7)';
     // nav.style.height = '3rem';
     list.forEach(element => {
 
-      element.style.color = 'rgb(30, 116, 48)';
+      element.style.color = 'rgb(49, 24, 24)';
     });
 
   } else {
-    nav.style.background = 'rgb(30, 116, 48)';
+    nav.style.background = 'url("../img/index_img/nav_bar_bg.jpg")';
     // nav.style.height = '6.9rem';
 
     list.forEach(element => {
-      element.style.color = 'lightgrey';
+      element.style.color = 'rgb(49, 24, 24)';
 
     });
   }
@@ -519,3 +519,15 @@ $(document).ready(() => {
   //   $('#result').html('');
   // });
 });
+
+//Second NavBar Displays
+const productsMenu = document.getElementById("productsMenu")
+const secondNav = document.getElementById("secondNav")
+
+productsMenu.addEventListener("mouseover", function(){
+ secondNav.style.display = 'block'
+ secondNav.style.borderTop = '1px solid rgb(77, 30, 30)'
+})
+productsMenu.addEventListener("click", function(){
+  secondNav.style.display = 'none'
+ })
