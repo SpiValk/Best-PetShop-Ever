@@ -29,7 +29,6 @@ module.exports.bootstrap = async function() {
   //-------------- CREATE USERS ---------------//
   await User.createEach([
     {
-      username:'admin',
       password:await sails.helpers.passwords.hashPassword('admin'),
       firstName: 'super',
       lastName: 'admin',
@@ -41,7 +40,6 @@ module.exports.bootstrap = async function() {
     },
 
     {
-      username:'john',
       firstName: 'Bon',
       lastName: 'Doe',
       contact_number: '1212',
