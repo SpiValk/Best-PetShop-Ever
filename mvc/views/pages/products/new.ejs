@@ -10,29 +10,34 @@
                 <div class="row">
                     <div class="col-md-5 offset-md-3">
                         <div class="new-product bg-light mt-4 p-4">
-                            <form action="/products/new" enctype="multipart/form-data" accept="image/jpeg, .jpeg, .jpg" method="post" class="row g-3">
+                            <form action="/products/new"  enctype="multipart/form-data" accept="image/jpeg, .jpeg, .jpg" method="post" class="row g-3" name="new-product-form" onsubmit="validateNewProductForm()">
 
                            
                                 <h4 style="text-align: center;">Add New Product</h4>
                                
                                 <div class="col-12">
+                                 <label for="name" class="form-label">Name:</label>
                                     <input type="text" name="name" class="form-control" placeholder="Name">
                                 </div>
                                 <div class="col-12">
+                                 <label for="description" class="form-label">Description:</label>
                                     <input type="text" name="description" class="form-control" placeholder="description">
                                 </div>
                                 <div class="col-12">
-                                    <input type="number" name="retailPrice" class="form-control" placeholder="Vendor Price:">
+                                 <label for="vendorPrice" class="form-label">Vendor Price:</label>
+                                    <input type="number" name="vendorPrice" class="form-control required"  placeholder="vendor Price:">
                                 </div>
                                 <div class="col-12">
+                                    <label for="retailPrice" class="form-label">Retail Price:</label>
                                     <input type="number" name="retailPrice" class="form-control" placeholder="Retail Price:">
                                 </div>
                                 <div class="col-12">
+                                 <label for="quantity" class="form-label">Quantity:</label>
                                     <input type="number" name="quantity" class="form-control" placeholder=" Quantity:">
                                 </div>
 
                                 </div>
-                               
+
             <select class="form-select" id="pet" name="pet" >
                <option value="" hidden selected>Choose a pet</option>
                <option value="1">Dog</option>
@@ -45,7 +50,7 @@
             
         
 
-            <select class="form-select" id="vendor" name="vendor" >
+               <select class="form-select" id="vendor" name="vendor" >
                <option value="" hidden selected>Choose a Vendor</option>
                <option value="1">Giwrgos</option>
                <option value="2">Giannis</option>
@@ -75,7 +80,6 @@
 
            
             <div class="mb-3">
-               <label for="image" class="form-label">Upload Image</label>
                <input class="form-control" type="file" id="image" name="image" >
              </div>
 
