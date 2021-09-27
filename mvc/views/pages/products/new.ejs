@@ -1,7 +1,7 @@
-<%- include("../head") %>
+
 
    <body>
-      <%- include("../navbar") %>
+      <%- partial("../partials/navbar.ejs") %>
          <h3>Create a new Product</h3>
          <form action="/products/new" enctype="multipart/form-data" accept="image/jpeg, .jpeg, .jpg" method="post">
             Name: <input type="text" name="name"><br>
@@ -41,7 +41,7 @@
             Upload an Image: <input type="file" id="image" name="image"> <br>
             <input type="submit" value="Add Product">
          </form>
-         <%-include("../footer") %>
-            <%- include("../scripts") %>
+         <%-partial("../partials/footer.ejs") %>
+            <%- partial("../partials/scripts.ejs") %>
                <script src="newProduct.js" type="text/javascript"></script>
    </body>
