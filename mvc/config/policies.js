@@ -18,7 +18,6 @@ module.exports.policies = {
   ***************************************************************************/
 
   //   Admin
-  'products'           :  'users/isAdmin',
   'products/list'      :  'users/isAdmin',
   'products/new'       :  'users/isAdmin',
   'products/save'      :  'users/isAdmin',

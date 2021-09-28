@@ -19,6 +19,7 @@ var picHeader = document.querySelectorAll('.li-header');
 var sublists = document.querySelectorAll('.drop-ul > li');
 
 
+
 /******* 1st NAVBAR EFFECT **********/
 window.onscroll = function () {
   if (window.pageYOffset > 100) {
@@ -40,6 +41,8 @@ window.onscroll = function () {
     });
   }
 };
+
+
 
 
 /****** NAVBAR IMG BOX/HOVER *************/

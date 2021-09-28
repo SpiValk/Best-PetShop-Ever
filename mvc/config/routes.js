@@ -60,12 +60,15 @@ module.exports.routes = {
 
 
   //Users
+  'GET /users/changePass'          : { view: 'pages/users/changePass'},
+  'POST /users/changePass'         : { action: 'users/changepass'},
+  'POST /users/update'             : { action: 'users/update'},
   'GET  /login'                    : { action: 'users/login' },
   'POST /login'                    : { action: 'users/checklogin' },
   'GET  /register'                 : { action: 'users/register' },
   'POST /register'                 : { action: 'users/savenewuser' },
   'GET  /logout'                   : { action: 'users/logout' },
-  'GET  /users/info'                : { action: 'users/userinfo'},
+  'GET  /users/info'               : { action: 'users/userinfo'},
 
 
 

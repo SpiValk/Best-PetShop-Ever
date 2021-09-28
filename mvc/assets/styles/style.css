@@ -1195,6 +1195,11 @@ button:focus {
   background-color: #9fa8da;
 }
 
+.user-view-orders-button a {
+  color: rgb(176, 106, 228);
+  text-decoration: none;
+}
+
 .login-form {
   margin-bottom: 50px;
   border-radius: 1%;
