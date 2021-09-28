@@ -6,6 +6,12 @@
       <%- include("popUpWindow") %>
      
       <div class="main">
+ 
+       <% flash.get('passChange').forEach(function(message){ %>
+         <script type="text/javascript">  alert( '<%= message %>' )  </script>
+      <% }) %>
+            
+
          <div id="carouselExampleCaptions" class="carousel slide main1-custom col-md-12" data-bs-ride="carousel">
             <div class="carousel-indicators">
                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
