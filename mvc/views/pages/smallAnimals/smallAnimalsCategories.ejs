@@ -16,7 +16,7 @@
                <div class="border-bottom pb-2 ml-2">
                   <h4 id="burgundy">Filters</h4>
                </div>
-               <div class="py-2 border-bottom ml-3">
+               <!-- <div class="py-2 border-bottom ml-3">
                   <h6 class="font-weight-bold">Categories</h6>
                   <div id="orange"><span class="fa fa-minus"></span></div>
                   <form>
@@ -29,37 +29,43 @@
                         </div>
                         <%})%>
                   </form>
-               </div>
-               <div class="py-2 border-bottom ml-3">
-                  <h6 class="font-weight-bold">Vendor</h6>
+               </div> -->
+               <div class="py-2 border-bottom ml-3 ">
+                  <h6 class="font-weight-bold">Price</h6>
+                  <label for="customRange1" class="form-label"></label>
                   <div id="orange"><span class="fa fa-minus"></span></div>
-                  <form>
-                     <div class="form-group"> <input type="checkbox" id="tea"> <label for="tea">Tea Cakes</label> </div>
-                     <div class="form-group"> <input type="checkbox" id="cookies"> <label for="cookies">Cookies</label>
-                     </div>
-                     <div class="form-group"> <input type="checkbox" id="pastries"> <label
-                           for="pastries">Pastries</label>
-                     </div>
-                     <div class="form-group"> <input type="checkbox" id="dough"> <label for="dough">Cookie Dough</label>
-                     </div>
-                     <div class="form-group"> <input type="checkbox" id="choco"> <label for="choco">Chocolates</label>
-                     </div>
-                  </form>
+                  <div class="slidecontainer">
+                     <input type="range" min="1" max="500" value="50" class="slider" id="myRange">
+                     <div>Max-Price:<span id="rangeResult"></span> </div>
+                   </div>
                </div>
                <div class="py-2 ml-3">
-                  <h6 class="font-weight-bold">Top Offers</h6>
+                  <h6 class="font-weight-bold">Availability</h6>
                   <div id="orange"><span class="fa fa-minus"></span></div>
                   <form>
-                     <div class="form-group"> <input type="checkbox" id="25off"> <label for="25">25% off</label> </div>
-                     <div class="form-group"> <input type="checkbox" id="5off"> <label for="5off" id="off">5% off on
-                           artisan
-                           breads</label> </div>
+                     <div class="form-group"> <input type="radio" name="status"value=1> In stock</div>
+                     <div class="form-group"> <input type="radio" name="status"value=2> Out Of Stock</div>
                   </form>
+                  <div class="py-2 ml-3">
+                  <button id="search-button">Search</button>
+               </div>
                </div>
             </section>
-            <div class="row col-md-9">
+         
+            <div class="col-md-1">
+               <select name="" class="arrange">
+                   <option selected disabled value="default">Default</option>
+                   <option value="price-asc">Price Asc</option>
+                   <option value="price-desc">Price Desc</option>
+                   <option value="date-asc">Date Asc</option>
+                   <option value="date-desc">Date Desc</option>
+                   <!-- <option value="availability">Availability</option> -->
+               </select>
+            </div>
+
+            <div id="item-list" class=" row col-md-8">
                <%smallAnimalsProducts.forEach((product)=> { %>
-                  <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                  <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1" data-price="<%=product.retail_price%>"data-name="<%=product.name %>"data-date="<%=product.createdAt %>">
                      <div class="card myProductBox cartbox"><a href="/products/view/<%=product.id%>"> <img
                               src="/img/product_images/small-animals/<%= category %>/<%= subCategs[product.subcategory_id -1][product.subcategory_id] %>/<%= product.image_name %>">
                            <div class="card-body">
