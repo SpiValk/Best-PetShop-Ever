@@ -1,25 +1,23 @@
-// document.querySelector("button").addEventListener('click', function(e){
-//     let success =  "Successful Registration!"
-    
-//     document.querySelector('section').style.textAlign = "center"
-//     document.querySelector('section').style.fontSize = "3em"
-//     document.querySelector('section').innerHTML = success
-// })
-let mainPage = document.querySelector("body")
-let popUpContainer = document.getElementById("modal-bg")
+let popUpContainer = document.getElementById('modal-bg');
 
 
 window.onload = function(){
-    setTimeout(() => {
-        // mainPage.style.backgroundColor = "rgba(0,0,0, 0.5)"
-        // popUpContainer.style.display = "block"
-        // popUpContainer.style.zIndex = "999"
-        popUpContainer.classList.add('bg-active');
-    }, 1000);
-}
-document.getElementById("xbuttton").addEventListener('click', function(e){
-    
-    document.querySelector('.mainPopUpSection').style.display = 'none'
+  setTimeout(() => {
+    popUpContainer.classList.add('bg-active');
+  }, 1000);
+};
+document.getElementById('xbuttton').addEventListener('click', () => {
+  document.querySelector('.mainPopUpSection').style.display = 'none';
+  popUpContainer.classList.remove('bg-active');
+});
+
+
+const keyDownHandler = (e) => {
+  if(e.key === 'Escape' && document.querySelector('.mainPopUpSection')){
+    document.querySelector('.mainPopUpSection').style.display = 'none';
     popUpContainer.classList.remove('bg-active');
-   
-})
+    document.body.removeEventListener('keydown', keyDownHandler);
+  }
+};
+
+document.body.addEventListener('keydown', keyDownHandler );

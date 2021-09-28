@@ -1,9 +1,4 @@
 module.exports={
-    // inputs:{
-    //     id:{
-    //         type:"number",
-    //         required:true
-    //     }
 
     // },
     fn:async function(){
@@ -11,7 +6,7 @@ module.exports={
         let subproduct=await Pet_product.find().populate("subcategory_id")
         // let userInfo=await User.findOne({id:this.req.session.userId})
 
-        
-        return this.res.view('pages/addtocart',{product,subproduct})
-    }
-}
+
+    return this.res.view('pages/addtocart',{product,subproduct});
+  }
+};

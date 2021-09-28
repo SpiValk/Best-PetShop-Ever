@@ -1,47 +1,97 @@
-<%- include("../head") %>
+
+<%- partial("../partials/head.ejs") %>
 
    <body>
-      <%- include("../navbar") %>
-         <h3>Create a new Product</h3>
-         <form action="/products/new" enctype="multipart/form-data" accept="image/jpeg, .jpeg, .jpg" method="post">
-            Name: <input type="text" name="name"><br>
-            Description: <input type="text" name="description"><br>
-            Vendor Price: <input type="number" name="vendorPrice"><br>
-            Retail Price: <input type="number" name="retailPrice"><br>
-            Quantity: <input type="number" name="quantity"><br>
+      <%- partial("../partials/navbar.ejs") %>
+    
 
-            Pet Relating: <select id="pet" name="pet">
+         <div class="new-product " > 
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 offset-md-3">
+                        <div class="new-product bg-light mt-4 p-4">
+                            <form action="/products/new"  enctype="multipart/form-data" accept="image/jpeg, .jpeg, .jpg" method="post" class="row g-3" name="new-product-form" onsubmit="validateNewProductForm()">
+
+                           
+                                <h4 style="text-align: center;">Add New Product</h4>
+                               
+                                <div class="col-12">
+                                 <label for="name" class="form-label">Name:</label>
+                                    <input type="text" name="name" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="col-12">
+                                 <label for="description" class="form-label">Description:</label>
+                                    <input type="text" name="description" class="form-control" placeholder="description">
+                                </div>
+                                <div class="col-12">
+                                 <label for="vendorPrice" class="form-label">Vendor Price:</label>
+                                    <input type="number" name="vendorPrice" class="form-control required"  placeholder="vendor Price:">
+                                </div>
+                                <div class="col-12">
+                                    <label for="retailPrice" class="form-label">Retail Price:</label>
+                                    <input type="number" name="retailPrice" class="form-control" placeholder="Retail Price:">
+                                </div>
+                                <div class="col-12">
+                                 <label for="quantity" class="form-label">Quantity:</label>
+                                    <input type="number" name="quantity" class="form-control" placeholder=" Quantity:">
+                                </div>
+
+                                </div>
+
+            <select class="form-select" id="pet" name="pet" >
                <option value="" hidden selected>Choose a pet</option>
                <option value="1">Dog</option>
                <option value="2">Cat</option>
                <option value="3">Fish</option>
-               <option value="4">Bird</option>
-               <option value="5">Small Animals</option>
-            </select>
-            <br>
+               <option value="3">Bird</option>
+               <option value="3">Small Animals</option>
+             </select>
 
-            Vendor: <select name="vendor">
+            
+        
+
+               <select class="form-select" id="vendor" name="vendor" >
+               <option value="" hidden selected>Choose a Vendor</option>
                <option value="1">Giwrgos</option>
                <option value="2">Giannis</option>
                <option value="3">Giwths</option>
-            </select> <br>
-            Status: <select name="status">
+               <option value="3">eukleidis</option>
+               <option value="3">parmeniwn</option>
+             </select>
+           
+
+            <select class="form-select" id="status" name="status" >
+               <option value="" hidden selected>Choose a Status</option>
                <option value="1">Available</option>
                <option value="2">Out of Stock</option>
-            </select> <br>
+            </select> 
 
-            Product category: <select id="pet-category" name="category">
+            <select class="form-select" id="pet-category" name="category" >
                <option value="" hidden selected>Choose your category</option>
-            </select> <br>
+             </select>
 
-            Product subcategory: <select id="pet-subcategory" name="subcategory">
+           
+
+            <select class="form-select" id="pet-subcategory" name="subcategory" >
                <option value="" hidden selected>Choose your subcategory</option>
-            </select> <br>
+             </select>
 
-            Upload an Image: <input type="file" id="image" name="image"> <br>
-            <input type="submit" value="Add Product">
+        
+
+           
+            <div class="mb-3">
+               <input class="form-control" type="file" id="image" name="image" >
+             </div>
+
+            <input type="submit" class="btn btn-success" value="Add Product">
          </form>
-         <%-include("../footer") %>
-            <%- include("../scripts") %>
+        
+      </div>
+  </div>
+</div>
+</div>
+
+         <%-partial("../partials/footer.ejs") %>
+            <%- partial("../partials/scripts.ejs") %>
                <script src="newProduct.js" type="text/javascript"></script>
    </body>

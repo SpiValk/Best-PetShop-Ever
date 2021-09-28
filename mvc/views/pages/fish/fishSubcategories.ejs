@@ -57,13 +57,13 @@
                               <%= product.name %>
                            </h4>
                            <h4 class="price" hidden>
-                              <%=product.vendor_price%>
+                              <%=product.retail_price%>
                            </h4>
                            <div class="d-flex flex-row my-2">
                               <!-- <div class="text-muted">₹110/loaf</div> -->
                         </a>
                         <div class="select-size">
-                           <div id="quantity"><span class="retail-price">€ <%=product.retail_price%></span></div>
+                           <div id="quantity"><span class="retail-price">€ <%=product.retail_price.toFixed(2) %></span></div>
                            <!-- <div id="quantity"><button class="border rounded quantity-button"><span class="fa fa-plus"
                                     id="orange"></span></button> <span class="px-sm-1 quanNumber">1</span> <button
                                  class="border rounded quantity-button"><span class="fa fa-minus"

@@ -3,9 +3,17 @@
    <body>
       <%- partial("partials/navbar.ejs") %>
 
-      <%- include("popUpWindow") %>
+      <% if(!req.session.email){ %>
+         <%- include("popUpWindow") %>
+         <% } %>
      
       <div class="main">
+ 
+       <% flash.get('passChange').forEach(function(message){ %>
+         <script type="text/javascript">  alert( '<%= message %>' )  </script>
+      <% }) %>
+            
+
          <div id="carouselExampleCaptions" class="carousel slide main1-custom col-md-12" data-bs-ride="carousel">
             <div class="carousel-indicators">
                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -123,13 +131,13 @@
                                  <%= product.name %>
                               </h4>
                               <h4 class="price" hidden>
-                                 <%=product.vendor_price%>
+                                 <%=product.retail_price%>
                               </h4>
                               <div class="d-flex flex-row my-2">
                         </a>
                         <div class="select-size">
 
-                           <div id="quantity"><span class="retail-price">€ <%=product.retail_price %></span> </div>
+                           <div id="quantity"><span class="retail-price">€ <%=product.retail_price.toFixed(2) %></span> </div>
 
 
                            <!-- <div id="quantity"><button class="border rounded quantity-button"><span class="fa fa-plus"
@@ -158,13 +166,13 @@
                                  <%= product.name %>
                               </h4>
                               <h4 class="price" hidden>
-                                 <%=product.vendor_price%>
+                                 <%=product.retail_price%>
                               </h4>
                               <div class="d-flex flex-row my-2">
                         </a>
                         <div class="select-size">
 
-                           <div id="quantity"><span class="retail-price">€ <%=product.retail_price %></span> </div>
+                           <div id="quantity"><span class="retail-price">€ <%=product.retail_price.toFixed(2) %></span> </div>
 
 
                            <!-- <div id="quantity"><button class="border rounded quantity-button"><span class="fa fa-plus"
@@ -192,13 +200,13 @@
                                  <%= product.name %>
                               </h4>
                               <h4 class="price" hidden>
-                                 <%=product.vendor_price%>
+                                 <%=product.retail_price%>
                               </h4>
                               <div class="d-flex flex-row my-2">
                         </a>
                         <div class="select-size">
 
-                           <div id="quantity"><span class="retail-price">€ <%=product.retail_price %></span> </div>
+                           <div id="quantity"><span class="retail-price">€ <%=product.retail_price.toFixed(2) %></span> </div>
 
 
                            <!-- <div id="quantity"><button class="border rounded quantity-button"><span class="fa fa-plus"

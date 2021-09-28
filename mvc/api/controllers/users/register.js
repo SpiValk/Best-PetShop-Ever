@@ -1,7 +1,7 @@
 module.exports = {
   exits: {
     success: {
-      viewTemplatePath: 'pages/partials/register'
+      viewTemplatePath: 'pages/users/register'
     }
   },
 

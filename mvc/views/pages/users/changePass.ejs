@@ -1,0 +1,41 @@
+
+
+<%- partial("../partials/head.ejs") %>
+<%- partial("../partials/navbar.ejs") %>
+<div class="logged-in" > 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 offset-md-3">
+                <div class="login-form bg-light mt-4 p-4">
+                    <form action="/users/changePass" method="POST" class="row g-3">
+
+                        <h4>Password Change</h4>
+                       
+                        <div class="col-12">
+                            <label>Existing password:</label>
+                            <input type="password" name="oldPass" class="form-control" placeholder="Password">
+                        </div>
+                        <div class="col-12">
+                            <label>New Password:</label>
+                            <input type="password" name="newPass" class="form-control" placeholder="New Password">
+                        </div>
+                        <div class="col-12">
+                            <label>Confirm Password:</label>
+                            <input type="password" name="confirmPass" class="form-control" placeholder="Confirm Password">
+                        </div>
+                    <hr class="mt-4">
+                    <div class="col-12">
+                     <input type="submit" class="btn btn-success" value="Check & Update">
+                 </div>
+                </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <%- partial("../partials/footer.ejs") %>
+    
+
+

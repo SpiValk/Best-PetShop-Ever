@@ -19,15 +19,16 @@ var picHeader = document.querySelectorAll('.li-header');
 var sublists = document.querySelectorAll('.drop-ul > li');
 
 
+
 /******* 1st NAVBAR EFFECT **********/
 window.onscroll = function () {
   if (window.pageYOffset > 100) {
     // nav.style.background =  "transparent";
-    nav.style.background = 'rgba(255, 249, 192, 0.7)';
+    nav.style.background = 'rgba(30, 116, 48, 0.75)';
     // nav.style.height = '3rem';
     list.forEach(element => {
 
-      element.style.color = 'rgb(30, 116, 48)';
+      element.style.color = 'lightgrey';
     });
 
   } else {
@@ -40,6 +41,8 @@ window.onscroll = function () {
     });
   }
 };
+
+
 
 
 /****** NAVBAR IMG BOX/HOVER *************/
@@ -261,6 +264,7 @@ $(document).ready(() => {
     toastr.success('The product added to cart');
   });
 });
+
 
 
 
@@ -519,3 +523,15 @@ $(document).ready(() => {
   //   $('#result').html('');
   // });
 });
+
+//Second NavBar Displays
+const productsMenu = document.getElementById("productsMenu")
+const secondNav = document.getElementById("secondNav")
+
+productsMenu.addEventListener("mouseover", function(){
+ secondNav.style.display = 'block'
+ secondNav.style.borderTop = '1px solid rgb(77, 30, 30)'
+})
+productsMenu.addEventListener("click", function(){
+  secondNav.style.display = 'none'
+ })
