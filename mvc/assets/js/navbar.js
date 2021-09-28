@@ -24,19 +24,19 @@ var sublists = document.querySelectorAll('.drop-ul > li');
 window.onscroll = function () {
   if (window.pageYOffset > 100) {
     // nav.style.background =  "transparent";
-    nav.style.background = 'rgba(226, 224, 202, 0.7)';
+    nav.style.background = 'rgba(30, 116, 48, 0.75)';
     // nav.style.height = '3rem';
     list.forEach(element => {
 
-      element.style.color = 'rgb(49, 24, 24)';
+      element.style.color = 'lightgrey';
     });
 
   } else {
-    nav.style.background = 'url("../img/index_img/nav_bar_bg.jpg")';
+    nav.style.background = 'rgb(30, 116, 48)';
     // nav.style.height = '6.9rem';
 
     list.forEach(element => {
-      element.style.color = 'rgb(49, 24, 24)';
+      element.style.color = 'lightgrey';
 
     });
   }
