@@ -1,18 +1,18 @@
 module.exports = {
   inputs: {
     password:        { type: 'string', required: true },
-    email:           { type: 'string',  required: true },
+    email:           { type: 'string', required: true },
     firstName:       { type: 'string', required: true },
     lastName:        { type: 'string', required: true },
     address:         { type: 'string', required: true },
     contact_number:  { type: 'string', required: true },
 
   },
-  exits: {
-    success: {
-      viewTemplatePath: 'pages/users/successfullregistration'
-    }
-  },
+  // exits: {
+  //   success: {
+  //     viewTemplatePath: 'pages/users/successfullregistration'
+  //   }
+  // },
   fn: async function(inputs) {
     // REMEMBER - npm install sails-hook-organics --save
     await User.create({
@@ -25,6 +25,7 @@ module.exports = {
       contact_number: inputs.contact_number,
       isAdmin: 0,
     });
-    return {};
+    const firstNameR = await User.findOne({firstName: inputs.firstName})
+    return this.res.view('pages/users/successfullregistration',{firstNameR});;
   }
 };

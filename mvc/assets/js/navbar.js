@@ -268,6 +268,7 @@ $(document).ready(() => {
 
 
 
+
 //to clear the localstorage
 
 

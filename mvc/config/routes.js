@@ -73,7 +73,7 @@ module.exports.routes = {
 
 
 
-
+// '/register' : {view: 'pages/users/successfullregistration'},
 
 
 

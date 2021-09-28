@@ -3,7 +3,9 @@
    <body>
       <%- partial("partials/navbar.ejs") %>
 
-      <%- include("popUpWindow") %>
+      <% if(!req.session.email){ %>
+         <%- include("popUpWindow") %>
+         <% } %>
      
       <div class="main">
  
