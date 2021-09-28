@@ -3,7 +3,7 @@ function validateLoginForm() {
     let email = document.forms["form-login"]["email"].value
     let password = document.forms["form-login"]["password"].value
     if (email == "" || password =="" ) {
-      alert("Fill all koutakia")
+      alert("Fill all fields")
       return false
     }
   }
@@ -73,7 +73,7 @@ function validateNewProductForm() {
     var fileName = document.getElementById("image").value;
 
     if (name == "" || description == "" || vendorPrice == "" || retailPrice == "" || quantity == "") {
-        alert("Fill all")
+        alert("Fill all fields")
         return false
     }
 
@@ -83,7 +83,27 @@ function validateNewProductForm() {
     }
 
     if(pet == ""|| vendor == "" || status == "" || category == "" || subcategory == "" ) {
-        alert("Fill alllllll")
+        alert("Choose pet")
+        return false
+    }
+    
+    if(vendor == "" ) {
+        alert("Choose vendor")
+        return false
+    }
+    
+    if( status == "" ) {
+        alert("Choose status")
+        return false
+    }
+    
+    if( category == ""  ) {
+        alert("Choose category")
+        return false
+    }
+    
+    if(subcategory == "" ) {
+        alert("Choose subcategory ")
         return false
     }
     
