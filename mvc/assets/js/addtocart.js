@@ -8,7 +8,8 @@ let cartProductBox = document.getElementsByClassName('cartViewProduct');
 let cartProductId = document.getElementsByClassName('id');
 let quantityNumbers=document.getElementsByClassName('quanNumber');
 let quantityButtons=document.getElementsByClassName('quantity-btns');
-console.log(quantityButtons);
+let finalPrice=document.getElementsByClassName('price-with-shipping')[0];
+// console.log(quantityButtons);
 
 
 var pull = JSON.parse(Items);
@@ -67,7 +68,7 @@ function displayCartProducts(){
     </div> 
     `;});
     productsCartView.innerHTML = result.join(' ');
-    finalOrderPrice.innerHTML = 'Checkout €' + countSumPrice1();
+    finalOrderPrice.innerHTML = 'Checkout '; //+ countSumPrice1();
   }
   else {
     productsCartView.innerHTML = 'Your shopping cart is empty';
@@ -75,7 +76,7 @@ function displayCartProducts(){
   }}
 
 
-finalOrderPrice.innerHTML = 'Checkout €' + countSumPrice1();
+finalOrderPrice.innerHTML = 'Checkout '; //+ countSumPrice1();
 
 
 
@@ -195,12 +196,13 @@ function quantityOfProducts(e){
       parentElement.innerHTML = result.join('');
       document.querySelector('.checkout').classList.remove('hidden');//den leitourgei des argotera an leipei i klassi
       cartSumPrice.innerHTML = '€' + countSumPrice1();
-
+      finalPrice.innerHTML = '€' + countSumPrice1();
     }
     else {
       document.querySelector('.checkout').classList.add('hidden');
       parentElement.innerHTML = '<h4 class="empty">Your shopping cart is empty</h4>';
       cartSumPrice.innerHTML = '';
+      finalPrice.innerHTML = '';
     }
 
   }

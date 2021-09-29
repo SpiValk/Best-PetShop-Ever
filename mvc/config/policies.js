@@ -31,6 +31,7 @@ module.exports.policies = {
   'users/login'        :  'users/alreadyLoggedIn',
   'users/logout'       :  'users/isLoggedIn',
   'users/userinfo'     :  'users/isLoggedIn',
+  'addtocartcontroller':  'users/isLoggedIn',
 
 };
 
