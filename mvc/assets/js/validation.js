@@ -19,39 +19,39 @@ function validateRegistrationForm() {
     let contact_number = document.forms["form-register"]["contact_number"].value
 
     if (email == "" || password == "" || firstName == "" || lastName == "" || address == "" || contact_number == "") {
-        alert("Fill all")
+        alert("Fill all fields")
         return false
     }
 
-    if(email.length < 4 ) {
+    if(email < 4 ) {
         alert("E-mail must be more than 4 characters")
         return false;
     }
 
-    if (password.length < 8 ) {
+    if (password < 8 ) {
         alert("Password must be more than 8 characters")
         return false
 
     }
 
-    if (firstName.length < 3) {
+    if (firstName < 3) {
         alert("First Name must be more than 3 characters")
         return false
 
     }
 
-    if (lastName.length < 3) {
+    if (lastName < 3) {
         alert("Last name must be more than 3 characters")
         return false
 
     }
 
-    if ( address.length < 5) {
+    if ( address < 5) {
         alert("Adrdress must be more than 5 characters")
         return false
 
     }
-    if (contact_number.length < 10 && inputtxt.value.match(number)) {
+    if (contact_number < 10 && inputtxt.value.match(number)) {
         alert("Contact number must be more than 10 characters")
         return false
     }
@@ -111,8 +111,126 @@ function validateNewProductForm() {
         alert("Upload an image")
         return false
     }
-    
+}
+      // Validation For User Info Update  form
+
+function validateUpdateForm() {
+    let email = document.forms["update-form"]["email"].value
+    let password = document.forms["update-form"]["password"].value
+    let firstName = document.forms["update-form"]["firstName"].value
+    let lastName = document.forms["update-form"]["lastName"].value
+    let address = document.forms["update-form"]["address"].value
+    let contact_number = document.forms["update-form"]["contact_number"].value
+
+    if (email == "" || password == "" || firstName == "" || lastName == "" || address == "" || contact_number == "") {
+        alert("Fill all fields")
+        return false
     }
-  
+
+    if (password < 8 ) {
+        alert("Password must be more than 8 characters")
+        return false
+
+    }
+
+    if (firstName < 3) {
+        alert("First Name must be more than 3 characters")
+        return false
+
+    }
+
+    if (lastName < 3) {
+        alert("Last name must be more than 3 characters")
+        return false
+
+    }
+
+    if ( address < 5) {
+        alert("Address must be more than 5 characters")
+        return false
+
+    }
+
+
+if (contact_number < 10 ) {
+    alert("Contact number must be more than 10 characters")
+    return false
+
+    }
+}
+
+
+// Validation For Update A Product Form
+function validateUpdateForm() {
+    let name = document.forms["edit-product-form"]["name"].value
+    let description = document.forms["edit-product-form"]["description"].value
+    let quantity = document.forms["edit-product-form"]["quantity"].value
+    let vendor_price = document.forms["edit-product-form"]["vendor_price"].value
+    let retail_price = document.forms["edit-product-form"]["retail_price"].value
+    let status = document.forms["edit-product-form"]["status"].value
+    var fileName = document.getElementById("image").value;
+
+    if (name == "" || description == "" || quantity == "" || vendor_price == "" || retail_price == "" || status == "") {
+        alert("Fill all fields")
+        return false
+    }
+    
+
+    if (name < 1 ) {
+        alert("Name must be more than 1 characters")
+        return false
+
+    }
+
+    if (description < 3) {
+        alert("Description Name must be more than 3 characters")
+        return false
+
+    }
+
+    if (quantity < 1) {
+        alert("Quantity must be more than 0")
+        return false
+
+    }
+    if (retail_price < 1) {
+        alert("Retail Price must be more than 1")
+        return false
+
+    }
+
+    if (fileName == "") {
+        alert("Upload an image")
+        return false
+    }
+}
+    
+
+
+
+    // Validation For Change Password form
+    function validateNewUserForm() {
+        let oldPass = document.forms["change-pass-form"]["oldPass"].value
+        let newPass = document.forms["change-pass-form"]["newPass"].value
+        let confirmPass = document.forms["change-pass-form"]["confirmPass"].value
+     
+        if (newPass == oldPass) {
+            alert("This is your old password, please provide a new password ")
+            return false
+        }
+      
+        if (newPass !== confirmPass ) {
+            alert("New password and confirm password must be the same")
+            return false
+        }
+
+        if( newPass < 8 || confirmPass < 8) {
+            alert("Your pasword must be 8 or more characters ")
+            return false
+
+        }
+}
+    
+
 
 
