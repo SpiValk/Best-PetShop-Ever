@@ -5,29 +5,44 @@
   outline: 0;
 }
 
+.admin-table-rows {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /* SMALL USEFULL CLASSES */
 .capitalize {
   text-transform: capitalize;
 }
 
+/* *****TABLES*****
+#table-area {
+  width: 97vw !important;
+  height: 97vh !important;
+} */
+
 /***** NAVBAR *****/
+
 .toast-success {
   background-color: rgb(30, 116, 48) !important
 }
 
 #secondNav{
   display: none;
-  border-style: none!important;
-
+  border-style: none !important;
 }
 
 #secondNav .navbar-nav .nav-item a {
   color: lightgrey;
 }
+
 .bg-custom {
   background-color: rgb(30, 116, 48);
   /* visibility: visible ; */
 }
+
 
 #navbarNav .navbar-nav .nav-item a{
   color: lightgrey;
@@ -80,7 +95,6 @@
   transition: 0.5s;
   z-index: 1;
   height: 4rem;
-
 }
 .container .navbar-brand{
   position: relative;

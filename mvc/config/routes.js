@@ -40,10 +40,10 @@ module.exports.routes = {
   '/reason-to-smile'          : { view: 'pages/static/reason-to-smile'},
 
 
-  'GET /addtocart'       : { action:'addtocartcontroller' },
+  'GET /addtocart'            : { action:'addtocartcontroller' },
 
 
-
+  'POST /checkout'           : {action: 'checkout'},
 
 
   // Admin Products
