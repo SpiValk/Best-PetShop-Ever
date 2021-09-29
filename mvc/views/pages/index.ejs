@@ -3,10 +3,11 @@
    <body>
       <%- partial("partials/navbar.ejs") %>
 
-      <%- include("popUpWindow") %>
+      <% if(!req.session.email){ %>
+         <%- include("popUpWindow") %>
+         <% } %>
      
       <div class="main">
-
 
          <div id="carouselExampleCaptions" class="carousel slide main1-custom col-md-12" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -220,11 +221,9 @@
             </div>
             </div>
             <br>
-
             <% flash.get('passChange').forEach(function(message){ %>
                <script type="text/javascript">  alert( '<%= message %>' )  </script>
             <% }) %>
-
             <%- partial("partials/footer.ejs") %>
             <%- partial("partials/scripts.ejs") %>
    </body>

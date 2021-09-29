@@ -22,7 +22,7 @@ module.exports = {
     await sails.helpers.passwords.checkPassword(oldPass, theUser.password).intercept('incorrect', 'badCombo');
     await User.updateOne({id: this.req.session.userId}).set({password: await sails.helpers.passwords.hashPassword(newPass)});
 
-    this.req.addFlash('passChange','Your Password has been changed successfully!');
+    this.req.addFlash('passChange');
 
     return this.res.redirect('/');
   }

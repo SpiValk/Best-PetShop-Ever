@@ -1,2 +1,13 @@
-<h2>register ok</h2>
-<a href = '/'>homepage</a>
+<%- partial("../partials/head.ejs") %>
+<body>
+    <%- partial("../partials/navbar.ejs") %>
+    <div class="reg-container">
+        <h1>Welcome <%=firstNameR.firstName%>!</h1>
+        <h2>Registration Complete</h2>
+        <a href = '/'>homepage</a>
+    </div>
+    
+    <%- partial("../partials/footer.ejs") %>
+
+            <%- partial("../partials/scripts.ejs") %>
+</body>

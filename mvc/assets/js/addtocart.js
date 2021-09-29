@@ -1,5 +1,7 @@
 
 var Items = localStorage.getItem('shoppingCart');
+console.log(Items)
+// var checkoutBtn=document.getElementById("checkout")
 // console.log(Itemonly)
 // console.log(typeof Itemonly)
 let productsCartView = document.getElementById('display-product-in-cart-view');
@@ -57,7 +59,8 @@ if (pull.length > 0) {
             </div>
         </div>
     </div>  
-    `;}
+    `;
+  }
   );
   productsCartView.innerHTML = result;
 }
@@ -139,3 +142,39 @@ function removeElement(event) {
 for (let btn of removeProductBtns) {
   btn.addEventListener('click', removeElement);
 }
+
+let poutsesMple = "poutse mple kai fuck you bird"
+$(function () {
+  console.log($("#checkoutBtn"))
+  $("#checkoutBtn").click(function () {
+    console.log("fuck you bird"),
+      $.ajax({
+        type: 'POST',
+        url: 'http://localhost:1337/checkout',
+        data: poutsesMple,
+        success: function (data) {
+          alert("congratulations")
+        }
+
+      })
+  })
+})
+
+
+// fetch(`http://localhost:5000/api/users/`, {
+//                 method: 'POST',
+//                 headers,
+//                 body: JSON.stringify({ user: user._id, ...newData }),
+//               })
+//                 .then((resp) => resp.json())
+//                 .then((resp) => getUsers());
+//               resolve();
+          
+              
+              
+
+
+
+
+
+

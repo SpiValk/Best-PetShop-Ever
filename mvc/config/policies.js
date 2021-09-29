@@ -21,7 +21,7 @@ module.exports.policies = {
   'products/list'      :  'users/isAdmin',
   'products/new'       :  'users/isAdmin',
   'products/save'      :  'users/isAdmin',
-  'products/edit'      :  'users/isAdmin',
+  // 'products/edit'      :  'users/isAdmin',
   'products/update'    :  'users/isAdmin',
   'products/delete'    :  'users/isAdmin',
 
