@@ -1,14 +1,3 @@
-<!-- <form action="/products/update" method="post">
-   Name: <input type="text" name="name" value="<%= product.name %>" ><br>
-   description: <input type="number" name="description" value="<%= product.description %>" ><br>
-   quantity: <input type="number" name="quantity" value="<%= product.description %>" ><br>
-   vendor_price: <input type="number" name="vendor_price" value="<%= product.price %>" ><br>
-   retail_price <input type="number" name="retail_price" value="<%= product.dateOfRelease %>" ><br>
-   image_name <input type="text" name="image_name" value="<%= product.dateOfRelease %>" ><br>
-   status <input type="number" name="status" value="<%= product.dateOfRelease %>" ><br>
-   <input type="number" name="id" value = "<%= product.id %>" hidden readonly > <br>
-   <input type="submit" value="Update Product">
-</form> -->
 <%- partial("../partials/head.ejs") %>
 
    <body>
@@ -19,36 +8,41 @@
        <div class="row">
            <div class="col-md-5 offset-md-3">
                <div class="edit-product bg-light mt-4 p-4">
-                   <form action="/products/edit/"  enctype="multipart/form-data" accept="image/jpeg, .jpeg, .jpg" method="POST" class="row g-3" name="edit-product-form" onsubmit="return validateNewProductForm()" >
+                   <form action="/products/update"  method="POST" class="row g-3"  >
+                     
                      <h4 style="text-align: center;">Update Product</h4>
+
+                     <div class="col-12">
+                        <label for="id" class="form-label">Product Id:</label>
+                           <input type="number" name="id" class="form-control" value= "<%= product.id %>" readonly >
+                       </div>
+                       
                      <div class="col-12">
                         <label for="name" class="form-label">Name:</label>
-                           <input type="text" name="name" class="form-control" placeholder="Name">
+                           <input type="text" name="name" class="form-control" value="<%=product.name%>" placeholder="Name">
                        </div>
                      <div class="col-12">
-                        <label for="description" class="form-label">Description:</label>
-                           <input type="text" name="description" class="form-control" placeholder="Description">
+                        <label for="description" class="form-label">Description:</label>  
+                           <input type="text" name="description" class="form-control" value="<%=product.description %>" placeholder="Description">
                        </div>
                      <div class="col-12">
                         <label for="quantity" class="form-label">Quantity:</label>
-                           <input type="number" name="quantity" class="form-control" placeholder="Quantity">
+                           <input type="number" name="quantity" class="form-control" value="<%= product.quantity %>" placeholder="Quantity">
                        </div>
                      <div class="col-12">
                         <label for="vendor_price" class="form-label">Vendor Price:</label>
-                           <input type="number" name="vendor_price" class="form-control" placeholder="Vendor Price">
+                           <input type="number" name="vendor_price" class="form-control" value="<%= product.vendor_price %>" placeholder="Vendor Price">
                        </div>
                      <div class="col-12">
                         <label for="retail_price" class="form-label">Retail Price:</label>
-                           <input type="number" name="retail_price" class="form-control" placeholder="Retail Price">
+                           <input type="number" name="retail_price" class="form-control" value="<%= product.retail_price %>" placeholder="Retail Price">
                        </div>
-                       <div class="mb-3">
-                        <input class="form-control" type="file" id="image" name="image" >
-                      </div>
                      <div class="col-12">
                         <label for="status" class="form-label">Status:</label>
-                           <input type="number" name="status" class="form-control" placeholder="Status">
+                           <input type="number" name="status" class="form-control" value="<%= product.status %>" placeholder="Status">
                        </div>
-                     <input type="submit" class="btn btn-success" value="Edit Product" >
+
+                     <input type="submit" class="btn btn-success"  value="Update Product" >
                   </form>
         
                </div>
