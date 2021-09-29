@@ -52,7 +52,7 @@ module.exports.routes = {
   'POST /products/new'        : { action: 'products/save'},
   'GET /products/delete/:id'  : { action: 'products/delete'},
   'GET /products/edit/:id'    : { action: 'products/edit'},
-  'GET /products/update/:id'  : { action: 'products/update'},
+  'POST /products/update'     : { action: 'products/update'},
 
   'GET /categories/:pet'     : { action: 'petcategorycontroller'},
   'GET /products/view/:id'   : { action: 'productviewcontroller'},
@@ -73,7 +73,7 @@ module.exports.routes = {
 
 
 
-// '/register' : {view: 'pages/users/successfullregistration'},
+  // '/register' : {view: 'pages/users/successfullregistration'},
 
 
 

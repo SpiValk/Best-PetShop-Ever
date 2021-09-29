@@ -4,12 +4,13 @@ module.exports = {
   },
   exits: {
     success: {
-      viewTemplatePath: 'pages/products/edit'
+      // viewTemplatePath: 'pages/products/edit'
     }
   },
 
   fn: async function(inputs) {
-    var dbProduct = await Pet_product.findOne(inputs.id);
-    return { product: dbProduct };
+    var product = await Pet_product.findOne(inputs.id);
+
+    return this.res.view('pages/products/edit',{product});
   }
 };
