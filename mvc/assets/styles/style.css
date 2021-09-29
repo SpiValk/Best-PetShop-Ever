@@ -1332,6 +1332,7 @@ button:focus {
     visibility: hidden;
   }
 }
+
 /******* filter bar ********************/
 
 /*******Range slider **********/
@@ -1411,4 +1412,10 @@ button:focus {
   color:black;
 
 }
+/* .form-group{
+  display:flex;
+  flex-direction:row;
+   align-items:center;
+  justify-content:flex-start
+}  */
 
