@@ -18,6 +18,4 @@ module.exports={
       through:    'order_products'
     }
 
-    
-
   }};

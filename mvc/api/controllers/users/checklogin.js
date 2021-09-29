@@ -24,6 +24,10 @@ module.exports = {
     await sails.helpers.passwords.checkPassword(inputs.password, theUser.password).intercept('incorrect','badCombo');
     if(theUser.isAdmin) {
       this.req.session.cookie.maxAge = sails.config.custom.rememberMeCookieMaxAge;
+      this.req.session.firstName = theUser.firstName;
+      this.req.session.lastName = theUser.lastName;
+      this.req.session.address = theUser.address;
+      // this.req.session.wallet = theUser.wallet;
       this.req.session.email = inputs.email; // <----- This is the actual login!!!!! :0)
       this.req.session.userId = theUser.id;
       this.req.session.isAdmin = true;
@@ -31,6 +35,10 @@ module.exports = {
     }
     if(!theUser.isAdmin) {
       this.req.session.cookie.maxAge = sails.config.custom.rememberMeCookieMaxAge;
+      this.req.session.firstName = theUser.firstName;
+      this.req.session.lastName = theUser.lastName;
+      this.req.session.address = theUser.address;
+      // this.req.session.wallet = theUser.wallet;
       this.req.session.email = inputs.email;
       this.req.session.userId = theUser.id;
       this.req.session.isAdmin = false;
