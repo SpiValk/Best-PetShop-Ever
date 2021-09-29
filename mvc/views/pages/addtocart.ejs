@@ -71,32 +71,35 @@
                                     </div>
                                 </div> -->
                                 <div class="col-lg-6 custom-div-form">
-                                    <div class="input-cart"><label class=" form-control-label text-center">Name on
-                                            Card</label> <input type="text" id="cname" name="cname"
-                                            placeholder="Johnny Doe"></div>
-                                    <div class="input-cart"><label class="form-control-label text-center">Card
-                                            Number</label> <input type="text" id="cnum" name="cnum"
-                                            placeholder="1111 2222 3333 4444"></div>
-                                    <div class="input-cart"><label class="form-control-label">Expiration Date</label>
-                                        <input type="text" id="exp" name="exp" placeholder="MM/YYYY"></div>
-                                    <div class="input-cart"><label class="form-control-label">CVV</label> <input
-                                            type="text" id="cvv" name="cvv" placeholder="***">
+                                    <div class="input-cart"><label class=" form-control-label text-center">First Name
+                                            </label> <input type="text" id="cname" name="cname" value="<%= req.session.firstName%>"
+                                            disabled></div>
+                                    <div class="input-cart"><label class="form-control-label text-center">Last Name
+                                            </label> <input type="text" id="cnum" name="cnum"
+                                            value="<%= req.session.lastName%>"
+                                            disabled></div>
+                                    <div class="input-cart"><label class="form-control-label">Address</label>
+                                        <input type="text" id="exp" name="exp" value="<%= req.session.address%>"
+                                        disabled></div>
+                                    <div class="input-cart"><label class="form-control-label">Your Wallet</label> <input
+                                            type="text" id="cvv" name="cvv" value="<%= req.session.wallet%>"
+                                            disabled>
                                     </div>
                                 </div>
 
 
                                 <div class="col-lg-3 mt-2 ">
                                     <div class="row d-flex justify-content-between px-4">
-                                        <p class="mb-1 text-left">Subtotal</p>
-                                        <h6 class="mb-1 text-right">€23.49</h6>
+                                        <p class="mb-1 text-left">Wallet</p>
+                                        <h6 class="mb-1 text-right"> <%= req.session.wallet %> €</h6>
                                     </div>
                                     <div class="row d-flex justify-content-between px-4">
                                         <p class="mb-1 text-left">Shipping</p>
                                         <h6 class="mb-1 text-right">€2.99</h6>
                                     </div>
                                     <div class="row d-flex justify-content-between px-4" id="tax">
-                                        <p class="mb-1 text-left">Total (tax included)</p>
-                                        <h6 class="mb-1 text-right final-price">€26.48</h6>
+                                        <p class="mb-1 text-left">Total (shipping included)</p>
+                                        <h6 class="mb-1 text-right price-with-shipping final-price"></h6>
                                     </div> <button id="checkoutBtn" class="btn-block btn-blue "> <span> <span
                                                 id="checkout"class="final-price">
                                              <span id="check-amt"> </span> </button>

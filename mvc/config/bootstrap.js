@@ -35,7 +35,7 @@ module.exports.bootstrap = async function() {
       address: 'In da house',
       contact_number: '1313',
       email: 'admin@admin.com',
-      // wallet: 5000,
+      wallet: 5000,
       isAdmin: 1,
       payment_id: 1
     },
@@ -48,7 +48,7 @@ module.exports.bootstrap = async function() {
       password:await sails.helpers.passwords.hashPassword('doe'),
       email: 'john@doe.com',
       isAdmin: 0,
-      // wallet: 5000,
+      wallet: 5000,
       payment_id: 1
     } //only one payment per user???
 
