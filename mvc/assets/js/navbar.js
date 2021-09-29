@@ -188,7 +188,7 @@ const updateShoppingCartHTML = function () {  // 3
     });
     parentElement.innerHTML = result.join('');
     document.querySelector('.checkout').classList.remove('hidden');
-    cartSumPrice.innerHTML = '$' + countTheSumPrice();
+    cartSumPrice.innerHTML = '€' + countTheSumPrice();
 
   }
   else {
