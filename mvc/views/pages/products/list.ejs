@@ -1,10 +1,42 @@
-<h1>List of Products</h1>
-<% products.forEach((product)=> { %>
-      <%= product.id %> <%= product.name %>
-       <%= product.description %> <%= product.costPrice %> 
-       <%= product.quantity %> <%= product.product_category %>
-     <a href='<%= ' /products/edit/' + product.id %>'> Edit </a>
-      <a href='<%= ' /products/delete/' + product.id %>'> Delete </a> <br>
-      <br>
-   <% }) %>
-   <p><a href="/products/new"> New Product</a></p>
+<%- partial("../partials/head.ejs") %>
+<div id="tabe-area">
+   <table id="adminTable">
+      <thead>
+         <tr>
+             <th>ID</th>
+             <th>Product Name</th>
+             <th>Retail Price</th>
+             <th>Action</th>
+         </tr>
+     </thead>
+     <tbody>
+         <% products.forEach((product) => {%>
+             <tr class="admin-table-rows">
+                 <td>
+                     <p class="admin-table-rows" ><%=product.id%></p>
+                 </td>
+                 <td>
+                  <p class="admin-table-rows" ><%=product.name%></p>
+                 </td>
+                 <td>
+                  <p class="admin-table-rows" ><%=product.retail_price%></p>
+                  </td> 
+                  <td>
+                     <span><a
+                            href='/products/edit/<%=product.id%>'
+                           class="fas fa-pencil-alt update anchor" title="Edit">
+                     </a></span>
+                    <span><a
+                             href='/products/delete/<%= product.id %>'
+                             class="far fa-trash-alt deleteRef anchor"
+                             title="Delete">
+                     </a></span>
+                 </td>
+             </tr>
+             <%})%>
+       </tbody>
+   </table>
+</div>
+<%- partial("../partials/scripts.ejs") %>
+ 
+   
