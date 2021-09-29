@@ -202,7 +202,7 @@ function updateProductsInCart(product) { // 2
   for (let i = 0; i < productsInCart.length; i++) {
     if (productsInCart[i].id == product.id) {
       productsInCart[i].count += 1;
-      productsInCart[i].price = productsInCart[i].vendorPrice * productsInCart[i].count;
+      productsInCart[i].price = productsInCart[i].basePrice * productsInCart[i].count;
       return;
     }
   }
@@ -222,7 +222,7 @@ products.forEach(item => {   // 1
         id: productID,
         count: 1,
         price: +productPrice,
-        vendorPrice: +productPrice,
+        basePrice: +productPrice,
       };
       updateProductsInCart(product);
       updateShoppingCartHTML();

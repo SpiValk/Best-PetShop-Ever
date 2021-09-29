@@ -1308,6 +1308,7 @@ button:focus {
   .top-shipping-img {
     visibility: hidden;
   }
+}
 
 /******* filter bar ********************/
 
@@ -1388,4 +1389,10 @@ button:focus {
   color:black;
 
 }
+/* .form-group{
+  display:flex;
+  flex-direction:row;
+   align-items:center;
+  justify-content:flex-start
+}  */
 
