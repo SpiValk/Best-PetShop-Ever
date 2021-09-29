@@ -1,4 +1,4 @@
-//VARIABLES
+// //VARIABLES
 
 var slider = document.getElementById("myRange");
 let selector = document.querySelector(".arrange")
@@ -9,102 +9,102 @@ let searchFilter = document.getElementById("search-button")
 let li = Array.from(items_list.children);
 // console.log(li)
 var radioStatus = document.getElementsByName("status")
-console.log(radioStatus)
+
 
 
 //PRICE RANGE SLIDERS
-
-output.innerHTML = slider.value; // Display the default slider value
+// Display the default slider value
+output.innerHTML = slider.value; 
 
 // Update the current slider value (each time you drag the slider handle)
 slider.oninput = function () {
     output.innerHTML = this.value;
 }
 
-//FILTERING PRODUCTS
+// //FILTERING PRODUCTS
 
-//*****1ST ATTEMPT****** */
+// //*****1ST ATTEMPT****** */
 
-// //filter by status
-// let statusFilter=(arr)=>{
-//     for (radio in radioStatus) {
-//         // console.log(radioStatus[radio])
-//         if (radioStatus[radio].checked) {
-//             for (list of li) {
-//                 if (list.dataset.status == radioStatus[radio].value) {
-//                     arr.push(list)
-//                 }
-//             }
-//         }
-//     }
-//     console.log(`after status filter ${arr}`)
-//     return arr
+// // //filter by status
+// // let statusFilter=(arr)=>{
+// //     for (radio in radioStatus) {
+// //         // console.log(radioStatus[radio])
+// //         if (radioStatus[radio].checked) {
+// //             for (list of li) {
+// //                 if (list.dataset.status == radioStatus[radio].value) {
+// //                     arr.push(list)
+// //                 }
+// //             }
+// //         }
+// //     }
+// //     console.log(`after status filter ${arr}`)
+// //     return arr
 
-//     }
-
-
+// //     }
 
 
 
-// //filter by price
-// rangePriceFilter=(arr)=>{
-//     console.log(`begins range filter ${arr}`)
-//   let sortedPriceArr=[]
-//     console.log(arr.length)
-//     // console.log(typeof arr)
-//     console.log(li.length)
-
-//     // let newSorted=arr.filter(list=>list.dataset.price>=output.value)
-//     // console.log(newSorted.length)
-//     for (list of arr){
-//            console.log(list.dataset.price)
-//         if(list.dataset.price>=slider.value){
-//             sortedPriceArr.push(list)
-//         }
-//     }
-
-//     console.log(sortedPriceArr)
-//     return sortedPriceArr
 
 
+// // //filter by price
+// // rangePriceFilter=(arr)=>{
+// //     console.log(`begins range filter ${arr}`)
+// //   let sortedPriceArr=[]
+// //     console.log(arr.length)
+// //     // console.log(typeof arr)
+// //     console.log(li.length)
 
-//     //   arr.forEach((list)=>{
-//     //    console.log(output.innerHTML)
-//     //    console.log(list.dataset.price)
-//     //    console.log(list.dataset.price >= output.value)
-//     // if (list.dataset.price >= output.innerHTML) {
-//     //     console.log(list.dataset.price >= output.value)
-//     //     sortedPriceArr.push(list)
-//     //         // console.log(arr.length)
-//     // }
-//     // console.log(sortedPriceArr)
+// //     // let newSorted=arr.filter(list=>list.dataset.price>=output.value)
+// //     // console.log(newSorted.length)
+// //     for (list of arr){
+// //            console.log(list.dataset.price)
+// //         if(list.dataset.price>=slider.value){
+// //             sortedPriceArr.push(list)
+// //         }
+// //     }
 
-// // })
+// //     console.log(sortedPriceArr)
+// //     return sortedPriceArr
 
 
-// }
 
+// //     //   arr.forEach((list)=>{
+// //     //    console.log(output.innerHTML)
+// //     //    console.log(list.dataset.price)
+// //     //    console.log(list.dataset.price >= output.value)
+// //     // if (list.dataset.price >= output.innerHTML) {
+// //     //     console.log(list.dataset.price >= output.value)
+// //     //     sortedPriceArr.push(list)
+// //     //         // console.log(arr.length)
+// //     // }
+// //     // console.log(sortedPriceArr)
+
+// // // })
 
 
 // // }
 
-// let filteringProducts=()=>{
-//         let filterArr = [] 
-//         statusFilter(filterArr)
-//         console.log(filterArr)
-//         rangePriceFilter(filterArr)
-// //     // categoryFilter()
 
 
-// let result=filterArr.map((product)=>{
-//             return product.outerHTML
+// // // }
+
+// // let filteringProducts=()=>{
+// //         let filterArr = [] 
+// //         statusFilter(filterArr)
+// //         console.log(filterArr)
+// //         rangePriceFilter(filterArr)
+// // //     // categoryFilter()
 
 
-//         })
-//         items_list.innerHTML=result.join(" ")}
+// // let result=filterArr.map((product)=>{
+// //             return product.outerHTML
 
 
-//******************************************************** */
+// //         })
+// //         items_list.innerHTML=result.join(" ")}
+
+
+// //******************************************************** */
 
 
 let filteringProducts = () => {
@@ -150,15 +150,15 @@ let filteringProducts = () => {
                     return product.outerHTML
         
                 })
-                items_list.innerHTML=filterResult.join(" ")
+                items_list.innerHTML=filterResult.join("")
                 // selector.value="default"
                 return filterResult
    
                 }
 
-              for (data in filteringProducts()){
-                 console.log(filteringProducts())
-              }
+            //   for (data in filteringProducts()){
+            //      console.log(filteringProducts())
+            //   }
       
 
 
@@ -170,7 +170,7 @@ searchFilter.addEventListener("click", filteringProducts)
 
 
 
-//Get the prices
+// //Get the prices
 let prodPriceList = [];
 let prodPrice = document.getElementsByClassName("retail-price");
 
