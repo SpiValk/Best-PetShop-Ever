@@ -9,7 +9,7 @@ module.exports = {
   },
 
   fn: async function(inputs) {
-    var dbProduct = await Product.findOne(inputs.id);
+    var dbProduct = await Pet_product.findOne(inputs.id);
     return { product: dbProduct };
   }
 };
