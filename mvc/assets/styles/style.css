@@ -918,6 +918,16 @@ select.size {
   padding-top: 15px;
 }
 
+.cartbox {
+  margin: 40px 0px;
+  padding: 40px 50px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.2);
+  height: 420px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .card {
   margin: 40px 0px;
   padding: 40px 50px;
@@ -1332,6 +1342,7 @@ button:focus {
     visibility: hidden;
   }
 }
+
 /******* filter bar ********************/
 
 /*******Range slider **********/
@@ -1411,4 +1422,10 @@ button:focus {
   color:black;
 
 }
+/* .form-group{
+  display:flex;
+  flex-direction:row;
+   align-items:center;
+  justify-content:flex-start
+}  */
 
