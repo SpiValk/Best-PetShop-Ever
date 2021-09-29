@@ -1,6 +1,6 @@
 
 var Items = localStorage.getItem('shoppingCart');
-console.log(Items)
+console.log(Items);
 // var checkoutBtn=document.getElementById("checkout")
 // console.log(Itemonly)
 // console.log(typeof Itemonly)
@@ -51,7 +51,7 @@ if (pull.length > 0) {
                     </div>
                 </div>
                 <div class="col-4">
-                    <h6 class="mob-text">$${carprod.price}</h6>
+                    <h6 class="mob-text">€${carprod.price}</h6>
                 </div>
                 <div class="col-4">
                     <button class="btn btn-danger cart-product-remove" id="${carprod.id}">Remove</button>
@@ -70,7 +70,7 @@ else {
 
 
 
-finalOrderPrice.innerHTML = 'Checkout $' + countSumPrice1();
+finalOrderPrice.innerHTML = 'Checkout €' + countSumPrice1();
 
 
 // <p hidden><span class="id">${carprod.id}</span></p>
@@ -114,7 +114,7 @@ function localremove(e) {
       });
       parentElement.innerHTML = result.join('');
       document.querySelector('.checkout').classList.remove('hidden');
-      cartSumPrice.innerHTML = '$' + countSumPrice1();
+      cartSumPrice.innerHTML = '€' + countSumPrice1();
 
     }
     else {
@@ -143,22 +143,22 @@ for (let btn of removeProductBtns) {
   btn.addEventListener('click', removeElement);
 }
 
-let poutsesMple = "poutse mple kai fuck you bird"
-$(function () {
-  console.log($("#checkoutBtn"))
-  $("#checkoutBtn").click(function () {
-    console.log("fuck you bird"),
-      $.ajax({
-        type: 'POST',
-        url: 'http://localhost:1337/checkout',
-        data: poutsesMple,
-        success: function (data) {
-          alert("congratulations")
-        }
+let poutsesMple = 'poutse mple kai fuck you bird';
+$(() => {
+  console.log($('#checkoutBtn'));
+  $('#checkoutBtn').click(() => {
+    console.log('fuck you bird'),
+    $.ajax({
+      type: 'POST',
+      url: 'http://localhost:1337/checkout',
+      data: poutsesMple,
+      success: function (data) {
+        alert('congratulations');
+      }
 
-      })
-  })
-})
+    });
+  });
+});
 
 
 // fetch(`http://localhost:5000/api/users/`, {
@@ -169,9 +169,9 @@ $(function () {
 //                 .then((resp) => resp.json())
 //                 .then((resp) => getUsers());
 //               resolve();
-          
-              
-              
+
+
+
 
 
 
