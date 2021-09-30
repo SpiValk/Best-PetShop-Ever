@@ -82,7 +82,7 @@
                      </a>
                      <div class="select-size">
 
-                        <div id="quantity"><span class="retail-price">€ <%=product.retail_price %></span> </div>
+                        <div id="quantity"><span class="retail-price">€ <%=product.retail_price.toFixed(2) %></span> </div>
                      </div>
                   </div> <button class="btn w-100 rounded my-2 addtocart" data-product-id="<%=product.id%>"><i
                         class="fas fa-shopping-cart"></i> Add to cart </button>

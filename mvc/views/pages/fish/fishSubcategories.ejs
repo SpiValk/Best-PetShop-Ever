@@ -48,7 +48,7 @@
             </div>
             <div id="item-list" class=" row col-md-8">
                <%fishProducts.forEach((product)=> { %>
-                  <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1" data-price="<%=product.retail_price%>"data-name="<%=product.name %>"data-date="<%=product.createdAt %>">
+                  <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1" data-price="<%=product.retail_price%>"data-name="<%=product.name %>"data-date="<%=product.createdAt %>"data-status="<%=product.status %>">
 
                      <div class="card myProductBox cartbox"><a href="/products/view/<%=product.id%>"> <img
                               src="/img/product_images/fish/<%= category %>/<%= subcategory %>/<%=product.image_name%>"

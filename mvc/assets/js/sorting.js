@@ -119,6 +119,12 @@ let filteringProducts = () => {
         // }
         if (radioStatus[radio].checked) {
             for (list of li) {
+                console.log(list.dataset.status)
+                console.log(radioStatus[radio].value)
+                console.log(typeof list.dataset.status)
+                console.log(typeof radioStatus[radio].value)
+                console.log(list.dataset.status == radioStatus[radio].value)
+
                 if (list.dataset.status == radioStatus[radio].value) {
                     filterArr.push(list)
                 }
@@ -131,7 +137,7 @@ let filteringProducts = () => {
     if(filterArr.length>0){
         
         filterArr.forEach((list)=>{
-            if (list.dataset.price <= slider.value) {
+            if (parseFloat(list.dataset.price) <= parseInt(slider.value)) {
                         sortedPriceArr.push(list)//1
                        
                     }
@@ -139,7 +145,7 @@ let filteringProducts = () => {
         })
   }else{
       li.forEach((list)=>{
-          if(list.dataset.price<=slider.value){
+          if(parseFloat(list.dataset.price)<=parseInt(slider.value)){
               sortedPriceArr.push(list)//2
             
           }
