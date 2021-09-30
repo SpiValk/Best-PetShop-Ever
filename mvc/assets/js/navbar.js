@@ -199,10 +199,14 @@ const updateShoppingCartHTML = function () {  // 3
 };
 
 function updateProductsInCart(product) { // 2
+  
   for (let i = 0; i < productsInCart.length; i++) {
+    console.log(productsInCart[i].basePrice)
+  console.log(productsInCart[i].count)
     if (productsInCart[i].id == product.id) {
       productsInCart[i].count += 1;
       productsInCart[i].price = productsInCart[i].basePrice * productsInCart[i].count;
+    
       return;
     }
   }
@@ -242,7 +246,7 @@ parentElement.addEventListener('click', (e) => { // Last
         else if (isMinusButton) {
           productsInCart[i].count -= 1;
         }
-        productsInCart[i].price = productsInCart[i].vendorPrice * productsInCart[i].count;
+        productsInCart[i].price = productsInCart[i].basePrice * productsInCart[i].count;
 
       }
       if (productsInCart[i].count <= 0) {
