@@ -36,8 +36,6 @@
          -Dog flea and wormers: #23
          -Dog vitamins minerals electrolytes: #24
 
-
-
 # Cat
 
       - Cat foods: #5
@@ -66,8 +64,8 @@
          -Cat Medicines: #40
          -Cat vitamins minerals electrolytes: #41
 
-
 # Fish
+
       - Fish foods: #9
          -Fish flakes: #42
          -Fish granules pellets sticks: #43
@@ -96,8 +94,8 @@
          -Fish sea water improvement: #57
          -Fish tests: #58
 
-
 # Bird
+
       - Bird Foods and Treats: #13
          -Bird food: #59
          -Wild bird food: #60
@@ -120,8 +118,8 @@
          -Bird baths: #71
          -Bird nail & break trimmers: #72
 
-
 # Small Animals
+
       - Rabbit: #16
          -Rabbit food: #73
          -Rabbit accessories: #74
@@ -140,7 +138,4 @@
          -Iguana health care: #81
 
 
-         
-
-      ***  npm install sails-hook-organics --save ***
 
