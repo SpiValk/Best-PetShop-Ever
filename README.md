@@ -2,6 +2,8 @@
 
 PeopleCert CB13 Group final project
 
+# Description
+
 Team Members:
 Coordinator: Spiros Valkaniotis
 Front-End Developers: Apostolis Sitaras, Vangelis Konstantinidis
